@@ -3,6 +3,12 @@ number: 9
 title: "Wholesale Deep Dive"
 ---
 
+**Hospitality Distribution & Demand Management**
+*NYU Tisch Center for Hospitality*
+
+David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman
+
+
 ## Opening Vignette
 
 In 2019, the revenue manager of a five-star hotel in Barcelona noticed something troubling. While auditing rates across distribution channels, she discovered her hotel's rooms listed on a German leisure travel website at €189 per night—€41 below the best available rate (BAR)—the lowest unrestricted retail rate available to consumers through the hotel's direct channels—on the hotel's own website. The rate wasn't coming from Booking.com or Expedia. It wasn't a member discount or a promotional error. The €189 rate was the hotel's **wholesale net rate**—a confidential price intended exclusively for a bed bank partner to bundle into opaque vacation packages—now displayed naked and unbundled on a consumer-facing website for anyone to book.
@@ -162,12 +168,39 @@ Once a bed bank has contracted hotel inventory, it distributes that inventory to
 
 The multi-layered nature of wholesale distribution means that a hotel's net rate must be low enough to accommodate markups at each level of the chain while still resulting in a consumer-facing price that is competitive. Consider:
 
-| Supply Chain Layer | Rate | Margin |
-|---|---|---|
-| Hotel net rate | $140 | — |
-| Bed bank markup (18%) | $165.20 | $25.20 |
-| Tour operator markup (12%) | $185.02 | $19.82 |
-| Retail travel agency commission (10%) | Consumer pays $185.02; agency earns $18.50 from tour operator | $18.50 |
+<div className="my-6 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="bg-brand-50 border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Supply Chain Layer</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Rate</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Margin</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Hotel net rate</td>
+<td className="py-3 px-4 text-primary">$140</td>
+<td className="py-3 px-4 text-primary">—</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Bed bank markup (18%)</td>
+<td className="py-3 px-4 text-primary">$165.20</td>
+<td className="py-3 px-4 text-primary">$25.20</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Tour operator markup (12%)</td>
+<td className="py-3 px-4 text-primary">$185.02</td>
+<td className="py-3 px-4 text-primary">$19.82</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Retail travel agency commission (10%)</td>
+<td className="py-3 px-4 text-primary">Consumer pays $185.02; agency earns $18.50 from tour operator</td>
+<td className="py-3 px-4 text-primary">$18.50</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 In this example, the consumer pays $185 for a room with a retail BAR of $220. The hotel received $140—a 36% discount from BAR. The intermediary chain captured $45 in combined margins. The consumer received a $35 discount from BAR—a bargain that may have been enabled by the tour operator bundling the room with a flight.
 
@@ -255,13 +288,44 @@ Leading RMS vendors have begun addressing this gap. IDeaS, for instance, has inc
 
 ### The Trade-Off
 
-| Feature | Contracted Rates | Dynamic Rates |
-|---|---|---|
-| Predictability | High (fixed rates) | Lower (rates fluctuate) |
-| Revenue optimization | Lower (static during high demand) | Higher (tracks demand) |
-| Rate leakage risk | Higher (deep discounts during peaks) | Lower (maintains relative positioning) |
-| Operational complexity | Lower (annual negotiation) | Higher (requires real-time connectivity) |
-| Suitable for | Group blocks, seasonal programs | FIT distribution, yield management |
+<div className="my-6 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="bg-brand-50 border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Feature</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Contracted Rates</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Dynamic Rates</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Predictability</td>
+<td className="py-3 px-4 text-primary">High (fixed rates)</td>
+<td className="py-3 px-4 text-primary">Lower (rates fluctuate)</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Revenue optimization</td>
+<td className="py-3 px-4 text-primary">Lower (static during high demand)</td>
+<td className="py-3 px-4 text-primary">Higher (tracks demand)</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Rate leakage risk</td>
+<td className="py-3 px-4 text-primary">Higher (deep discounts during peaks)</td>
+<td className="py-3 px-4 text-primary">Lower (maintains relative positioning)</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Operational complexity</td>
+<td className="py-3 px-4 text-primary">Lower (annual negotiation)</td>
+<td className="py-3 px-4 text-primary">Higher (requires real-time connectivity)</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Suitable for</td>
+<td className="py-3 px-4 text-primary">Group blocks, seasonal programs</td>
+<td className="py-3 px-4 text-primary">FIT distribution, yield management</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 Most sophisticated hotels employ a **blended approach**: contracted rates for group allotments and key tour operator partnerships where rate certainty is valuable, combined with dynamic rates for FIT wholesale distribution where revenue optimization and rate integrity are priorities.
 
@@ -478,28 +542,97 @@ Between 2016 and 2024, under successive ownership by private equity firms Cinven
 *(Sources: Hotelbeds, 2024; company presentations. Financial and performance figures are company-reported and have not been independently audited.)*
 
 
+## Chapter Summary
+
+This chapter examined wholesale hotel distribution—the net-rate-plus-markup model that connects hotels to bed banks, tour operators, and downstream intermediaries across a multi-layered B2B supply chain. We explored the dominant players (Hotelbeds, WebBeds, W2M), the mechanics of contracted versus dynamic rates, the persistent challenge of rate leakage, and the negotiation dynamics that vary by hotel type and geographic market. Effective wholesale management requires well-structured contracts, active rate monitoring, and a blended approach to pricing that balances volume with rate integrity. **What's Next:** Chapter 10 shifts from wholesale's opaque B2B supply chain to the transparent, consumer-facing world of metasearch—the comparison-shopping layer where hotels compete for visibility alongside OTAs at the critical moment of booking intent.
+
+
 ## Key Terms
 
-| Term | Definition |
-|------|-----------|
-| **Allotment** | A pre-agreed block of rooms allocated to a wholesaler for a specific period, with unsold rooms reverting to the hotel after a cutoff date |
-| **BAR (Best Available Rate)** | The lowest unrestricted retail rate available to consumers through the hotel's direct channels |
-| **B2B (Business-to-Business)** | A transaction model where a company sells products or services to other businesses rather than directly to consumers |
-| **B2B2C (Business-to-Business-to-Consumer)** | A distribution model where a company sells through business intermediaries who then sell to end consumers |
-| **Bed Bank** | A wholesale aggregator that contracts hotel inventory in bulk and distributes it to downstream B2B partners |
-| **Closed User Group (CUG)** | A defined group of users (e.g., members of a program) who receive access to rates not available to the general public |
-| **Contracted Rate** | A fixed wholesale net rate negotiated in advance for a defined period |
-| **Displacement Analysis** | The process of evaluating whether a group booking generates incremental revenue or simply replaces higher-rated demand |
-| **Dynamic Rate** | A wholesale net rate derived in real-time from the hotel's BAR using a pre-agreed discount formula |
-| **FIT (Free Independent Traveler)** | An individual traveler booking through the wholesale channel, as opposed to a group |
-| **Net Rate** | The confidential wholesale price at which a hotel sells inventory to a wholesaler, before any markup |
-| **Rate Leakage** | The appearance of confidential wholesale net rates (or rates derived from them) on consumer-facing booking channels |
-| **Rate Parity** | The practice of maintaining consistent public pricing across all consumer-facing distribution channels |
-| **Rate Shopping** | The practice of monitoring a hotel's rates across multiple distribution channels to detect parity violations and leakage |
-| **Release Date** | The deadline by which a wholesaler must confirm bookings against an allotment; unsold rooms return to the hotel |
-| **Sell Rate** | The final price at which a room is sold to the consumer after all intermediary markups |
-| **Virtual Wholesaler** | An aggregator that sources hotel inventory from multiple bed banks via API connections rather than contracting directly with hotels |
-| **White-label** | A product or service produced by one company and rebranded by another to appear as its own |
+<div className="my-8 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Term</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Allotment**</td>
+<td className="py-3 px-4 text-primary">A pre-agreed block of rooms allocated to a wholesaler for a specific period, with unsold rooms reverting to the hotel after a cutoff date</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**BAR (Best Available Rate)**</td>
+<td className="py-3 px-4 text-primary">The lowest unrestricted retail rate available to consumers through the hotel's direct channels</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**B2B (Business-to-Business)**</td>
+<td className="py-3 px-4 text-primary">A transaction model where a company sells products or services to other businesses rather than directly to consumers</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**B2B2C (Business-to-Business-to-Consumer)**</td>
+<td className="py-3 px-4 text-primary">A distribution model where a company sells through business intermediaries who then sell to end consumers</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Bed Bank**</td>
+<td className="py-3 px-4 text-primary">A wholesale aggregator that contracts hotel inventory in bulk and distributes it to downstream B2B partners</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Closed User Group (CUG)**</td>
+<td className="py-3 px-4 text-primary">A defined group of users (e.g., members of a program) who receive access to rates not available to the general public</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Contracted Rate**</td>
+<td className="py-3 px-4 text-primary">A fixed wholesale net rate negotiated in advance for a defined period</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Displacement Analysis**</td>
+<td className="py-3 px-4 text-primary">The process of evaluating whether a group booking generates incremental revenue or simply replaces higher-rated demand</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Dynamic Rate**</td>
+<td className="py-3 px-4 text-primary">A wholesale net rate derived in real-time from the hotel's BAR using a pre-agreed discount formula</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**FIT (Free Independent Traveler)**</td>
+<td className="py-3 px-4 text-primary">An individual traveler booking through the wholesale channel, as opposed to a group</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Net Rate**</td>
+<td className="py-3 px-4 text-primary">The confidential wholesale price at which a hotel sells inventory to a wholesaler, before any markup</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Rate Leakage**</td>
+<td className="py-3 px-4 text-primary">The appearance of confidential wholesale net rates (or rates derived from them) on consumer-facing booking channels</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Rate Parity**</td>
+<td className="py-3 px-4 text-primary">The practice of maintaining consistent public pricing across all consumer-facing distribution channels</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Rate Shopping**</td>
+<td className="py-3 px-4 text-primary">The practice of monitoring a hotel's rates across multiple distribution channels to detect parity violations and leakage</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Release Date**</td>
+<td className="py-3 px-4 text-primary">The deadline by which a wholesaler must confirm bookings against an allotment; unsold rooms return to the hotel</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Sell Rate**</td>
+<td className="py-3 px-4 text-primary">The final price at which a room is sold to the consumer after all intermediary markups</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Virtual Wholesaler**</td>
+<td className="py-3 px-4 text-primary">An aggregator that sources hotel inventory from multiple bed banks via API connections rather than contracting directly with hotels</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**White-label**</td>
+<td className="py-3 px-4 text-primary">A product or service produced by one company and rebranded by another to appear as its own</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 ## Discussion Questions

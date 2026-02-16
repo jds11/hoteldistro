@@ -7,6 +7,10 @@ import {
   extractVignette,
   extractIntroTitle,
   extractLearningObjectives,
+  extractChapterSummary,
+  extractKeyTerms,
+  extractDiscussionQuestions,
+  extractReferences,
 } from "@/lib/chapters";
 import { getPartColors } from "@/lib/part-colors";
 import Link from "next/link";
@@ -15,6 +19,8 @@ import Footer from "@/components/Footer";
 import ChapterSubNav from "@/components/ChapterSubNav";
 import TableOfContents from "@/components/TableOfContents";
 import { mdxComponents } from "@/components/MdxComponents";
+import CollapsibleReferences from "@/components/CollapsibleReferences";
+import CollapsibleKeyTerms from "@/components/CollapsibleKeyTerms";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -48,8 +54,24 @@ export default async function ChapterPage({ params }: Props) {
   const loResult = extractLearningObjectives(afterTitle);
   const afterLO = loResult ? loResult.contentWithout : afterTitle;
   const vignetteResult = extractVignette(afterLO);
-  const displayContent = vignetteResult ? vignetteResult.contentWithout : afterLO;
-  const sections = getChapterSections(displayContent);
+  const afterVignette = vignetteResult ? vignetteResult.contentWithout : afterLO;
+  const summaryResult = extractChapterSummary(afterVignette);
+  const afterSummary = summaryResult ? summaryResult.contentWithout : afterVignette;
+  const keyTermsResult = extractKeyTerms(afterSummary);
+  const afterKT = keyTermsResult ? keyTermsResult.contentWithout : afterSummary;
+  const dqResult = extractDiscussionQuestions(afterKT);
+  const afterDQ = dqResult ? dqResult.contentWithout : afterKT;
+  const refsResult = extractReferences(afterDQ);
+  const displayContent = refsResult ? refsResult.contentWithout : afterDQ;
+
+  // Build sections for TOC, then append end-of-chapter sections
+  const contentSections = getChapterSections(displayContent);
+  const endSections: { id: string; title: string; level: number }[] = [];
+  if (summaryResult) endSections.push({ id: "chapter-summary", title: "Chapter Summary", level: 2 });
+  if (dqResult) endSections.push({ id: "discussion-questions", title: "Discussion Questions", level: 2 });
+  if (keyTermsResult) endSections.push({ id: "key-terms", title: "Key Terms", level: 2 });
+  if (refsResult) endSections.push({ id: "references", title: "References", level: 2 });
+  const sections = [...contentSections, ...endSections];
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -95,7 +117,7 @@ export default async function ChapterPage({ params }: Props) {
                 <svg className="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-text-primary text-xs font-semibold uppercase tracking-wider">
+                <span className="text-text-primary text-sm font-bold uppercase tracking-wider">
                   Learning Objectives
                 </span>
               </div>
@@ -116,18 +138,18 @@ export default async function ChapterPage({ params }: Props) {
 
           {/* Vignette callout */}
           {vignetteResult && (
-            <div className="mb-10 bg-brand-50 border border-brand-100 rounded-2xl p-6 md:p-8">
+            <div className="mb-10 bg-brand-900 rounded-2xl p-6 md:p-8">
               <div className="flex items-center gap-2 mb-4">
-                <svg className="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                <svg className="w-5 h-5 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
                 </svg>
-                <span className="text-brand-700 text-xs font-semibold uppercase tracking-wider">
+                <span className="text-brand-300 text-sm font-bold uppercase tracking-wider">
                   Opening Vignette
                 </span>
               </div>
-              <div className="text-[15px] text-brand-900/80 leading-[1.8] space-y-4">
+              <div className="text-[15px] text-white/90 leading-[1.8] space-y-4">
                 {vignetteResult.vignette.split("\n\n").map((p, i) => (
-                  <p key={i}>{p}</p>
+                  <p key={i} dangerouslySetInnerHTML={{ __html: p.replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>').replace(/\*(.+?)\*/g, '<em>$1</em>') }} />
                 ))}
               </div>
             </div>
@@ -152,6 +174,58 @@ export default async function ChapterPage({ params }: Props) {
           >
             <MDXRemote source={displayContent} components={mdxComponents} />
           </div>
+
+          {/* Chapter Summary */}
+          {summaryResult && (
+            <div id="chapter-summary" className="mt-14 bg-brand-900 rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-5 h-5 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                <span className="text-brand-300 text-sm font-bold uppercase tracking-wider">
+                  Chapter Summary
+                </span>
+              </div>
+              <div className="text-[15px] text-white/90 leading-[1.8] space-y-3">
+                {summaryResult.summary.split("\n").filter((l: string) => l.trim()).map((line: string, i: number) => (
+                  <p key={i} dangerouslySetInnerHTML={{ __html: line.replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>') }} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Discussion Questions */}
+          {dqResult && (
+            <div id="discussion-questions" className="mt-10 bg-slate-50 border border-border rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                </svg>
+                <span className="text-text-primary text-sm font-bold uppercase tracking-wider">
+                  Discussion Questions
+                </span>
+              </div>
+              <div className="text-[14px] text-text-secondary leading-[1.8] space-y-3">
+                {dqResult.questions.split("\n").filter((l: string) => l.trim()).map((line: string, i: number) => (
+                  <p key={i} dangerouslySetInnerHTML={{ __html: line.replace(/\*\*(.+?)\*\*/g, '<strong class="text-text-primary font-semibold">$1</strong>') }} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Key Terms — collapsible, open by default */}
+          {keyTermsResult && (
+            <div id="key-terms" className="mt-10">
+              <CollapsibleKeyTerms html={keyTermsResult.keyTerms} />
+            </div>
+          )}
+
+          {/* References — collapsible, closed by default */}
+          {refsResult && (
+            <div id="references" className="mt-6">
+              <CollapsibleReferences references={refsResult.references} />
+            </div>
+          )}
         </div>
       </article>
 

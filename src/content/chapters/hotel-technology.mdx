@@ -3,10 +3,7 @@ number: 2
 title: "Hotel Technology"
 ---
 
-## The Technology Stack That Powers Distribution
-
-
-### Opening Vignette
+## Opening Vignette
 
 It is 2:47 a.m. at the Langham, New York, Fifth Avenue. A business traveler in Tokyo has just booked a corner suite through Booking.com. Within milliseconds, the hotel's channel manager picks up the reservation, pushes it into the property management system, adjusts availability across every connected platform — Expedia, the hotel's own website, the GDS — and triggers a confirmation email to the guest's inbox. A revenue management algorithm, noticing that Tuesday-night demand just ticked upward, automatically raises the rate for the remaining suites by twelve dollars. The guest's loyalty profile, stored in a CRM, flags a preference for a high floor and a hypoallergenic pillow. A pre-arrival message is queued. None of this requires a human hand.
 
@@ -17,7 +14,7 @@ Now consider what happens when it goes wrong. In September 2019, a major lifesty
 The distance between the seamless 2:47 a.m. booking and the €180,000 disaster is the story of hotel technology — a story of paper ledgers giving way to mainframes, mainframes yielding to servers, and servers dissolving into the cloud. This chapter maps that journey and unpacks the technology stack that makes modern hotel distribution possible. As Law, Leung, and Chan (2020) documented in a comprehensive review of information and communication technology research in hospitality, the field has evolved through distinct phases — from basic property automation to sophisticated multi-channel distribution strategies enabled by cloud computing, APIs, and artificial intelligence.
 
 
-### Learning Objectives
+## Learning Objectives
 
 Upon completing this chapter, you should be able to:
 
@@ -110,21 +107,48 @@ The PMS market in the mid-2020s is a study in contrasts — legacy giants underg
 
 - **Other notable players:** Agilysys (particularly strong in resorts and gaming), Hotelogix (budget-friendly cloud PMS for emerging markets), and Clock PMS (popular in Europe).
 
+Beyond the PMS, hotel technology stacks increasingly encompass food and beverage operations. Marriott's 2025–2026 deployment of **Shiji Infrasys Cloud POS** across properties and its selection of **SevenRooms** as a preferred restaurant technology partner reflect a broader trend toward cloud-based, API-connected point-of-sale and reservation systems that integrate directly with the PMS and guest profile infrastructure (Stone, 2026).
+
 ### What It Costs
 
 Technology pricing is one of the least transparent areas in hospitality, and students entering the industry should understand the economics. Cloud PMS platforms typically charge on a **per-room-per-month (PRPM)** basis. While pricing varies by vendor, property size, and negotiated terms, general ranges in the mid-2020s look approximately like this:
 
-| PMS Tier | Typical PRPM Range | Best Fit |
-|----------|-------------------|----------|
-| Budget/entry-level cloud (Hotelogix, Little Hotelier) | $3–$8 | Small independents, hostels |
-| Mid-market cloud (Cloudbeds, Clock PMS) | $8–$18 | Independent hotels, small groups |
-| Enterprise cloud (Mews, Opera Cloud, StayNTouch) | $15–$35+ | Branded chains, full-service properties |
+<div className="my-6 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="bg-brand-50 border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">PMS Tier</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Typical PRPM Range</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Best Fit</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Budget/entry-level cloud (Hotelogix, Little Hotelier)</td>
+<td className="py-3 px-4 text-primary">$3–$8</td>
+<td className="py-3 px-4 text-primary">Small independents, hostels</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Mid-market cloud (Cloudbeds, Clock PMS)</td>
+<td className="py-3 px-4 text-primary">$8–$18</td>
+<td className="py-3 px-4 text-primary">Independent hotels, small groups</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Enterprise cloud (Mews, Opera Cloud, StayNTouch)</td>
+<td className="py-3 px-4 text-primary">$15–$35+</td>
+<td className="py-3 px-4 text-primary">Branded chains, full-service properties</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 For a 200-room hotel at $20 PRPM, the PMS alone costs $48,000 per year — before adding modules for revenue management, CRM, or payment processing. Legacy on-premise systems like Opera 5 typically involved larger upfront license fees ($50,000–$200,000+) plus annual maintenance contracts of 18–22% of the license value, plus dedicated server hardware and on-site IT support. The shift to cloud has transformed a capital expenditure into an operating expense, but the total cost of ownership over five years is not always lower — it depends heavily on the property's size, complexity, and integration needs.
 
 ### The Cloud Migration: Progress and Barriers
 
 The shift to cloud PMS is not merely a technology upgrade — it is reshaping how hotels operate. Cloud systems enable contactless operations (mobile check-in, digital key, self-service kiosks), labor efficiency through automated workflows, real-time dashboards accessible from any device, and ecosystem connectivity through app marketplaces where hotels can add specialized tools via pre-built integrations.
+
+The scale of investment required is substantial. Marriott International committed $1.1 billion in total investment spending for 2026, with more than one-third directed toward digital and technology transformation — specifically, replatforming its PMS, central reservations system, and loyalty platform from legacy infrastructure to cloud-native environments with unified guest data, API-first integrations, and real-time analytics (Stone, 2026). Across 8,500+ properties operating primarily under a franchise model, this migration represents a multiyear effort that illustrates both the promise and complexity of enterprise-scale cloud adoption.
 
 Despite the momentum, barriers remain. Large hotel companies with thousands of properties face complex, multi-year migration projects. Data migration risks, staff retraining, and the sheer cost of transition at scale are non-trivial. Some hotels, particularly in regions with unreliable internet connectivity, still depend on on-premise systems with local fallback capabilities. Bilgihan, Okumus, Nusair, and Kwun (2011), studying information technology applications and competitive advantage in the hospitality industry, found that technology adoption alone does not guarantee competitive advantage — it is the *strategic alignment* of technology with operational goals and guest service that creates differentiation.
 
@@ -155,7 +179,12 @@ Think of the CRS as a traffic controller. When a revenue manager decides to rais
 
 This bidirectional flow — rates and availability *out*, reservations *in* — is the fundamental heartbeat of hotel distribution technology.
 
-> **Exhibit 2.1: The CRS as Distribution Hub**
+
+<figure className="my-8">
+<img src="/exhibits/exhibit-2-1-tech-stack.png" alt="Exhibit 2.1: The CRS as Distribution Hub" className="w-full rounded-lg shadow-sm border border-gray-200" />
+<figcaption className="mt-2 text-center text-sm text-brand-600">Exhibit 2.1: The CRS as Distribution Hub</figcaption>
+</figure>
+
 >
 > *This exhibit should be designed as a hub-and-spoke diagram with the CRS at the center. Outward-facing arrows (labeled "Rates, Availability, Restrictions") flow from the CRS to six connected nodes: GDS (Amadeus, Sabre, Travelport), OTAs (via channel manager), Brand.com (booking engine), Call Center, Metasearch (Google Hotel Ads, Trivago), and Wholesalers/Bed Banks. Inward-facing arrows (labeled "Reservations, Modifications, Cancellations") flow from each node back to the CRS. A downward arrow from the CRS connects to the PMS, labeled "Reservation Delivery & Inventory Sync." The diagram should use color coding: blue for outbound rate/availability flows, green for inbound reservation flows, and a dashed line between CRS and PMS to indicate the critical two-way sync. Include a note: "In hotels without a CRS (many independents), the channel manager assumes this hub role, connecting directly to the PMS."*
 
@@ -230,7 +259,12 @@ The modern revenue management workflow operates as a pipeline:
 
 This end-to-end pipeline can execute in minutes, enabling hotels to respond to demand shifts far faster than any manual process would allow.
 
-> **Exhibit 2.2: The Revenue Management to Distribution Pipeline**
+
+<figure className="my-8">
+<img src="/exhibits/exhibit-2-2-pms-vendors.png" alt="Exhibit 2.2: The Revenue Management to Distribution Pipeline" className="w-full rounded-lg shadow-sm border border-gray-200" />
+<figcaption className="mt-2 text-center text-sm text-brand-600">Exhibit 2.2: The Revenue Management to Distribution Pipeline</figcaption>
+</figure>
+
 >
 > *This exhibit should be designed as a horizontal flowchart moving left to right across five stages. Stage 1 (Data Ingestion): icons representing the PMS (historical bookings, pace data), Rate Shopper (competitor rates, parity alerts), and External Data (events, flights, weather) feed into Stage 2 (RMS Optimization), shown as a central processing box with "ML Algorithm" inside. Stage 3 (Decision Point): a diamond showing "Auto-publish?" with two paths — "Yes" going directly forward, "No" routing to a "Revenue Manager Review" step before continuing. Stage 4 (Rate Push): the CRS and/or Channel Manager receives the approved rates. Stage 5 (Channel Update): arrows fan out from the CRS/CM to icons for Brand.com, OTAs, GDS, Metasearch, and Call Center. A feedback loop arrow curves from Stage 5 back to Stage 1, labeled "Booking data returns to PMS," illustrating the continuous cycle. Include timing annotations: "Minutes, not hours" between Stages 2–5, and "Continuous" for the feedback loop.*
 
@@ -380,7 +414,12 @@ Achieving this level of connectivity across all systems remains an aspiration fo
 
 This trade-off — composable best-of-breed versus integrated all-in-one — is one of the most consequential technology decisions a hotel operator will make, and it is explored further in the chapter's discussion questions and hands-on exercise.
 
-> **Exhibit 2.3: The Hotel Technology Ecosystem**
+
+<figure className="my-8">
+<img src="/exhibits/exhibit-2-3-tech-evolution.png" alt="Exhibit 2.3: The Hotel Technology Ecosystem" className="w-full rounded-lg shadow-sm border border-gray-200" />
+<figcaption className="mt-2 text-center text-sm text-brand-600">Exhibit 2.3: The Hotel Technology Ecosystem</figcaption>
+</figure>
+
 >
 > *This exhibit should be designed as a network diagram with the PMS at the center, enclosed in a prominent circle. Radiating outward are two-way connections (double-headed arrows) to: CRS, Channel Manager, RMS, CRM, Booking Engine, POS (restaurants and bars), Payment Systems, Guest Messaging, and Housekeeping/Maintenance. Between the CRS and the external world, arrows connect to GDS, OTAs, Metasearch, and Wholesalers. Line weight should indicate criticality: the thickest lines connect PMS↔CRS, PMS↔Channel Manager, and PMS↔RMS (the core distribution loop). Medium-weight lines connect PMS↔CRM and PMS↔Payment Systems. Thinner lines connect to operational systems (POS, Housekeeping, Guest Messaging). A shaded overlay on the right side of the diagram groups all external-facing systems (CRS, Channel Manager, Booking Engine) under the label "Distribution Layer," while the left side groups operational systems (POS, Housekeeping, Maintenance) under "Operations Layer." A note at the bottom reads: "In a composable stack, each node may be a different vendor. In an all-in-one platform, multiple nodes are bundled into a single system." Include a legend showing that solid lines = real-time API integration, dashed lines = batch or near-real-time sync.*
 
@@ -421,44 +460,147 @@ The Mews story illustrates a broader truth about hotel technology in the 2020s: 
 *Discussion prompt: How might a cloud-native, API-first PMS like Mews change the competitive dynamics between large hotel chains and independent hotels? Could technology be the great equalizer — or do scale advantages still dominate?*
 
 
-## Hands-On Exercise: PMS Vendor Evaluation
+### Hands-On Exercise: PMS Vendor Evaluation
 
 **Instructions:** Visit the websites of three PMS vendors — **Oracle Opera Cloud** (oracle.com/hospitality), **Mews** (mews.com), and **Cloudbeds** (cloudbeds.com). Research their feature sets, target markets, integration ecosystems, and (where available) pricing models. Then recommend a PMS for each of the following scenarios, justifying your choice:
 
-| Scenario | Property Description | Key Considerations |
-|----------|---------------------|-------------------|
-| **A** | A 50-room boutique hotel in Lisbon, independently owned, with no IT staff | Ease of use, cost, built-in channel management, minimal training |
-| **B** | A 500-room convention hotel in Chicago, flagged under a major brand (e.g., Marriott, Hilton) | Brand PMS mandates, integration with brand CRS and loyalty, group sales capability, scalability |
-| **C** | A 20-property management company with a mix of boutique hotels and apart-hotels across five European countries | Multi-property management, centralized reporting, multi-currency, API ecosystem for diverse property needs |
+<div className="my-6 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="bg-brand-50 border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Scenario</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Property Description</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Key Considerations</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">**A**</td>
+<td className="py-3 px-4 text-primary">A 50-room boutique hotel in Lisbon, independently owned, with no IT staff</td>
+<td className="py-3 px-4 text-primary">Ease of use, cost, built-in channel management, minimal training</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">**B**</td>
+<td className="py-3 px-4 text-primary">A 500-room convention hotel in Chicago, flagged under a major brand (e.g., Marriott, Hilton)</td>
+<td className="py-3 px-4 text-primary">Brand PMS mandates, integration with brand CRS and loyalty, group sales capability, scalability</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">**C**</td>
+<td className="py-3 px-4 text-primary">A 20-property management company with a mix of boutique hotels and apart-hotels across five European countries</td>
+<td className="py-3 px-4 text-primary">Multi-property management, centralized reporting, multi-currency, API ecosystem for diverse property needs</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 For each scenario, address: (1) Which PMS would you recommend and why? (2) What other technology systems would this property need, and how would the PMS integrate with them? (3) What are the risks of your recommendation? (4) Estimate the approximate annual technology cost (PMS + essential integrations) using the PRPM ranges discussed in Section 2.2.
 
 
+## Chapter Summary
+
+This chapter explored the technology stack that powers modern hotel distribution — from the PMS at the operational core, through the CRS, channel manager, RMS, CRM, booking engine, and payment systems that connect hotels to the global marketplace. We traced the evolution from handwritten ledgers and on-premise servers to today's cloud-native, API-first platforms, and examined why system integration remains the industry's most persistent and expensive technology challenge. Emerging trends — including composable architectures, AI-driven automation, and embedded payments — are reshaping what is possible, but the fundamental imperative remains: technology decisions are distribution decisions, and the quality of a hotel's tech stack directly determines its ability to compete for guests across channels.
+
+**What's Next:** With the technology infrastructure in place, we turn in **Chapter 3: The Value of a Guest** to the economics that sit on top of it — customer lifetime value, Net RevPAR, the true cost of acquisition across channels, and why not all bookings are created equal.
+
+
 ## Key Terms
 
-| Term | Definition |
-|------|-----------|
-| **API (Application Programming Interface)** | A set of protocols that allows different software systems to communicate and exchange data. |
-| **Booking Engine** | The e-commerce software on a hotel's website that enables guests to search availability and complete reservations. |
-| **Business Intelligence (BI)** | Tools and platforms that aggregate, analyze, and visualize data from multiple systems to support decision-making. |
-| **Channel Manager** | Middleware that distributes rates and availability from a hotel's systems to multiple online distribution channels simultaneously and delivers reservations back. |
-| **Cloud-Native** | Software designed from the ground up to run in cloud environments, using modern architectures like microservices and APIs. |
-| **Composable Technology Stack** | An approach where hotels assemble best-of-breed technology components from different vendors, connected via open APIs. |
-| **CRM (Customer Relationship Management)** | A system that collects and organizes guest data to enable personalized marketing, service, and loyalty management. |
-| **CRS (Central Reservation System)** | An enterprise-level system that manages rate and inventory distribution across all channels and delivers reservations to properties. |
-| **Event-Driven Architecture** | A software design pattern where systems communicate by publishing and subscribing to events (e.g., "reservation created") rather than polling for changes. |
-| **Microservices** | An architectural approach where a software application is built as a collection of small, independent services, each handling a specific function and communicating via APIs. |
-| **Middleware** | Software that acts as a bridge between different applications, translating data formats and routing information between systems that were not originally designed to work together. |
-| **Night Audit** | The end-of-day process of reconciling a hotel's financial transactions, traditionally run overnight. |
-| **Open Pricing** | A revenue management strategy in which each room type, channel, and segment can be priced independently, without fixed rate differentials. |
-| **PCI DSS (Payment Card Industry Data Security Standard)** | Security standards designed to protect credit card data during processing and storage. |
-| **PMS (Property Management System)** | The core operational software that manages reservations, check-in/out, guest profiles, billing, and housekeeping for a hotel property. |
-| **Rate Shopper** | A competitive intelligence tool that monitors and compares hotel room rates across OTAs and competitor websites, providing data to inform pricing decisions. |
-| **RMS (Revenue Management System)** | Software that uses data and algorithms to optimize room pricing and inventory allocation. |
-| **SaaS (Software as a Service)** | A software distribution model where applications are hosted in the cloud and accessed via subscription. |
-| **Tokenization** | The process of replacing sensitive data (like credit card numbers) with non-sensitive substitute values (tokens). |
-| **Two-Way Integration** | A system connection that allows data to flow in both directions — for example, rates flowing out and reservations flowing back. |
-| **VCC (Virtual Credit Card)** | A single-use, system-generated credit card number used by OTAs and wholesalers to remit payment to hotels. |
+<div className="my-8 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Term</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**API (Application Programming Interface)**</td>
+<td className="py-3 px-4 text-primary">A set of protocols that allows different software systems to communicate and exchange data.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Booking Engine**</td>
+<td className="py-3 px-4 text-primary">The e-commerce software on a hotel's website that enables guests to search availability and complete reservations.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Business Intelligence (BI)**</td>
+<td className="py-3 px-4 text-primary">Tools and platforms that aggregate, analyze, and visualize data from multiple systems to support decision-making.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Channel Manager**</td>
+<td className="py-3 px-4 text-primary">Middleware that distributes rates and availability from a hotel's systems to multiple online distribution channels simultaneously and delivers reservations back.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Cloud-Native**</td>
+<td className="py-3 px-4 text-primary">Software designed from the ground up to run in cloud environments, using modern architectures like microservices and APIs.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Composable Technology Stack**</td>
+<td className="py-3 px-4 text-primary">An approach where hotels assemble best-of-breed technology components from different vendors, connected via open APIs.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**CRM (Customer Relationship Management)**</td>
+<td className="py-3 px-4 text-primary">A system that collects and organizes guest data to enable personalized marketing, service, and loyalty management.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**CRS (Central Reservation System)**</td>
+<td className="py-3 px-4 text-primary">An enterprise-level system that manages rate and inventory distribution across all channels and delivers reservations to properties.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Event-Driven Architecture**</td>
+<td className="py-3 px-4 text-primary">A software design pattern where systems communicate by publishing and subscribing to events (e.g., "reservation created") rather than polling for changes.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Microservices**</td>
+<td className="py-3 px-4 text-primary">An architectural approach where a software application is built as a collection of small, independent services, each handling a specific function and communicating via APIs.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Middleware**</td>
+<td className="py-3 px-4 text-primary">Software that acts as a bridge between different applications, translating data formats and routing information between systems that were not originally designed to work together.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Night Audit**</td>
+<td className="py-3 px-4 text-primary">The end-of-day process of reconciling a hotel's financial transactions, traditionally run overnight.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Open Pricing**</td>
+<td className="py-3 px-4 text-primary">A revenue management strategy in which each room type, channel, and segment can be priced independently, without fixed rate differentials.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**PCI DSS (Payment Card Industry Data Security Standard)**</td>
+<td className="py-3 px-4 text-primary">Security standards designed to protect credit card data during processing and storage.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**PMS (Property Management System)**</td>
+<td className="py-3 px-4 text-primary">The core operational software that manages reservations, check-in/out, guest profiles, billing, and housekeeping for a hotel property.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Rate Shopper**</td>
+<td className="py-3 px-4 text-primary">A competitive intelligence tool that monitors and compares hotel room rates across OTAs and competitor websites, providing data to inform pricing decisions.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**RMS (Revenue Management System)**</td>
+<td className="py-3 px-4 text-primary">Software that uses data and algorithms to optimize room pricing and inventory allocation.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**SaaS (Software as a Service)**</td>
+<td className="py-3 px-4 text-primary">A software distribution model where applications are hosted in the cloud and accessed via subscription.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Tokenization**</td>
+<td className="py-3 px-4 text-primary">The process of replacing sensitive data (like credit card numbers) with non-sensitive substitute values (tokens).</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**Two-Way Integration**</td>
+<td className="py-3 px-4 text-primary">A system connection that allows data to flow in both directions — for example, rates flowing out and reservations flowing back.</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 font-semibold text-brand-800">**VCC (Virtual Credit Card)**</td>
+<td className="py-3 px-4 text-primary">A single-use, system-generated credit card number used by OTAs and wholesalers to remit payment to hotels.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 ## Discussion Questions
@@ -551,6 +693,8 @@ Sabre Corporation. (2024). *SynXis platform*. https://www.sabrehospitality.com
 Salesforce. (2024). *Hospitality solutions*. https://www.salesforce.com/solutions/industries/hospitality/
 
 SiteMinder. (2024). *About SiteMinder*. https://www.siteminder.com/about/
+
+Stone, D. (2026, February 13). Marriott advances technology migration as AI strategy moves into deployment. *Hotel Technology News*. https://hoteltechnologynews.com/2026/02/marriott-advances-technology-migration-as-ai-strategy-moves-into-deployment/
 
 Soares, A. L. V., Mendes-Filho, L., & Gretzel, U. (2021). Technology adoption in hotels: Applying institutional theory to tourism. *Tourism Review*, *76*(3), 669–680. https://doi.org/10.1108/TR-05-2019-0153
 

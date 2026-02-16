@@ -3,6 +3,12 @@ number: 8
 title: "OTAs Deep Dive"
 ---
 
+**Hospitality Distribution & Demand Management**
+*NYU Tisch Center for Hospitality*
+
+David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman
+
+
 ## Opening Vignette
 
 In the spring of 2020, as COVID-19 shuttered hotels across the globe, Booking Holdings CEO Glenn Fogel faced an existential reckoning. The Amsterdam-based travel giant—parent of Booking.com, Priceline, Agoda, Kayak, and OpenTable—saw gross travel bookings plummet 91% in April 2020 compared to the prior year (Booking Holdings, 2020). Virtually overnight, the company that had processed over $96 billion in travel bookings in 2019 watched its pipeline evaporate. Fogel laid off thousands, drew down credit lines, and prepared for a recovery whose timeline nobody could predict.
@@ -104,14 +110,56 @@ Expedia Group, conversely, expanded its agency-model offerings, particularly thr
 
 ### Comparing the Models: What Hotels Need to Know
 
-| Feature | Merchant Model | Agency Model | Hybrid |
-|---|---|---|---|
-| Who sets the price? | OTA | Hotel | Varies |
-| Who collects payment? | OTA | Hotel (or OTA-facilitated) | Varies |
-| Hotel revenue basis | Net rate | Retail minus commission | Varies |
-| Cash flow timing | Post-stay payment from OTA | Guest pays hotel | Varies |
-| Rate transparency | Lower (markup opaque) | Higher (hotel sets rate) | Moderate |
-| Typical effective cost | 20–30% | 15–25% | 15–25% |
+<div className="my-6 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="bg-brand-50 border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Feature</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Merchant Model</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Agency Model</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Hybrid</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Who sets the price?</td>
+<td className="py-3 px-4 text-primary">OTA</td>
+<td className="py-3 px-4 text-primary">Hotel</td>
+<td className="py-3 px-4 text-primary">Varies</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Who collects payment?</td>
+<td className="py-3 px-4 text-primary">OTA</td>
+<td className="py-3 px-4 text-primary">Hotel (or OTA-facilitated)</td>
+<td className="py-3 px-4 text-primary">Varies</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Hotel revenue basis</td>
+<td className="py-3 px-4 text-primary">Net rate</td>
+<td className="py-3 px-4 text-primary">Retail minus commission</td>
+<td className="py-3 px-4 text-primary">Varies</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Cash flow timing</td>
+<td className="py-3 px-4 text-primary">Post-stay payment from OTA</td>
+<td className="py-3 px-4 text-primary">Guest pays hotel</td>
+<td className="py-3 px-4 text-primary">Varies</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Rate transparency</td>
+<td className="py-3 px-4 text-primary">Lower (markup opaque)</td>
+<td className="py-3 px-4 text-primary">Higher (hotel sets rate)</td>
+<td className="py-3 px-4 text-primary">Moderate</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Typical effective cost</td>
+<td className="py-3 px-4 text-primary">20–30%</td>
+<td className="py-3 px-4 text-primary">15–25%</td>
+<td className="py-3 px-4 text-primary">15–25%</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 For revenue managers, the critical calculation is not the nominal commission rate but the **effective net revenue** per room night from each channel. A 17% agency commission on a $200 rate yields $166 net; a merchant model where the OTA pays a $155 net rate yields $155—even though the merchant model may appear simpler. Understanding these economics at a granular level is essential for optimizing distribution strategy.
 
@@ -153,15 +201,54 @@ Despite competing for the same hotel bookings, the two companies have pursued me
 
 **Key Competitive Dimensions:**
 
-| Dimension | Booking Holdings | Expedia Group |
-|---|---|---|
-| Geographic strength | Europe, APAC | North America |
-| Property mix | Hotels + alternatives | Hotels + Vrbo (vacation rentals) |
-| Model heritage | Agency | Merchant |
-| Consumer strategy | Single mega-brand | Multi-brand portfolio |
-| B2B business | Limited (Agoda B2B) | EPS (major B2B platform) |
-| Loyalty approach | Genius (tier-based discounts) | One Key (cross-brand) |
-| Revenue model trend | Expanding payments | Expanding agency |
+<div className="my-6 overflow-x-auto">
+<table className="w-full border-collapse text-sm">
+<thead>
+<tr className="bg-brand-50 border-b-2 border-brand-200">
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Dimension</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Booking Holdings</th>
+<th className="py-3 px-4 text-left font-semibold text-brand-900">Expedia Group</th>
+</tr>
+</thead>
+<tbody>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Geographic strength</td>
+<td className="py-3 px-4 text-primary">Europe, APAC</td>
+<td className="py-3 px-4 text-primary">North America</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Property mix</td>
+<td className="py-3 px-4 text-primary">Hotels + alternatives</td>
+<td className="py-3 px-4 text-primary">Hotels + Vrbo (vacation rentals)</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Model heritage</td>
+<td className="py-3 px-4 text-primary">Agency</td>
+<td className="py-3 px-4 text-primary">Merchant</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Consumer strategy</td>
+<td className="py-3 px-4 text-primary">Single mega-brand</td>
+<td className="py-3 px-4 text-primary">Multi-brand portfolio</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">B2B business</td>
+<td className="py-3 px-4 text-primary">Limited (Agoda B2B)</td>
+<td className="py-3 px-4 text-primary">EPS (major B2B platform)</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Loyalty approach</td>
+<td className="py-3 px-4 text-primary">Genius (tier-based discounts)</td>
+<td className="py-3 px-4 text-primary">One Key (cross-brand)</td>
+</tr>
+<tr className="border-b border-gray-200 hover:bg-gray-50">
+<td className="py-3 px-4 text-primary">Revenue model trend</td>
+<td className="py-3 px-4 text-primary">Expanding payments</td>
+<td className="py-3 px-4 text-primary">Expanding agency</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### The Financial Gap
 
@@ -435,6 +522,13 @@ The coexistence of hotel direct-booking growth *and* continued OTA expansion ref
 - Net RevPAR increased by 8.4%, even after accounting for investments in direct channels
 
 **The Lesson:** OTA optimization and direct booking investment are not mutually exclusive—they are complementary strategies that, when executed together, improve both reach and profitability.
+
+
+## Chapter Summary
+
+Online travel agencies have transformed hotel distribution from a relationship-driven, offline process into a technology-mediated, global marketplace. This chapter traced the OTA origin story from Expedia and Priceline's launches in the late 1990s through Booking.com's agency-model revolution, examined the agency, merchant, and hybrid business models that define OTA economics, and analyzed the Booking Holdings–Expedia Group duopoly that dominates the industry. We explored commission structures and negotiation strategies, decoded the ranking algorithms that determine hotel visibility, and examined the ongoing rate parity debate across global regulatory environments. The billboard effect, OTA relationship management best practices, regional platforms beyond the duopoly, and post-COVID strategic shifts — including the connected-trip vision, AI-driven personalization, and the narrowing gap between OTA and direct-booking share — round out the strategic framework hotel professionals need to manage these powerful intermediaries effectively.
+
+In Chapter 9, we turn to the broader intermediary ecosystem beyond OTAs — including wholesalers, bed banks, metasearch engines, and the Global Distribution System — to complete our understanding of how hotel inventory reaches the global traveler.
 
 
 ## Key Terms

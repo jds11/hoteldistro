@@ -17,6 +17,9 @@ function uniqueId(base: string): string {
   return count === 0 ? base : `${base}-${count}`;
 }
 
+/** Match numbered sections like "7.1 The Architecture of Loyalty" */
+const NUMBERED_RE = /^(\d+\.\d+)\s+(.+)$/;
+
 function Heading({
   level,
   children,
@@ -27,6 +30,26 @@ function Heading({
   const text = typeof children === "string" ? children : "";
   const id = uniqueId(slugify(text));
   const Tag = `h${level}` as "h2" | "h3";
+
+  // For numbered h2s, render stacked: small section number on top, title below
+  if (level === 2) {
+    const match = text.match(NUMBERED_RE);
+    if (match) {
+      const [, num, title] = match;
+      return (
+        <div id={id} className="mt-12 mb-4 pt-8 border-t border-border-light">
+          <a href={`#${id}`} className="no-underline hover:no-underline block">
+            <span className="block text-xs font-semibold uppercase tracking-widest text-brand-500 mb-1">
+              {num}
+            </span>
+            <span className="block text-xl font-bold tracking-tight text-text-primary">
+              {title}
+            </span>
+          </a>
+        </div>
+      );
+    }
+  }
 
   return (
     <Tag id={id}>

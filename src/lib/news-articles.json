@@ -1,0 +1,890 @@
+[
+  {
+    "title": "States Push New Laws Targeting AI 'Surveillance Pricing'",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2026-02-13",
+    "description": "Regulatory backlash against AI-driven dynamic pricing. States are pushing legislation that could impact how hotels use AI for personalized pricing.",
+    "url": "https://skift.com/2026/02/13/states-push-new-laws-targeting-ai-surveillance-pricing/",
+    "image": "https://skift.com/wp-content/uploads/2024/09/tpamainterminalpassengers-scaled-e1746548742507.jpg?resize=1024,576",
+    "tags": [
+      "AI",
+      "Pricing",
+      "Regulation"
+    ]
+  },
+  {
+    "title": "Marriott Advances Technology Migration as AI Strategy Moves Into Deployment",
+    "author": "Dustin Stone",
+    "source": "Hotel Technology News",
+    "date": "2026-02-13",
+    "description": "Covers Marriott's technology migration and deployment of AI strategy across operations, including cloud migration and AI-driven tools for property management.",
+    "url": "https://hoteltechnologynews.com/2026/02/marriott-advances-technology-migration-as-ai-strategy-moves-into-deployment/",
+    "image": "https://hoteltechnologynews.com/wp-content/uploads/2026/02/iStock-1679264003-1024x683.jpg",
+    "tags": [
+      "Hotel Technology",
+      "AI"
+    ]
+  },
+  {
+    "title": "Chesky Disses Rivals' Chatbots — Calls Airbnb's AI 'Impossible to Replicate'",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2026-02-12",
+    "description": "Airbnb CEO Brian Chesky defends his company's slower AI rollout, calling its 'intentional path' toward a native AI platform 'our strongest defense against disintermediation.'",
+    "url": "https://skift.com/2026/02/12/chesky-disses-rivals-chatbots-calls-airbnbs-ai-impossible-to-replicate/",
+    "image": "https://skift.com/wp-content/uploads/2023/09/airbnb-ceo-e1746129579267.jpg?resize=1024,683",
+    "tags": [
+      "Airbnb",
+      "AI"
+    ]
+  },
+  {
+    "title": "Expedia's B2B Surge Buys Time for Vrbo and Hotels.com",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2026-02-12",
+    "description": "Expedia's B2B division is growing 5x faster than its consumer brands, buying time as Vrbo and Hotels.com evolve under the One Key strategy.",
+    "url": "https://skift.com/2026/02/12/expedia-q4-2025-earnings-b2b-b2c/",
+    "image": "https://skift.com/wp-content/uploads/2025/09/Ariane-Gorin.jpg?resize=1024,683",
+    "tags": [
+      "OTAs",
+      "Wholesale"
+    ]
+  },
+  {
+    "title": "Hyatt CEO Sees Lift From AI Search; Reveals ChatGPT App",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2026-02-12",
+    "description": "Hyatt CEO reveals two years of AI enablement, a rebuilt website search reflecting conversational trip planning, improved booking conversion rates, and a new ChatGPT integration.",
+    "url": "https://skift.com/2026/02/12/hyatt-ceo-sees-lift-from-ai-search-reveals-chatgpt-app/",
+    "image": "https://skift.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-14-at-14.21.44-e1752483174642.jpeg?resize=1024,682",
+    "tags": [
+      "AI",
+      "Direct Booking"
+    ]
+  },
+  {
+    "title": "Tripadvisor Sees Traffic Decline from AI Overviews, Considers 'Strategic Alternatives'",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2026-02-12",
+    "description": "Tripadvisor CEO cited 'ongoing declines in flyby visitors' due to AI Overviews. SEO expected to generate less than 10% of the Experience business's GBV by end of 2026.",
+    "url": "https://skift.com/2026/02/12/tripadvisor-sees-traffic-decline-from-ai-overviews-considers-strategic-alternatives-again/",
+    "image": "https://skift.com/wp-content/uploads/2025/06/243.jpg?resize=1024,683",
+    "tags": [
+      "Metasearch",
+      "AI",
+      "SEO"
+    ]
+  },
+  {
+    "title": "New Marriott and Hilton Filings Reveal Risks From AI Platforms to Direct Bookings",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2026-02-11",
+    "description": "Hilton and Marriott flagged AI platforms like ChatGPT as threats to direct bookings in their SEC filings — the first time either company formally identified LLMs as a distribution risk.",
+    "url": "https://skift.com/2026/02/11/new-marriott-and-hilton-filings-reveal-risks-from-ai-platforms-to-direct-bookings/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/IMG_1228.jpeg?resize=1024,683",
+    "tags": [
+      "Direct Booking",
+      "AI"
+    ]
+  },
+  {
+    "title": "Marriott Says Google AI Mode Will Process Hotel Bookings, Not Just Send Links",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2026-02-11",
+    "description": "Marriott CEO Anthony Capuano reveals the hotel giant is building an integration to process bookings directly through Google's AI Mode, offering the first public look at how agentic travel booking will function.",
+    "url": "https://skift.com/2026/02/11/marriott-google-agentic-travel-booking/",
+    "image": "https://skift.com/wp-content/uploads/2025/08/IMG_0752.jpeg?resize=1024,683",
+    "tags": [
+      "Google",
+      "AI",
+      "Direct Booking"
+    ]
+  },
+  {
+    "title": "Hilton CEO: 2026 'Will Be a Lot Better Than 25' After Results Show Sluggish Growth",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2026-02-11",
+    "description": "Hilton's 2025 results showed muted RevPAR growth reflecting economic strain on mid-market travelers. CEO Chris Nassetta discusses Hilton's leverage over AI platforms.",
+    "url": "https://skift.com/2026/02/11/hilton-ceo-2026-will-be-a-lot-better-than-25-after-results-show-sluggish-growth/",
+    "image": "https://skift.com/wp-content/uploads/2026/02/Hilton-Arcadia-Los-Angeles-Double-Room-hilton-worldwide.jpg?resize=1024,683",
+    "tags": [
+      "Earnings",
+      "Revenue Management"
+    ]
+  },
+  {
+    "title": "Marriott Plans New Credit-Card Deals, Sees Surge in Fee Revenue",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2026-02-10",
+    "description": "Marriott expects 'around a 35% increase' in co-branded credit-card fees in 2026, driven by higher issuer royalties and continued growth in cardholder spending.",
+    "url": "https://skift.com/2026/02/10/marriott-plans-new-credit-card-deals-sees-surge-in-fee-revenue/",
+    "image": "https://skift.com/wp-content/uploads/2026/02/family-room-at-Pattaya-Marriott-Resort-and-Spa.jpg?resize=1024,683",
+    "tags": [
+      "Credit Cards",
+      "Loyalty Programs"
+    ]
+  },
+  {
+    "title": "OpenAI Launches Ads Pilot for ChatGPT, Travel Expected to Participate",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2026-02-09",
+    "description": "OpenAI began testing ads inside ChatGPT, inserting sponsored content into one of the most visible trip-planning tools. A new commercial access point to travelers at the moment of planning.",
+    "url": "https://skift.com/2026/02/09/openai-chatgpt-ad-pilot-launch-travel/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/OpenAI-travel-ad-mockup.png?resize=1024,576",
+    "tags": [
+      "AI",
+      "Advertising"
+    ]
+  },
+  {
+    "title": "Google Earnings: AI Search Is Changing Travel Discovery",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2026-02-04",
+    "description": "Google's Q4 earnings call made clear the company is moving from building AI infrastructure to deploying it. CEO Sundar Pichai framed 2026 as 'the year where you will see consumers actually being able to use all of this.'",
+    "url": "https://skift.com/2026/02/04/google-earnings-ai-search-q4-2025-travel/",
+    "image": "https://skift.com/wp-content/uploads/2026/02/Sundar-Pichai-alphabet-google.png?w=700",
+    "tags": [
+      "Google",
+      "AI"
+    ]
+  },
+  {
+    "title": "Google's Latest AI Search Features Look Like a Personalized Travel Concierge",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2026-02-02",
+    "description": "Google announced AI updates coalescing into a revamped search experience — more conversational and personalized. Gemini 3 powers AI Overviews, while AI Mode taps into private data.",
+    "url": "https://skift.com/2026/02/02/googles-latest-ai-search-features-look-like-a-personalized-travel-concierge/",
+    "image": "https://skift.com/wp-content/uploads/2026/02/Google-Ai-Search-Overview-Mode.jpeg?resize=1024,577",
+    "tags": [
+      "Google",
+      "AI",
+      "Personalization"
+    ]
+  },
+  {
+    "title": "Accor Launches App in ChatGPT to Compete for Early Bookings",
+    "author": "Luke Martin",
+    "source": "Skift",
+    "date": "2026-01-29",
+    "description": "Accor launched a branded app inside ChatGPT's app store, marking an early move by a hotel group into OpenAI's in-chat ecosystem.",
+    "url": "https://skift.com/2026/01/29/accor-launches-app-in-chatgpt-to-compete-for-early-bookings/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/Accor-ALL-ChatGPT.jpg?resize=1024,683",
+    "tags": [
+      "AI",
+      "Direct Booking"
+    ]
+  },
+  {
+    "title": "Navan Buys Lodging Visibility With Booking.com as the Guide",
+    "author": "Clara Awuse",
+    "source": "Skift",
+    "date": "2026-01-26",
+    "description": "Navan expanded its direct connection with Booking.com to give corporate travelers access to wider lodging options and discounted rates.",
+    "url": "https://skift.com/2026/01/26/navan-buys-lodging-visibility-in-business-travel-blind-spots-with-booking-com-as-the-guide/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/Navan-Times-Square-Nasdaq.jpeg?resize=1024,684",
+    "tags": [
+      "Corporate Travel",
+      "OTAs"
+    ]
+  },
+  {
+    "title": "From Vibe Coding to Exclusive LLM Deals: AI Takeaways from Agoda's CEO",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2026-01-23",
+    "description": "Agoda CEO discusses AI workflows and exclusive LLM deals — showing how OTAs are adapting their technology strategy for the AI era.",
+    "url": "https://skift.com/2026/01/23/from-vibe-coding-to-exclusive-llm-deals-ai-takeaways-from-agodas-ceo/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/Omri-Morgenshtern-Agoda.jpg?resize=1024,683",
+    "tags": [
+      "OTAs",
+      "AI",
+      "Hotel Technology"
+    ]
+  },
+  {
+    "title": "Skift Megatrends Debate: How Fast Will AI Disrupt Travel?",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2026-01-22",
+    "description": "At the Skift Megatrends event, experts debated how quickly AI will reshape travel distribution. They agreed on direction but disagreed on timing.",
+    "url": "https://skift.com/2026/01/22/skift-megatrends-debate-ai-travel-disruption-speed/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/Thomas-Reiner-Altimeter-Seth-Borko-Skift-Research-megatrends-Large.jpeg?resize=1024,682",
+    "tags": [
+      "AI",
+      "Distribution"
+    ]
+  },
+  {
+    "title": "Mews Raises $300 Million to Prove AI Can Run Hotel Operations",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2026-01-22",
+    "description": "Hotel technology company Mews raised $300 million at a $2.5 billion valuation to build AI agents that autonomously manage hotel operations.",
+    "url": "https://skift.com/2026/01/22/mews-raises-300-million-series-d-2-5-billion-valuation/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/RichardMatt-Mews-Large.jpeg?resize=1024,682",
+    "tags": [
+      "Hotel Technology",
+      "AI",
+      "PMS"
+    ]
+  },
+  {
+    "title": "Google's Advice for Travel Brands: Forget Generic Keywords, AI Can Read Your Photos",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2026-01-20",
+    "description": "Google's industry head for travel spoke about how travelers use conversational AI for planning but revert to traditional search when ready to convert.",
+    "url": "https://skift.com/2026/01/20/google-ai-travel-planning-brands-search/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/Megatrends-London-2026_Same-day_009.jpg?resize=1024,681",
+    "tags": [
+      "Google",
+      "AI",
+      "SEO"
+    ]
+  },
+  {
+    "title": "Airbnb Builds Hotel Team to Take On the OTAs",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2026-01-16",
+    "description": "Airbnb elevated Jesse Stein to head of hotels and hired Lou Zameryka from Booking.com. Chesky: 'We Are Now Getting Serious About Hotels.'",
+    "url": "https://skift.com/2026/01/16/airbnb-builds-hotel-team-to-take-on-the-otas/",
+    "image": "https://skift.com/wp-content/uploads/2025/10/27071084566_3b8d24cc0e_k-e1760621393394.jpg?resize=1024,678",
+    "tags": [
+      "Airbnb",
+      "OTAs"
+    ]
+  },
+  {
+    "title": "The Rebalancing of Travel and Decline of Brand Loyalty",
+    "author": "Varsha Arora",
+    "source": "Skift",
+    "date": "2026-01-16",
+    "description": "53% of U.S. travelers would switch brands if AI tools surfaced better deals. Introduces the 'Travel Confidence Index' blending intent, trip volume, and spending outlook.",
+    "url": "https://skift.com/2026/01/16/the-rebalancing-of-travel-and-decline-of-brand-loyalty/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg?resize=1024,681",
+    "tags": [
+      "Loyalty Programs",
+      "AI"
+    ]
+  },
+  {
+    "title": "Travel's Wallet Share Reckoning Is Here",
+    "author": "Rafat Ali",
+    "source": "Skift",
+    "date": "2026-01-15",
+    "description": "Three independent signals from U.S. credit card issuers point to the same pressure: travel is losing wallet share. The post-pandemic spending binge is over.",
+    "url": "https://skift.com/2026/01/15/travels-wallet-share-reckoning-is-here/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/unnamed-7-1.png?resize=1024,603",
+    "tags": [
+      "Market Data",
+      "Credit Cards"
+    ]
+  },
+  {
+    "title": "Credit-Card Rewards Now Rival Airline and Hotel Loyalty Programs",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2026-01-09",
+    "description": "34% of U.S. travelers say credit-card programs offer the most rewarding benefits, compared to 22% for hotel programs and 21% for airlines.",
+    "url": "https://skift.com/2026/01/09/credit-card-rewards-now-rival-airline-and-hotel-loyalty-programs/",
+    "image": "https://skift.com/wp-content/uploads/2026/01/Artist-Concept-Transportation-Hub-at-Disneyland-Resort-.jpg?resize=1024,683",
+    "tags": [
+      "Credit Cards",
+      "Loyalty Programs"
+    ]
+  },
+  {
+    "title": "Skift + McKinsey: Remapping Travel With Agentic AI",
+    "author": "Skift Research & McKinsey",
+    "source": "Skift Research",
+    "date": "2026-01-01",
+    "description": "Comprehensive research report on agentic AI implications for travel, examining how AI agents will reshape distribution, booking, and the travel value chain.",
+    "url": "https://skift.com/insights/new-report-remapping-travel-with-agentic-ai/",
+    "image": "",
+    "tags": [
+      "AI",
+      "Agentic AI",
+      "Distribution",
+      "Industry Trends"
+    ]
+  },
+  {
+    "title": "MCP Explained: The AI Standard Reshaping Travel Tech",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2025-12-23",
+    "description": "Explains Model Context Protocol (MCP), the AI standard that streamlines how travel systems are made accessible to AI agents. Not being machine-readable will mean becoming invisible.",
+    "url": "https://skift.com/2025/12/23/mcp-explainer-travel-ai-agentic/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/Travel-AI-trip-planner-MCP.jpeg?resize=1024,683",
+    "tags": [
+      "AI",
+      "Hotel Technology"
+    ]
+  },
+  {
+    "title": "Online Travel Is Set for Growth, But AI Threatens the Status Quo",
+    "author": "Saniya Zanpure",
+    "source": "Skift",
+    "date": "2025-12-23",
+    "description": "The global OTA market generated $94 billion in revenue in 2024. Skift Research expects $107 billion by 2026. But OTAs face a major shift if AI platforms bypass them altogether.",
+    "url": "https://skift.com/2025/12/23/online-travel-is-set-for-growth-but-ai-threatens-the-status-quo/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/Travel.png?resize=1024,681",
+    "tags": [
+      "OTAs",
+      "AI",
+      "Market Data"
+    ]
+  },
+  {
+    "title": "Why Travel's Biggest Brands Are Becoming Dangerously Boring",
+    "author": "Colin Nagy",
+    "source": "Skift",
+    "date": "2025-12-19",
+    "description": "A branding critique arguing that some travel brands are making the same mistakes luxury fashion spent millions learning to regret — identities that are calm, neutral, and lack personality.",
+    "url": "https://skift.com/2025/12/19/why-travels-biggest-brands-are-becoming-dangerously-boring/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/lufthansagrouplogoimraum-1.png?resize=1024,576",
+    "tags": [
+      "Marketing",
+      "Branding"
+    ]
+  },
+  {
+    "title": "Data Centers Are Rewriting the Hotel Development Map",
+    "author": "Rafat Ali",
+    "source": "Skift",
+    "date": "2025-12-16",
+    "description": "An infrastructure supercycle driven by data centers and AI is reshaping hotel development. Some of the next best hotel markets will look like 'non-destinations.'",
+    "url": "https://skift.com/2025/12/16/data-centers-are-rewriting-the-hotel-development-map/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/unnamed-1-e1765918940968.jpg?resize=1024,601",
+    "tags": [
+      "Hotel Technology",
+      "AI"
+    ]
+  },
+  {
+    "title": "The Ugly New Math Crushing Hotels",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2025-12-12",
+    "description": "U.S. hotels are spending more to operate while taking in less revenue. Labor costs soared 9% year-over-year on a per-available-room basis.",
+    "url": "https://skift.com/2025/12/12/the-ugly-new-math-crushing-hotels/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/Amway-Grand-Plaza-Curio-Collection-by-Hilton-Exterior-chicago-hilton.jpg?resize=1024,683",
+    "tags": [
+      "Revenue Management",
+      "Market Data"
+    ]
+  },
+  {
+    "title": "Google's Latest Test Could Erode Travel Search Referrals Even More",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2025-12-10",
+    "description": "Google began testing a feature that lets users jump from AI Overviews directly into AI Mode on mobile, keeping users inside the results page.",
+    "url": "https://skift.com/2025/12/10/google-ai-mode-overviews-test-combine/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/Google-AI-Mode-Overviews.png?resize=1024,576",
+    "tags": [
+      "Google",
+      "AI",
+      "SEO"
+    ]
+  },
+  {
+    "title": "Cracks Emerge in the Online Travel Agency Oligopoly",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2025-12-09",
+    "description": "Booking Holdings, Expedia, Airbnb, and Trip.com control roughly two-thirds of global gross bookings, but their grip is loosening as AI platforms and hotel direct channels grow.",
+    "url": "https://skift.com/2025/12/09/cracks-emerge-in-the-online-travel-agency-oligopoly/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/1200-x-800-MT-THE-SPLINTED-THRONE-Megatrends2026.png?resize=1024,683",
+    "tags": [
+      "OTAs",
+      "Distribution"
+    ]
+  },
+  {
+    "title": "Q&A: Accommodation Curation Will Change the Loyalty Landscape",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2025-12-09",
+    "description": "Discusses how curation-based loyalty is replacing points-based loyalty, representing a fundamental shift in how travelers engage with hotel programs.",
+    "url": "https://skift.com/2025/12/09/qa-accommodation-curation-will-change-the-loyalty-landscape/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/1200-x-800-MT-the-KEY-Megatrends2026.png?resize=1024,683",
+    "tags": [
+      "Loyalty Programs",
+      "Personalization"
+    ]
+  },
+  {
+    "title": "The Great Reinvention of Hotel Loyalty",
+    "author": "Robin Gilbert-Jones",
+    "source": "Skift",
+    "date": "2025-12-02",
+    "description": "Hotel loyalty is evolving from a points program into a personalized, experience-led, AI-powered ecosystem. Brands that embrace the shift will unlock deeper engagement and stronger direct bookings.",
+    "url": "https://skift.com/2025/12/02/the-great-reinvention-of-hotel-loyalty/",
+    "image": "https://skift.com/wp-content/uploads/2025/12/francesca-saraco-_dS27XGgRyQ-unsplash.jpg?resize=1024,683",
+    "tags": [
+      "Loyalty Programs",
+      "AI"
+    ]
+  },
+  {
+    "title": "Aviation's New Third Rail: AI Pricing",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2025-11-30",
+    "description": "Examines AI \"surveillance pricing\" fears in aviation — relevant to the ethical debate around hotel dynamic pricing.",
+    "url": "https://skift.com/2025/11/30/aviations-new-third-rail-ai-pricing/",
+    "image": "https://skift.com/wp-content/uploads/2025/11/1200x800-hero-social.png?resize=1024,683",
+    "tags": [
+      "AI",
+      "Pricing",
+      "Revenue Management"
+    ]
+  },
+  {
+    "title": "More Clarity, More Experiences: What's Next for Hotel Loyalty",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2025-11-21",
+    "description": "Hotel loyalty programs are in the middle of their biggest shift in years — greater transparency, more experiential moments, and deeper digital integration.",
+    "url": "https://skift.com/2025/11/21/more-clarity-more-experiences-whats-next-for-hotel-loyalty/",
+    "image": "https://skift.com/wp-content/uploads/2024/04/Zannier-Hotels-Sonop-Namibia.jpg?resize=1024,683",
+    "tags": [
+      "Loyalty Programs",
+      "Personalization"
+    ]
+  },
+  {
+    "title": "Google Clarifies Its Agentic AI Booking Plans: 'No Intention of Becoming an OTA'",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2025-11-20",
+    "description": "Google stressed it has 'no intention of becoming an OTA' as it develops its agentic AI booking tool with partners including Booking.com, Expedia, Marriott, and others.",
+    "url": "https://skift.com/2025/11/20/google-agentic-ai-travel-booking-no-intention-become-ota/",
+    "image": "https://skift.com/wp-content/uploads/2025/11/Google-Travel-agentic-AI-booking.png?resize=1024,577",
+    "tags": [
+      "Google",
+      "AI",
+      "OTAs"
+    ]
+  },
+  {
+    "title": "Hilton Overhauls Loyalty Program: Adds Top Tier, Lowers Bar for Status",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2025-11-18",
+    "description": "Hilton made it easier to earn elite status while creating a new top tier for its biggest spenders, the latest move in an escalating competition among hotel chains.",
+    "url": "https://skift.com/2025/11/18/hilton-overhauls-loyalty-program-adds-top-tier-lowers-bar-for-status/",
+    "image": "https://skift.com/wp-content/uploads/2025/11/Waldorf-Astoria-Costa-Rica-Punta-Cacique-Aerial-shot-hilton.jpg?resize=1024,683",
+    "tags": [
+      "Loyalty Programs",
+      "Direct Booking"
+    ]
+  },
+  {
+    "title": "Google Is Building Agentic Travel Booking",
+    "author": "Adriana Lee",
+    "source": "Skift",
+    "date": "2025-11-17",
+    "description": "Google unveiled an agentic tool for booking flights and hotels, aiming to turn AI Mode into a travel hub that can plan trips and help users complete them.",
+    "url": "https://skift.com/2025/11/17/google-is-building-agentic-travel-booking-plus-other-travel-ai-updates/",
+    "image": "https://skift.com/wp-content/uploads/2025/11/Google-Flights.png?resize=1024,576",
+    "tags": [
+      "Google",
+      "AI",
+      "Distribution"
+    ]
+  },
+  {
+    "title": "1 Hotels Loyalty Revamp: Green Giving, Not Free Rooms",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2025-11-12",
+    "description": "Barry Sternlicht's 1 Hotels ditched points for tree-planting and charity donations, betting eco-conscious guests value impact over free stays.",
+    "url": "https://skift.com/2025/11/12/starwoods-1-hotels-brand-relaunches-its-loyalty-program/",
+    "image": "https://skift.com/wp-content/uploads/2025/11/1-hotel-mayfair-guest-room-starwood-hotels-1.jpg?resize=1024,683",
+    "tags": [
+      "Loyalty Programs",
+      "Branding"
+    ]
+  },
+  {
+    "title": "How Airbnb Is Thinking About Its Third New Business — Hotels",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2025-11-07",
+    "description": "Airbnb is running a hotel pilot in New York City, Los Angeles, and Madrid — cities with tough short-term rental restrictions.",
+    "url": "https://skift.com/2025/11/07/how-airbnb-is-thinking-about-its-third-new-business-of-2025-hotels/",
+    "image": "https://skift.com/wp-content/uploads/2023/05/the-old-Arlo-NoMad-Queen-Urban.jpg?resize=1024,684",
+    "tags": [
+      "Airbnb",
+      "Distribution"
+    ]
+  },
+  {
+    "title": "This Marriott Metric Points to Profit Pressure",
+    "author": "Pranavi Agarwal",
+    "source": "Skift",
+    "date": "2025-11-03",
+    "description": "Marriott's flat incentive management fees signal profit pressures at the property level — a barometer of the industry's underlying financial health.",
+    "url": "https://skift.com/2025/11/03/what-marriotts-incentive-management-fees-tell-us-about-a-u-s-recession-threat/",
+    "image": "https://skift.com/wp-content/uploads/2025/11/jordan-ryskamp-kxI7siCTAyY-unsplash.jpg?resize=1024,683",
+    "tags": [
+      "Revenue Management",
+      "Earnings"
+    ]
+  },
+  {
+    "title": "Wyndham's $95 Loyalty Program: Can Hotels Make Subscriptions Work?",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2025-10-27",
+    "description": "Wyndham wants travelers to pay $95/year for hotel discounts and loyalty perks — the first major experiment in a paid loyalty program by a U.S.-based hotel group.",
+    "url": "https://skift.com/2025/10/27/wyndhams-95-loyalty-program-can-hotels-make-subscriptions-work/",
+    "image": "https://skift.com/wp-content/uploads/2025/10/Wyndham-Grand-Orlando-Resort-Bonnet-Creek.jpg?resize=1024,683",
+    "tags": [
+      "Loyalty Programs",
+      "Pricing"
+    ]
+  },
+  {
+    "title": "The New Science of Hotel Pricing",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2025-10-26",
+    "description": "The $340 billion U.S. hotel industry is replacing gut instinct with precision pricing. Less than 10% of independent hotels use advanced pricing tech.",
+    "url": "https://skift.com/2025/10/26/the-new-science-of-hotel-pricing/",
+    "image": "https://skift.com/wp-content/uploads/2025/10/hotel-room-lab-for-homepage-appearance.jpg?resize=1024,683",
+    "tags": [
+      "Revenue Management",
+      "AI",
+      "Pricing"
+    ]
+  },
+  {
+    "title": "Airbnb Needs to Win Over Policymakers — the Cost Is Adding Up",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2025-08-11",
+    "description": "Airbnb acknowledged for the first time that lobbying spend to win over policymakers will contribute to lower profit margins.",
+    "url": "https://skift.com/2025/08/11/airbnb-needs-to-win-over-policymakers/",
+    "image": "https://skift.com/wp-content/uploads/2025/08/Airbnb-Italy-2023-Guest-Favorite.jpg?resize=1024,683",
+    "tags": [
+      "Airbnb",
+      "Regulation"
+    ]
+  },
+  {
+    "title": "Where Hotels Can Find Growth: Live Events, Social Commerce, Smarter Loyalty",
+    "author": "Robin Gilbert-Jones",
+    "source": "Skift",
+    "date": "2025-07-22",
+    "description": "Identifies social commerce as a $2 billion opportunity for hotels, alongside live events and loyalty reinvention as growth drivers.",
+    "url": "https://skift.com/2025/07/22/where-hotels-can-find-growth-live-events-social-commerce-smarter-loyalty/",
+    "image": "https://skift.com/wp-content/uploads/2025/04/accor-hotel-lobby.jpg?resize=1024,683",
+    "tags": [
+      "Social Media",
+      "Loyalty Programs"
+    ]
+  },
+  {
+    "title": "Expedia Makes Gains as Google Hotels Is Increasingly 'Bruised'",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2025-06-17",
+    "description": "With Google Hotels under pressure from the EU's Digital Markets Act and its own AI Overviews, Expedia, Tripadvisor, and newcomer Super.com are making gains.",
+    "url": "https://skift.com/2025/06/17/expedia-makes-gains-as-google-hotels-is-increasingly-bruised/",
+    "image": "https://skift.com/wp-content/uploads/2025/06/AdobeStock_483233285_Editorial_Use_Only.jpeg?resize=1024,683",
+    "tags": [
+      "Metasearch",
+      "OTAs"
+    ]
+  },
+  {
+    "title": "Tripadvisor's Perplexity Deal: AI for Customer Acquisition Is Now a Thing in Travel",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2025-02-20",
+    "description": "Tripadvisor's partnership with Perplexity represents the emergence of AI customer acquisition channels in travel, potentially redirecting marketing spend away from Google.",
+    "url": "https://skift.com/2025/02/20/tripadvisors-perplexity-deal-ai-for-customer-acquisition-is-now-a-thing-in-travel/",
+    "image": "https://skift.com/wp-content/uploads/2024/08/AdobeStock_885673078_Editorial_Use_Only.jpeg?resize=1024,683",
+    "tags": [
+      "AI",
+      "Metasearch"
+    ]
+  },
+  {
+    "title": "Hotelbeds' Parent Plans to IPO at a $5.1 Billion Valuation",
+    "author": "Skift",
+    "source": "Skift",
+    "date": "2025-01-16",
+    "description": "HBX Group, the world's largest hotel wholesaler, planned an IPO at $5.1 billion valuation. Distributes to 60,000 OTAs, agencies, tour operators, airlines, and loyalty programs.",
+    "url": "https://skift.com/2025/01/16/hotelbeds-parent-plans-to-ipo-in-spain-at-a-5-1-billion-valuation/",
+    "image": "https://skift.com/wp-content/uploads/2024/09/AC-by-Marriott-hotel-owned-by-Apple-Hospitality.jpg",
+    "tags": [
+      "Wholesale",
+      "Distribution"
+    ]
+  },
+  {
+    "title": "AI Overviews Impact on Search Traffic",
+    "author": "Authoritas",
+    "source": "Authoritas",
+    "date": "2025-01-01",
+    "description": "Research measuring the impact of Google's AI Overviews on organic search traffic and referrals, relevant to understanding how AI is reshaping travel search.",
+    "url": "https://www.authoritas.com/research/ai-overviews-impact",
+    "image": "",
+    "tags": [
+      "Google",
+      "AI Overviews",
+      "SEO",
+      "Data & Analytics"
+    ]
+  },
+  {
+    "title": "Hotel Loyalty Programs Continue to Prove Their Value: Key Findings from 675 Million Members",
+    "author": "CBRE",
+    "source": "CBRE",
+    "date": "2025-01-01",
+    "description": "Loyalty fees increased 4.4% in 2024, outpacing 2.7% revenue growth. CPOR for loyalty at $5.46 (1.6% of revenue). 675M members across major brands. Loyalty members = ~50% of room nights at major chains.",
+    "url": "https://www.cbre.com/insights/articles/hotel-loyalty-programs-continue-to-prove-their-value-key-findings-from-675-million-members",
+    "image": "",
+    "tags": [
+      "Loyalty Programs",
+      "Data & Analytics",
+      "Direct Booking"
+    ]
+  },
+  {
+    "title": "Hotel Versus OTA Direct-Booking Tussle Will Shape Distribution for Years",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2024-12-23",
+    "description": "OTAs held $266 billion vs hotel websites' $262 billion in gross bookings — a narrowing gap. Examines whether hotel websites will become the dominant channel by 2030.",
+    "url": "https://skift.com/2024/12/23/hotel-versus-ota-direct-booking-tussle-will-shape-distribution-for-years-to-come/",
+    "image": "https://skift.com/wp-content/uploads/2024/09/pexels-rdne-8052811.jpg",
+    "tags": [
+      "Direct Booking",
+      "OTAs"
+    ]
+  },
+  {
+    "title": "Will Hotel Direct Bookings Overtake OTAs? Digging Deeper Into Our Forecast",
+    "author": "Pranavi Agarwal, Seth Borko",
+    "source": "Skift",
+    "date": "2024-11-25",
+    "description": "Examining whether direct digital channels will generate more than $400 billion in hotel gross bookings by 2030 versus $333 billion from OTAs.",
+    "url": "https://skift.com/2024/11/25/will-hotel-direct-bookings-overtake-otas/",
+    "image": "https://skift.com/wp-content/uploads/2024/11/anna-storsul-qkly0SctrNM-unsplash-scaled.jpg",
+    "tags": [
+      "Direct Booking",
+      "OTAs",
+      "Market Data"
+    ]
+  },
+  {
+    "title": "The Ideal Mix For Hotel Distribution: Direct Bookings to Lead by 2030",
+    "author": "Pranavi Agarwal",
+    "source": "Skift Research",
+    "date": "2024-11-11",
+    "description": "Skift Research predicts direct digital channels will overtake OTAs as the dominant distribution channel by 2030, generating over $400 billion in global hotel gross bookings.",
+    "url": "https://skift.com/2024/11/11/the-ideal-mix-for-hotel-distribution-direct-bookings-to-lead/",
+    "image": "https://skift.com/wp-content/uploads/2024/11/sasha-kaunas-67-sOi7mVIk-unsplash-scaled.jpg",
+    "tags": [
+      "Distribution",
+      "Market Data"
+    ]
+  },
+  {
+    "title": "Tripadvisor CEO on Evolution From Advertising to a Booking Model",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2024-09-22",
+    "description": "Tripadvisor CEO Matt Goldberg discusses the shift from metasearch and advertising clicks to generative AI trip-planning and 'engagement economics.'",
+    "url": "https://skift.com/2024/09/22/tripadvisor-ceo-on-companys-evolution-from-advertising-to-a-booking-model/",
+    "image": "https://skift.com/wp-content/uploads/2024/09/Tripadvisor-Matt-Goldberg-SGF-2024-scaled-e1745968400768.jpg?resize=1024,683",
+    "tags": [
+      "Metasearch",
+      "AI"
+    ]
+  },
+  {
+    "title": "Banned in NYC: Airbnb One Year Later",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2024-09-01",
+    "description": "An in-depth look at the impact of NYC's Local Law 18 one year later. Hotels are thriving, but small-time hosts lost a key income source.",
+    "url": "https://skift.com/2024/09/01/banned-in-nyc-airbnb-1-year-later/",
+    "image": "https://skift.com/wp-content/uploads/2024/08/Hero-Image-without-text_1.png?resize=1024,683",
+    "tags": [
+      "Airbnb",
+      "Regulation"
+    ]
+  },
+  {
+    "title": "Tripadvisor's Flagship Brand Saw Revenue Decline Accelerate With Google Search Changes a Factor",
+    "author": "Justin Dawes",
+    "source": "Skift",
+    "date": "2024-08-06",
+    "description": "Revenue for Tripadvisor's flagship brand declined 10% year-over-year in Q2, accelerating from a 2% decline in Q1. Executives attributed the decline to ongoing metasearch pressure and changes in Google's travel search results pages.",
+    "url": "https://skift.com/2024/08/06/tripadvisors-flagship-brand-saw-revenue-decline-accelerate-with-google-search-changes-a-factor/",
+    "image": "https://skift.com/wp-content/uploads/2024/08/52617546928_efc57d9bed_k-e1722992722387.jpg",
+    "tags": [
+      "Metasearch",
+      "TripAdvisor",
+      "Google",
+      "Earnings"
+    ]
+  },
+  {
+    "title": "Selina Collapses in Liquidity Crisis, Seeks Buyers",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2024-07-22",
+    "description": "Selina, the hospitality brand targeting digital nomads, collapsed amid a liquidity crisis — a cautionary tale in alternative accommodation models.",
+    "url": "https://skift.com/2024/07/22/selina-collapses-in-liquidity-crisis-seeks-buyers/",
+    "image": "",
+    "tags": [
+      "Sharing Economy",
+      "Industry Trends"
+    ]
+  },
+  {
+    "title": "The Latest Numbers Behind Hotel Groups' Bet on Credit Card Rewards",
+    "author": "Sean O'Neill",
+    "source": "Skift",
+    "date": "2024-07-12",
+    "description": "CBRE analysis of five major U.S. hotel groups (Marriott, Hilton, Hyatt, Choice, Wyndham) shows loyalty programs drive occupancy growth. Loyalty members accounted for one out of every two room nights at major chains.",
+    "url": "https://skift.com/2024/07/12/the-latest-numbers-behind-hotel-groups-bet-on-credit-card-rewards/",
+    "image": "https://skift.com/wp-content/uploads/2024/07/InterContinental-Danang-Sun-Peninsula-Resort-2019-source-IHG.jpg",
+    "tags": [
+      "Credit Cards",
+      "Loyalty Programs",
+      "Data & Analytics"
+    ]
+  },
+  {
+    "title": "How Travel Metasearch Lost Its Mojo",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2024-04-01",
+    "description": "Travel metasearch companies used to be the hottest thing in travel, but Google Hotels, YouTube, TikTok, and loyalty programs have deflated the value proposition.",
+    "url": "https://skift.com/2024/04/01/how-travel-metasearch-lost-its-mojo/",
+    "image": "https://skift.com/wp-content/uploads/2024/04/Mr-Trivago-ad-2023-scaled.jpg",
+    "tags": [
+      "Metasearch",
+      "Distribution"
+    ]
+  },
+  {
+    "title": "HOTREC European Hotel Distribution Study 2022",
+    "author": "HOTREC",
+    "source": "HOTREC",
+    "date": "2022-06-01",
+    "description": "Comprehensive study of European hotel distribution channels, including OTA share, direct booking trends, and the impact of rate parity regulations across European markets.",
+    "url": "https://www.hotellerie.de/fileadmin/user_upload/Dokumente/Extranet_Dokumente/Marketing_und_Distribution/HOTREC-European-Hotel-Distribution-Study-2022.pdf",
+    "image": "",
+    "tags": [
+      "Distribution",
+      "OTAs",
+      "Research"
+    ]
+  },
+  {
+    "title": "Google Free Booking Links: One Year Later",
+    "author": "Google",
+    "source": "Google Blog",
+    "date": "2022-01-01",
+    "description": "Follow-up on the impact of free booking links one year after launch, with data on adoption and performance.",
+    "url": "https://blog.google/products/travel/free-booking-links-one-year/",
+    "image": "",
+    "tags": [
+      "Google Hotels",
+      "Distribution",
+      "Metasearch"
+    ]
+  },
+  {
+    "title": "A New Way for Hotels to Reach Travelers with Free Booking Links",
+    "author": "Google",
+    "source": "Google Blog",
+    "date": "2021-01-01",
+    "description": "Google's original announcement of free booking links for hotels, enabling properties to appear in Google Hotels results without ad spend.",
+    "url": "https://blog.google/products/travel/new-way-hotels-reach-travelers-free-booking-links/",
+    "image": "",
+    "tags": [
+      "Google Hotels",
+      "Distribution",
+      "Direct Booking",
+      "Metasearch"
+    ]
+  },
+  {
+    "title": "The State of Online Retail Performance",
+    "author": "Akamai Technologies",
+    "source": "Akamai",
+    "date": "2017-01-01",
+    "description": "Research on how website performance (page load speed) impacts conversion rates and revenue in online retail, applied to hotel direct booking optimization.",
+    "url": "https://www.akamai.com/resources/research-paper/akamai-online-retail-performance-report",
+    "image": "",
+    "tags": [
+      "Direct Booking",
+      "Hotel Technology",
+      "Data & Analytics"
+    ]
+  },
+  {
+    "title": "Hotel CEOs Think Their Direct Booking Pushes Position Them for Long-Term Gain",
+    "author": "Deanna Ting",
+    "source": "Skift",
+    "date": "2016-08-09",
+    "description": "Hotel CEOs defend their direct booking campaigns as long-term strategic investments rather than short-term marketing stunts.",
+    "url": "https://skift.com/2016/08/09/hotel-ceos-think-their-direct-booking-pushes-position-them-for-long-term-gain/",
+    "image": "",
+    "tags": [
+      "Direct Booking",
+      "OTAs",
+      "Distribution"
+    ]
+  },
+  {
+    "title": "Hilton's New Ad Campaign and the Push for More Direct Hotel Bookings",
+    "author": "Dennis Schaal",
+    "source": "Skift",
+    "date": "2016-02-26",
+    "description": "Coverage of Hilton's \"Stop Clicking Around\" campaign launch, one of the opening salvos in the hotel industry's direct booking wars against OTAs.",
+    "url": "https://skift.com/2016/02/26/hiltons-new-ad-campaign-and-push-for-more-direct-booking/",
+    "image": "",
+    "tags": [
+      "Direct Booking",
+      "Marketing",
+      "OTAs"
+    ]
+  },
+  {
+    "title": "Hilton's Stop Clicking Around Campaign",
+    "author": "Reuters",
+    "source": "Reuters",
+    "date": "2016-01-01",
+    "description": "Coverage of Hilton's landmark \"Stop Clicking Around\" direct booking campaign that helped spark the industry-wide direct booking wars between hotels and OTAs.",
+    "url": "https://www.reuters.com/article/hilton-marketing-idUSL2N15X1HS",
+    "image": "",
+    "tags": [
+      "Direct Booking",
+      "Marketing",
+      "OTAs"
+    ]
+  }
+]

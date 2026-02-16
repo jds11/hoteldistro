@@ -133,6 +133,84 @@ export function extractVignette(content: string): { vignette: string; contentWit
   return { vignette: excerpt, contentWithout };
 }
 
+/**
+ * Extract Key Terms section from chapter content.
+ * Returns the raw HTML/content and content with the section removed.
+ */
+export function extractKeyTerms(content: string): { keyTerms: string; contentWithout: string } | null {
+  const match = content.match(/^##\s+Key Terms[^\n]*\n/m);
+  if (!match) return null;
+
+  const startIdx = match.index!;
+  const afterHeading = startIdx + match[0].length;
+
+  const nextHeading = content.indexOf("\n## ", afterHeading);
+  const endIdx = nextHeading === -1 ? content.length : nextHeading;
+
+  const text = content.slice(afterHeading, endIdx).trim();
+  const contentWithout = content.slice(0, startIdx) + content.slice(endIdx);
+
+  return { keyTerms: text, contentWithout };
+}
+
+/**
+ * Extract Discussion Questions section from chapter content.
+ */
+export function extractDiscussionQuestions(content: string): { questions: string; contentWithout: string } | null {
+  const match = content.match(/^##\s+Discussion Questions[^\n]*\n/m);
+  if (!match) return null;
+
+  const startIdx = match.index!;
+  const afterHeading = startIdx + match[0].length;
+
+  const nextHeading = content.indexOf("\n## ", afterHeading);
+  const endIdx = nextHeading === -1 ? content.length : nextHeading;
+
+  const text = content.slice(afterHeading, endIdx).trim();
+  const contentWithout = content.slice(0, startIdx) + content.slice(endIdx);
+
+  return { questions: text, contentWithout };
+}
+
+/**
+ * Extract References section from chapter content.
+ */
+export function extractReferences(content: string): { references: string; contentWithout: string } | null {
+  const match = content.match(/^##\s+References[^\n]*\n/m);
+  if (!match) return null;
+
+  const startIdx = match.index!;
+  const afterHeading = startIdx + match[0].length;
+
+  const nextHeading = content.indexOf("\n## ", afterHeading);
+  const endIdx = nextHeading === -1 ? content.length : nextHeading;
+
+  const text = content.slice(afterHeading, endIdx).trim();
+  const contentWithout = content.slice(0, startIdx) + content.slice(endIdx);
+
+  return { references: text, contentWithout };
+}
+
+/**
+ * Extract Chapter Summary section from chapter content.
+ * Returns the summary text and content with the section removed.
+ */
+export function extractChapterSummary(content: string): { summary: string; contentWithout: string } | null {
+  const match = content.match(/^##\s+Chapter Summary[^\n]*\n/m);
+  if (!match) return null;
+
+  const startIdx = match.index!;
+  const afterHeading = startIdx + match[0].length;
+
+  const nextHeading = content.indexOf("\n## ", afterHeading);
+  const endIdx = nextHeading === -1 ? content.length : nextHeading;
+
+  const summaryText = content.slice(afterHeading, endIdx).trim();
+  const contentWithout = content.slice(0, startIdx) + content.slice(endIdx);
+
+  return { summary: summaryText, contentWithout };
+}
+
 export function getChapterSections(content: string): ChapterSection[] {
   const lines = content.split("\n");
   const sections: ChapterSection[] = [];
