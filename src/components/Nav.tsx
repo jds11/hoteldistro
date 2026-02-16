@@ -33,10 +33,13 @@ export default function Nav() {
       }
 
       // Hide/show nav on chapter pages based on scroll direction
-      if (isChapter && y > 200) {
-        setHidden(y > lastScrollY.current && y - lastScrollY.current > 5);
-      } else {
-        setHidden(false);
+      if (isChapter) {
+        const delta = y - lastScrollY.current;
+        if (delta > 2 && y > 100) {
+          setHidden(true);
+        } else if (delta < -2) {
+          setHidden(false);
+        }
       }
 
       lastScrollY.current = y;

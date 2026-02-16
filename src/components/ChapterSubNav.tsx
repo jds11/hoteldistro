@@ -21,9 +21,10 @@ export default function ChapterSubNav({ current, chapters, sections }: Props) {
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY;
-      if (y > 200) {
-        setNavHidden(y > lastScrollY.current && y - lastScrollY.current > 5);
-      } else {
+      const delta = y - lastScrollY.current;
+      if (delta > 2 && y > 100) {
+        setNavHidden(true);
+      } else if (delta < -2) {
         setNavHidden(false);
       }
       lastScrollY.current = y;
