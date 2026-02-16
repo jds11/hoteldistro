@@ -55,14 +55,14 @@ export function getAllChapters(): ChapterMeta[] {
 }
 
 export function extractVignette(content: string): { vignette: string; contentWithout: string } | null {
-  // Match "## Opening Vignette" or "## X.X Opening Vignette: ..."
-  const vignetteMatch = content.match(/^##\s+(?:\d+\.\d+\s+)?Opening Vignette[^\n]*\n/m);
+  // Match "## Opening Vignette", "### Opening Vignette", or "## X.X Opening Vignette: ..."
+  const vignetteMatch = content.match(/^(#{2,3})\s+(?:\d+\.\d+\s+)?Opening Vignette[^\n]*\n/m);
   if (!vignetteMatch) return null;
 
   const startIdx = vignetteMatch.index!;
   const afterHeading = startIdx + vignetteMatch[0].length;
 
-  // Find the next ## heading
+  // Find the next ## heading (always stop at h2, regardless of whether vignette was h2 or h3)
   const nextHeading = content.indexOf("\n## ", afterHeading);
   const endIdx = nextHeading === -1 ? content.length : nextHeading;
 

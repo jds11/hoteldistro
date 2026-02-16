@@ -79,6 +79,8 @@ export default async function ChapterPage({ params }: Props) {
       {/* Reading area */}
       <article className="flex-1">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <TableOfContents sections={sections} />
+
           {/* Vignette callout */}
           {vignetteResult && (
             <div className="mb-10 bg-brand-50 border border-brand-100 rounded-2xl p-6 md:p-8">
@@ -97,8 +99,6 @@ export default async function ChapterPage({ params }: Props) {
               </div>
             </div>
           )}
-
-          <TableOfContents sections={sections} />
 
           <div
             className="prose max-w-none
