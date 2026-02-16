@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   description:
     "A modern textbook on hotel distribution strategy and technology",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
