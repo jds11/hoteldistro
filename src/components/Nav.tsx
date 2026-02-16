@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const links = [
   { href: "/", label: "Chapters" },
@@ -15,7 +15,19 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const isChapter = pathname.startsWith("/chapters/");
+  const isHome = pathname === "/";
+
+  useEffect(() => {
+    if (!isHome) return;
+    const onScroll = () => setScrolled(window.scrollY > 300);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isHome]);
+
+  const showTitle = !isHome || scrolled;
 
   return (
     <header className={`sticky top-0 z-50 backdrop-blur-md border-b ${
@@ -26,7 +38,11 @@ export default function Nav() {
           <svg className="w-7 h-7 text-brand-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
-          <span className="font-semibold text-text-primary text-sm tracking-tight">
+          <span
+            className={`font-semibold text-text-primary text-sm tracking-tight transition-opacity duration-300 ${
+              showTitle ? "opacity-100" : "opacity-0"
+            }`}
+          >
             Hotel Distribution
           </span>
         </Link>
