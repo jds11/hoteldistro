@@ -84,7 +84,7 @@ export default async function ChapterPage({ params }: Props) {
       </div>
 
       {/* Reading area */}
-      <article className="flex-1">
+      <article className="flex-1" role="main">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 md:py-14">
           <TableOfContents sections={sections} />
 

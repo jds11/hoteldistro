@@ -3,15 +3,16 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 
-import anchorMap from "@/lib/glossary-anchors.json";
-
 interface Term {
   term: string;
   definition: string;
   chapters: string;
 }
 
-const anchors: Record<string, Record<string, string>> = anchorMap;
+interface Props {
+  terms: Term[];
+  anchors: Record<string, Record<string, string>>;
+}
 
 const CHAPTER_SLUGS: Record<number, string> = {
   1: "distribution-101",
@@ -29,7 +30,7 @@ const CHAPTER_SLUGS: Record<number, string> = {
   13: "future-tech-stack",
 };
 
-export default function GlossaryTable({ terms }: { terms: Term[] }) {
+export default function GlossaryTable({ terms, anchors }: Props) {
   const [query, setQuery] = useState("");
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
 

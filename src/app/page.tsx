@@ -19,7 +19,7 @@ export default function Home() {
       <Nav />
 
       {/* Hero */}
-      <section className="bg-white">
+      <header className="bg-white" role="banner">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-32 md:py-28">
           <p className="text-brand-600 text-sm font-semibold tracking-wide mb-6 md:mb-5">
             NYU Tisch Center for Hospitality
@@ -53,10 +53,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Chapters */}
-      <main className="bg-surface">
+      <main className="bg-surface" role="main">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 w-full">
         {parts.map((part, partIdx) => {
           const partChapters = chapters.filter(

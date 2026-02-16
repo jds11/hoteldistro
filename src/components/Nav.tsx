@@ -34,7 +34,7 @@ export default function Nav() {
   const showTitle = scrolled || (!isHome && !isChapter);
 
   return (
-    <header className={`${isChapter ? "relative bg-white border-b border-border/50" : "sticky top-0 z-50 backdrop-blur-md border-b bg-white/90 border-border"}`}>
+    <header className={`${isChapter ? "relative bg-white border-b border-border/50" : "sticky top-0 z-50 backdrop-blur-md border-b bg-white/90 border-border"}`} role="banner">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <svg className="w-7 h-7 text-brand-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -49,14 +49,14 @@ export default function Nav() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-0.5">
+        <nav className="hidden md:flex items-center gap-0.5" role="navigation" aria-label="Main navigation">
           {links.map(({ href, label }) => {
             const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
             return (
               <Link
                 key={href}
                 href={href}
-                className={`px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors ${
+                className={`px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 ${
                   isActive
                     ? "bg-brand-50 text-brand-800"
                     : "text-text-muted hover:text-text-primary hover:bg-slate-50"
@@ -70,8 +70,10 @@ export default function Nav() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden p-2 -mr-2 text-text-secondary"
-          aria-label="Menu"
+          className="md:hidden p-2 -mr-2 text-text-secondary focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 rounded"
+          aria-label="Toggle navigation menu"
+          aria-expanded={open}
+          aria-controls="mobile-menu"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {open ? (
@@ -84,7 +86,11 @@ export default function Nav() {
       </div>
 
       {open && (
-        <nav className="md:hidden border-t border-border bg-white px-4 py-3 space-y-1">
+        <nav 
+          id="mobile-menu"
+          className="md:hidden border-t border-border bg-white px-4 py-3 space-y-1"
+          aria-label="Mobile navigation"
+        >
           {links.map(({ href, label }) => {
             const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
             return (
@@ -92,7 +98,7 @@ export default function Nav() {
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
-                className={`block px-4 py-2.5 rounded-lg text-sm font-medium ${
+                className={`block px-4 py-2.5 rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-inset ${
                   isActive
                     ? "bg-brand-50 text-brand-800"
                     : "text-text-secondary hover:bg-slate-50"

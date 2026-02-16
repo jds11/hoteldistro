@@ -2,7 +2,10 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
-export const metadata = { title: "About — Hotel Distribution" };
+export const metadata = { 
+  title: "About — Hotel Distribution",
+  description: "Meet the authors and contributors behind this comprehensive hotel distribution textbook, created by industry practitioners at the NYU Tisch Center for Hospitality."
+};
 
 const authors = [
   {

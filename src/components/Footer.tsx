@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-white mt-auto">
+    <footer className="border-t border-border bg-white mt-auto" role="contentinfo">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-text-muted">
           <div className="flex items-center gap-2">
@@ -13,7 +13,7 @@ export default function Footer() {
               © {new Date().getFullYear()} David Pavelko, Jason Shames & Richie Karaburun
             </span>
           </div>
-          <nav className="flex items-center gap-4 text-xs">
+          <nav className="flex items-center gap-4 text-xs" role="navigation" aria-label="Footer navigation">
             <Link href="/about" className="hover:text-brand-600 transition-colors">About</Link>
             <Link href="/glossary" className="hover:text-brand-600 transition-colors">Glossary</Link>
             <Link href="/contact" className="hover:text-brand-600 transition-colors">Contact</Link>
