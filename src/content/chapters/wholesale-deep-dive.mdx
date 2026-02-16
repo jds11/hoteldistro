@@ -3,13 +3,6 @@ number: 9
 title: "Wholesale Deep Dive"
 ---
 
-**Hospitality Distribution & Demand Management**
-*NYU Tisch Center for Hospitality*
-
-David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman
-
----
-
 ## Opening Vignette
 
 In 2019, the revenue manager of a five-star hotel in Barcelona noticed something troubling. While auditing rates across distribution channels, she discovered her hotel's rooms listed on a German leisure travel website at €189 per night—€41 below the best available rate (BAR)—the lowest unrestricted retail rate available to consumers through the hotel's direct channels—on the hotel's own website. The rate wasn't coming from Booking.com or Expedia. It wasn't a member discount or a promotional error. The €189 rate was the hotel's **wholesale net rate**—a confidential price intended exclusively for a bed bank partner to bundle into opaque vacation packages—now displayed naked and unbundled on a consumer-facing website for anyone to book.
@@ -20,7 +13,6 @@ This scenario—known in the industry as **rate leakage**—is not an aberration
 
 This chapter dissects how wholesale distribution works, who the major players are, why rate leakage persists, and how sophisticated revenue managers protect their properties while leveraging wholesale's undeniable strengths.
 
----
 
 ## Learning Objectives
 
@@ -33,7 +25,6 @@ After reading this chapter, you will be able to:
 5. **Analyze how negotiation leverage, geographic context, and revenue management systems shape wholesale strategy** across different hotel types and markets.
 6. **Evaluate the strategic trade-offs** of wholesale participation and develop a framework for managing wholesale relationships that balances volume, rate integrity, and profitability.
 
----
 
 ## 9.1 How Wholesale Distribution Works
 
@@ -88,7 +79,6 @@ Understanding who these intermediaries are—and how value and risk accumulate a
 - **White-label:** A product or service produced by one company and rebranded by another company to appear as its own (e.g., an airline hotel booking page powered by a bed bank's inventory).
 - **B2B2C (Business-to-Business-to-Consumer):** A distribution model where a company sells through business intermediaries who then sell to end consumers.
 
----
 
 ## 9.2 The Major Players: Bed Banks and Wholesale Aggregators
 
@@ -137,11 +127,10 @@ Other virtual wholesalers and aggregator platforms include **HotelsPro** (Turkey
 
 ### Market Concentration
 
-The wholesale bed bank market has consolidated dramatically over the past decade. Where dozens of small and mid-sized wholesalers once competed, the market is now dominated by two major players—Hotelbeds and WebBeds—that control an estimated majority of B2B accommodation distribution volume globally. Industry analyst Dennis Schaal, writing for *Skift*, estimated this share at 50–60% (Peltier, 2023), though this figure represents a single journalist's informed estimate rather than a formally audited market study. *No independently verified market share data for the bed bank sector has been published by a major research firm as of this writing.*
+The wholesale bed bank market has consolidated dramatically over the past decade. Where dozens of small and mid-sized wholesalers once competed, the market is now dominated by two major players—Hotelbeds and WebBeds—that control an estimated majority of B2B accommodation distribution volume globally. Industry analysts have estimated that Hotelbeds and WebBeds together control roughly 50–60% of global B2B accommodation distribution volume, though this figure represents informed industry estimates rather than a formally audited market study. *No independently verified market share data for the bed bank sector has been published by a major research firm as of this writing.*
 
 This consolidation has given the top bed banks significant bargaining power in rate negotiations with hotels—while simultaneously creating a more efficient distribution channel for downstream partners who can access vast inventories through a single API connection.
 
----
 
 ## 9.3 The B2B Model Explained
 
@@ -165,7 +154,7 @@ Once a bed bank has contracted hotel inventory, it distributes that inventory to
 
 **Airlines** distribute hotel inventory through their websites and loyalty programs, often sourcing from bed banks via **white-label** solutions—platforms where the bed bank's technology and inventory appear under the airline's own branding. When a consumer books a "hotel + flight" package on an airline's website, the hotel component frequently comes from a bed bank.
 
-**Corporate Booking Platforms** and travel management companies (TMCs) use bed bank inventory to supplement their directly contracted hotel programs, particularly for leisure travel and off-program destinations.
+**Corporate Booking Platforms** and travel management companies (TMCs) use bed bank inventory to supplement their directly contracted hotel programs, particularly for leisure travel and off-program destinations. Navan's 2026 expansion of its Booking.com API integration exemplifies this trend: the corporate travel platform added Booking.com's closed-user-group pricing — including loyalty rates, mobile rates, and seasonal discounts — to broaden lodging options in secondary destinations where traditional corporate hotel programs have limited coverage (Awuse, 2026). For hotels, such partnerships blur the boundary between wholesale and corporate channels, as B2B rates originally intended for package distribution may surface through corporate booking tools at discounted price points.
 
 **Loyalty Programs and Affinity Groups** (credit card travel portals, employee benefit programs, membership clubs) source hotel inventory from bed banks to offer accommodation options to their members. These **B2B2C** channels—where the bed bank sells to a business partner who then sells to the end consumer—represent a growing share of wholesale distribution and a category where rate controls are particularly difficult to enforce.
 
@@ -173,48 +162,17 @@ Once a bed bank has contracted hotel inventory, it distributes that inventory to
 
 The multi-layered nature of wholesale distribution means that a hotel's net rate must be low enough to accommodate markups at each level of the chain while still resulting in a consumer-facing price that is competitive. Consider:
 
-<div className="not-prose my-6">
-<div className="border border-slate-200 rounded-lg overflow-x-auto">
-<table className="w-full text-sm">
-<thead>
-<tr className="bg-slate-50 border-b border-slate-200">
-<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Supply Chain Layer</th>
-<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Rate</th>
-<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Margin</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Hotel net rate</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">$140</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">—</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Bed bank markup (18%)</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">$165.20</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">$25.20</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Tour operator markup (12%)</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">$185.02</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">$19.82</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Retail travel agency commission (10%)</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Consumer pays $185.02; agency earns $18.50 from tour operator</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">$18.50</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
+| Supply Chain Layer | Rate | Margin |
+|---|---|---|
+| Hotel net rate | $140 | — |
+| Bed bank markup (18%) | $165.20 | $25.20 |
+| Tour operator markup (12%) | $185.02 | $19.82 |
+| Retail travel agency commission (10%) | Consumer pays $185.02; agency earns $18.50 from tour operator | $18.50 |
 
 In this example, the consumer pays $185 for a room with a retail BAR of $220. The hotel received $140—a 36% discount from BAR. The intermediary chain captured $45 in combined margins. The consumer received a $35 discount from BAR—a bargain that may have been enabled by the tour operator bundling the room with a flight.
 
 When the system works as designed, this is efficient value creation: the hotel fills a room it might not have sold otherwise, at a rate that covers variable costs and contributes to fixed cost recovery. When it breaks down—when that $165 bed bank rate leaks onto a consumer-facing website without any packaging—the result is rate erosion that undermines the hotel's entire pricing architecture.
 
----
 
 ## 9.4 Rate Leakage: The #1 Problem
 
@@ -249,7 +207,6 @@ Rate leakage creates a cascade of negative consequences:
 
 Industry estimates suggest that rate leakage affects the majority of hotels that participate in wholesale distribution. Rate monitoring platforms such as Lighthouse (formerly OTA Insight) and RateGain regularly report that wholesale-sourced rates are among the most common causes of rate parity violations detected in their monitoring data. A widely circulated industry figure suggests 62% of hotels experience wholesale-linked parity violations monthly (attributed to Lighthouse, 2023, vendor research), though this specific statistic has not been independently verified from publicly available reports. What is clear from practitioner experience and available monitoring data is that rate leakage remains pervasive—for some properties, leaked wholesale rates are the lowest publicly available price on metasearch engines a significant portion of the time, fundamentally undermining the hotel's pricing strategy.
 
----
 
 ## 9.5 Contracted vs. Dynamic Wholesale Rates
 
@@ -298,51 +255,16 @@ Leading RMS vendors have begun addressing this gap. IDeaS, for instance, has inc
 
 ### The Trade-Off
 
-<div className="not-prose my-6">
-<div className="border border-slate-200 rounded-lg overflow-x-auto">
-<table className="w-full text-sm">
-<thead>
-<tr className="bg-slate-50 border-b border-slate-200">
-<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Feature</th>
-<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Contracted Rates</th>
-<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Dynamic Rates</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Predictability</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">High (fixed rates)</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Lower (rates fluctuate)</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Revenue optimization</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Lower (static during high demand)</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Higher (tracks demand)</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Rate leakage risk</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Higher (deep discounts during peaks)</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Lower (maintains relative positioning)</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Operational complexity</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Lower (annual negotiation)</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Higher (requires real-time connectivity)</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Suitable for</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">Group blocks, seasonal programs</td>
-<td className="px-4 py-2.5 text-slate-600 align-top">FIT distribution, yield management</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
+| Feature | Contracted Rates | Dynamic Rates |
+|---|---|---|
+| Predictability | High (fixed rates) | Lower (rates fluctuate) |
+| Revenue optimization | Lower (static during high demand) | Higher (tracks demand) |
+| Rate leakage risk | Higher (deep discounts during peaks) | Lower (maintains relative positioning) |
+| Operational complexity | Lower (annual negotiation) | Higher (requires real-time connectivity) |
+| Suitable for | Group blocks, seasonal programs | FIT distribution, yield management |
 
 Most sophisticated hotels employ a **blended approach**: contracted rates for group allotments and key tour operator partnerships where rate certainty is valuable, combined with dynamic rates for FIT wholesale distribution where revenue optimization and rate integrity are priorities.
 
----
 
 ## 9.6 FIT vs. Group Wholesale
 
@@ -377,7 +299,6 @@ For **FIT wholesale**, the priority is rate integrity. Dynamic rates, strict dis
 
 For **group wholesale**, the priority is volume management and displacement analysis. A 50-room group block at a net rate of $140 during a period when BAR is $220 may seem attractive—but if the hotel would have sold those rooms at $200+ through retail channels, the group represents a revenue loss of $3,000+ per night. Displacement analysis—evaluating whether the group business is incremental or simply replacing higher-rated demand—is a critical revenue management skill (Ivanov, 2014).
 
----
 
 ## 9.7 Negotiation Power Dynamics: Who Has Leverage?
 
@@ -403,7 +324,6 @@ Independent hotels—particularly small and mid-sized properties without brand a
 
 For independent hotels, the practical implication is clear: wholesale partnerships must be chosen carefully, with an emphasis on partners whose distribution controls are demonstrably strong. Working with a smaller number of trusted bed banks—rather than distributing widely and hoping for the best—is generally a more prudent strategy. Industry associations such as HOTREC in Europe have advocated for greater transparency in wholesale distribution specifically to protect smaller properties (Schegg, 2022).
 
----
 
 ## 9.8 Geographic Variation: Wholesale Around the World
 
@@ -441,7 +361,6 @@ Both regions occupy intermediate positions. **Middle Eastern** destinations (Dub
 
 The strategic takeaway: a hotel's wholesale strategy must be calibrated to its geographic context. A resort in Mallorca and a select-service hotel in Dallas operate in fundamentally different wholesale ecosystems, and their strategies should reflect that reality.
 
----
 
 ## 9.9 Managing Wholesale: Contracts, Auditing, and Rate Integrity
 
@@ -491,7 +410,6 @@ When leakage is detected, hotels should take a graduated approach:
 
 In practice, enforcement is challenging. The multi-layered nature of the wholesale supply chain means that a bed bank may genuinely not know which of its hundreds of downstream partners is responsible for a specific leak. Building and maintaining constructive relationships with key bed bank partners—while firmly enforcing rate integrity—is a nuanced skill that distinguishes effective distribution managers.
 
----
 
 ## 9.10 The Growth of Wholesale (2019–2024)
 
@@ -531,7 +449,6 @@ The growth of wholesale distribution presents both opportunities and challenges:
 
 Hotels that ignore wholesale distribution risk leaving significant revenue on the table. Hotels that embrace it without robust rate integrity controls risk undermining their entire pricing strategy. The balance—strategic wholesale participation with disciplined rate management—is the hallmark of sophisticated distribution practice.
 
----
 
 ## Industry Spotlight: Hotelbeds and the Digital Transformation of Wholesale
 
@@ -560,98 +477,30 @@ Between 2016 and 2024, under successive ownership by private equity firms Cinven
 
 *(Sources: Hotelbeds, 2024; company presentations. Financial and performance figures are company-reported and have not been independently audited.)*
 
----
 
 ## Key Terms
 
-<div className="not-prose my-8">
-<div className="border border-slate-200 rounded-lg overflow-hidden">
-<table className="w-full text-sm">
-<thead>
-<tr className="bg-slate-50 border-b border-slate-200">
-<th className="text-left px-4 py-3 font-semibold text-slate-900 w-[200px]">Term</th>
-<th className="text-left px-4 py-3 font-semibold text-slate-900">Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Allotment</td>
-<td className="px-4 py-3 text-slate-600 align-top">A pre-agreed block of rooms allocated to a wholesaler for a specific period, with unsold rooms reverting to the hotel after a cutoff date</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">BAR (Best Available Rate)</td>
-<td className="px-4 py-3 text-slate-600 align-top">The lowest unrestricted retail rate available to consumers through the hotel's direct channels</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">B2B (Business-to-Business)</td>
-<td className="px-4 py-3 text-slate-600 align-top">A transaction model where a company sells products or services to other businesses rather than directly to consumers</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">B2B2C (Business-to-Business-to-Consumer)</td>
-<td className="px-4 py-3 text-slate-600 align-top">A distribution model where a company sells through business intermediaries who then sell to end consumers</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Bed Bank</td>
-<td className="px-4 py-3 text-slate-600 align-top">A wholesale aggregator that contracts hotel inventory in bulk and distributes it to downstream B2B partners</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Closed User Group (CUG)</td>
-<td className="px-4 py-3 text-slate-600 align-top">A defined group of users (e.g., members of a program) who receive access to rates not available to the general public</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Contracted Rate</td>
-<td className="px-4 py-3 text-slate-600 align-top">A fixed wholesale net rate negotiated in advance for a defined period</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Displacement Analysis</td>
-<td className="px-4 py-3 text-slate-600 align-top">The process of evaluating whether a group booking generates incremental revenue or simply replaces higher-rated demand</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Dynamic Rate</td>
-<td className="px-4 py-3 text-slate-600 align-top">A wholesale net rate derived in real-time from the hotel's BAR using a pre-agreed discount formula</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">FIT (Free Independent Traveler)</td>
-<td className="px-4 py-3 text-slate-600 align-top">An individual traveler booking through the wholesale channel, as opposed to a group</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Net Rate</td>
-<td className="px-4 py-3 text-slate-600 align-top">The confidential wholesale price at which a hotel sells inventory to a wholesaler, before any markup</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Rate Leakage</td>
-<td className="px-4 py-3 text-slate-600 align-top">The appearance of confidential wholesale net rates (or rates derived from them) on consumer-facing booking channels</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Rate Parity</td>
-<td className="px-4 py-3 text-slate-600 align-top">The practice of maintaining consistent public pricing across all consumer-facing distribution channels</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Rate Shopping</td>
-<td className="px-4 py-3 text-slate-600 align-top">The practice of monitoring a hotel's rates across multiple distribution channels to detect parity violations and leakage</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Release Date</td>
-<td className="px-4 py-3 text-slate-600 align-top">The deadline by which a wholesaler must confirm bookings against an allotment; unsold rooms return to the hotel</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Sell Rate</td>
-<td className="px-4 py-3 text-slate-600 align-top">The final price at which a room is sold to the consumer after all intermediary markups</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">Virtual Wholesaler</td>
-<td className="px-4 py-3 text-slate-600 align-top">An aggregator that sources hotel inventory from multiple bed banks via API connections rather than contracting directly with hotels</td>
-</tr>
-<tr className="border-t border-slate-100">
-<td className="px-4 py-3 font-medium text-slate-900 align-top">White-label</td>
-<td className="px-4 py-3 text-slate-600 align-top">A product or service produced by one company and rebranded by another to appear as its own</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+| Term | Definition |
+|------|-----------|
+| **Allotment** | A pre-agreed block of rooms allocated to a wholesaler for a specific period, with unsold rooms reverting to the hotel after a cutoff date |
+| **BAR (Best Available Rate)** | The lowest unrestricted retail rate available to consumers through the hotel's direct channels |
+| **B2B (Business-to-Business)** | A transaction model where a company sells products or services to other businesses rather than directly to consumers |
+| **B2B2C (Business-to-Business-to-Consumer)** | A distribution model where a company sells through business intermediaries who then sell to end consumers |
+| **Bed Bank** | A wholesale aggregator that contracts hotel inventory in bulk and distributes it to downstream B2B partners |
+| **Closed User Group (CUG)** | A defined group of users (e.g., members of a program) who receive access to rates not available to the general public |
+| **Contracted Rate** | A fixed wholesale net rate negotiated in advance for a defined period |
+| **Displacement Analysis** | The process of evaluating whether a group booking generates incremental revenue or simply replaces higher-rated demand |
+| **Dynamic Rate** | A wholesale net rate derived in real-time from the hotel's BAR using a pre-agreed discount formula |
+| **FIT (Free Independent Traveler)** | An individual traveler booking through the wholesale channel, as opposed to a group |
+| **Net Rate** | The confidential wholesale price at which a hotel sells inventory to a wholesaler, before any markup |
+| **Rate Leakage** | The appearance of confidential wholesale net rates (or rates derived from them) on consumer-facing booking channels |
+| **Rate Parity** | The practice of maintaining consistent public pricing across all consumer-facing distribution channels |
+| **Rate Shopping** | The practice of monitoring a hotel's rates across multiple distribution channels to detect parity violations and leakage |
+| **Release Date** | The deadline by which a wholesaler must confirm bookings against an allotment; unsold rooms return to the hotel |
+| **Sell Rate** | The final price at which a room is sold to the consumer after all intermediary markups |
+| **Virtual Wholesaler** | An aggregator that sources hotel inventory from multiple bed banks via API connections rather than contracting directly with hotels |
+| **White-label** | A product or service produced by one company and rebranded by another to appear as its own |
 
----
 
 ## Discussion Questions
 
@@ -667,9 +516,10 @@ Between 2016 and 2024, under successive ownership by private equity firms Cinven
 
 6. **FIT vs. Group Strategy.** You are the revenue manager for a 250-room urban hotel. Currently, 60% of your wholesale bookings are FIT and 40% are group. FIT bookings have a 35% cancellation rate and frequent rate leakage issues; group bookings have a 5% cancellation rate and no leakage problems but require significant operational coordination. How would you adjust your wholesale strategy? What metrics would you use to evaluate each segment?
 
----
 
 ## References
+
+Awuse, C. (2026, January 26). Navan buys lodging visibility in business travel blind spots — with Booking.com as the guide. *Skift*. https://skift.com/
 
 Anderson, C. K. (2009). The billboard effect: Online travel agent impact on non-OTA reservation volume. *Cornell Hospitality Report*, *9*(16), 6–9. https://scholarship.sha.cornell.edu/chrpubs/2/
 
@@ -680,8 +530,6 @@ Hotelbeds. (2024). *Hotelbeds company overview and partner solutions*. https://w
 Ivanov, S. (2014). *Hotel revenue management: From theory to practice*. Zangador.
 
 O'Connor, P. (2020). Managing hospitality distribution in the digital age. In D. Buhalis (Ed.), *Encyclopedia of tourism management and marketing*. Edward Elgar Publishing.
-
-⚠️ CITATION NEEDED: No Dennis Peltier articles found on Skift; author does not appear to write for Skift
 
 Schegg, R. (2022). *European hotel distribution study 2022*. HES-SO Valais-Wallis / HOTREC. https://www.hotellerie.de/fileadmin/user_upload/Dokumente/Extranet_Dokumente/Marketing_und_Distribution/HOTREC-European-Hotel-Distribution-Study-2022.pdf
 
@@ -697,6 +545,5 @@ W2M (World2Meet). (2024). *Company overview*. https://www.w2m.travel
 
 Webjet Limited. (2023). *Annual report FY2023*. Webjet Limited Investor Relations. https://www.webjetlimited.com
 
----
 
 *© 2025 David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman. NYU Jonathan M. Tisch Center for Hospitality.*
