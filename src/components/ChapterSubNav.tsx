@@ -26,10 +26,10 @@ export default function ChapterSubNav({ current, chapters, sections }: Props) {
               onClick={() => { setChapOpen(!chapOpen); setTocOpen(false); }}
               className="flex items-center gap-2 text-sm font-medium text-text-primary hover:text-brand-700 transition-colors min-w-0"
             >
-              <span className="text-text-muted text-xs font-mono shrink-0 leading-none">
+              <span className="text-text-muted text-xs font-mono shrink-0">
                 {String(current.number).padStart(2, "0")}
               </span>
-              <span className="truncate leading-none">{current.title}</span>
+              <span className="truncate">{current.title}</span>
               <svg className={`w-3.5 h-3.5 text-text-muted shrink-0 transition-transform ${chapOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
