@@ -1,0 +1,857 @@
+[
+  {
+    "title": "Economic impact research 2025",
+    "author": "WTTC",
+    "source": "",
+    "year": "2025",
+    "url": "https://wttc.org/research/economic-impact",
+    "chapter": "distribution-101",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Tourism and Hospitality Research",
+    "author": "de Vega-Ventura, A., & Coenders, G.",
+    "source": "",
+    "year": "2024",
+    "url": "https://doi.org/10.1177/14673584251378657",
+    "chapter": "distribution-101",
+    "source_type": "Research"
+  },
+  {
+    "title": "Shiji Group solutions",
+    "author": "Shiji.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.shijigroup.com/",
+    "chapter": "future-tech-stack",
+    "source_type": "Industry"
+  },
+  {
+    "title": "SiteMinder platform",
+    "author": "SiteMinder.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.siteminder.com/",
+    "chapter": "future-tech-stack",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Global hotel industry performance data",
+    "author": "STR.",
+    "source": "",
+    "year": "2024",
+    "url": "https://str.com/",
+    "chapter": "future-tech-stack",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Cvent supplier network: 2024 overview",
+    "author": "Cvent.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.cvent.com/en/supplier-network",
+    "chapter": "group-bookings",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Hotel Technology Next Generation (HTNG) workgroups",
+    "author": "AHLA",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.ahla.com",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Central reservations",
+    "author": "Amadeus Hospitality.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.amadeus-hospitality.com",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "CRM and loyalty solutions",
+    "author": "Cendyn.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.cendyn.com",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Digital Key",
+    "author": "Hilton.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.hilton.com",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "State of hotel property management systems 2024",
+    "author": "Hotel Tech Report.",
+    "source": "",
+    "year": "2024",
+    "url": "https://hoteltechreport.com",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "About",
+    "author": "Open Hospitality Alliance.",
+    "source": "",
+    "year": "2024",
+    "url": "https://open-hospitality.org",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "PCI DSS quick reference guide",
+    "author": "PCI Security Standards Council.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.pcisecuritystandards.org",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Hospitality solutions",
+    "author": "Salesforce.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.salesforce.com/solutions/industries/hospitality/",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Cloud PMS",
+    "author": "StayNTouch.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.stayntouch.com",
+    "chapter": "hotel-technology",
+    "source_type": "Industry"
+  },
+  {
+    "title": "INVITED loyalty program and World of Hyatt partnership",
+    "author": "SLH.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.slh.com",
+    "chapter": "loyalty-and-personalization",
+    "source_type": "Industry"
+  },
+  {
+    "title": "The impact of Google AI Overviews on organic click-through rates",
+    "author": "Authoritas.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.authoritas.com/research/ai-overviews-impact",
+    "chapter": "metasearch-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Q4 2023 earnings call transcript",
+    "author": "Booking Holdings.",
+    "source": "",
+    "year": "2024",
+    "url": "https://ir.bookingholdings.com",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Preferred Partner programme overview",
+    "author": "Booking.com.",
+    "source": "",
+    "year": "2024",
+    "url": "https://partner.booking.com",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Booking Holdings vs Expedia market capitalization comparison",
+    "author": "Macrotrends.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.macrotrends.net",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Mastering the travel intermediaries: Origins and future of global distribution systems and online travel agencies",
+    "author": "Vinod, B.",
+    "source": "",
+    "year": "2024",
+    "url": "https://doi.org/10.1007/978-3-031-51524-8",
+    "chapter": "otas-deep-dive",
+    "source_type": "Research"
+  },
+  {
+    "title": "2024 short-term rental market report",
+    "author": "AirDNA.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.airdna.co/",
+    "chapter": "sharing-economy",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Barcelona will eliminate tourist apartments by November 2028",
+    "author": "Ajuntament de Barcelona.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.barcelona.cat/",
+    "chapter": "sharing-economy",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Reuters",
+    "author": "Reuters.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.reuters.com/",
+    "chapter": "sharing-economy",
+    "source_type": "News"
+  },
+  {
+    "title": "Skift",
+    "author": "Schaal, D.",
+    "source": "",
+    "year": "2024",
+    "url": "https://skift.com/2024/07/22/selina-collapses-in-liquidity-crisis-seeks-buyers/",
+    "chapter": "sharing-economy",
+    "source_type": "Skift"
+  },
+  {
+    "title": "The impact of Google AI Overviews on organic click-through rates",
+    "author": "Authoritas.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.authoritas.com/",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Industry"
+  },
+  {
+    "title": "2024 global travel outlook",
+    "author": "Deloitte.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.deloitte.com/",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Consulting"
+  },
+  {
+    "title": "International Journal of Contemporary Hospitality Management",
+    "author": "Dwivedi, Y. K., Pandey, N., Currie, W., et al.",
+    "source": "36",
+    "year": "2024",
+    "url": "https://doi.org/10.1108/IJCHM-05-2023-0686",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Research"
+  },
+  {
+    "title": "The state of influencer marketing 2024: Benchmark report",
+    "author": "Influencer Marketing Hub.",
+    "source": "",
+    "year": "2024",
+    "url": "https://influencermarketinghub.com/",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Tourism Economics",
+    "author": "Bianchi, G., & Chen, Y.",
+    "source": "",
+    "year": "2024",
+    "url": "https://doi.org/10.1177/13548166231190142",
+    "chapter": "value-of-a-guest",
+    "source_type": "Research"
+  },
+  {
+    "title": "Hotelbeds company overview and partner solutions",
+    "author": "Hotelbeds.",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.hotelbeds.com",
+    "chapter": "wholesale-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Company overview",
+    "author": "W2M",
+    "source": "",
+    "year": "2024",
+    "url": "https://www.w2m.travel",
+    "chapter": "wholesale-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "GroupSync marketplace expands with major brand partnerships",
+    "author": "Groups360.",
+    "source": "",
+    "year": "2023",
+    "url": "https://www.groups360.com",
+    "chapter": "group-bookings",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Meetings Today",
+    "author": "Meetings Today.",
+    "source": "",
+    "year": "2023",
+    "url": "https://www.meetingstoday.com",
+    "chapter": "group-bookings",
+    "source_type": "Industry"
+  },
+  {
+    "title": "The value of getting personalization right\u2014or wrong\u2014is multiplying",
+    "author": "McKinsey & Company.",
+    "source": "",
+    "year": "2023",
+    "url": "https://www.mckinsey.com",
+    "chapter": "loyalty-and-personalization",
+    "source_type": "Consulting"
+  },
+  {
+    "title": "Skift",
+    "author": "Skift.",
+    "source": "",
+    "year": "2023",
+    "url": "https://skift.com",
+    "chapter": "loyalty-and-personalization",
+    "source_type": "Skift"
+  },
+  {
+    "title": "Google Hotel Ads: How it works",
+    "author": "Google.",
+    "source": "",
+    "year": "2023",
+    "url": "https://support.google.com/google-ads/answer/9243014",
+    "chapter": "metasearch-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "2023 universal registration document",
+    "author": "Accor.",
+    "source": "",
+    "year": "2023",
+    "url": "https://group.accor.com/en/investors",
+    "chapter": "sharing-economy",
+    "source_type": "Industry"
+  },
+  {
+    "title": "arXiv preprint arXiv:2311.09735",
+    "author": "Aggarwal, P., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K., & Deshpande, A.",
+    "source": "",
+    "year": "2023",
+    "url": "https://arxiv.org/abs/2311.09735",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Expedia launches ChatGPT-powered travel planning experience",
+    "author": "Expedia Group.",
+    "source": "",
+    "year": "2023",
+    "url": "https://www.expediagroup.com/",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Industry"
+  },
+  {
+    "title": "The Economist",
+    "author": "The Economist.",
+    "source": "",
+    "year": "2023",
+    "url": "https://www.economist.com/",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Tourism and Hospitality Management",
+    "author": "Remy, D., Boo, H. C., & Tee, S.",
+    "source": "29",
+    "year": "2023",
+    "url": "https://hrcak.srce.hr/302441",
+    "chapter": "value-of-a-guest",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Annual report FY2023",
+    "author": "Webjet Limited.",
+    "source": "",
+    "year": "2023",
+    "url": "https://www.webjetlimited.com",
+    "chapter": "wholesale-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Central European Business Review",
+    "author": "Dadi\u0107, I., Slivar, I., & Flori\u010di\u0107, T.",
+    "source": "11",
+    "year": "2022",
+    "url": "https://doi.org/10.18267/j.cebr.272",
+    "chapter": "distribution-101",
+    "source_type": "Research"
+  },
+  {
+    "title": "European hotel distribution study 2022",
+    "author": "Schegg, R.",
+    "source": "",
+    "year": "2022",
+    "url": "https://www.hotellerie.de/fileadmin/user_upload/Dokumente/Extranet_Dokumente/Marketing_und_Distribution/HOTREC-European-Hotel-Distribution-Study-2022.pdf",
+    "chapter": "distribution-101",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Free booking links: One year later",
+    "author": "Google.",
+    "source": "",
+    "year": "2022",
+    "url": "https://blog.google/products/travel/free-booking-links-one-year/",
+    "chapter": "metasearch-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Current Issues in Tourism",
+    "author": "Destefanis, A., Neirotti, P., & Paolucci, E.",
+    "source": "25",
+    "year": "2022",
+    "url": "https://doi.org/10.1080/13683500.2020.1846501",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "Cornell Hospitality Quarterly",
+    "author": "Dogru, T., Mody, M., Line, N., & Hanks, L.",
+    "source": "63",
+    "year": "2022",
+    "url": "https://doi.org/10.1177/1938965521993083",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "American Economic Review",
+    "author": "Farronato, C., & Fradkin, A.",
+    "source": "112",
+    "year": "2022",
+    "url": "https://doi.org/10.1257/aer.20180260",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "International Journal of Gaming, Hospitality and Tourism",
+    "author": "Webb, T., Cho, S. R., & Legg, M.",
+    "source": "3",
+    "year": "2022",
+    "url": "https://www.ijght.org/index.php/light/article/view/46",
+    "chapter": "value-of-a-guest",
+    "source_type": "Industry"
+  },
+  {
+    "title": "A new way for hotels to reach travelers with free booking links",
+    "author": "Google.",
+    "source": "",
+    "year": "2021",
+    "url": "https://blog.google/products/travel/new-way-hotels-reach-travelers-free-booking-links/",
+    "chapter": "digital-direct",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Tourism Review",
+    "author": "Soares, A. L. V., Mendes-Filho, L., & Gretzel, U.",
+    "source": "76",
+    "year": "2021",
+    "url": "https://doi.org/10.1108/TR-05-2019-0153",
+    "chapter": "hotel-technology",
+    "source_type": "Research"
+  },
+  {
+    "title": "Journal of Financial Economics",
+    "author": "Barron, K., Kung, E., & Proserpio, D.",
+    "source": "141",
+    "year": "2021",
+    "url": "https://doi.org/10.1016/j.jfineco.2021.03.001",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "Computer Law & Security Review",
+    "author": "Kathuria, V., & Mackenrodt, M. O.",
+    "source": "42",
+    "year": "2021",
+    "url": "https://doi.org/10.1016/j.clsr.2021.105479",
+    "chapter": "value-of-a-guest",
+    "source_type": "Research"
+  },
+  {
+    "title": "ICO fines Marriott International Inc \u00a318.4 million for failing to keep customers' personal data secure",
+    "author": "ICO.",
+    "source": "",
+    "year": "2020",
+    "url": "https://ico.org.uk/",
+    "chapter": "future-tech-stack",
+    "source_type": "Industry"
+  },
+  {
+    "title": "International Journal of Contemporary Hospitality Management",
+    "author": "Law, R., Leung, D., & Chan, I. C. C.",
+    "source": "32",
+    "year": "2020",
+    "url": "https://doi.org/10.1108/IJCHM-07-2018-0586",
+    "chapter": "hotel-technology",
+    "source_type": "Research"
+  },
+  {
+    "title": "Annual report 2019",
+    "author": "Booking Holdings.",
+    "source": "",
+    "year": "2020",
+    "url": "https://www.sec.gov",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Sustainability",
+    "author": "Guo, Q., Anderson, C. K., Dong, J., Zhao, P., & Ji, Q.",
+    "source": "12",
+    "year": "2020",
+    "url": "https://doi.org/10.3390/su12083355",
+    "chapter": "otas-deep-dive",
+    "source_type": "Research"
+  },
+  {
+    "title": "Airbnb S-1 registration statement",
+    "author": "Airbnb.",
+    "source": "",
+    "year": "2020",
+    "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312520294801/d81668ds1.htm",
+    "chapter": "sharing-economy",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Tourism Management",
+    "author": "Dogru, T., Mody, M., & Suess, C.",
+    "source": "79",
+    "year": "2020",
+    "url": "https://doi.org/10.1016/j.tourman.2020.104090",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "Tourism Management",
+    "author": "Dogru, T., Mody, M., Suess, C., Line, N., & Bonn, M.",
+    "source": "78",
+    "year": "2020",
+    "url": "https://doi.org/10.1016/j.tourman.2019.104049",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "Journal of Hospitality Marketing & Management",
+    "author": "Jiang, L., & Erdem, M.",
+    "source": "27",
+    "year": "2018",
+    "url": "https://doi.org/10.1080/19368623.2017.1377134",
+    "chapter": "digital-direct",
+    "source_type": "Research"
+  },
+  {
+    "title": "The state of online retail performance",
+    "author": "Akamai.",
+    "source": "",
+    "year": "2017",
+    "url": "https://www.akamai.com/resources/research-paper/akamai-online-retail-performance-report",
+    "chapter": "digital-direct",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Worldwide Hospitality and Tourism Themes",
+    "author": "Bowen, J. T., & Whalen, E.",
+    "source": "9",
+    "year": "2017",
+    "url": "https://doi.org/10.1108/WHATT-09-2017-0045",
+    "chapter": "otas-deep-dive",
+    "source_type": "Research"
+  },
+  {
+    "title": "Cornell Hospitality Quarterly",
+    "author": "Xie, X., Anderson, C. K., & Verma, R.",
+    "source": "58",
+    "year": "2017",
+    "url": "https://doi.org/10.1177/1938965516686108",
+    "chapter": "otas-deep-dive",
+    "source_type": "Research"
+  },
+  {
+    "title": "Journal of Marketing Research",
+    "author": "Zervas, G., Proserpio, D., & Byers, J. W.",
+    "source": "54",
+    "year": "2017",
+    "url": "https://doi.org/10.1509/jmr.15.0204",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "Reuters",
+    "author": "Freed, J.",
+    "source": "",
+    "year": "2016",
+    "url": "https://www.reuters.com/article/hilton-marketing-idUSL2N15X1HS",
+    "chapter": "digital-direct",
+    "source_type": "News"
+  },
+  {
+    "title": "Find out how you stack up to new industry benchmarks for mobile page speed",
+    "author": "Google.",
+    "source": "",
+    "year": "2016",
+    "url": "https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/",
+    "chapter": "digital-direct",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Skift",
+    "author": "Schaal, D.",
+    "source": "",
+    "year": "2016",
+    "url": "https://skift.com/2016/02/26/hiltons-new-ad-campaign-and-push-for-more-direct-booking/",
+    "chapter": "digital-direct",
+    "source_type": "Skift"
+  },
+  {
+    "title": "Skift",
+    "author": "Ting, D.",
+    "source": "",
+    "year": "2016",
+    "url": "https://skift.com/2016/08/09/hotel-ceos-think-their-direct-booking-pushes-position-them-for-long-term-gain/",
+    "chapter": "digital-direct",
+    "source_type": "Skift"
+  },
+  {
+    "title": "Journal of Revenue and Pricing Management",
+    "author": "Kimes, S. E.",
+    "source": "15",
+    "year": "2016",
+    "url": "https://doi.org/10.1057/rpm.2016.27",
+    "chapter": "group-bookings",
+    "source_type": "Research"
+  },
+  {
+    "title": "Hotel booking report",
+    "author": "ACCC",
+    "source": "",
+    "year": "2016",
+    "url": "https://www.accc.gov.au",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Tourism Management",
+    "author": "Ert, E., Fleischer, A., & Magen, N.",
+    "source": "55",
+    "year": "2016",
+    "url": "https://doi.org/10.1016/j.tourman.2016.01.013",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "International Journal of Hospitality Management",
+    "author": "Stangl, B., Inversini, A., & Schegg, R.",
+    "source": "52",
+    "year": "2016",
+    "url": "https://doi.org/10.1016/j.ijhm.2015.09.015",
+    "chapter": "wholesale-deep-dive",
+    "source_type": "Research"
+  },
+  {
+    "title": "International Journal of Contemporary Hospitality Management",
+    "author": "Bowen, J. T., & Chen McCain, S.-L.",
+    "source": "27",
+    "year": "2015",
+    "url": "https://doi.org/10.1108/IJCHM-07-2014-0368",
+    "chapter": "digital-direct",
+    "source_type": "Research"
+  },
+  {
+    "title": "Booking.com releases best price clauses",
+    "author": "Bundeskartellamt",
+    "source": "",
+    "year": "2015",
+    "url": "https://www.bundeskartellamt.de",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Online hotel booking: Monitoring of commitments",
+    "author": "CMA",
+    "source": "",
+    "year": "2015",
+    "url": "https://www.gov.uk/cma-cases/hotel-online-booking",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Current Issues in Tourism",
+    "author": "Guttentag, D.",
+    "source": "18",
+    "year": "2015",
+    "url": "https://doi.org/10.1080/13683500.2013.827159",
+    "chapter": "sharing-economy",
+    "source_type": "Research"
+  },
+  {
+    "title": "International Journal of Hospitality Management",
+    "author": "Ling, L., Dong, Y., Guo, X., & Liang, L.",
+    "source": "50",
+    "year": "2015",
+    "url": "https://doi.org/10.1016/j.ijhm.2015.07.005",
+    "chapter": "value-of-a-guest",
+    "source_type": "Research"
+  },
+  {
+    "title": "Proceedings of the 2014 Conference on Internet Measurement",
+    "author": "Hannak, A., Soeller, G., Lazer, D., Mislove, A., & Wilson, C.",
+    "source": "",
+    "year": "2014",
+    "url": "https://doi.org/10.1145/2663716.2663744",
+    "chapter": "digital-direct",
+    "source_type": "Research"
+  },
+  {
+    "title": "International Journal of Contemporary Hospitality Management",
+    "author": "Law, R., Buhalis, D., & Cobanoglu, C.",
+    "source": "26",
+    "year": "2014",
+    "url": "https://doi.org/10.1108/IJCHM-08-2013-0367",
+    "chapter": "hotel-technology",
+    "source_type": "Research"
+  },
+  {
+    "title": "Online travel agencies: More than a distribution channel",
+    "author": "Carroll, B., & Sileo, L.",
+    "source": "",
+    "year": "2014",
+    "url": "https://www.academia.edu/download/37989439/Expedia-OTA.pdf",
+    "chapter": "otas-deep-dive",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Journal of Revenue and Pricing Management",
+    "author": "Noone, B. M., & McGuire, K. A.",
+    "source": "12",
+    "year": "2013",
+    "url": "https://doi.org/10.1057/rpm.2013.13",
+    "chapter": "digital-direct",
+    "source_type": "Research"
+  },
+  {
+    "title": "Income and poverty in the United States: 2012",
+    "author": "U.S. Census Bureau.",
+    "source": "",
+    "year": "2013",
+    "url": "https://www.census.gov/library/publications/2013/demo/p60-245.html",
+    "chapter": "sharing-economy",
+    "source_type": "Industry"
+  },
+  {
+    "title": "Journal of Travel & Tourism Marketing",
+    "author": "Leung, D., Law, R., van Hoof, H., & Buhalis, D.",
+    "source": "30",
+    "year": "2013",
+    "url": "https://doi.org/10.1080/10548408.2013.750919",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Research"
+  },
+  {
+    "title": "Marketing Science",
+    "author": "Ghose, A., Ipeirotis, P. G., & Li, B.",
+    "source": "31",
+    "year": "2012",
+    "url": "https://doi.org/10.1287/mksc.1110.0700",
+    "chapter": "digital-direct",
+    "source_type": "Research"
+  },
+  {
+    "title": "Journal of Hospitality and Tourism Technology",
+    "author": "Bilgihan, A., Okumus, F., Nusair, K., & Kwun, D. J.",
+    "source": "2",
+    "year": "2011",
+    "url": "https://doi.org/10.1108/17579881111154245",
+    "chapter": "hotel-technology",
+    "source_type": "Research"
+  },
+  {
+    "title": "Cornell Hospitality Quarterly",
+    "author": "Toh, R. S., Raven, P., & DeKay, F.",
+    "source": "52",
+    "year": "2011",
+    "url": "https://doi.org/10.1177/1938965511400866",
+    "chapter": "otas-deep-dive",
+    "source_type": "Research"
+  },
+  {
+    "title": "Cornell Hospitality Quarterly",
+    "author": "Toh, R. S., Raven, P., & DeKay, F.",
+    "source": "52",
+    "year": "2011",
+    "url": "https://doi.org/10.1177/1938965511400409",
+    "chapter": "value-of-a-guest",
+    "source_type": "Research"
+  },
+  {
+    "title": "Tourism Management",
+    "author": "Xiang, Z., & Gretzel, U.",
+    "source": "31",
+    "year": "2010",
+    "url": "https://doi.org/10.1016/j.tourman.2009.02.016",
+    "chapter": "social-media-super-apps-ai",
+    "source_type": "Research"
+  },
+  {
+    "title": "Cornell Hospitality Report",
+    "author": "Anderson, C. K.",
+    "source": "9",
+    "year": "2009",
+    "url": "https://scholarship.sha.cornell.edu/chrpubs/2/",
+    "chapter": "distribution-101",
+    "source_type": "Research"
+  },
+  {
+    "title": "Journal of Revenue and Pricing Management",
+    "author": "Cross, R. G., Higbie, J. A., & Cross, Z. N.",
+    "source": "8",
+    "year": "2009",
+    "url": "https://doi.org/10.1057/rpm.2008.30",
+    "chapter": "group-bookings",
+    "source_type": "Research"
+  },
+  {
+    "title": "Travel packaging: An internet frontier",
+    "author": "Carroll, B., Kwortnik, R. J., & Rose, N. L.",
+    "source": "",
+    "year": "2007",
+    "url": "https://ecommons.cornell.edu/bitstream/1813/71029/1/Carroll_202007_20Travel_20packaging.pdf",
+    "chapter": "otas-deep-dive",
+    "source_type": "Research"
+  },
+  {
+    "title": "Cornell Hotel and Restaurant Administration Quarterly",
+    "author": "Carroll, B., & Siguaw, J.",
+    "source": "44",
+    "year": "2003",
+    "url": "https://doi.org/10.1016/S0010-8804(03",
+    "chapter": "distribution-101",
+    "source_type": "Research"
+  },
+  {
+    "title": "The New York Times",
+    "author": "Hansell, S.",
+    "source": "",
+    "year": "1999",
+    "url": "https://www.nytimes.com",
+    "chapter": "otas-deep-dive",
+    "source_type": "News"
+  }
+]

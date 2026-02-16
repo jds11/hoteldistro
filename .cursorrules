@@ -1,0 +1,31 @@
+# hoteldistro.com — Cursor Rules
+
+## Stack
+- Next.js 15 (App Router)
+- TypeScript (strict)
+- Tailwind CSS v4
+- MDX via next-mdx-remote/rsc
+- Deployed on Vercel
+
+## Architecture
+- Chapters live in `src/content/chapters/` as `.mdx` files with frontmatter
+- Dynamic routing at `/chapters/[slug]`
+- Password auth via middleware + cookie (`hdistro_auth`)
+- Exhibits (images) in `public/exhibits/`
+
+## Conventions
+- Use `@/` import alias for `src/`
+- Server Components by default; `"use client"` only when needed
+- No inline styles — Tailwind only
+- Inter font via next/font/google
+- Clean, minimal UI — lots of whitespace, sharp typography
+- Prose styling via `@tailwindcss/typography`
+
+## File Naming
+- Components: PascalCase (`ChapterNav.tsx`)
+- Utils/lib: camelCase (`chapters.ts`)
+- MDX content: kebab-case (`distribution-101.mdx`)
+
+## Security
+- All routes gated by middleware except `/login` and `/api/auth`
+- Never expose `SITE_PASSWORD` client-side

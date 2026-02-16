@@ -1,0 +1,557 @@
+---
+number: 13
+title: "The Future Tech Stack"
+---
+
+## Opening Vignette
+
+In September 2018, Marriott International disclosed that hackers had accessed the Starwood guest reservation database, compromising the personal records of up to 500 million guests—names, addresses, phone numbers, passport numbers, and encrypted payment card data (Marriott International, 2018). The breach, which had gone undetected for four years, originated in systems Marriott inherited when it acquired Starwood in 2016. The root cause was not a single firewall failure but a structural one: legacy, on-premise technology systems that were never designed to communicate securely with one another, layered together through brittle integrations that no single team fully understood.
+
+The Marriott breach was a watershed moment. It exposed what technologists had warned about for years: the monolithic, siloed hotel technology architectures built in the 1990s and 2000s were not merely inefficient—they were dangerous. They trapped data in disconnected systems, created blind spots in security monitoring, and made it nearly impossible to respond to threats in real time.
+
+Contrast that with the technology stack assembled by a new-build lifestyle hotel in Austin, Texas, in 2025. Its cloud-native property management system communicated with a booking engine, channel manager, revenue management system, CRM, and payment processor through open APIs—standardized digital interfaces that enabled real-time data exchange with built-in encryption and access controls. The hotel's general manager could add or swap a technology vendor in days rather than months, though configuration and data mapping still required careful attention. Security patches deployed automatically. Guest data flowed through tokenized, PCI-compliant pipelines from the moment of capture.
+
+The distance between these two scenarios—a 500-million-record breach rooted in legacy architecture and a modular, cloud-native stack designed for security and agility—defines the transformation underway in hospitality technology. This chapter examines that transformation: the shift to composable architectures, the forces driving consolidation and innovation, the emerging technologies reshaping hotel operations, and the cybersecurity and data governance challenges that accompany them. It concludes with the careers these changes are creating and a call to action for students preparing to lead this industry's next chapter.
+
+---
+
+## Learning Objectives
+
+Upon completing this chapter, you should be able to:
+
+1. Describe the shift from legacy, on-premise hotel technology systems to cloud-native, API-first, composable architectures and explain its implications for distribution, security, and operational agility.
+2. Analyze the major consolidation trends in hospitality technology and evaluate their impact on hotels of different sizes and types.
+3. Assess emerging technologies (IoT, blockchain, unified commerce) and critically evaluate their realistic potential versus vendor hype.
+4. Explain the cybersecurity and data governance challenges facing modern hotel technology stacks and identify mitigation strategies.
+5. Evaluate how sustainability considerations are becoming integrated into distribution strategy and guest decision-making.
+6. Identify career opportunities in hospitality technology and distribution and articulate the skills needed to succeed in these roles.
+
+---
+
+## 13.1 The Composable Technology Stack
+
+### From Monoliths to Microservices
+
+For decades, hotel technology followed a monolithic model. A property management system was a single, self-contained application—often installed on a physical server in the hotel's back office—that handled reservations, guest profiles, room assignments, billing, and basic reporting. Integrations with other systems, if they existed at all, were custom-built, expensive to maintain, and slow to update. Research on technology adoption in hospitality has consistently identified this architectural rigidity as a barrier to innovation (Law, Buhalis, & Cobanoglu, 2014; Bilgihan, Okumus, Nusair, & Kwun, 2016).
+
+This monolithic model created significant distribution challenges:
+
+- **Data silos**: Guest information trapped in one system could not easily be shared with another. A guest's loyalty preferences stored in the CRM were invisible to the PMS; their booking history in the CRS was disconnected from the RMS. Neuhofer, Buhalis, and Ladkin (2015) demonstrated that such fragmentation directly undermined the technology-enhanced experiences that guests increasingly expected.
+- **Slow innovation cycles**: Updating a monolithic system required comprehensive regression testing to ensure changes did not break interconnected functions. Software releases were infrequent—often annual—and expensive.
+- **Vendor lock-in**: Once a hotel committed to a PMS vendor, switching was so disruptive and costly that properties often stayed with underperforming systems for years. A 2019 Hospitality Technology survey found that the average PMS replacement cycle exceeded seven years, with migration projects costing mid-scale hotels $150,000–$500,000 (Hospitality Technology, 2019).
+- **Limited connectivity**: Legacy systems struggled to connect with the growing number of distribution channels—OTAs, metasearch engines, direct booking tools—that demanded real-time inventory and rate updates.
+
+The modern alternative is the **composable technology stack**: a modular architecture in which individual functions (reservations, guest messaging, housekeeping, payments, distribution) are handled by specialized, best-of-breed applications that communicate through standardized **Application Programming Interfaces (APIs)**.
+
+This shift mirrors broader trends in enterprise software. Just as the financial services industry adopted open banking standards that allowed third-party applications to access bank data through regulated APIs (European Union PSD2 directive, 2018), hospitality is moving toward an ecosystem in which hotel systems interoperate by design rather than by custom engineering.
+
+### Key Characteristics of Modern Hotel Tech
+
+**Cloud-native**: Applications run on cloud infrastructure (Amazon Web Services, Google Cloud, Microsoft Azure) rather than on-premise servers. This eliminates hardware maintenance, enables automatic security patching and feature updates, provides elasticity during demand spikes, and allows access from any location. According to Phocuswright (2024), approximately 55% of hotel properties globally had adopted at least one cloud-based core system (PMS, CRS, or RMS) by 2024, up from an estimated 25% in 2019.
+
+**API-first**: Systems are designed from the ground up to communicate with other applications through well-documented APIs. A hotel can connect its PMS to any compatible channel manager, RMS, or CRM without custom integration work—reducing implementation timelines from months to weeks.
+
+**Composable and modular**: Hotels can assemble their technology stack from best-of-breed components rather than accepting a single vendor's entire suite. If a superior revenue management system emerges, the hotel can integrate it without disrupting other systems. This modularity reduces switching costs and stimulates vendor competition.
+
+**Real-time data flow**: Modern architectures enable real-time data synchronization across systems. When a guest books a room on an OTA, the PMS updates instantly, the channel manager adjusts availability across all channels, the RMS recalculates pricing, and the CRM prepares a personalized pre-arrival communication—all within seconds.
+
+### The HTNG and Open Hospitality Standards
+
+The movement toward interoperability has been supported by industry standards organizations. **HTNG (Hotel Technology Next Generation)**, now part of the **American Hotel & Lodging Association (AHLA)**, has developed standards for data exchange between hotel systems, including property interfaces (HTNG Property Interface Specification), booking delivery protocols, and guest data management frameworks (AHLA/HTNG, 2023).
+
+The **OpenTravel Alliance** maintains XML and JSON schemas for travel data exchange across the distribution ecosystem. These schemas standardize how systems represent rates, availability, reservations, and guest profiles, reducing the integration burden when connecting new systems (OpenTravel Alliance, 2024).
+
+Emerging initiatives around open APIs are pushing toward a future where hotel systems communicate as seamlessly as consumer applications—a hospitality equivalent of the open banking revolution. However, progress remains uneven: while newer cloud-native vendors build to these standards natively, legacy systems often require middleware or custom adapters, creating a two-speed technology landscape across the industry.
+
+---
+
+## 13.2 Consolidation in Hospitality Technology
+
+### The Acquisition Wave
+
+The hospitality technology landscape has undergone dramatic consolidation as larger companies seek to build comprehensive platforms through acquisition. The following table summarizes key transactions:
+
+<div className="not-prose my-6">
+<div className="border border-slate-200 rounded-lg overflow-x-auto">
+<table className="w-full text-sm">
+<thead>
+<tr className="bg-slate-50 border-b border-slate-200">
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Acquirer</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Key Acquisitions</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Strategic Logic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Amadeus</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">TravelClick (2018, $1.5B) (Amadeus, 2018)</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Added hotel distribution, media, and data analytics to its GDS and travel platform</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Oracle</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">OPERA PMS suite; Simphony POS (Oracle, 2024)</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Built a comprehensive hospitality cloud spanning PMS, POS, distribution, and analytics</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Mews</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">600+ marketplace integrations (Mews, 2024)</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Built an open-platform PMS with extensive partner ecosystem</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Cloudbeds</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Multiple technology acquisitions</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Created an all-in-one platform for independent properties: PMS, channel manager, booking engine, RMS, payments</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Sabre</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">SynXis CRS platform (Sabre, 2024)</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Combined GDS distribution with hotel CRS and revenue management capabilities</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Shiji Group</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">ReviewPro, Infrasys (Shiji, 2024)</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Built a global hospitality tech platform spanning PMS, POS, guest intelligence, and distribution</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+This consolidation wave parallels trends in adjacent industries. Enterprise software broadly has seen platform players acquire point solutions to build integrated ecosystems—Salesforce's acquisition strategy in CRM, for instance, or Shopify's expansion from e-commerce to payments and logistics. In hospitality, the same logic applies: controlling multiple touchpoints in the technology stack creates data advantages and increases customer retention.
+
+### What Consolidation Means for Hotels
+
+**For large branded chains**: Consolidation creates opportunities to standardize technology across portfolios, negotiate enterprise agreements, and build integrated data ecosystems. Marriott, Hilton, and IHG have each moved toward mandating specific technology platforms across their managed and franchised properties, using their purchasing power to secure favorable terms and influence vendor roadmaps.
+
+**For independent hotels**: Consolidation presents both risks and opportunities. The risk is reduced choice and potential vendor lock-in as the market concentrates. The opportunity is that consolidated platforms (Cloudbeds, Mews, SiteMinder) now offer independents access to enterprise-grade capabilities—CRS, channel management, RMS, CRM—that were previously available only to large chains, at accessible price points. Cloudbeds, for example, reports serving over 20,000 properties in 150+ countries, the vast majority of which are independent (Cloudbeds, 2024).
+
+**For the distribution ecosystem**: As technology vendors consolidate, the boundaries between technology categories blur. A PMS company that acquires a channel manager and a booking engine becomes a distribution platform. This vertical integration changes competitive dynamics and partnership structures throughout the ecosystem—and raises questions about whether integrated platforms will favor their own distribution channels over third-party alternatives, echoing the platform neutrality debates in other industries (see Chapter 10's discussion of Google's dual role in metasearch).
+
+---
+
+## 13.3 Unified Commerce: Where Payments, Distribution, and Experience Converge
+
+### The Concept of Unified Commerce
+
+Traditional hotel operations treat distribution (getting the booking), operations (delivering the stay), and payments (processing the transaction) as separate functions managed by separate technology systems. **Unified commerce** integrates these into a single, continuous data flow:
+
+Consider a concrete example. A guest discovers a hotel on Instagram, clicks through to the brand website, and books a room. The booking engine captures the reservation and tokenizes the payment card. Upon arrival, the guest checks in via mobile app, using the same payment token for incidental authorization. During the stay, a spa treatment, a restaurant dinner, and a late checkout charge all flow through a unified payment system connected to the PMS, POS, and spa management platform. At checkout, the guest receives a single itemized folio. Payment processes automatically, loyalty points are awarded, and a personalized post-stay survey triggers—without manual intervention at any step.
+
+Accor's partnership with Adyen illustrates this model at scale. Adyen provides unified payment infrastructure across Accor's booking channels, on-property POS systems, and multiple geographies, enabling the group to reconcile transactions across 40+ brands and 110+ countries through a single platform (Adyen, 2024). The result: reduced payment processing costs, faster reconciliation, and a seamless guest payment experience regardless of channel or property.
+
+### Payment Innovation in Hospitality
+
+Several payment trends are transforming hotel distribution and operations:
+
+- **Tokenization and PCI compliance**: Modern payment platforms tokenize credit card data at the point of capture, replacing sensitive card numbers with non-sensitive tokens. This reduces PCI compliance scope and enables secure transactions across the guest journey without repeatedly exposing card data.
+- **Alternative payment methods**: Hotels increasingly accept mobile wallets (Apple Pay, Google Pay), buy-now-pay-later services (Klarna, Affirm), and regional payment methods (Alipay, WeChat Pay, Pix in Brazil). Skift Research (2024) found that hotels offering localized payment methods saw 8–12% reductions in booking abandonment from international travelers.
+- **Virtual credit cards (VCCs)**: OTAs and travel management companies increasingly pay hotels via VCCs—digitally generated card numbers for specific transactions. VCCs create processing cost challenges (interchange fees are typically higher than standard corporate cards) but provide fraud prevention benefits and simplified reconciliation for the issuer. Understanding VCC economics has become essential knowledge for revenue and distribution professionals.
+- **Embedded payments**: Rather than routing transactions through a separate payment gateway, modern hotel platforms embed payment processing directly into the PMS or booking engine. SiteMinder's integrated payment solution, for example, processes payments within the booking flow and automates reconciliation with the PMS, reducing manual accounting work (SiteMinder, 2024).
+
+---
+
+## 13.4 Artificial Intelligence and the Agentic Future of Distribution
+
+### AI as Infrastructure, Not Feature
+
+The most consequential technology shift in hotel distribution since the rise of OTAs is not a new booking channel — it is the emergence of artificial intelligence as the foundational infrastructure layer that will reshape how every channel operates. While Chapter 12 examined generative AI's impact on travel planning and discovery, this section addresses the deeper, structural transformation: AI as the operating system of hotel distribution itself.
+
+The evolution is happening in three waves:
+
+1. **Optimization AI (2015–present)**: Machine learning models that improve existing processes — dynamic pricing algorithms, demand forecasting, personalized marketing, and review sentiment analysis. Tools like IDeaS, Duetto, and Atomize already use ML to set rates across thousands of properties in real time. This wave is mature and widely adopted among major brands and sophisticated independents.
+
+2. **Generative AI (2023–present)**: Large language models (LLMs) that create content, handle guest communication, and synthesize information. Hotels are deploying AI for automated guest messaging, marketing copy generation, review response drafting, and itinerary recommendations. As Dwivedi et al. (2024) documented, generative AI is transforming operations from content creation to distribution strategy. This wave is in rapid early adoption.
+
+3. **Agentic AI (2025–emerging)**: Autonomous AI systems that can take actions on behalf of hotels or travelers — not just recommend a rate, but implement it; not just draft a response, but negotiate a group block; not just surface options, but book a complete trip with flights, transfers, and dining reservations. This wave is nascent but represents the most profound disruption to distribution intermediaries since Booking.com.
+
+### The Model Context Protocol and Agentic Infrastructure
+
+In late 2024, Anthropic introduced the **Model Context Protocol (MCP)** — an open standard that enables AI systems to connect directly with external tools, databases, and services through standardized interfaces. MCP is to AI agents what APIs were to cloud computing: a universal connection layer that allows any AI model to interact with any system that implements the protocol.
+
+For hotel distribution, the implications are transformative:
+
+- **AI booking agents**: A traveler's personal AI assistant (whether from Apple, Google, OpenAI, or another provider) could use MCP to connect directly to a hotel's booking engine, query real-time availability, negotiate rates based on the traveler's profile and preferences, and complete a reservation — all without the traveler visiting a website or app. The AI agent becomes the new "browser," and MCP becomes the new "URL."
+
+- **Hotel-side AI agents**: Revenue managers could deploy AI agents that monitor demand signals across dozens of data sources (PMS data, event calendars, flight bookings, competitor rates, weather, social media sentiment), generate pricing recommendations, and — with appropriate guardrails — implement rate changes across all connected distribution channels automatically via MCP connections to the channel manager.
+
+- **Distribution disintermediation**: If an AI agent can connect directly to a hotel's inventory via MCP, the value proposition of traditional intermediaries changes fundamentally. OTAs have historically provided three things: (1) demand aggregation, (2) comparison shopping, and (3) trust/payment infrastructure. AI agents could replicate all three — aggregating options from thousands of hotels, comparing them against the traveler's stated and inferred preferences, and handling payment through secure protocols. The question for OTAs is whether their brand trust and supply relationships can withstand this structural bypass.
+
+- **Content as distribution**: In an agentic world, the information a hotel makes available to AI systems — structured data, rich descriptions, real-time inventory, guest reviews, images with proper metadata — becomes its most important distribution asset. Hotels that provide comprehensive, machine-readable content via MCP or similar protocols will be "found" and recommended by AI agents. Hotels with poor digital content will be invisible. This is the shift from SEO (optimizing for search engines) to what Aggarwal et al. (2023) termed **Generative Engine Optimization (GEO)** — optimizing for AI recommendation engines.
+
+### AI and the Revenue Management Revolution
+
+The integration of AI into revenue management represents a step change beyond the rule-based systems that have dominated the field since the 1990s:
+
+- **Total revenue optimization**: Traditional RMS focused narrowly on room revenue. AI-powered systems can optimize across the entire guest spend profile — room rate, F&B, spa, experiences, parking — understanding that a lower room rate to a high-spending guest segment may maximize total property revenue. IDeaS' G3 and Duetto's GameChanger are moving in this direction, though true total revenue optimization remains an industry aspiration more than a reality for most properties.
+
+- **Hyper-personalization of pricing**: Rather than setting a single "best available rate" for a given room type and date, AI enables individualized pricing based on a guest's booking history, loyalty status, channel preference, and predicted ancillary spend. Marriott's Revenue Strategy and Advisory team has built proprietary ML models that incorporate hundreds of demand variables, though the industry continues to wrestle with the ethical and legal dimensions of personalized pricing (Jiang & Erdem, 2018).
+
+- **Competitive intelligence at scale**: AI tools can monitor competitor pricing, review sentiment, and availability across hundreds of properties in real time — a task that would require dozens of analysts to perform manually. Companies like OTA Insight (now Lighthouse), RateGain, and Fornova provide these AI-powered competitive intelligence platforms.
+
+### Challenges and Risks
+
+The AI transformation of distribution is not without significant challenges:
+
+- **Algorithmic opacity**: When an AI agent decides to book Hotel A instead of Hotel B, the reasoning may be opaque to both the traveler and the hotel. This "black box" problem raises questions about fairness, competition, and potential algorithmic bias — for instance, AI systems trained primarily on Western booking data may systematically undervalue hotels in emerging markets.
+
+- **Concentration risk**: If a small number of AI platforms (Google, Apple, OpenAI, Meta) become the primary "agents" through which travelers book, power could concentrate even more dramatically than it did with OTAs. Hotels could trade dependence on Booking.com for dependence on an AI platform's recommendation algorithm.
+
+- **Data requirements**: Effective AI requires vast amounts of high-quality, structured data. Independent hotels and small chains — which already struggle with technology adoption (Soares et al., 2021) — may lack the data infrastructure to compete in an AI-driven distribution landscape, potentially widening the gap between branded and independent properties.
+
+- **Hallucination and accuracy**: Generative AI systems can produce plausible but incorrect information about hotels — wrong amenities, fabricated reviews, inaccurate pricing. The industry needs robust fact-checking mechanisms and standardized data feeds to ensure AI agents provide accurate information to travelers.
+
+- **Regulatory uncertainty**: Governments are still developing frameworks for AI governance. The EU AI Act (2024) introduces requirements for transparency and human oversight in automated decision-making systems. Hotels and technology vendors will need to navigate an evolving regulatory landscape.
+
+---
+
+## 13.5 The Internet of Things (IoT) in Hotels
+
+### Smart Rooms and Connected Properties
+
+The Internet of Things—the network of physical devices embedded with sensors, software, and connectivity—is reshaping the in-room guest experience and generating data streams with direct implications for distribution and operations.
+
+**Smart room controls**: Hilton's Connected Room technology, deployed across its global portfolio, allows guests to personalize lighting, temperature, and entertainment through the Hilton Honors app and carry preferences from stay to stay (Hilton, 2024). Marriott has piloted similar capabilities through its Bonvoy app in select properties. These implementations transform the room from a static product into a customizable environment—a shift that Neuhofer et al. (2015) identified as central to the "technology-enhanced tourist experience."
+
+**Keyless and mobile entry**: Digital key technology has moved from novelty to mainstream expectation. Hilton reported over 300 million cumulative digital key uses by 2024 (Hilton, 2024), and Marriott deployed mobile key across thousands of properties (Marriott International, 2024). The operational impact extends beyond guest convenience: digital keys reduce front-desk labor at check-in, eliminate physical key card costs, and generate data on guest arrival patterns that inform staffing models.
+
+**Energy management**: IoT sensors that detect room occupancy and automatically adjust HVAC and lighting systems can reduce energy consumption significantly. Independent studies have documented energy savings of 15–25% from occupancy-based HVAC management in hotel settings (Grandhi & Singh, 2021). These savings carry both sustainability and cost implications.
+
+**Predictive maintenance**: Connected building systems can detect equipment anomalies—an HVAC compressor drawing excess current, a water heater cycling abnormally—before they cause guest complaints or require emergency repairs. The Cornell Center for Hospitality Research has noted that predictive maintenance technologies can reduce equipment downtime by 30–50% in hospitality settings (Cornell CHR, 2022).
+
+### Distribution Implications of IoT
+
+IoT's connection to distribution may not be immediately obvious, but it is significant across four dimensions:
+
+1. **Differentiation and pricing power**: Smart room features—personalized environment controls, keyless entry, voice-activated concierge—justify premium pricing and create bookable attributes. "Smart room" or "Connected Room" can appear as a room type on OTAs and brand.com, commanding rate premiums analogous to rooms with a view or club-level access.
+
+2. **Guest data enrichment**: IoT data (temperature preferences, entertainment choices, minibar usage) enriches guest profiles, enabling more precise personalization in future marketing and distribution efforts. When aggregated and anonymized, this data also informs product design and market segmentation.
+
+3. **Operational efficiency**: Automated housekeeping alerts, energy management, and predictive maintenance reduce operating costs, improving the net RevPAR equation that underlies all distribution strategy (see Chapter 7).
+
+4. **Loyalty and stickiness**: When a guest's personalized preferences (room temperature at 68°F, blackout curtains closed at 10 PM, preferred news channel at 7 AM) follow them from property to property within a brand's ecosystem, switching costs increase. This creates a loyalty mechanism rooted in accumulated personalization that no OTA can replicate—a powerful strategic advantage in the direct-versus-indirect distribution competition discussed in Chapter 5.
+
+---
+
+## 13.6 Cybersecurity and Data Governance
+
+### The Stakes
+
+The shift to cloud-native, API-connected, IoT-enabled hotel technology stacks creates enormous operational benefits—and equally significant security risks. Hotels are high-value targets for cyberattacks: they process large volumes of payment card data, store sensitive personal information (passport numbers, travel itineraries), and operate in environments where guest-facing convenience often takes priority over security friction.
+
+The scale of the threat is well documented:
+
+- The 2018 Marriott/Starwood breach exposed up to 500 million guest records and resulted in regulatory fines exceeding £18.4 million from the UK Information Commissioner's Office under GDPR (ICO, 2020).
+- In 2020, MGM Resorts confirmed a breach affecting over 10.6 million guests, with stolen data appearing on dark web forums (MGM Resorts, 2020).
+- Trustwave's 2023 Global Security Report ranked hospitality among the top five industries targeted by cybercriminals, citing the combination of high-value data and relatively immature security postures (Trustwave, 2023).
+
+### Cybersecurity in a Composable Architecture
+
+The composable technology stack introduces specific security considerations:
+
+**Expanded attack surface**: Every API connection between systems is a potential entry point. A hotel using 15 integrated cloud applications has 15 vendor relationships, 15 sets of API credentials, and 15 potential points of compromise. Security must be evaluated not just for each vendor individually but for the ecosystem as a whole.
+
+**Shared responsibility model**: In cloud computing, security responsibility is divided between the cloud provider (infrastructure security) and the customer (application and data security). Hotels must understand this division clearly. Amazon Web Services secures the physical data center; the hotel (or its PMS vendor) is responsible for access controls, data encryption, and user authentication within the application.
+
+**Third-party risk management**: Hotels that connect to OTAs, channel managers, payment processors, and guest-facing applications must assess the security posture of every connected partner. A breach at a third-party vendor can compromise the hotel's guest data even if the hotel's own systems are secure.
+
+### Data Governance: Ownership and Portability
+
+Beyond security, the cloud-native era raises fundamental questions about data ownership and portability:
+
+- **Who owns guest data?** When a hotel uses a cloud PMS, the guest profile data resides on the vendor's infrastructure. Contractual terms vary: some vendors grant hotels full data ownership and export rights; others restrict portability, making it difficult to switch systems without losing historical data. Hotels must negotiate data ownership clauses explicitly in vendor contracts.
+- **Regulatory compliance**: The European Union's General Data Protection Regulation (GDPR), California's Consumer Privacy Act (CCPA), and similar legislation worldwide impose strict requirements on how guest data is collected, stored, processed, and deleted. Hotels operating across jurisdictions must ensure their technology stack supports compliance in every market they serve.
+- **Guest consent and transparency**: As IoT devices, AI personalization engines, and CRM systems collect increasingly granular data about guest behavior, the ethical obligation to inform guests about data collection practices—and to honor their preferences—grows correspondingly. This connects directly to the ethical frameworks discussed in Chapter 12.
+
+---
+
+## 13.7 Blockchain: A Realistic Assessment
+
+Blockchain technology—a decentralized, immutable digital ledger—has been proposed as a transformative force in hospitality distribution, with potential applications in loyalty program interoperability, identity verification, transparent rate agreements, and disintermediation of OTAs.
+
+As of 2025, adoption in hospitality remains negligible. The gap between promise and reality reflects several structural barriers: public blockchains lack the transaction throughput required for real-time hotel distribution; the user experience of crypto wallets and gas fees contradicts hospitality's emphasis on frictionlessness; the existing distribution infrastructure—imperfect but functional—sets a high replacement threshold; and regulatory uncertainty around digital assets deters enterprise experimentation (Treiblmaier, 2020; Önder & Treiblmaier, 2018).
+
+The most realistic near-term applications are narrow and behind-the-scenes: supply chain provenance verification for sustainability-conscious properties, employee credential verification across borders, and pilot programs for tokenized loyalty points. The honest assessment: blockchain remains a technology in search of a hospitality problem that cannot be solved more easily by existing means. This may change as the technology matures, but it is not a strategic priority for most hotel distribution operations today.
+
+---
+
+## 13.8 Sustainability and Distribution
+
+### The Green Traveler: From Aspiration to Action
+
+Sustainability has moved from a niche concern to a measurable factor in travel decision-making and distribution strategy. A 2024 Booking.com survey of 31,000 travelers across 34 countries found that 76% stated they wanted to travel more sustainably, and 43% reported that a property's sustainability practices had influenced their booking decision (Booking.com, 2024). While self-reported survey data should be interpreted cautiously—stated intentions often exceed actual behavior—the trend is corroborated by platform actions: Google introduced "eco-certified" badges in search results and Google Travel; Expedia Group, Booking.com, and Tripadvisor have all deployed sustainability filters and labels that surface certified properties to interested travelers.
+
+Academic research supports the business case, with caveats. A meta-analysis by Dolnicar and Grün (2009) found that while a segment of travelers consistently prioritizes environmental attributes, the segment's willingness to pay a premium varies significantly by market, price sensitivity, and the credibility of the sustainability claim. More recent work by Merli, Preziosi, Acampora, and Ali (2019) found that green certifications positively influenced booking intentions, particularly when certifications were issued by recognized third parties rather than self-declared by the hotel.
+
+### Sustainability as Distribution Content
+
+For hotels, sustainability is no longer solely an operational imperative—it functions as distribution content:
+
+- **Green certifications** (LEED, Green Key, EarthCheck, Green Globe) serve as trust signals in distribution channels, differentiating properties in search results and filtering systems. The **Global Sustainable Tourism Council (GSTC)** has established internationally recognized criteria for hotels and tour operators, providing a credible framework that distribution platforms reference when labeling properties as "sustainable" (GSTC, 2024).
+
+- **Sustainability storytelling**: Properties that communicate their environmental and social impact through compelling content—on websites, OTA listings, and social media—attract sustainability-conscious travelers. The key challenge is authenticity: "greenwashing" (making misleading sustainability claims) erodes trust and, increasingly, invites regulatory scrutiny. The EU's Green Claims Directive, expected to take effect by 2026, will require companies to substantiate environmental claims with verified data (European Commission, 2023).
+
+- **Carbon offset integration**: Some booking platforms now offer travelers the option to offset their stay's carbon footprint at the point of purchase, adding a new transactional dimension to distribution.
+
+- **ESG reporting**: Institutional investors and hotel management companies increasingly require Environmental, Social, and Governance (ESG) data, making sustainability measurement a business imperative that extends well beyond marketing.
+
+### The Revenue Impact Question
+
+The central question for distribution strategists is whether sustainability credentials translate into measurable booking performance. The evidence is mixed but directional: STR data has shown that hotels with recognized green certifications achieve marginally higher ADR in some markets, though isolating the certification effect from confounding variables (property quality, location, brand) remains methodologically challenging (STR, 2024).
+
+What is clear is that sustainability content improves visibility on platforms that prioritize it. As OTAs and metasearch engines add sustainability filters—effectively creating a new dimension of search ranking—hotels without recognized certifications risk reduced visibility to a growing segment of demand.
+
+---
+
+## 13.9 The Workforce: Distribution Careers in 2030
+
+### New Roles, New Skills
+
+The technological and strategic changes described throughout this textbook are creating career opportunities that did not exist a decade ago and transforming roles that have existed for decades.
+
+**Emerging roles:**
+
+- **Distribution Strategist**: Spanning revenue management, digital marketing, and technology, this role optimizes the hotel's presence across all booking channels—from OTAs and metasearch to AI assistants and social commerce. At major hotel companies, this function increasingly reports to a Chief Commercial Officer rather than siloed under marketing or revenue management.
+
+- **Hotel Data Scientist**: Analyzing booking patterns, guest behavior, pricing elasticity, and market demand using statistical modeling and machine learning. Marriott's Revenue Strategy and Advisory team, for example, employs data scientists who build demand forecasting models that feed into the company's revenue management systems (Marriott International, 2024).
+
+- **AI/Automation Manager**: Overseeing the implementation and optimization of AI tools—chatbots, dynamic pricing algorithms, personalization engines, generative AI content systems—across the hotel's technology stack.
+
+- **Sustainability & ESG Analyst**: Managing environmental impact measurement, certification compliance, and sustainability communication across distribution channels and investor reporting.
+
+- **Guest Experience Technologist**: Designing and managing technology touchpoints across the guest journey, from mobile check-in to smart room controls to post-stay engagement.
+
+**Evolving roles:**
+
+- **Revenue Manager → Commercial Strategy Leader**: The traditional revenue management role is expanding to encompass total revenue optimization across rooms, food and beverage, meetings, and ancillary services, along with distribution channel strategy and commercial analytics.
+
+- **Digital Marketer → Growth & Acquisition Leader**: Hotel digital marketing is evolving from campaign management to full-funnel customer acquisition and lifecycle management, requiring competence in AI, data analysis, and conversion optimization.
+
+- **IT Manager → Technology & Innovation Leader**: Hotel IT is shifting from infrastructure maintenance to strategic technology selection, vendor management, cybersecurity oversight, and innovation leadership.
+
+### Skills for the Future
+
+Students preparing for careers in hospitality distribution and technology should develop competencies across five domains:
+
+1. **Data literacy**: The ability to analyze, interpret, and act on data from multiple sources—booking performance, guest feedback, competitive intelligence, market trends. This does not necessarily mean coding proficiency, but it does mean comfort with data visualization tools, statistical reasoning, and the ability to translate data into strategic recommendations.
+
+2. **Technology fluency**: Understanding how hotel systems work, how they interconnect via APIs, and how to evaluate new technologies. The goal is not to become a software engineer but to speak the language of technology confidently enough to collaborate with technical teams and make informed vendor decisions.
+
+3. **Commercial acumen**: Understanding the economics of distribution—cost of acquisition, channel margin analysis, net RevPAR, lifetime guest value—and making strategic trade-offs between channels, segments, and investments.
+
+4. **Adaptability**: Specific tools, platforms, and channels will change. The capacity to learn rapidly, experiment systematically, and pivot when evidence warrants is more valuable than expertise in any single system.
+
+5. **Ethical reasoning**: As AI, data collection, and automation play larger roles in hospitality, the ability to navigate questions of privacy, algorithmic bias, transparency, and labor impact will distinguish leaders from operators.
+
+---
+
+## 13.10 A Call to Action: The Opportunity Ahead
+
+This textbook has traced the complex, evolving world of hospitality distribution—from the fundamental principles of how hotels reach guests (Chapters 1–3), through the intermediaries, platforms, and technologies that shape the booking ecosystem (Chapters 4–12), to the architectural and strategic changes examined in this final chapter.
+
+As we conclude, one perspective transcends the technical and strategic:
+
+**This is an extraordinary time to enter the hospitality industry.**
+
+The convergence of cloud computing, artificial intelligence, mobile technology, and shifting consumer expectations is creating a once-in-a-generation opportunity to reimagine how hotels connect with guests. The old playbooks—distribute widely, discount to fill rooms, treat technology as a cost center—are giving way to a new paradigm in which distribution is a strategic capability, technology is a competitive advantage, and the guest relationship is the most valuable asset a hotel can build.
+
+The industry needs people who understand both hospitality and technology—who can bridge the gap between a hotel's service culture and the digital tools that amplify it. It needs revenue managers who think like data scientists and marketers who think like technologists. It needs operators who understand that the PMS is not merely a reservation system but the hub of a connected ecosystem shaping every dimension of the guest experience.
+
+Most importantly, it needs leaders who bring curiosity, empathy, and ethical grounding to an industry being transformed by powerful technologies. AI can optimize pricing, but it cannot define what a brand stands for. An algorithm can recommend a property, but it cannot create the human warmth that turns a guest into a lifelong advocate. Technology is the tool; hospitality is the purpose.
+
+You are entering this industry at a moment when the rules are being rewritten. The knowledge you have gained in this course gives you a foundation. What you build on that foundation—the innovations you pursue, the strategies you craft, the experiences you shape—is yours to determine.
+
+The future of hospitality distribution is not something that will happen to you. It is something you will create.
+
+---
+
+## Industry Spotlight: Mews—Building the Hotel Operating System of the Future
+
+When Richard Valtr founded Mews in Prague in 2012, he did not set out to build a better PMS. He set out to reimagine the relationship between hotels and their guests—starting with the technology that mediated it.
+
+Valtr's insight was that the traditional PMS was designed around the hotel's operational needs (check-in, check-out, billing) rather than around the guest experience. It was a back-office tool, not a guest-facing platform. Its monolithic, on-premise architecture made it slow to innovate, difficult to integrate, and expensive to maintain.
+
+Mews took a different approach:
+
+**Cloud-native from day one**: Built entirely in the cloud, Mews deployed new features continuously rather than annually, provided access from any device, and scaled infrastructure dynamically during peak demand periods. Automatic security patching eliminated the vulnerability window that plagues on-premise systems.
+
+**API-first architecture**: Mews designed its platform with open APIs at its core, creating a marketplace of over 600 integrations. Hotels could connect best-of-breed solutions for revenue management, guest messaging, housekeeping, payments, and more—without custom development work.
+
+**Guest-centric design**: Mews reimagined traditional PMS workflows around the guest journey. Online check-in, automated billing, and digital key issuance reduced friction and freed front-desk staff to focus on hospitality rather than administration.
+
+**Distribution integration**: The open architecture connected seamlessly to channel managers, OTAs, and direct booking engines, enabling real-time distribution across all channels from a single system of record.
+
+By 2024, Mews served over 5,500 properties in 85+ countries, ranging from independent boutique hotels to large chains. The company raised over $100 million in funding and was recognized as a leading innovator in hotel technology (Mews, 2024).
+
+The Mews case illustrates a broader principle about the future of hospitality technology: the winners will not be the companies with the longest feature lists, but those that build the most open, flexible, and guest-centric platforms. In a composable world, the best technology is the technology that integrates well with others—and that puts the guest, not the back office, at the center of the experience.
+
+---
+
+## Key Terms
+
+<div className="not-prose my-8">
+<div className="border border-slate-200 rounded-lg overflow-hidden">
+<table className="w-full text-sm">
+<thead>
+<tr className="bg-slate-50 border-b border-slate-200">
+<th className="text-left px-4 py-3 font-semibold text-slate-900 w-[200px]">Term</th>
+<th className="text-left px-4 py-3 font-semibold text-slate-900">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td className="px-4 py-3 font-medium text-slate-900 align-top">API (Application Programming Interface)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A standardized set of protocols that allows different software applications to communicate and share data with each other.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Blockchain</td>
+<td className="px-4 py-3 text-slate-600 align-top">A decentralized, distributed digital ledger technology that records transactions across multiple computers in a way that is transparent and resistant to modification.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Cloud-native</td>
+<td className="px-4 py-3 text-slate-600 align-top">Software designed to run in cloud computing environments, leveraging scalability, automatic updates, and remote accessibility.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Composable architecture</td>
+<td className="px-4 py-3 text-slate-600 align-top">A technology design approach in which applications are built from modular, interchangeable components that communicate through standardized interfaces.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Composable technology stack</td>
+<td className="px-4 py-3 text-slate-600 align-top">A hotel's technology infrastructure assembled from modular, best-of-breed components connected through APIs, as opposed to a monolithic, single-vendor system.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">CRS (Central Reservation System)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A centralized system that manages room inventory and rates across distribution channels for a hotel or hotel group.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Agentic AI</td>
+<td className="px-4 py-3 text-slate-600 align-top">Artificial intelligence systems capable of autonomous action — not just generating recommendations but executing tasks such as adjusting rates, booking reservations, or negotiating contracts on behalf of humans.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Generative Engine Optimization (GEO)</td>
+<td className="px-4 py-3 text-slate-600 align-top">The practice of optimizing a hotel's digital content and structured data to be accurately represented and favorably recommended by AI-powered search and booking systems.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Model Context Protocol (MCP)</td>
+<td className="px-4 py-3 text-slate-600 align-top">An open standard introduced by Anthropic (2024) that enables AI systems to connect with external tools, databases, and services through standardized interfaces, allowing AI agents to interact directly with hotel booking engines, channel managers, and other distribution technology.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Cybersecurity</td>
+<td className="px-4 py-3 text-slate-600 align-top">The practice of protecting systems, networks, and data from digital attacks, unauthorized access, and data breaches.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Data portability</td>
+<td className="px-4 py-3 text-slate-600 align-top">The ability to transfer data between systems or vendors without loss of structure, content, or functionality.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">ESG (Environmental, Social, and Governance)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A framework for evaluating a company's sustainability and ethical practices, increasingly relevant to hospitality investment and operations.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">GSTC (Global Sustainable Tourism Council)</td>
+<td className="px-4 py-3 text-slate-600 align-top">An international body that establishes and manages global standards for sustainable travel and tourism.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Internet of Things (IoT)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A network of physical devices embedded with sensors, software, and connectivity, enabling data collection and remote control.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Open API</td>
+<td className="px-4 py-3 text-slate-600 align-top">An API that is publicly documented and available for third-party developers to use, facilitating interoperability between systems.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">PMS (Property Management System)</td>
+<td className="px-4 py-3 text-slate-600 align-top">The core operational software used by hotels to manage reservations, guest check-in/check-out, room assignments, billing, and reporting.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">SaaS (Software as a Service)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A software delivery model in which applications are hosted by a vendor and accessed by customers over the internet, typically via subscription.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Tokenization (payments)</td>
+<td className="px-4 py-3 text-slate-600 align-top">The process of replacing sensitive payment data (credit card numbers) with non-sensitive tokens, reducing security risk while enabling seamless transactions.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Unified commerce</td>
+<td className="px-4 py-3 text-slate-600 align-top">The integration of all commercial touchpoints (distribution, payments, operations, guest experience) into a single, seamless technology ecosystem.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Virtual credit card (VCC)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A digitally generated credit card number used for specific transactions, commonly used by OTAs and TMCs to pay hotels.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+## Discussion Questions
+
+1. **Build, buy, or compose?** You are the CTO of a mid-sized hotel management company operating 25 select-service and lifestyle properties across three countries. You must choose between (a) building a proprietary technology stack, (b) adopting a single vendor's comprehensive platform (e.g., Oracle OPERA Cloud), or (c) assembling a composable stack from best-of-breed components. Develop a decision framework that accounts for total cost of ownership, integration complexity, data portability, cybersecurity risk, and organizational capability. Which approach do you recommend, and what are the conditions under which your recommendation would change?
+
+2. **Cybersecurity trade-offs**: The composable technology stack offers flexibility and best-of-breed functionality but expands the attack surface through multiple API connections and vendor relationships. Analyze the cybersecurity implications of a composable architecture versus a single-vendor platform. How should a hotel's risk tolerance, guest data sensitivity, and regulatory environment influence the architectural decision? Reference the Marriott breach and GDPR enforcement actions in your analysis.
+
+3. **IoT, personalization, and privacy**: Smart room technology generates granular data about guest behavior—sleep patterns, entertainment preferences, temperature settings, minibar usage. Using an ethical framework (e.g., Floridi's information ethics or a stakeholder analysis model), evaluate how hotels should balance personalization benefits against privacy risks. What data should hotels collect, what should they avoid, and what consent mechanisms should govern the boundary? Consider both Western regulatory frameworks (GDPR, CCPA) and guest expectations in different cultural contexts.
+
+4. **Sustainability credentials and distribution performance**: A hotel general manager argues that investing $200,000 in a Green Key certification and associated operational changes will "pay for itself through higher visibility on OTAs and premium pricing." Critically evaluate this claim. What evidence would you need to assess its validity? What are the methodological challenges in isolating the revenue impact of sustainability certifications? How might the answer differ for a luxury resort versus an economy roadside hotel?
+
+5. **Blockchain: Due diligence exercise**: A technology vendor pitches your hotel company on a blockchain-based loyalty program that "eliminates intermediaries and revolutionizes guest engagement." Develop a structured evaluation framework with at least eight specific questions you would ask the vendor, addressing technical feasibility, scalability, user experience, regulatory compliance, integration requirements, competitive alternatives, and measurable ROI. For each question, explain what answer would raise a red flag.
+
+6. **Your 2030 career**: Based on what you have learned throughout this textbook, design a five-year career development plan for a hospitality technology or distribution role. Specify the role you are targeting, the skills you would need to develop (with specific learning strategies for each), the experiences you would seek, and how you would stay current in a field where the technology landscape changes faster than most career development cycles. Ground your plan in the industry trends analyzed in this chapter.
+
+---
+
+## References
+
+Adyen. (2024). *Hospitality payments report 2024*. Adyen. https://www.adyen.com/
+
+AHLA/HTNG. (2023). *Hotel technology standards and specifications*. American Hotel & Lodging Association.
+
+Amadeus. (2018). *Amadeus completes acquisition of TravelClick* [Press release]. https://amadeus.com/
+
+Bilgihan, A., Okumus, F., Nusair, K., & Kwun, D. J. W. (2016). Information technology applications and competitive advantage in hotel companies. *Journal of Hospitality and Tourism Technology*, *7*(2), 139–153.
+
+Booking.com. (2024). *Sustainable travel report 2024*. Booking.com. https://www.booking.com/
+
+Cloudbeds. (2024). *About Cloudbeds*. Cloudbeds. https://www.cloudbeds.com/
+
+Dolnicar, S., & Grün, B. (2009). Environmentally friendly behavior: Can heterogeneity among individuals and contexts/environments be harvested for improved sustainable management? *Environment and Behavior*, *41*(5), 693–714.
+
+European Commission. (2023). *Proposal for a directive on green claims*. European Commission. https://environment.ec.europa.eu/
+
+GSTC. (2024). *GSTC criteria for hotels and accommodations*. Global Sustainable Tourism Council. https://www.gstcouncil.org/
+
+Hilton. (2024). *Hilton 2023 ESG report*. Hilton Worldwide Holdings. https://esg.hilton.com/
+
+ICO. (2020). *ICO fines Marriott International Inc £18.4 million for failing to keep customers' personal data secure*. Information Commissioner's Office. https://ico.org.uk/
+
+Law, R., Buhalis, D., & Cobanoglu, C. (2014). Progress on information and communication technologies in hospitality and tourism. *International Journal of Contemporary Hospitality Management*, *26*(5), 727–750.
+
+Marriott International. (2018). *Marriott International notifies guests of data security incident* [Press release]. https://news.marriott.com/
+
+Marriott International. (2024). *Marriott International 2023 annual report (Form 10-K)*. U.S. Securities and Exchange Commission.
+
+Merli, R., Preziosi, M., Acampora, A., & Ali, F. (2019). Why should hotels go green? Insights from guests' experience in green hotels. *International Journal of Hospitality Management*, *81*, 169–179.
+
+Mews. (2024). *About Mews*. Mews Systems. https://www.mews.com/
+
+Neuhofer, B., Buhalis, D., & Ladkin, A. (2015). Smart technologies for personalized experiences: A case study in the hospitality domain. *Electronic Markets*, *25*(3), 243–254.
+
+Önder, I., & Treiblmaier, H. (2018). Blockchain and tourism: Three research propositions. *Annals of Tourism Research*, *72*, 180–182.
+
+OpenTravel Alliance. (2024). *OpenTravel specifications*. OpenTravel. https://opentravel.org/
+
+Oracle Hospitality. (2024). *OPERA Cloud property management*. Oracle Corporation. https://www.oracle.com/hospitality/
+
+Sabre. (2024). *SynXis platform*. Sabre Corporation. https://www.sabre.com/
+
+Shiji. (2024). *Shiji Group solutions*. Shiji Group. https://www.shijigroup.com/
+
+SiteMinder. (2024). *SiteMinder platform*. SiteMinder. https://www.siteminder.com/
+
+Skift Research. (2024). *Hotel distribution outlook 2024*. Skift.
+
+STR. (2024). *Global hotel industry performance data*. STR (CoStar Group). https://str.com/
+
+Treiblmaier, H. (2020). Blockchain and tourism. In Z. Xiang, M. Fuchs, U. Gretzel, & W. Höpken (Eds.), *Handbook of e-Tourism* (pp. 1–21). Springer.
+
+Trustwave. (2023). *2023 Trustwave global security report*. Trustwave Holdings.

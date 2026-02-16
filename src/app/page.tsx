@@ -1,65 +1,141 @@
-import Image from "next/image";
+import Link from "next/link";
+import { getAllChapters } from "@/lib/chapters";
+import { getPartColors } from "@/lib/part-colors";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+
+const parts = [
+  { title: "Part I", subtitle: "Introduction", range: [1, 3] },
+  { title: "Part II", subtitle: "Direct Channels", range: [4, 7] },
+  { title: "Part III", subtitle: "Indirect Channels", range: [8, 10] },
+  { title: "Part IV", subtitle: "Future of Distribution", range: [11, 13] },
+];
 
 export default function Home() {
+  const chapters = getAllChapters();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen flex flex-col bg-white">
+      <Nav />
+
+      {/* Hero */}
+      <section className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-28">
+          <p className="text-brand-600 text-sm font-semibold tracking-wide mb-5">
+            NYU Tisch Center for Hospitality
           </p>
+          <h1 className="max-w-2xl">
+            <span className="block text-4xl md:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-brand-900 leading-[1.08]">
+              Hotel Distribution
+            </span>
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-brand-600 mt-2">
+              Online Textbook
+            </span>
+          </h1>
+          <p className="mt-5 text-text-secondary text-base md:text-lg max-w-lg leading-relaxed">
+            13 chapters on strategy, technology, and the channels that connect hotels to guests — written by industry practitioners for the next generation of hospitality leaders.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/chapters/distribution-101"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-900 text-white font-semibold text-sm rounded-full hover:bg-brand-800 transition-all shadow-md shadow-brand-900/20"
+            >
+              Start Reading
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center px-6 py-3 text-text-secondary font-medium text-sm rounded-full border border-border hover:bg-slate-50 transition-all"
+            >
+              About the Authors
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Chapters */}
+      <main className="bg-surface">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 w-full">
+        {parts.map((part, partIdx) => {
+          const partChapters = chapters.filter(
+            (ch) => ch.number >= part.range[0] && ch.number <= part.range[1]
+          );
+          if (partChapters.length === 0) return null;
+
+          return (
+            <section
+              key={part.title}
+              className={`${partIdx === 0 ? "pt-16" : "pt-12"} pb-12 ${
+                partIdx < parts.length - 1 ? "border-b border-border" : ""
+              }`}
+            >
+              <div className="mb-6">
+                <p className="text-sm font-semibold uppercase tracking-widest text-brand-500 mb-1">
+                  {part.title}
+                </p>
+                <h2 className="text-2xl md:text-3xl font-bold text-text-primary tracking-tight">
+                  {part.subtitle}
+                </h2>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {partChapters.map((ch) => {
+                  const colors = getPartColors(ch.number);
+                  return (
+                    <Link
+                      key={ch.slug}
+                      href={`/chapters/${ch.slug}`}
+                      className={`group relative bg-white rounded-2xl border border-border overflow-hidden hover:shadow-xl hover:shadow-brand-100/50 transition-all duration-300 hover:-translate-y-0.5 ${colors.border}`}
+                    >
+                      <div className={`h-24 ${colors.card} flex items-end p-4`}>
+                        <span className="text-white/30 text-4xl font-bold tracking-tight">
+                          {String(ch.number).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <div className="p-5">
+                        <h3 className="font-bold text-text-primary text-[15px] leading-snug group-hover:text-brand-700 transition-colors">
+                          {ch.title}
+                        </h3>
+                        <p className="text-sm text-text-muted mt-2 leading-relaxed line-clamp-2">
+                          {ch.description}
+                        </p>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
+
+        {/* Bottom CTA */}
+        <section className="py-16 border-t border-border">
+          <div className="bg-brand-900 rounded-2xl p-8 md:p-12 text-white text-center">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">
+              Learn more
+            </h2>
+            <p className="text-brand-300 mb-8 max-w-md mx-auto text-sm leading-relaxed">
+              164 industry terms, insights from leading sources, and the people behind the book.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/glossary" className="px-6 py-3 bg-white text-brand-900 font-semibold text-sm rounded-full hover:bg-brand-50 transition-colors">
+                Browse Glossary
+              </Link>
+              <Link href="/about" className="px-6 py-3 text-white font-medium text-sm rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+                Meet the Authors
+              </Link>
+              <Link href="/contact" className="px-6 py-3 text-white font-medium text-sm rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+                Get in Touch
+              </Link>
+            </div>
+          </div>
+        </section>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

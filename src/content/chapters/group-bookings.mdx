@@ -1,0 +1,587 @@
+---
+number: 5
+title: "Group Bookings"
+---
+
+## Learning Objectives
+
+Upon completing this chapter, you should be able to:
+
+- Define the group segment and distinguish among its major subsegments, including corporate meetings, conventions, weddings, sports, and SMERF business.
+- Explain how group distribution works, including the roles of RFPs, CVBs, housing bureaus, hotel sales teams, third-party intermediaries, and digital platforms such as Cvent.
+- Conduct a basic displacement analysis to evaluate whether accepting a group block maximizes total hotel revenue.
+- Apply the concept of group wash to improve forecast accuracy and inventory management.
+- Identify the key contractual elements of a group booking, including attrition clauses, cutoff dates, concession packages, and comp room ratios.
+- Analyze group pricing strategies, including cost-plus, percentage-off-BAR, and ceiling/floor approaches.
+- Evaluate post-COVID trends reshaping group business and the rise of digital group booking platforms.
+
+---
+
+## 5.1 Opening Vignette: Priya's March Dilemma
+
+Priya Chandrasekaran had been director of revenue strategy at the Grand Cypress Orlando — a 1,200-room convention hotel — for exactly eleven months when the decision landed on her desk. It was the second week of January 2023, and her forecasts told an uncomfortable story: March was shaping up soft. Transient demand projections showed occupancy barely cracking 60 percent during the third week of the month — a valley period that, left unfilled, would put her Q1 RevPAR target out of reach. Ownership had made that target a condition of the management company's incentive fee. Priya's boss had made it a condition of her continued employment, though he'd said it with a smile.
+
+Then the RFP arrived. The American Society of Association Executives (ASAE) had issued a request for proposals for a 3,000-attendee regional leadership conference — peak nights falling precisely in that soft third week of March. The room block: 1,800 nights over four days. The requested rate: $179, roughly 12 percent below the hotel's projected transient best available rate of $204.
+
+On paper, it looked like a gift. But Priya had been in revenue management long enough to know that "on paper" was where bad decisions hid. She assembled a cross-functional team the next morning. Her revenue analyst pulled transient demand forecasts by day and segment. The catering director projected $1.2 million in food-and-beverage (F&B) revenue from the conference's planned banquets, breakout lunches, and reception. The convention services manager mapped meeting-room configurations against two smaller groups already on the books for overlapping dates. The director of sales, who had a fifteen-year relationship with the ASAE planner, provided intel on historical pickup patterns — ASAE groups, he noted, consistently washed about 15 percent, meaning they'd likely pick up around 1,530 of the 1,800 blocked rooms.
+
+Seventy-two hours later, Priya's team submitted a proposal through Cvent's Supplier Network, accompanied by a separately hosted virtual tour showcasing the property's renovated ballroom and breakout spaces. The displacement analysis told the story: even at a discounted room rate, the total revenue contribution — rooms, F&B, audiovisual, parking, resort fees — exceeded what transient demand alone would generate by more than $400,000 over the four-day period.
+
+Six weeks later, the contract was signed. The group filled the hotel's need period, anchored over a million dollars in ancillary spending, and introduced the property to thousands of association professionals — future planners, future guests, future advocates. Priya hit her Q1 target with room to spare.
+
+Her decision wasn't magic. It was methodology — the same analytical framework this chapter will teach you.
+
+---
+
+## 5.2 The Group Segment: An Overview
+
+Group business has long been a cornerstone of hotel revenue, particularly for full-service and convention properties. Skift Research estimated that group bookings accounted for approximately 14 percent of global hotel gross bookings in 2024 (Skift Research, 2024). For large convention hotels, that share can be substantially higher — STR data has shown that group room revenue at major convention properties can exceed 40 percent of total room revenue [citation needed].
+
+### Defining "Group"
+
+In hotel parlance, a "group" is typically defined as a block of rooms — often ten or more — booked under a single contract at a negotiated rate. But the group segment is far from monolithic. It encompasses a wide array of demand generators, each with distinct booking behaviors, lead times, rate sensitivities, and ancillary revenue profiles.
+
+### Major Group Subsegments
+
+**Corporate Meetings and Conferences.** These include board meetings, management retreats, product launches, sales kickoffs, and training programs. Corporate groups tend to be smaller (10–200 attendees), have shorter lead times (30–120 days), and are less price-sensitive than association business. They often generate significant ancillary revenue through AV rentals, catering, and executive amenities. According to the Global Business Travel Association (GBTA), U.S. business travel spending reached $356 billion in 2024, with meetings and events representing a substantial share (GBTA, 2024).
+
+**Conventions and Association Meetings.** Associations — professional, trade, and civic organizations — drive some of the largest group events in the industry. The International Association of Exhibitions and Events (IAEE) reported that the U.S. exhibitions industry alone generated $101 billion in direct spending in 2023 (IAEE, 2024). Conventions feature long lead times (one to five years for citywide events), complex RFP processes, and significant destination-level economic impact. They typically require large room blocks, extensive meeting space, and coordination with convention and visitors bureaus (CVBs).
+
+**Weddings and Social Events.** The wedding segment represents a distinct and emotionally driven subsegment. The Knot's 2023 Real Weddings Study found that the average U.S. wedding cost $35,000, with venue costs representing the single largest line item (The Knot, 2024). Wedding blocks are typically 20–150 rooms over one to three nights, with high F&B and event-space revenue.
+
+**Sports Groups.** Youth and collegiate sports tournaments, professional team travel, and major sporting events generate predictable, recurring group demand. Sports groups tend to be highly rate-sensitive but book reliably and fill rooms during weekends and shoulder periods. The Sports Events & Tourism Association (Sports ETA) estimated that sports tourism generated $45.1 billion in traveler spending in 2023 (Sports ETA, 2024).
+
+**SMERF.** This acronym — Social, Military, Educational, Religious, and Fraternal — captures a category of groups that are typically more budget-conscious, book further in advance, and are more flexible on dates than corporate groups. SMERF business is particularly valuable for filling need periods and weekends at urban hotels. While average daily rates (ADRs) tend to be lower, SMERF groups often have low cancellation rates and generate meaningful F&B revenue.
+
+*Exhibit 5.1: Group Subsegment Comparison Matrix*
+
+![Exhibit 5.1: Group Subsegment Comparison Matrix](/exhibits/exhibit-5-1-group-process.png)
+
+<div className="not-prose my-6">
+<div className="border border-slate-200 rounded-lg overflow-x-auto">
+<table className="w-full text-sm">
+<thead>
+<tr className="bg-slate-50 border-b border-slate-200">
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Dimension</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Corporate</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Association/Convention</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Wedding/Social</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Sports</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">SMERF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Typical Size</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">10–200 rooms</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">100–5,000+ rooms</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">20–150 rooms</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">50–500 rooms</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">25–300 rooms</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Lead Time</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">30–120 days</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">1–5 years</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">6–18 months</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">3–12 months</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">6–24 months</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Rate Sensitivity</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Low–Moderate</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Moderate–High</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Moderate</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">High</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">High</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">F&amp;B Revenue Potential</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">High</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Very High</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Very High</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Low–Moderate</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Moderate</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Primary Booking Channel</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Direct sales, intermediaries</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">CVB, RFP platforms</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Direct sales, event platforms</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Sports commissions, CVBs</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">Direct sales, associations</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+---
+
+## 5.3 How Group Distribution Works
+
+Unlike transient distribution, which relies on real-time electronic channels and individual booking decisions, group distribution is fundamentally a relationship-driven, negotiation-based process. It involves multiple stakeholders, longer sales cycles, and a distinct set of distribution intermediaries and technologies.
+
+### The Request for Proposal (RFP)
+
+The RFP is the lingua franca of group distribution. A meeting planner or event organizer issues an RFP specifying dates, room-block requirements, meeting-space needs, F&B expectations, AV requirements, and budget parameters. The RFP may be distributed to multiple hotels simultaneously — often through digital platforms — creating a competitive bidding dynamic.
+
+The evolution of the RFP process has been dramatic. What was once a labor-intensive exchange of paper documents, phone calls, and faxes has migrated substantially to digital platforms. Cvent, the dominant player in this space, processes millions of RFPs annually, connecting planners with hotels worldwide (Cvent, 2024). Other platforms — including HotelPlanner, Groups360, and Tripleseat — have also gained traction, particularly in specific subsegments.
+
+### Convention and Visitors Bureaus (CVBs)
+
+CVBs — increasingly rebranded as destination marketing organizations (DMOs) — play a critical intermediary role in group distribution, particularly for large conventions and citywide events. CVBs market their destination to meeting planners, help source appropriate venues, coordinate multi-hotel room blocks, and provide destination services such as airport transfers and local programming.
+
+For hotels, CVBs are a significant lead-generation channel. Destinations International reported that U.S. CVBs influenced more than $100 billion in direct visitor spending annually (Destinations International, 2023). The relationship between a hotel and its local CVB is often a key determinant of the property's success in attracting large-scale group business. CVBs typically do not charge hotels a commission on group bookings; instead, they are funded through hotel occupancy taxes and membership dues.
+
+### Citywide Conventions and Multi-Hotel Blocks
+
+Among the most complex — and most lucrative — group events are **citywide conventions**: large-scale gatherings that exceed the capacity of any single hotel and require room blocks spread across multiple properties in a destination. Events like the Consumer Electronics Show (CES) in Las Vegas, the American Academy of Ophthalmology's annual meeting, or the National Restaurant Association Show in Chicago can generate tens of thousands of room nights across dozens of hotels.
+
+In a citywide, the CVB or its affiliated **housing bureau** manages the room allocation process. The housing bureau serves as the central coordinating body, negotiating room blocks with participating hotels, managing attendee reservations through a centralized booking portal, and tracking pickup across the entire block. Hotels are typically designated into tiers:
+
+- **Headquarter hotel(s):** The primary property (or properties) hosting the convention's main sessions, exhibit hall, and VIP functions. The HQ hotel receives the largest room block, the most meeting-space revenue, and the highest visibility — but also bears the greatest operational burden and must offer competitive rates and concessions to win the designation.
+- **Overflow hotels:** Properties that absorb room demand beyond the headquarter hotel's capacity. Overflow hotels benefit from guaranteed occupancy during the event but typically receive smaller blocks and less ancillary revenue.
+- **Peripheral properties:** Hotels outside the official block that may still benefit from demand spillover, often at higher transient rates since they are not bound by the negotiated group rate.
+
+The economics of a citywide can be transformative for a destination. A single large medical or technology convention can generate $50–$100 million in direct spending across hotels, restaurants, transportation, and entertainment venues in the host city (Events Industry Council, 2024). Competition among destinations for these events is fierce, with CVBs assembling multi-year bids that include convention center availability, hotel room commitments, airline lift, and sometimes direct financial incentives.
+
+### Hotel Sales Teams
+
+The hotel sales team remains the primary engine of group distribution. In a full-service hotel, the sales department is typically organized by market segment (corporate, association, wedding/social, SMERF) or by geographic territory. Key roles include:
+
+- **Director of Sales (DOS) or Director of Sales & Marketing (DOSM):** Sets overall group strategy, manages the team, and personally handles the largest accounts.
+- **Sales Managers:** Manage portfolios of accounts, respond to RFPs, conduct site visits, negotiate contracts, and build long-term planner relationships.
+- **Convention Services Managers (CSMs):** Take over after the contract is signed, managing all operational details of the event — meeting-room setups, catering, AV, and billing.
+- **Revenue Management:** Works in partnership with sales to evaluate group opportunities, set pricing guidelines, and conduct displacement analyses.
+
+The interplay between sales and revenue management is one of the most critical — and sometimes contentious — dynamics in hotel operations. Sales teams are incentivized to book group business; revenue managers must ensure that group bookings contribute to total hotel profitability rather than merely filling rooms at suboptimal rates.
+
+### The Role of Third-Party Intermediaries
+
+Beyond CVBs, several types of intermediaries operate in the group space:
+
+**Third-Party Meeting Planners and Procurement Companies.** Organizations like HelmsBriscoe, ConferenceDirect, and Meetings & Incentives Worldwide act as intermediaries between corporate clients and hotels, leveraging their volume and market knowledge to negotiate favorable rates and concessions on behalf of planners. These firms typically earn a commission of 7–10 percent of the room revenue, paid by the hotel — not the client (Fenich, 2023). For hotels, this commission is the cost of access to a pipeline of qualified group leads that the property's own sales team might not reach. HelmsBriscoe, the largest such firm, places more than $6 billion in hotel revenue annually across thousands of events worldwide (HelmsBriscoe, 2024).
+
+**Housing Bureaus.** For large conventions, housing bureaus manage the room-block allocation across multiple hotels, often using platforms like Passkey (now part of Cvent) to provide a centralized booking portal for attendees. The housing bureau ensures that pickup is tracked in real time, that rate integrity is maintained across participating hotels, and that the overall attendee experience is seamless.
+
+**Sports Commissions.** Similar to CVBs but focused specifically on sports events, these organizations help rights holders and tournament organizers source host cities and negotiate hotel blocks.
+
+### International Group Distribution
+
+Group distribution mechanics vary significantly across global markets. In Europe and parts of Asia, the role of the **Professional Congress Organizer (PCO)** is far more prominent than in North America. A PCO manages the end-to-end logistics of a conference or congress — from abstract submission and speaker management to venue sourcing, accommodation booking, and on-site operations. The International Association of Professional Congress Organisers (IAPCO) represents PCOs in more than 40 countries and sets professional standards for the sector (IAPCO, 2024).
+
+In many European and Asian markets, the congress and convention landscape operates differently from the U.S. model:
+
+- **Government and academic involvement** in conference planning is more common, with national tourism authorities and universities playing active roles in bidding for international congresses.
+- **Net rate contracting** is more prevalent, particularly in markets like Southeast Asia and Southern Europe, where hotels provide PCOs and destination management companies with confidential net rates. The intermediary then adds its margin before selling to the end client. This creates a different economic dynamic than the commission-based model dominant in the U.S.
+- **International Congress and Convention Association (ICCA)** data shows that Europe hosted approximately 53 percent of all international association meetings in 2023, with Asia-Pacific accounting for 18 percent — underscoring the global scale of group distribution beyond North America (ICCA, 2024).
+
+---
+
+## 5.4 Group Pricing Strategies
+
+Setting the right rate for a group is one of the most nuanced decisions in hotel commercial strategy. Unlike transient pricing, which can be adjusted dynamically in real time, group rates are negotiated and contracted — sometimes years in advance — locking in a price that the hotel must live with regardless of how demand conditions evolve.
+
+### Common Approaches
+
+**Percentage off BAR.** The most common approach: the hotel offers the group a fixed discount — typically 10–25 percent — off the best available rate (BAR) at the time of booking or at a specified future date. This method is simple and transparent but carries risk for both parties. If BAR rises significantly before the event, the group gets a windfall; if BAR drops, the hotel may find itself honoring a rate that is actually *above* the prevailing market price, making the group rate uncompetitive with publicly available rates.
+
+**Flat negotiated rate.** The hotel and planner agree on a specific dollar amount per night, irrespective of BAR fluctuations. This provides certainty for both sides and simplifies budgeting for the planner. Hotels favor flat rates when they have high confidence in their demand forecasts for the event dates.
+
+**Cost-plus pricing.** Particularly common in F&B-heavy events, the hotel calculates its variable cost per occupied room (housekeeping, amenities, energy) and adds a target margin. This approach ensures profitability but requires transparent cost accounting and is more typical of resort and conference-center pricing than urban hotels.
+
+**Ceiling/floor (dynamic group rate).** An increasingly sophisticated approach where the group rate is tied to BAR but bounded by a negotiated floor (minimum) and ceiling (maximum). For example, the group rate might be defined as "15 percent off BAR, with a floor of $169 and a ceiling of $219." This protects both parties: the hotel is guaranteed a minimum rate, and the group is protected from rate spikes. Dynamic group rates are gaining traction among large hotel brands and represent an application of revenue management principles to the traditionally static world of group pricing (Cross et al., 2009).
+
+**Bid rate / net rate for intermediaries.** When a group is sourced through a third-party intermediary such as HelmsBriscoe or ConferenceDirect, the hotel must factor the intermediary's commission (typically 7–10 percent of room revenue) into its rate calculation. Some hotels quote a gross rate and pay the commission separately; others build the commission into a higher rate and let the intermediary pass through a net rate to the client. The approach varies by market and relationship, but the economic impact is the same: the hotel's effective revenue per room night is reduced by the commission, which must be reflected in the displacement analysis.
+
+### The Total Revenue Lens
+
+Experienced revenue managers evaluate group pricing not in isolation but through a **total revenue** lens. A group offering a below-average room rate might still be the most profitable piece of business on the books when F&B minimums, meeting-space revenue, AV charges, and ancillary spending are factored in. Conversely, a group with an attractive room rate but minimal ancillary contribution may be less valuable than it appears.
+
+This is why the most sophisticated hotel companies have moved from "rooms revenue management" to "total hotel revenue management" — evaluating every group opportunity against the full spectrum of revenue and profit it generates (Kimes, 2016).
+
+---
+
+## 5.5 Group vs. Transient Revenue Management: Displacement Analysis
+
+One of the most important analytical frameworks in hotel revenue management is **displacement analysis** — the process of evaluating whether accepting a group block at a negotiated rate will generate more total revenue than the transient demand it would displace.
+
+### The Logic of Displacement
+
+Hotels have a fixed number of rooms on any given night. Every room sold to a group guest at a discounted rate is a room that cannot be sold to a potential transient guest who might pay a higher rate. Displacement analysis quantifies this trade-off.
+
+### Components of a Displacement Analysis
+
+A thorough displacement analysis considers multiple revenue streams:
+
+1. **Room Revenue.** Compare the group's offered rate against the forecasted transient ADR for each night of the block. If the group rate is $179 and the forecasted transient ADR is $229 with 95 percent projected occupancy, the room-revenue displacement is significant. However, if the forecasted transient occupancy is only 55 percent, the group fills rooms that would otherwise go unsold — generating incremental revenue.
+
+2. **F&B Revenue.** Group guests often generate substantially more F&B revenue than transient guests through banquets, receptions, coffee breaks, and group dinners. A corporate meeting group might generate $75–$150 per attendee per day in F&B spending, compared to $20–$40 for a typical transient guest. This ancillary contribution can swing the displacement calculus decisively in favor of accepting the group.
+
+3. **Meeting-Space Revenue.** Room rental fees, AV charges, and service fees for meeting and event spaces contribute additional revenue that transient guests do not generate.
+
+4. **Other Ancillary Revenue.** Parking, spa services, resort fees, and other incidentals attributable to the group.
+
+5. **Cost Offsets.** Group business may carry higher operational costs (dedicated event staff, complimentary amenities, intermediary commissions, attrition risk) that should be factored into the analysis.
+
+### A Simplified Displacement Example
+
+*Exhibit 5.2: Displacement Analysis — Accept vs. Decline Comparison*
+
+![Exhibit 5.2: Displacement Analysis](/exhibits/exhibit-5-2-displacement.png)
+
+<div className="not-prose my-6">
+<div className="border border-slate-200 rounded-lg overflow-x-auto">
+<table className="w-full text-sm">
+<thead>
+<tr className="bg-slate-50 border-b border-slate-200">
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Factor</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Accept Group</th>
+<th className="text-left px-4 py-2.5 font-semibold text-slate-900 whitespace-nowrap">Decline Group (Transient Only)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Rooms Sold (Peak Night)</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">200 group + 150 transient = 350</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">280 transient</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Room Revenue</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">(200 × $179) + (150 × $229) = $70,150</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">280 × $229 = $64,120</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">F&amp;B Revenue</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">$22,000 (group) + $4,500 (transient) = $26,500</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">$8,400</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Meeting Space Revenue</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">$8,000</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">$0</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-2.5 font-medium text-slate-900 align-top">Total Revenue</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">$104,650</td>
+<td className="px-4 py-2.5 text-slate-600 align-top">$72,520</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+In this example, accepting the group generates $32,130 more in total revenue despite the lower room rate — a compelling case for the group.
+
+*Exhibit 5.3: Displacement Analysis Framework (Description: A flowchart showing the step-by-step process of evaluating a group opportunity, from initial RFP review through forecasting displaced transient demand, calculating total revenue contribution, and making an accept/decline/counter decision.)*
+
+![Exhibit 5.3: Displacement Analysis Framework](/exhibits/exhibit-5-3-group-recovery.png)
+
+### Group Wash and Slippage
+
+No discussion of group displacement is complete without addressing **group wash** — also called **slippage** — the historical pattern by which groups consistently pick up fewer rooms than they block. Understanding wash is essential for accurate forecasting and optimal inventory management.
+
+Here's how it works: A convention contracts a block of 500 room nights, but historical data shows that this organization's attendees have picked up only 80–85 percent of the block in each of the last three events. A savvy revenue manager applies this historical wash factor to the forecast, projecting actual pickup of 400–425 rooms rather than the full 500. The remaining 75–100 rooms can then be made available for transient sale — or held strategically depending on demand conditions.
+
+Wash factors vary by subsegment. Association conventions tend to exhibit higher wash (15–25 percent) because individual attendees make independent travel decisions and some choose alternative accommodations. Corporate groups typically show lower wash (5–10 percent) because companies exercise more control over attendee compliance. SMERF groups fall somewhere in between.
+
+Failing to account for wash leads to one of two costly errors:
+
+- **Overblocking without wash adjustment** means the hotel turns away transient guests to protect rooms that will never be picked up — leaving inventory unsold.
+- **Over-correcting for wash** means the hotel sells rooms it may need for the group, potentially walking contracted guests to other properties — damaging the relationship and incurring relocation costs.
+
+The best revenue management teams maintain detailed wash histories by account, subsegment, and day of week, using this data to fine-tune forecasts and negotiate more realistic initial block sizes. Modern revenue management systems (RMS) from IDeaS, Duetto, and others increasingly incorporate wash modeling into their group evaluation algorithms (Cross et al., 2009).
+
+### The Role of Revenue Management Systems
+
+Modern RMS platforms increasingly incorporate group evaluation tools that automate elements of displacement analysis. Systems from IDeaS, Duetto, and Atomize can integrate group proposals with transient demand forecasts to provide data-driven recommendations. However, the inherently complex and relationship-driven nature of group negotiations means that human judgment remains essential — the RMS provides a starting point, not a final answer (Cross et al., 2009).
+
+---
+
+## 5.6 Contract Negotiations: Attrition, Cutoff Dates, and Concessions
+
+Group contracts are among the most complex documents in hotel operations. Understanding their key provisions is essential for both hotel professionals and meeting planners.
+
+### Room Block and Rates
+
+The contract specifies the number of rooms blocked by night, the negotiated group rate(s), and the rate type (e.g., single/double occupancy, suite rates). Group rates may be structured as a flat rate, percentage off BAR, or dynamic ceiling/floor rate, as described in Section 5.4.
+
+### Attrition Clauses
+
+Attrition is the gap between the number of rooms blocked and the number actually picked up (booked) by the group's attendees. Attrition clauses protect the hotel from the revenue loss that occurs when a group fails to fill its block.
+
+**Typical attrition structures include:**
+
+- **Percentage-based attrition:** The group commits to picking up a minimum percentage of the block — commonly 80 percent. If pickup falls below this threshold, the group pays an attrition fee, often calculated as the room rate multiplied by the shortfall in room nights.
+- **Sliding-scale attrition:** The penalty increases as the shortfall grows — for example, 50 percent of the room rate for the first 10 percent shortfall, escalating to 100 percent for shortfalls beyond 20 percent.
+- **Revenue-based attrition:** Less common but increasingly used, this approach ties the attrition calculation to total revenue (rooms plus F&B) rather than room nights alone, recognizing that a group may generate compensating revenue even if room pickup is below the block.
+
+The COVID-19 pandemic fundamentally reshaped attrition negotiations. Planners now routinely negotiate force majeure clauses, reduced attrition percentages, and more flexible cancellation terms than were standard pre-2020 (Meetings Today, 2023).
+
+### Cutoff Dates
+
+The cutoff date is the deadline by which group attendees must book their rooms to receive the group rate. After the cutoff date, unbooked rooms in the block are released back into the hotel's general inventory and sold at prevailing transient rates. Typical cutoff dates range from 21 to 45 days before the event, depending on the group's size and the hotel's demand outlook.
+
+Managing the cutoff date strategically is critical. Setting it too early may reduce pickup as attendees procrastinate; setting it too late limits the hotel's ability to resell unused rooms at higher transient rates. Many hotels now employ "pickup reports" and "rooming list management" to monitor block performance well in advance of the cutoff date and proactively communicate with planners about potential attrition issues.
+
+### Concessions
+
+Beyond room rates, group contracts typically include a package of concessions — value-added benefits provided to the group as part of the negotiation. Common concessions include:
+
+- **Complimentary rooms** (typically expressed as a **comp room ratio** — e.g., one comp room per 40–50 paid room nights)
+- Discounted or complimentary meeting-space rental
+- Complimentary AV packages
+- Upgraded Wi-Fi
+- Welcome amenities and VIP upgrades for key attendees
+- Discounted F&B pricing
+- Complimentary parking or shuttle service
+- Late checkout for attendees
+
+The art of concession management lies in offering value that has a high perceived worth to the planner but a relatively low cost to the hotel. A complimentary room upgrade, for example, costs the hotel little if higher-category rooms would otherwise go unsold, but it can be a significant differentiator in winning the business.
+
+### Comp Room Ratios
+
+The **comp room ratio** — the number of complimentary room nights provided relative to paid room nights — is one of the most closely negotiated elements of any group contract. Industry standards typically range from 1:40 (one comp room for every 40 paid rooms) to 1:50, though large-volume groups may negotiate more favorable ratios. From the hotel's perspective, comp rooms represent a tangible cost that must be factored into the group's total profitability calculation. From the planner's perspective, comp rooms are a critical budget tool — often used to house speakers, VIPs, or staff without additional expense.
+
+---
+
+## 5.7 The Rise of Digital Group Booking Platforms
+
+The group booking process has historically been one of the least digitized areas of hotel distribution. While transient bookings moved online in the late 1990s and early 2000s, group bookings remained stubbornly analog — dependent on phone calls, email exchanges, PDF contracts, and manual processes. This is changing rapidly.
+
+### Cvent: The Dominant Platform
+
+Cvent has established itself as the leading technology platform for meetings and events. Its Supplier Network connects more than 300,000 hotels with hundreds of thousands of meeting planners worldwide. Key capabilities include:
+
+- **Venue sourcing and RFP management:** Planners can search for hotels, submit RFPs to multiple properties simultaneously, and compare proposals side by side.
+- **Event management:** Registration, attendee management, mobile event apps, and post-event surveys.
+- **Passkey (housing management):** Centralized room-block management that integrates with hotel PMS systems, enabling real-time pickup tracking and attendee self-service booking.
+- **Analytics and reporting:** Data on sourcing trends, planner behavior, and competitive positioning.
+
+Cvent went public via SPAC in 2021 at a valuation of approximately $5.3 billion and was subsequently acquired by Blackstone in 2023 for $4.6 billion, underscoring the scale and strategic importance of the meetings-technology market. ⚠️ CITATION NEEDED
+
+### Emerging Platforms
+
+Several newer entrants are challenging Cvent's dominance or addressing underserved segments:
+
+- **Groups360:** Founded by former hotel industry executives, Groups360 launched GroupSync, a platform designed to enable "instant booking" for group rooms — bringing the transient e-commerce model to the group segment. In 2023, the company announced partnerships with major brands including Marriott, Hilton, IHG, and Wyndham (Groups360, 2023).
+- **HotelPlanner:** Focuses on small-to-midsize group bookings (10–100 rooms), offering a consumer-facing platform and a B2B solution for corporate and sports groups.
+- **Tripleseat:** Targets restaurants, hotels, and unique venues, specializing in social events and catering-driven bookings.
+
+### The Promise of Instant Book for Groups
+
+The "holy grail" of group distribution technology is the ability for planners to book group rooms instantly online — without the traditional RFP-and-negotiate cycle. Groups360's GroupSync Marketplace and Marriott's "Instant Book" initiative (in partnership with Groups360) represent early steps toward this vision. For small meetings (under 25 rooms with limited meeting-space needs), instant booking is increasingly viable. For larger, more complex events, the technology is improving but the human-touch elements of negotiation and customization remain essential (Meetings Today, 2024).
+
+The implications of instant book extend beyond convenience. For hotels, it opens a new demand segment: the small meeting that was never worth the cost of a full RFP cycle. A department head planning a two-day strategy session for 15 people is unlikely to submit a formal RFP and wait days for responses — but she will book instantly if the option is available. Hotels that enable this capture incremental revenue that previously leaked to Airbnb group rentals, co-working spaces, or competitors with faster response times.
+
+For revenue managers, instant book creates a new challenge: how to set group rates dynamically, in real time, without the traditional back-and-forth negotiation. This requires the same kind of algorithmic pricing sophistication that has long governed transient distribution — applied to a segment that has historically resisted automation. The hotels and technology providers that solve this problem will have a significant competitive advantage in the years ahead.
+
+### The Data Advantage
+
+Digital group platforms generate a wealth of data that was largely invisible in the analog era. Hotels can now track which planners are searching for their destination, which competitors are winning RFPs they lost, how their response times compare to market averages, and which concessions are most effective at converting proposals into contracts. Cvent's Supplier Network, for example, provides hotels with benchmarking data on their win rates, response times, and competitive positioning within their market (Cvent, 2024).
+
+This data transforms group sales from an art into a more disciplined science — though the art of relationship management remains irreplaceable. The most effective group sales professionals combine data literacy with the interpersonal skills to build trust, understand a planner's unspoken needs, and craft creative solutions that spreadsheets alone cannot deliver.
+
+---
+
+## 5.8 Group Business Post-COVID: Recovery and Transformation
+
+The COVID-19 pandemic devastated the meetings and events industry. U.S. hotel group revenue plummeted by approximately 73 percent in 2020, according to STR (now CoStar Group), far exceeding the decline in transient revenue (STR, 2021). Recovery has been gradual but transformative.
+
+### Recovery Trajectory
+
+Group demand recovery has lagged transient demand. While U.S. transient RevPAR surpassed 2019 levels by mid-2022, group RevPAR did not fully recover until late 2024 in many markets (CoStar Group, 2025). Several factors contributed to the slower recovery:
+
+- **Corporate travel policy changes:** Many companies reduced their meetings budgets and adopted hybrid meeting formats.
+- **Association attendance declines:** Some large associations experienced 10–30 percent attendance declines relative to pre-pandemic benchmarks, even as events resumed in person.
+- **Shorter booking windows:** Lead times compressed significantly, with planners booking closer to the event date and committing to smaller room blocks.
+
+### Structural Shifts
+
+The pandemic accelerated several structural changes in group distribution:
+
+- **Hybrid events:** The integration of virtual and in-person components became standard for many association and corporate events, affecting room-block sizes and attendee behavior.
+- **Smaller, more frequent meetings:** Many organizations shifted from large annual conferences to smaller, more frequent regional or departmental gatherings — a trend that benefits select-service and lifestyle hotels.
+- **Increased flexibility demands:** Planners now expect more flexible attrition and cancellation terms, and hotels that offer flexibility have a competitive advantage.
+- **Technology adoption:** The pandemic accelerated the adoption of digital tools for venue sourcing, virtual site visits, and contactless event management.
+- **Bleisure integration:** Group attendees increasingly extend their stays for leisure, blending business and leisure travel — a trend that creates additional transient revenue opportunities around group events.
+
+### The New Planner Profile
+
+The pandemic didn't just change what planners book — it changed who the planners are. A generation of meeting professionals who came of age during COVID expect digital-first tools, transparent pricing, and rapid response times. They are less likely to rely on long-standing hotel relationships and more likely to source venues through platforms, social media, and peer recommendations. At the same time, many experienced planners left the industry during the downturn, creating a knowledge gap that hotels must navigate carefully — new planners may not understand attrition clauses, cutoff-date mechanics, or the nuances of F&B minimums, requiring more education and hand-holding during the sales process.
+
+### The Outlook
+
+Despite the disruption, group business remains essential to hotel profitability. The Events Industry Council's 2024 Global Economic Significance Study estimated that the global business events sector generated $1.5 trillion in direct spending in 2023, supporting 26 million jobs worldwide (Events Industry Council, 2024). As organizations recognize the irreplaceable value of face-to-face connection, group demand is projected to continue its recovery, albeit in a structurally transformed landscape.
+
+The groups that return, however, look different from those that left. Blocks are smaller. Lead times are shorter. Hybrid components are standard. Flexibility clauses are non-negotiable. And the technology platforms that facilitate group distribution are more powerful — and more influential — than ever. For hotel revenue managers and sales leaders, the challenge is clear: master the new rules of engagement, or cede this high-value segment to competitors who will.
+
+---
+
+## Industry Spotlight: How Marriott and Groups360 Are Reinventing Group Booking
+
+In 2022, Marriott International announced a strategic partnership with Groups360 to launch instant booking for group rooms across its portfolio of more than 8,500 properties worldwide. The initiative, powered by Groups360's GroupSync technology, enables meeting planners to search for available meeting space and guest rooms, view real-time pricing, and book instantly — without submitting an RFP or waiting for a hotel response.
+
+The rollout began with simple meetings (10–25 rooms, basic meeting space) and has gradually expanded to accommodate more complex events. Early results were promising: Marriott reported that instant-booked groups had shorter lead times, higher pickup rates, and lower cancellation rates compared to traditionally booked groups (Marriott International, 2023).
+
+The partnership reflects Marriott's broader strategy of applying transient e-commerce principles to the group segment — reducing friction, accelerating the sales cycle, and capturing small-meeting business that often falls through the cracks of traditional RFP-based sales processes. For the industry, it signals a potential paradigm shift in how group distribution operates: from a negotiation-centric model to a technology-enabled marketplace.
+
+**Discussion Prompt:** What types of group business are best suited for instant booking? What types still require traditional sales processes, and why?
+
+---
+
+## 5.9 Chapter Summary
+
+Group distribution is a relationship-driven, strategically complex, and high-value segment of hotel distribution. This chapter has explored the major group subsegments — corporate, association, wedding, sports, and SMERF — and the distinct distribution channels and intermediaries that serve them, including RFPs, CVBs, housing bureaus, hotel sales teams, third-party intermediaries, and digital platforms like Cvent and Groups360. We examined displacement analysis and group wash as critical frameworks for evaluating group opportunities, reviewed group pricing strategies, and detailed the key contractual elements — attrition, cutoff dates, concessions, and comp room ratios — that define group agreements. We also explored citywide conventions, international group distribution through PCOs, and the post-COVID transformation of the meetings industry.
+
+In Chapter 6, we turn to two additional direct booking channels — voice reservations and walk-in guests — that, while smaller in share, continue to play important roles in the hotel distribution ecosystem.
+
+---
+
+## Key Terms
+
+<div className="not-prose my-8">
+<div className="border border-slate-200 rounded-lg overflow-hidden">
+<table className="w-full text-sm">
+<thead>
+<tr className="bg-slate-50 border-b border-slate-200">
+<th className="text-left px-4 py-3 font-semibold text-slate-900 w-[200px]">Term</th>
+<th className="text-left px-4 py-3 font-semibold text-slate-900">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Attrition</td>
+<td className="px-4 py-3 text-slate-600 align-top">The shortfall between the number of rooms blocked for a group and the number actually booked by attendees.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Attrition Clause</td>
+<td className="px-4 py-3 text-slate-600 align-top">A contractual provision requiring the group to compensate the hotel for rooms in the block that go unbooked beyond an agreed threshold.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Citywide Convention</td>
+<td className="px-4 py-3 text-slate-600 align-top">A large-scale event that exceeds the capacity of any single hotel, requiring room blocks across multiple properties in a destination, typically coordinated by a CVB or housing bureau.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Comp Room Ratio</td>
+<td className="px-4 py-3 text-slate-600 align-top">The number of complimentary room nights provided relative to paid room nights in a group contract (e.g., 1:40 or 1:50).</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Convention and Visitors Bureau (CVB)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A destination marketing organization that promotes a city or region as a meetings and events destination and connects planners with local hotels and venues.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Cutoff Date</td>
+<td className="px-4 py-3 text-slate-600 align-top">The deadline by which group attendees must book rooms to receive the negotiated group rate; unbooked rooms revert to the hotel's general inventory after this date.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Cvent</td>
+<td className="px-4 py-3 text-slate-600 align-top">The leading technology platform for meetings and events sourcing, management, and analytics.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Displacement Analysis</td>
+<td className="px-4 py-3 text-slate-600 align-top">An analytical framework evaluating whether accepting a group booking at a negotiated rate generates more total revenue than the transient demand it would displace.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Group Block</td>
+<td className="px-4 py-3 text-slate-600 align-top">A set number of rooms held under a single contract at a negotiated rate for a group event.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Group Wash (Slippage)</td>
+<td className="px-4 py-3 text-slate-600 align-top">The historical pattern by which groups pick up fewer rooms than originally blocked; used as a forecasting adjustment to improve inventory management.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Housing Bureau</td>
+<td className="px-4 py-3 text-slate-600 align-top">An organization, often affiliated with a CVB, that manages centralized room-block allocation and attendee reservations for large conventions across multiple hotels.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Instant Book</td>
+<td className="px-4 py-3 text-slate-600 align-top">An emerging capability allowing meeting planners to book group rooms and meeting space online in real time without the traditional RFP process.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Net Rate</td>
+<td className="px-4 py-3 text-slate-600 align-top">A confidential wholesale rate provided to intermediaries (e.g., PCOs, DMCs), who add their own margin before selling to the end client; common in international group distribution.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Professional Congress Organizer (PCO)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A specialist firm, prevalent in Europe and Asia, that manages the end-to-end logistics of conferences and congresses, including venue sourcing, accommodation, and on-site operations.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">Request for Proposal (RFP)</td>
+<td className="px-4 py-3 text-slate-600 align-top">A formal document issued by a meeting planner soliciting proposals from hotels for an event, specifying dates, room needs, meeting-space requirements, and budget.</td>
+</tr>
+<tr className="border-t border-slate-100">
+<td className="px-4 py-3 font-medium text-slate-900 align-top">SMERF</td>
+<td className="px-4 py-3 text-slate-600 align-top">An acronym for Social, Military, Educational, Religious, and Fraternal groups — a budget-conscious but reliable group subsegment.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+---
+
+## Discussion Questions
+
+1. A 500-room urban hotel receives an RFP for a 300-room-night block over three nights at a rate 20 percent below its forecasted transient ADR. Transient occupancy is projected at 70 percent for those dates. What additional information would you need to conduct a displacement analysis, and what factors might lead you to accept or decline the group?
+
+2. How has the COVID-19 pandemic changed the balance of negotiating power between hotels and meeting planners? Provide specific examples of contractual terms that have shifted.
+
+3. Compare and contrast the roles of CVBs, third-party meeting planners (e.g., HelmsBriscoe), and digital platforms (e.g., Cvent) in the group distribution ecosystem. How do they complement or compete with one another? Consider the different fee structures each employs.
+
+4. Evaluate the potential of "instant book" technology to transform group distribution. What barriers exist to its widespread adoption for large, complex events?
+
+5. A resort hotel generates 45 percent of its room revenue from weddings and social events. What distribution strategies and contractual approaches should it employ to optimize this segment?
+
+6. **Ethics in displacement:** A 400-room hotel in a mid-sized city receives two competing requests for the same weekend. One is from a national corporate client offering a rate of $199 per night for 200 rooms with a $50,000 F&B minimum. The other is from a local nonprofit hosting its annual fundraising gala — 150 rooms at $149 per night with a $30,000 F&B commitment. The nonprofit has held this event at your hotel for the past eight years and is a beloved institution in the community. The corporate group is clearly more profitable. What should the hotel do, and what factors beyond short-term revenue should inform the decision?
+
+---
+
+## References
+
+CoStar Group. (2025). *U.S. hotel industry performance report: Year-end 2024*. CoStar Group.
+
+Cross, R. G., Higbie, J. A., & Cross, Z. N. (2009). Milestones in the application of analytical pricing and revenue management. *Journal of Revenue and Pricing Management*, *8*(1), 8–18. https://doi.org/10.1057/rpm.2008.30
+
+Cvent. (2024). *Cvent supplier network: 2024 overview*. https://www.cvent.com/en/supplier-network
+
+Destinations International. (2023). *DestinationNEXT 2023: Futures study*. Destinations International.
+
+Events Industry Council. (2024). *Global economic significance of business events: 2024 update*. Events Industry Council.
+
+Fenich, G. G. (2023). *Meetings, expositions, events, and conventions: An introduction to the industry* (6th ed.). Pearson.
+
+Global Business Travel Association. (2024). *GBTA business travel index outlook — Annual global report & forecast*. GBTA.
+
+Groups360. (2023). *GroupSync marketplace expands with major brand partnerships* [Press release]. https://www.groups360.com
+
+IAPCO (International Association of Professional Congress Organisers). (2024). *About IAPCO*. https://www.iapco.org
+
+ICCA (International Congress and Convention Association). (2024). *ICCA statistics report: The international association meetings market 2023*. ICCA.
+
+International Association of Exhibitions and Events. (2024). *The economic impact of exhibitions: 2023 data*. IAEE.
+
+Kimes, S. E. (2016). The evolution of hotel revenue management. *Journal of Revenue and Pricing Management*, *15*(3–4), 183–191. https://doi.org/10.1057/rpm.2016.27
+
+Marriott International. (2023). *Marriott expands instant booking for meetings and events* [Press release]. Marriott International.
+
+Meetings Today. (2023). Pandemic's lasting impact on meeting contracts. *Meetings Today*. https://www.meetingstoday.com
+
+Meetings Today. (2024). The state of instant booking for group hotels. *Meetings Today*. https://www.meetingstoday.com
+
+⚠️ CITATION NEEDED: Blackstone acquisition of Cvent for $4.6 billion needs verified source
+
+Skift Research. (2024). *Hotel distribution outlook 2024*. Skift Research.
+
+Sports Events & Tourism Association. (2024). *State of the industry report 2024*. Sports ETA.
+
+STR. (2021). *U.S. hotel performance: Full-year 2020 review*. STR (CoStar Group).
+
+The Knot. (2024). *The Knot 2023 real weddings study*. The Knot Worldwide.
+
+---
+
+*© 2025 David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman. NYU Jonathan M. Tisch Center for Hospitality.*
