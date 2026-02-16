@@ -20,22 +20,22 @@ export default function Home() {
 
       {/* Hero */}
       <section className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-24 md:py-28">
-          <p className="text-brand-600 text-sm font-semibold tracking-wide mb-5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-32 md:py-28">
+          <p className="text-brand-600 text-sm font-semibold tracking-wide mb-6 md:mb-5">
             NYU Tisch Center for Hospitality
           </p>
           <h1 className="max-w-2xl">
             <span className="block text-4xl md:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-brand-900 leading-[1.08]">
               Hotel Distribution
             </span>
-            <span className="block text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-brand-600 mt-2">
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-brand-600 mt-3 md:mt-2">
               Online Textbook
             </span>
           </h1>
-          <p className="mt-5 text-text-secondary text-base md:text-lg max-w-lg leading-relaxed">
+          <p className="mt-6 md:mt-5 text-text-secondary text-base md:text-lg max-w-lg leading-relaxed">
             13 chapters on strategy, technology, and the channels that connect hotels to guests — written by industry practitioners for the next generation of hospitality leaders.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-10 md:mt-8 flex flex-wrap gap-3">
             <Link
               href="/chapters/distribution-101"
               className="inline-flex items-center gap-2 px-6 py-3 bg-brand-900 text-white font-semibold text-sm rounded-full hover:bg-brand-800 transition-all shadow-md shadow-brand-900/20"
