@@ -6,6 +6,7 @@ import {
   getChapterSections,
   extractVignette,
   extractIntroTitle,
+  extractLearningObjectives,
 } from "@/lib/chapters";
 import { getPartColors } from "@/lib/part-colors";
 import Link from "next/link";
@@ -41,11 +42,13 @@ export default async function ChapterPage({ params }: Props) {
   const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
   const colors = getPartColors(chapter.meta.number);
 
-  // Extract intro title first, then vignette from remaining content
+  // Extract special sections in order: intro title → learning objectives → vignette
   const introTitleResult = extractIntroTitle(chapter.content);
   const afterTitle = introTitleResult ? introTitleResult.contentWithout : chapter.content;
-  const vignetteResult = extractVignette(afterTitle);
-  const displayContent = vignetteResult ? vignetteResult.contentWithout : afterTitle;
+  const loResult = extractLearningObjectives(afterTitle);
+  const afterLO = loResult ? loResult.contentWithout : afterTitle;
+  const vignetteResult = extractVignette(afterLO);
+  const displayContent = vignetteResult ? vignetteResult.contentWithout : afterLO;
   const sections = getChapterSections(displayContent);
 
   return (
@@ -84,6 +87,25 @@ export default async function ChapterPage({ params }: Props) {
       <article className="flex-1">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 md:py-14">
           <TableOfContents sections={sections} />
+
+          {/* Learning Objectives */}
+          {loResult && (
+            <div className="mb-8 bg-slate-50 border border-border rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-text-primary text-xs font-semibold uppercase tracking-wider">
+                  Learning Objectives
+                </span>
+              </div>
+              <div className="text-[14px] text-text-secondary leading-[1.8] space-y-1.5">
+                {loResult.objectives.split("\n").filter((l) => l.trim()).map((line, i) => (
+                  <p key={i} dangerouslySetInnerHTML={{ __html: line.replace(/\*\*(.+?)\*\*/g, '<strong class="text-text-primary font-semibold">$1</strong>') }} />
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Intro title — standalone chapter title like "The Technology Stack That Powers Distribution" */}
           {introTitleResult && (

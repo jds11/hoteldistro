@@ -60,6 +60,31 @@ export function getAllChapters(): ChapterMeta[] {
  * e.g. "The Technology Stack That Powers Distribution" in Ch2.
  * Returns the title text and content with the heading removed.
  */
+/**
+ * Extract Learning Objectives section from chapter content.
+ * Returns the objectives text and content with the section removed.
+ */
+export function extractLearningObjectives(content: string): { objectives: string; contentWithout: string } | null {
+  const match = content.match(/^(#{2,3})\s+Learning Objectives[^\n]*\n/m);
+  if (!match) return null;
+
+  const startIdx = match.index!;
+  const afterHeading = startIdx + match[0].length;
+
+  // Find next ## heading
+  const nextHeading = content.indexOf("\n## ", afterHeading);
+  const endIdx = nextHeading === -1 ? content.length : nextHeading;
+
+  const objectivesText = content.slice(afterHeading, endIdx).trim();
+  // Filter out --- separators and blank intro lines
+  const lines = objectivesText.split("\n").filter((l) => l.trim() !== "---");
+  const cleaned = lines.join("\n").trim();
+
+  const contentWithout = content.slice(0, startIdx) + content.slice(endIdx);
+
+  return { objectives: cleaned, contentWithout };
+}
+
 export function extractIntroTitle(content: string): { introTitle: string; contentWithout: string } | null {
   const skip = /^##\s+(Opening Vignette|Learning Objectives|Key Terms|References|Discussion Questions|\d)/;
   const lines = content.split("\n");
@@ -100,12 +125,7 @@ export function extractVignette(content: string): { vignette: string; contentWit
   const vignetteText = content.slice(afterHeading, endIdx).trim();
   const paragraphs = vignetteText.split("\n\n").filter((p) => p.trim() && !p.startsWith("---"));
 
-  // Take first 2 paragraphs or ~500 chars
-  let excerpt = "";
-  for (const p of paragraphs) {
-    if (excerpt.length + p.length > 600 && excerpt.length > 0) break;
-    excerpt += (excerpt ? "\n\n" : "") + p;
-  }
+    const excerpt = paragraphs.join("\n\n");
 
   // Remove the vignette section from content
   const contentWithout = content.slice(0, startIdx) + content.slice(endIdx);
