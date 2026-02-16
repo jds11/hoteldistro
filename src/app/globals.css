@@ -26,11 +26,11 @@
   --color-text-muted: #94a3b8;
 }
 
-html, body {
+html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 ::selection {

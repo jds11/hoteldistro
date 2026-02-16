@@ -24,6 +24,7 @@ function LoginForm() {
 
     if (res.ok) {
       const from = searchParams.get("from") || "/";
+      window.scrollTo(0, 0);
       router.push(from);
       router.refresh();
     } else {
