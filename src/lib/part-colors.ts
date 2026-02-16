@@ -12,45 +12,45 @@ const PART_DEFS: { range: [number, number]; colors: PartColor }[] = [
   {
     range: [1, 3], // Part I: Introduction — deepest navy
     colors: {
-      card: "bg-[#0b1d32]",
-      hero: "from-[#0b1d32] to-[#142d48]",
+      card: "bg-[#001E3E]",
+      hero: "from-[#001E3E] to-[#00284F]",
       badge: "bg-[#d9e2ec]",
-      badgeText: "text-[#0b1d32]",
+      badgeText: "text-[#001E3E]",
       label: "text-[#9fb3c8]",
       border: "hover:border-[#9fb3c8]",
     },
   },
   {
-    range: [4, 7], // Part II: Direct Channels — rich teal-navy
+    range: [4, 7], // Part II: Direct Channels — navy
     colors: {
-      card: "bg-[#0c3547]",
-      hero: "from-[#0c3547] to-[#14495f]",
-      badge: "bg-[#b8e0ec]",
-      badgeText: "text-[#0c3547]",
-      label: "text-[#7ec8db]",
-      border: "hover:border-[#7ec8db]",
+      card: "bg-[#00244B]",
+      hero: "from-[#00244B] to-[#002E5A]",
+      badge: "bg-[#d9e2ec]",
+      badgeText: "text-[#00244B]",
+      label: "text-[#9fb3c8]",
+      border: "hover:border-[#bcccdc]",
     },
   },
   {
-    range: [8, 10], // Part III: Indirect Channels — slate blue
+    range: [8, 10], // Part III: Indirect Channels — medium navy-slate
     colors: {
-      card: "bg-[#1e3a5f]",
-      hero: "from-[#1e3a5f] to-[#2a4f7a]",
-      badge: "bg-[#c5d5e8]",
-      badgeText: "text-[#1e3a5f]",
-      label: "text-[#8baac8]",
-      border: "hover:border-[#8baac8]",
+      card: "bg-[#002D5E]",
+      hero: "from-[#002D5E] to-[#00376E]",
+      badge: "bg-[#d9e2ec]",
+      badgeText: "text-[#002D5E]",
+      label: "text-[#bcccdc]",
+      border: "hover:border-[#bcccdc]",
     },
   },
   {
-    range: [11, 13], // Part IV: Future — muted steel
+    range: [11, 13], // Part IV: Future — gray-navy
     colors: {
-      card: "bg-[#3d5474]",
-      hero: "from-[#3d5474] to-[#4e6888]",
-      badge: "bg-[#dce4ed]",
-      badgeText: "text-[#3d5474]",
-      label: "text-[#b8c9db]",
-      border: "hover:border-[#b8c9db]",
+      card: "bg-[#00336B]",
+      hero: "from-[#00336B] to-[#003D7C]",
+      badge: "bg-[#e2e8f0]",
+      badgeText: "text-[#00336B]",
+      label: "text-[#d9e2ec]",
+      border: "hover:border-[#d9e2ec]",
     },
   },
 ];

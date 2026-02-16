@@ -5,6 +5,7 @@ import {
   getAllChapters,
   getChapterSections,
   extractVignette,
+  extractIntroTitle,
 } from "@/lib/chapters";
 import { getPartColors } from "@/lib/part-colors";
 import Link from "next/link";
@@ -40,8 +41,11 @@ export default async function ChapterPage({ params }: Props) {
   const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
   const colors = getPartColors(chapter.meta.number);
 
-  const vignetteResult = extractVignette(chapter.content);
-  const displayContent = vignetteResult ? vignetteResult.contentWithout : chapter.content;
+  // Extract intro title first, then vignette from remaining content
+  const introTitleResult = extractIntroTitle(chapter.content);
+  const afterTitle = introTitleResult ? introTitleResult.contentWithout : chapter.content;
+  const vignetteResult = extractVignette(afterTitle);
+  const displayContent = vignetteResult ? vignetteResult.contentWithout : afterTitle;
   const sections = getChapterSections(displayContent);
 
   return (
@@ -80,6 +84,13 @@ export default async function ChapterPage({ params }: Props) {
       <article className="flex-1">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 md:py-14">
           <TableOfContents sections={sections} />
+
+          {/* Intro title — standalone chapter title like "The Technology Stack That Powers Distribution" */}
+          {introTitleResult && (
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-text-primary mt-8 mb-6">
+              {introTitleResult.introTitle}
+            </h2>
+          )}
 
           {/* Vignette callout */}
           {vignetteResult && (

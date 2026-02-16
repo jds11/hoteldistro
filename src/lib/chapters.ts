@@ -54,6 +54,36 @@ export function getAllChapters(): ChapterMeta[] {
     .sort((a, b) => a.number - b.number);
 }
 
+/**
+ * Extract a standalone intro title — a non-numbered, non-structural h2
+ * that appears before the first numbered section or Opening Vignette.
+ * e.g. "The Technology Stack That Powers Distribution" in Ch2.
+ * Returns the title text and content with the heading removed.
+ */
+export function extractIntroTitle(content: string): { introTitle: string; contentWithout: string } | null {
+  const skip = /^##\s+(Opening Vignette|Learning Objectives|Key Terms|References|Discussion Questions|\d)/;
+  const lines = content.split("\n");
+
+  for (let i = 0; i < lines.length; i++) {
+    const match = lines[i].match(/^##\s+(.+)/);
+    if (!match) continue;
+    // If first h2 is structural/numbered, no intro title
+    if (skip.test(lines[i])) return null;
+    // Found an intro title — also remove trailing separator (---) if present
+    const title = match[1].trim();
+    let removeEnd = i + 1;
+    // Skip blank lines and a single --- after the heading
+    let j = i + 1;
+    while (j < lines.length && lines[j].trim() === "") j++;
+    if (j < lines.length && lines[j].trim() === "---") {
+      removeEnd = j + 1;
+    }
+    const contentWithout = [...lines.slice(0, i), ...lines.slice(removeEnd)].join("\n");
+    return { introTitle: title, contentWithout };
+  }
+  return null;
+}
+
 export function extractVignette(content: string): { vignette: string; contentWithout: string } | null {
   // Match "## Opening Vignette", "### Opening Vignette", or "## X.X Opening Vignette: ..."
   const vignetteMatch = content.match(/^(#{2,3})\s+(?:\d+\.\d+\s+)?Opening Vignette[^\n]*\n/m);
