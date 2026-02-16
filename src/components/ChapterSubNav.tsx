@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { ChapterMeta, ChapterSection } from "@/lib/chapters";
 
@@ -13,30 +13,11 @@ interface Props {
 export default function ChapterSubNav({ current, chapters, sections }: Props) {
   const [chapOpen, setChapOpen] = useState(false);
   const [tocOpen, setTocOpen] = useState(false);
-  const [navHidden, setNavHidden] = useState(false);
-  const lastScrollY = useRef(0);
 
   const closeAll = () => { setChapOpen(false); setTocOpen(false); };
 
-  useEffect(() => {
-    const onScroll = () => {
-      const y = window.scrollY;
-      const delta = y - lastScrollY.current;
-      if (delta > 2 && y > 100) {
-        setNavHidden(true);
-      } else if (delta < -2) {
-        setNavHidden(false);
-      }
-      lastScrollY.current = y;
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <div className={`sticky z-40 bg-white/95 backdrop-blur-md border-b border-border/50 transition-all duration-300 ${
-      navHidden ? "top-0" : "top-14"
-    }`}>
+    <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-border/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-11 gap-4">
           {/* Chapter selector */}
