@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const links = [
   { href: "/", label: "Chapters" },
@@ -16,17 +16,34 @@ export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const lastScrollY = useRef(0);
   const isChapter = pathname.startsWith("/chapters/");
   const isHome = pathname === "/";
 
   useEffect(() => {
-    // On pages with hero sections (home + chapters), fade in title after scrolling past hero
     const hasHero = isHome || isChapter;
-    if (!hasHero) {
-      setScrolled(true);
-      return;
-    }
-    const onScroll = () => setScrolled(window.scrollY > 300);
+
+    const onScroll = () => {
+      const y = window.scrollY;
+
+      // Title fade-in after hero
+      if (hasHero) {
+        setScrolled(y > 300);
+      }
+
+      // Hide/show nav on chapter pages based on scroll direction
+      if (isChapter && y > 200) {
+        setHidden(y > lastScrollY.current && y - lastScrollY.current > 5);
+      } else {
+        setHidden(false);
+      }
+
+      lastScrollY.current = y;
+    };
+
+    if (!hasHero) setScrolled(true);
+
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -35,9 +52,11 @@ export default function Nav() {
   const showTitle = scrolled || (!isHome && !isChapter);
 
   return (
-    <header className={`sticky top-0 z-50 backdrop-blur-md border-b ${
-      isChapter ? "bg-white/95 border-border/50" : "bg-white/90 border-border"
-    }`}>
+    <header
+      className={`sticky top-0 z-50 backdrop-blur-md border-b transition-transform duration-300 ${
+        isChapter ? "bg-white/95 border-border/50" : "bg-white/90 border-border"
+      } ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+    >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <svg className="w-7 h-7 text-brand-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
