@@ -20,14 +20,19 @@ export default function Nav() {
   const isHome = pathname === "/";
 
   useEffect(() => {
-    if (!isHome) return;
+    // On pages with hero sections (home + chapters), fade in title after scrolling past hero
+    const hasHero = isHome || isChapter;
+    if (!hasHero) {
+      setScrolled(true);
+      return;
+    }
     const onScroll = () => setScrolled(window.scrollY > 300);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isHome]);
+  }, [isHome, isChapter]);
 
-  const showTitle = !isHome || scrolled;
+  const showTitle = scrolled || (!isHome && !isChapter);
 
   return (
     <header className={`sticky top-0 z-50 backdrop-blur-md border-b ${
