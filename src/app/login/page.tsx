@@ -54,7 +54,7 @@ function LoginForm() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Access code"
-              className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-text-primary
+              className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-base text-text-primary
                          focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent
                          placeholder:text-text-muted"
               autoFocus

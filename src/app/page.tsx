@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-24 md:py-28">
           <p className="text-brand-600 text-sm font-semibold tracking-wide mb-5">
             NYU Tisch Center for Hospitality
           </p>
