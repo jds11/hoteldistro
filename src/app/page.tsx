@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllChapters } from "@/lib/chapters";
 import { getPartColors } from "@/lib/part-colors";
+import glossaryTerms from "@/lib/glossary-data.json";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -33,7 +34,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="mt-6 md:mt-5 text-text-secondary text-base md:text-lg max-w-lg leading-relaxed">
-            14 chapters on strategy, technology, and the channels that connect hotels to guests — written by industry practitioners for the next generation of hospitality leaders.
+            {chapters.length} chapters on strategy, technology, and the channels that connect hotels to guests — written by industry practitioners for the next generation of hospitality leaders.
           </p>
           <div className="mt-10 md:mt-8 flex flex-wrap gap-3">
             <Link
@@ -116,7 +117,7 @@ export default function Home() {
               Learn more
             </h2>
             <p className="text-brand-300 mb-8 max-w-md mx-auto text-sm leading-relaxed">
-              183 industry terms, insights from leading sources, and the people behind the book.
+              {glossaryTerms.length} industry terms, insights from leading sources, and the people behind the book.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Link href="/glossary" className="px-6 py-3 bg-white text-brand-900 font-semibold text-sm rounded-full hover:bg-brand-50 transition-colors">
