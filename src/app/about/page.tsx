@@ -120,16 +120,15 @@ export default function AboutPage() {
           </h2>
           <div className="bg-white border border-border rounded-lg p-6 sm:p-8 text-[15px] text-text-secondary leading-relaxed space-y-4">
             <p>
-              This textbook would not exist without the generosity of the many industry leaders who have
-              shared their time, expertise, and stories with our students at NYU. The guest speakers who
-              have joined our Distribution &amp; Demand Management class over the years have brought the
-              material to life in ways no textbook alone ever could — and their insights are woven
-              throughout these pages.
+              This textbook exists because of the industry leaders who have generously shared their time,
+              expertise, and stories with our students at NYU. The guest speakers who have joined our
+              Distribution &amp; Demand Management class over the years brought the material to life in
+              ways no textbook could on its own — their insights are woven throughout these pages.
             </p>
             <p>
               We are especially grateful to <strong className="text-text-primary">Dr. Nicolas Graf</strong>,
               Dean of the NYU Jonathan M. Tisch Center for Hospitality, whose leadership and support made
-              this course — and this textbook — possible. We also owe a deep debt to{" "}
+              both the course and this textbook possible. We owe a great deal to{" "}
               <strong className="text-text-primary">Samantha Shankman</strong>, whose early contributions
               to the writing helped shape the foundation of this work, and to{" "}
               <strong className="text-text-primary">Dr. Bill Carroll</strong> and{" "}
@@ -137,13 +136,13 @@ export default function AboutPage() {
               hospitality distribution inspired us to bring this subject into the classroom.
             </p>
             <p>
-              More broadly, we are grateful to all those who have positively influenced us throughout our
-              careers in this industry. Your mentorship, collaboration, and willingness to push the
-              boundaries of what hospitality can be have made us better practitioners and better educators.
+              We are also grateful to everyone who has influenced us throughout our careers — mentors,
+              collaborators, and those who continually push the boundaries of what hospitality can be.
+              You&apos;ve made us better practitioners and better educators.
             </p>
             <p>
-              Finally, we thank our families, whose love and support have allowed us to take on the pursuit
-              of sharing our professional passion with the next generation. This work is for them, too.
+              And to our families: thank you for the love and support that made it possible to pursue
+              sharing our professional passion with the next generation. This work is for you, too.
             </p>
           </div>
         </section>
