@@ -28,7 +28,7 @@ SRC = "/Users/jason/Documents/Technology/Personal AI Bots/dotmatrix/textbook/cha
 DEST = "/Users/jason/Documents/Technology/Personal AI Bots/gilfoyle/hoteldistro/src/content/chapters"
 
 chapters = [
-    (1, "distribution-101", "Distribution 101 — The Ecosystem", "chapter-01-distribution-101.md"),
+    (1, "distribution-101", "Distribution 101", "chapter-01-distribution-101.md"),
     (2, "hotel-technology", "Hotel Technology", "chapter-02-hotel-technology.md"),
     (3, "value-of-a-guest", "The Value of a Guest", "chapter-03-value-of-a-guest.md"),
     (4, "digital-direct", "Digital Direct", "chapter-04-digital-direct.md"),
@@ -59,6 +59,9 @@ for num, slug, title, filename in chapters:
         start += 1
 
     content = "".join(lines[start:])
+    # Strip NYU header block if present
+    import re as _re
+    content = _re.sub(r'^\s*\*\*Hospitality Distribution.*?(?=\n## )', '', content, flags=_re.DOTALL)
     frontmatter = f'---\nnumber: {num}\ntitle: "{title}"\n---\n\n'
 
     dest_path = os.path.join(DEST, f"{slug}.mdx")

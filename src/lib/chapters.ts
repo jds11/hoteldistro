@@ -5,19 +5,19 @@ import matter from "gray-matter";
 const CHAPTERS_DIR = path.join(process.cwd(), "src/content/chapters");
 
 const DESCRIPTIONS: Record<string, string> = {
-  "distribution-101": "The foundational map — what distribution means, how it evolved from roadside signs to algorithmic pricing, and who the key players are today.",
-  "hotel-technology": "PMS, CRS, channel managers, RMS, and the integration challenge — the complete technology stack powering modern hotel distribution.",
-  "value-of-a-guest": "Customer lifetime value, Net RevPAR, the true cost of acquisition, and why not all bookings are created equal.",
-  "digital-direct": "Brand.com strategy, SEO/SEM, booking engines, rate guarantees, and the economics of direct vs. indirect bookings.",
-  "group-bookings": "Group segments, displacement analysis, contract negotiations, and how digital platforms are transforming meetings & events.",
-  "voice-and-walk-in": "Call centers as distribution channels, IVR technology, messaging platforms, and the front desk as a sales channel.",
-  "loyalty-and-personalization": "Program structures, the financial architecture of points, personalization engines, and the future of guest loyalty.",
-  "otas-deep-dive": "Agency vs. merchant models, the Booking/Expedia duopoly, ranking algorithms, rate parity, and managing OTA relationships.",
-  "wholesale-deep-dive": "Bed banks, net rates, rate leakage, B2B distribution chains, and the explosive growth of wholesale post-COVID.",
-  "metasearch-deep-dive": "Google Hotels, Trivago, CPC vs. CPA bidding, rate feed accuracy, and metasearch as a direct booking weapon.",
-  "sharing-economy": "Airbnb's impact on hotels, alternative accommodations, regulatory battles, and how the industry is fighting back.",
-  "social-media-super-apps-ai": "Social commerce, super apps, generative AI in travel search, conversational interfaces, and ethical considerations.",
-  "future-tech-stack": "Composable architecture, unified commerce, agentic AI, IoT, cybersecurity, and distribution careers in 2030.",
+  "distribution-101": "The channels that connect hotels to guests — from GDS and OTAs to brand.com — and the economics behind every booking path.",
+  "hotel-technology": "PMS, CRS, channel managers, RMS, booking engines, and the integration challenges of running a modern hotel tech stack.",
+  "value-of-a-guest": "Customer lifetime value, Net RevPAR, acquisition costs, guest segmentation, and why not all bookings are created equal.",
+  "digital-direct": "The direct booking wars, brand.com optimization, SEO/SEM strategy, rate guarantees, and the fight to reduce OTA dependence.",
+  "group-bookings": "Corporate meetings, conventions, SMERF — displacement analysis, contract negotiations, and digital platforms reshaping group sales.",
+  "voice-and-walk-in": "Call centers, IVR systems, messaging channels, and walk-in strategy — where high-touch service meets complex, high-value reservations.",
+  "loyalty-and-personalization": "Points programs as multibillion-dollar ecosystems — Marriott Bonvoy, Hilton Honors, Hyatt — and the shift toward AI-driven personalization.",
+  "otas-deep-dive": "Inside the Booking/Expedia duopoly — commission models, ranking algorithms, rate parity battles, and the billboard effect debate.",
+  "wholesale-deep-dive": "Bed banks, net rates, B2B supply chains, and the rate leakage problem that costs hotels millions in lost revenue.",
+  "metasearch-deep-dive": "Google Hotel Ads, Trivago, CPC vs. CPA bidding, and how metasearch became the direct booking channel hotels didn't expect.",
+  "sharing-economy": "Airbnb's rise to 7.7 million listings, its impact on hotel competitive sets, and how the industry is fighting back.",
+  "social-media-super-apps-ai": "TikTok-driven bookings, WeChat super apps, generative AI trip planners, and the collapse of the traditional search funnel.",
+  "future-tech-stack": "Composable architecture, agentic AI, cybersecurity after the Marriott breach, and the careers emerging in distribution technology.",
 };
 
 export interface ChapterMeta {
