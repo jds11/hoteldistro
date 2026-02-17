@@ -35,12 +35,13 @@ chapters = [
     (5, "group-bookings", "Group Bookings", "chapter-05-group-bookings.md"),
     (6, "voice-and-walk-in", "Voice & Walk-In", "chapter-06-voice-and-walk-in.md"),
     (7, "loyalty-and-personalization", "Loyalty & Personalization", "chapter-07-loyalty-and-personalization.md"),
-    (8, "otas-deep-dive", "OTAs Deep Dive", "chapter-08-otas-deep-dive.md"),
-    (9, "wholesale-deep-dive", "Wholesale Deep Dive", "chapter-09-wholesale-deep-dive.md"),
-    (10, "metasearch-deep-dive", "Metasearch Deep Dive", "chapter-10-metasearch-deep-dive.md"),
-    (11, "sharing-economy", "The Sharing Economy", "chapter-11-sharing-economy.md"),
-    (12, "social-media-super-apps-ai", "Social Media, Super Apps & AI", "chapter-12-social-media-super-apps-ai.md"),
-    (13, "future-tech-stack", "The Future Tech Stack", "chapter-13-future-tech-stack.md"),
+    (8, "gds-travel-agents-managed-travel", "GDS, Travel Agents & Managed Travel", "chapter-08-gds-travel-agents-managed-travel.md"),
+    (9, "otas-deep-dive", "OTAs Deep Dive", "chapter-09-otas-deep-dive.md"),
+    (10, "wholesale-deep-dive", "Wholesale Deep Dive", "chapter-10-wholesale-deep-dive.md"),
+    (11, "metasearch-deep-dive", "Metasearch Deep Dive", "chapter-11-metasearch-deep-dive.md"),
+    (12, "sharing-economy", "The Sharing Economy", "chapter-12-sharing-economy.md"),
+    (13, "social-media-super-apps-ai", "Social Media, Super Apps & AI", "chapter-13-social-media-super-apps-ai.md"),
+    (14, "future-tech-stack", "The Future Tech Stack", "chapter-14-future-tech-stack.md"),
 ]
 
 os.makedirs(DEST, exist_ok=True)

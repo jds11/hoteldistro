@@ -12,6 +12,7 @@ const DESCRIPTIONS: Record<string, string> = {
   "group-bookings": "Corporate meetings, conventions, SMERF — displacement analysis, contract negotiations, and digital platforms reshaping group sales.",
   "voice-and-walk-in": "Call centers, IVR systems, messaging channels, and walk-in strategy — where high-touch service meets complex, high-value reservations.",
   "loyalty-and-personalization": "Points programs as multibillion-dollar ecosystems — Marriott Bonvoy, Hilton Honors, Hyatt — and the shift toward AI-driven personalization.",
+  "gds-travel-agents-managed-travel": "The GDS architecture, the travel advisor renaissance (Fora, Virtuoso), TMCs, corporate rate programs, and NDC's threat to the status quo.",
   "otas-deep-dive": "Inside the Booking/Expedia duopoly — commission models, ranking algorithms, rate parity battles, and the billboard effect debate.",
   "wholesale-deep-dive": "Bed banks, net rates, B2B supply chains, and the rate leakage problem that costs hotels millions in lost revenue.",
   "metasearch-deep-dive": "Google Hotel Ads, Trivago, CPC vs. CPA bidding, and how metasearch became the direct booking channel hotels didn't expect.",

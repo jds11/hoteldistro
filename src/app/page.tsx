@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const parts = [
   { title: "Part I", subtitle: "Introduction", range: [1, 3] },
   { title: "Part II", subtitle: "Direct Channels", range: [4, 7] },
-  { title: "Part III", subtitle: "Indirect Channels", range: [8, 10] },
-  { title: "Part IV", subtitle: "Future of Distribution", range: [11, 13] },
+  { title: "Part III", subtitle: "Indirect Channels", range: [8, 11] },
+  { title: "Part IV", subtitle: "Future of Distribution", range: [12, 14] },
 ];
 
 export default function Home() {

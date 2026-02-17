@@ -41,7 +41,7 @@ const PART_DEFS: { range: [number, number]; colors: PartColor }[] = [
     },
   },
   {
-    range: [8, 10], // Part III: Indirect Channels — medium navy-slate
+    range: [8, 11], // Part III: Indirect Channels — medium navy-slate
     colors: {
       card: "bg-[#002D5E]",
       hero: "from-[#002D5E] to-[#00376E]",
@@ -55,7 +55,7 @@ const PART_DEFS: { range: [number, number]; colors: PartColor }[] = [
     },
   },
   {
-    range: [11, 13], // Part IV: Future — gray-navy
+    range: [12, 14], // Part IV: Future — gray-navy
     colors: {
       card: "bg-[#00336B]",
       hero: "from-[#00336B] to-[#003D7C]",
