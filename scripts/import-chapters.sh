@@ -35,7 +35,7 @@ chapters = [
     (5, "group-bookings", "Group Bookings", "chapter-05-group-bookings.md"),
     (6, "voice-and-walk-in", "Voice & Walk-In", "chapter-06-voice-and-walk-in.md"),
     (7, "loyalty-and-personalization", "Loyalty & Personalization", "chapter-07-loyalty-and-personalization.md"),
-    (8, "gds-travel-agents-managed-travel", "GDS, Travel Agents & Managed Travel", "chapter-08-gds-travel-agents-managed-travel.md"),
+    (8, "gds-travel-agents-managed-travel", "Global Distribution System", "chapter-08-gds-travel-agents-managed-travel.md"),
     (9, "otas-deep-dive", "OTAs Deep Dive", "chapter-09-otas-deep-dive.md"),
     (10, "wholesale-deep-dive", "Wholesale Deep Dive", "chapter-10-wholesale-deep-dive.md"),
     (11, "metasearch-deep-dive", "Metasearch Deep Dive", "chapter-11-metasearch-deep-dive.md"),
