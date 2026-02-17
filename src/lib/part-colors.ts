@@ -5,6 +5,9 @@ export interface PartColor {
   badgeText: string; // badge text color
   label: string;     // "Chapter X" label color in hero
   border: string;    // card border on hover
+  text: string;      // colored text for chapter number
+  borderLeft: string; // left border accent
+  pill: string;      // pill badge bg + text
 }
 
 // Each Part has a distinct shade — all chapters in a Part share the same color
@@ -18,6 +21,9 @@ const PART_DEFS: { range: [number, number]; colors: PartColor }[] = [
       badgeText: "text-[#001E3E]",
       label: "text-[#9fb3c8]",
       border: "hover:border-[#9fb3c8]",
+      text: "text-[#001E3E]",
+      borderLeft: "border-l-[#001E3E]",
+      pill: "bg-[#001E3E]/10 text-[#001E3E]",
     },
   },
   {
@@ -29,6 +35,9 @@ const PART_DEFS: { range: [number, number]; colors: PartColor }[] = [
       badgeText: "text-[#00244B]",
       label: "text-[#9fb3c8]",
       border: "hover:border-[#bcccdc]",
+      text: "text-[#00244B]",
+      borderLeft: "border-l-[#00244B]",
+      pill: "bg-[#00244B]/10 text-[#00244B]",
     },
   },
   {
@@ -40,6 +49,9 @@ const PART_DEFS: { range: [number, number]; colors: PartColor }[] = [
       badgeText: "text-[#002D5E]",
       label: "text-[#bcccdc]",
       border: "hover:border-[#bcccdc]",
+      text: "text-[#002D5E]",
+      borderLeft: "border-l-[#002D5E]",
+      pill: "bg-[#002D5E]/10 text-[#002D5E]",
     },
   },
   {
@@ -51,6 +63,9 @@ const PART_DEFS: { range: [number, number]; colors: PartColor }[] = [
       badgeText: "text-[#00336B]",
       label: "text-[#d9e2ec]",
       border: "hover:border-[#d9e2ec]",
+      text: "text-[#00336B]",
+      borderLeft: "border-l-[#00336B]",
+      pill: "bg-[#00336B]/10 text-[#00336B]",
     },
   },
 ];

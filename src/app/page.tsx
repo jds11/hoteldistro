@@ -80,28 +80,27 @@ export default function Home() {
                 </h2>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="space-y-0 border-t border-border">
                 {partChapters.map((ch) => {
                   const colors = getPartColors(ch.number);
                   return (
                     <Link
                       key={ch.slug}
                       href={`/chapters/${ch.slug}`}
-                      className={`group relative bg-white rounded-2xl border border-border overflow-hidden hover:shadow-xl hover:shadow-brand-100/50 transition-all duration-300 hover:-translate-y-0.5 ${colors.border}`}
+                      className="flex items-center gap-5 py-5 border-b border-border hover:bg-white/60 transition-colors px-4 -mx-4 group"
                     >
-                      <div className={`h-24 ${colors.card} flex items-end p-4`}>
-                        <span className="text-white/30 text-4xl font-bold tracking-tight">
-                          {String(ch.number).padStart(2, "0")}
-                        </span>
-                      </div>
-                      <div className="p-5">
-                        <h3 className="font-bold text-text-primary text-[15px] leading-snug group-hover:text-brand-700 transition-colors">
+                      <span className={`text-3xl font-bold tracking-tight ${colors.text} shrink-0 w-12`}>
+                        {String(ch.number).padStart(2, "0")}
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-bold text-text-primary text-lg leading-snug group-hover:text-brand-700 transition-colors">
                           {ch.title}
                         </h3>
-                        <p className="text-sm text-text-muted mt-2 leading-relaxed line-clamp-2">
-                          {ch.description}
-                        </p>
+                        <p className="text-sm text-text-muted mt-1 leading-relaxed">{ch.description}</p>
                       </div>
+                      <svg className="w-5 h-5 text-text-muted shrink-0 group-hover:text-brand-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </Link>
                   );
                 })}
@@ -111,7 +110,7 @@ export default function Home() {
         })}
 
         {/* Bottom CTA */}
-        <section className="py-16 border-t border-border">
+        <section className="py-16">
           <div className="bg-brand-900 rounded-2xl p-8 md:p-12 text-white text-center">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">
               Learn more
