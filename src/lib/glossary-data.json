@@ -21,7 +21,7 @@
   },
   {
     "term": "Agentic AI",
-    "definition": "Artificial intelligence systems capable of autonomous action — not just generating recommendations but executing tasks such as adjusting rates, booking reservations, or negotiating contracts on behalf of humans.",
+    "definition": "Artificial intelligence systems capable of autonomous action \u2014 not just generating recommendations but executing tasks such as adjusting rates, booking reservations, or negotiating contracts on behalf of humans.",
     "chapters": "13"
   },
   {
@@ -97,7 +97,7 @@
   {
     "term": "BAR (Best Available Rate)",
     "definition": "The lowest unrestricted retail rate available to consumers through the hotel's direct channels.",
-    "chapters": "9"
+    "chapters": "8, 9"
   },
   {
     "term": "Bed Bank",
@@ -118,6 +118,11 @@
     "term": "Billboard Effect",
     "definition": "The hypothesis that a hotel's listing on an OTA generates incremental awareness and traffic to the hotel's own website, resulting in direct bookings.",
     "chapters": "3, 4, 8"
+  },
+  {
+    "term": "Bleisure Travel",
+    "definition": "The practice of extending a business trip to include leisure days, blending professional and personal travel in a single itinerary.",
+    "chapters": "8"
   },
   {
     "term": "Blockchain",
@@ -152,7 +157,7 @@
   {
     "term": "Central Reservation System (CRS)",
     "definition": "A centralized system that manages hotel inventory, rates, and reservations across all distribution channels.",
-    "chapters": "1, 2"
+    "chapters": "1, 2, 8"
   },
   {
     "term": "Channel Manager",
@@ -217,6 +222,11 @@
   {
     "term": "Connected Trip",
     "definition": "Booking Holdings' strategy to bundle multiple travel products into a single, integrated booking experience.",
+    "chapters": "8"
+  },
+  {
+    "term": "Consortia (Travel Consortia)",
+    "definition": "Networks of travel agencies or advisors (e.g., Virtuoso, Signature, Internova) that aggregate purchasing power to negotiate preferred rates and amenities with hotels on behalf of their members.",
     "chapters": "8"
   },
   {
@@ -325,6 +335,11 @@
     "chapters": "8"
   },
   {
+    "term": "Duty of Care",
+    "definition": "A corporation's legal and ethical obligation to monitor and protect the safety of its traveling employees, typically fulfilled through TMC-provided traveler tracking and emergency assistance systems.",
+    "chapters": "8"
+  },
+  {
     "term": "Dynamic Pricing",
     "definition": "The practice of adjusting prices in real time based on demand, competition, and other market signals.",
     "chapters": "12"
@@ -340,13 +355,18 @@
     "chapters": "7"
   },
   {
+    "term": "EDIFACT",
+    "definition": "Electronic Data Interchange for Administration, Commerce, and Transport \u2014 the legacy messaging standard underlying traditional GDS airline transactions, now being supplemented by NDC.",
+    "chapters": "8"
+  },
+  {
     "term": "Elite Status",
     "definition": "Tiered recognition within a loyalty program earned through qualifying stays or spending, unlocking escalating benefits.",
     "chapters": "7"
   },
   {
     "term": "Emotional Loyalty",
-    "definition": "Guest attachment to a brand driven by positive experiences, personal connection, and trust — beyond economic incentives.",
+    "definition": "Guest attachment to a brand driven by positive experiences, personal connection, and trust \u2014 beyond economic incentives.",
     "chapters": "7"
   },
   {
@@ -365,6 +385,11 @@
     "chapters": "7"
   },
   {
+    "term": "Familiarization (FAM) Trip",
+    "definition": "An organized visit that invites travel advisors to experience a hotel property firsthand, enabling more informed and authentic client recommendations.",
+    "chapters": "8"
+  },
+  {
     "term": "FIT (Free Independent Traveler)",
     "definition": "An individual traveler booking through the wholesale channel, as opposed to a group.",
     "chapters": "9"
@@ -377,7 +402,7 @@
   {
     "term": "GDS (Global Distribution System)",
     "definition": "Electronic platform connecting travel suppliers with travel agents and corporate buyers (e.g., Amadeus, Sabre, Travelport).",
-    "chapters": "1"
+    "chapters": "1, 8"
   },
   {
     "term": "Generative AI",
@@ -490,6 +515,11 @@
     "chapters": "12"
   },
   {
+    "term": "Last Room Availability (LRA)",
+    "definition": "A corporate rate contract provision requiring a hotel to honor the negotiated rate as long as any standard room remains available for sale, even during high-demand periods.",
+    "chapters": "8"
+  },
+  {
     "term": "Lifetime Value (LTV)",
     "definition": "See Customer Lifetime Value (CLV).",
     "chapters": "7"
@@ -506,7 +536,7 @@
   },
   {
     "term": "Loyalty Program Contribution Fee",
-    "definition": "The percentage of room revenue that franchisees pay to fund the brand's loyalty program, typically 4.5–6% of gross room revenue.",
+    "definition": "The percentage of room revenue that franchisees pay to fund the brand's loyalty program, typically 4.5\u20136% of gross room revenue.",
     "chapters": "7"
   },
   {
@@ -560,6 +590,11 @@
     "chapters": "1, 3, 4"
   },
   {
+    "term": "New Distribution Capability (NDC)",
+    "definition": "An XML-based data transmission standard developed by IATA that allows airlines to distribute rich content and personalized offers directly to travel sellers, bypassing traditional GDS infrastructure.",
+    "chapters": "8"
+  },
+  {
     "term": "Night Audit",
     "definition": "The end-of-day process of reconciling a hotel's financial transactions, traditionally run overnight.",
     "chapters": "2"
@@ -580,13 +615,18 @@
     "chapters": "2"
   },
   {
+    "term": "Online Booking Tool (OBT)",
+    "definition": "A self-service platform provided by TMCs that allows corporate travelers to search, compare, and book travel within their company's policy guidelines. Also called a self-booking tool.",
+    "chapters": "8"
+  },
+  {
     "term": "OTA (Online Travel Agency)",
     "definition": "A third-party online platform that sells hotel rooms to consumers (e.g., Booking.com, Expedia).",
     "chapters": "1, 4, 8"
   },
   {
     "term": "OTA Commission",
-    "definition": "The fee paid by a hotel to an online travel agency for each booking, typically 15–25% of room revenue.",
+    "definition": "The fee paid by a hotel to an online travel agency for each booking, typically 15\u201325% of room revenue.",
     "chapters": "3"
   },
   {
@@ -601,7 +641,7 @@
   },
   {
     "term": "PCI DSS",
-    "definition": "Payment Card Industry Data Security Standard — security standards to protect credit card data during processing and storage.",
+    "definition": "Payment Card Industry Data Security Standard \u2014 security standards to protect credit card data during processing and storage.",
     "chapters": "2"
   },
   {
@@ -676,8 +716,8 @@
   },
   {
     "term": "Request for Proposal (RFP)",
-    "definition": "A formal document soliciting hotel proposals for a group event, specifying dates, room needs, and budget.",
-    "chapters": "5"
+    "definition": "A formal document soliciting hotel proposals for a group event or corporate rate program, specifying dates, room needs, and budget.",
+    "chapters": "5, 8"
   },
   {
     "term": "Retention Rate",
@@ -746,7 +786,7 @@
   },
   {
     "term": "SMERF",
-    "definition": "Social, Military, Educational, Religious, and Fraternal groups — a budget-conscious but reliable group subsegment.",
+    "definition": "Social, Military, Educational, Religious, and Fraternal groups \u2014 a budget-conscious but reliable group subsegment.",
     "chapters": "5"
   },
   {
@@ -785,9 +825,9 @@
     "chapters": "11"
   },
   {
-    "term": "Switch",
-    "definition": "Technology layer that translates data between hotel CRS systems and GDS platforms.",
-    "chapters": "1"
+    "term": "Switch/Aggregator",
+    "definition": "Technology intermediary that connects a hotel's CRS to multiple GDS networks and other distribution endpoints, translating data formats and streamlining connectivity.",
+    "chapters": "1, 8"
   },
   {
     "term": "Switching Costs",
@@ -811,8 +851,13 @@
   },
   {
     "term": "Travel Advisor",
-    "definition": "A professional providing personalized travel planning and booking services, earning commissions from suppliers.",
-    "chapters": "4"
+    "definition": "A professional who curates personalized travel experiences for clients, earning commissions from suppliers; distinct from the transactional \"travel agent\" model of previous decades.",
+    "chapters": "4, 8"
+  },
+  {
+    "term": "Travel Management Company (TMC)",
+    "definition": "A specialized firm that manages corporate travel programs end-to-end, including booking, policy enforcement, rate negotiation, duty of care, and expense management. Major TMCs include Amex GBT and BCD Travel.",
+    "chapters": "8"
   },
   {
     "term": "Two-Way Integration",

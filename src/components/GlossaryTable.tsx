@@ -22,12 +22,13 @@ const CHAPTER_SLUGS: Record<number, string> = {
   5: "group-bookings",
   6: "voice-and-walk-in",
   7: "loyalty-and-personalization",
-  8: "otas-deep-dive",
-  9: "wholesale-deep-dive",
-  10: "metasearch-deep-dive",
-  11: "sharing-economy",
-  12: "social-media-super-apps-ai",
-  13: "future-tech-stack",
+  8: "gds-travel-agents-managed-travel",
+  9: "otas-deep-dive",
+  10: "wholesale-deep-dive",
+  11: "metasearch-deep-dive",
+  12: "sharing-economy",
+  13: "social-media-super-apps-ai",
+  14: "future-tech-stack",
 };
 
 export default function GlossaryTable({ terms, anchors }: Props) {

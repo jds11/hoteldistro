@@ -7,7 +7,7 @@ import glossaryAnchors from "@/lib/glossary-anchors.json";
 
 export const metadata = { 
   title: "Glossary — Hotel Distribution",
-  description: "164 key terms and definitions from the hotel distribution industry, sourced from all 13 chapters of this comprehensive textbook."
+  description: "183 key terms and definitions from the hotel distribution industry, sourced from all 14 chapters of this comprehensive textbook."
 };
 
 export default function GlossaryPage() {
