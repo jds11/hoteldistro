@@ -37,7 +37,7 @@ chapters = [
     (7, "loyalty-and-personalization", "Loyalty & Personalization", "chapter-07-loyalty-and-personalization.md"),
     (8, "gds-travel-agents-managed-travel", "Global Distribution System", "chapter-08-gds-travel-agents-managed-travel.md"),
     (9, "otas-deep-dive", "Online Travel Agencies", "chapter-09-otas-deep-dive.md"),
-    (10, "wholesale-deep-dive", "Wholesale Distribution", "chapter-10-wholesale-deep-dive.md"),
+    (10, "wholesale-deep-dive", "Wholesale", "chapter-10-wholesale-deep-dive.md"),
     (11, "metasearch-deep-dive", "Metasearch", "chapter-11-metasearch-deep-dive.md"),
     (12, "sharing-economy", "The Sharing Economy", "chapter-12-sharing-economy.md"),
     (13, "social-media-super-apps-ai", "Social Media, Super Apps & AI", "chapter-13-social-media-super-apps-ai.md"),
