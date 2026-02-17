@@ -7,39 +7,66 @@
   },
   "ADR (Average Daily Rate)": {
     "1": "key-terms",
-    "4": "41-the-economics-of-direct-vs-indirect-bookings"
+    "2": "22-property-management-systems-pms-the-operational-backbone",
+    "3": "31-rethinking-revenue-why-not-all-bookings-are-created-equal",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "5": "51-the-group-segment-an-overview",
+    "6": "61-the-call-center-as-distribution-channel",
+    "7": "72-the-big-programs-a-comparative-analysis",
+    "8": "81-the-global-distribution-system-architecture-and-economics",
+    "12": "125-regulatory-battles-and-their-distribution-implications",
+    "14": "148-sustainability-and-distribution"
   },
   "Agency Model": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
-  },
-  "Agentic AI": {
-    "13": "131-social-commerce-and-travel-distribution"
-  },
-  "AI Hallucination": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
-  },
-  "AI Overviews (SGE)": {
-    "10": "101-how-wholesale-distribution-works",
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
-  },
-  "Algorithmic Bias": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
-  },
-  "Allotment": {
+    "1": "13-the-evolution-of-hotel-distribution-a-story-in-five-acts",
+    "7": "74-loyalty-as-distribution-strategy",
     "9": "91-the-ota-origin-story"
   },
+  "Agentic AI": {
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
+  },
+  "AI Hallucination": {
+    "13": "learning-objectives"
+  },
+  "AI Overviews (SGE)": {
+    "1": "13-the-evolution-of-hotel-distribution-a-story-in-five-acts",
+    "11": "learning-objectives",
+    "13": "key-terms",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
+  },
+  "Algorithmic Bias": {
+    "13": "learning-objectives",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
+  },
+  "Allotment": {
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
+    "10": "101-how-wholesale-distribution-works"
+  },
   "Alternative Accommodation": {
-    "11": "chapter-summary"
+    "1": "industry-spotlight-booking-holdings-vs-marriott-international-two-titans-two-models",
+    "5": "54-group-vs-transient-revenue-management-displacement-analysis",
+    "9": "93-the-duopoly-booking-holdings-vs-expedia-group",
+    "11": "chapter-summary",
+    "12": "learning-objectives"
   },
   "Ancillary Revenue": {
-    "3": "learning-objectives"
+    "3": "learning-objectives",
+    "4": "43-loyalty-programs-as-a-direct-booking-engine",
+    "5": "51-the-group-segment-an-overview",
+    "8": "83-the-modern-travel-advisor-fora-virtuoso-and-the-curation-model",
+    "10": "1010-the-growth-of-wholesale-20192024",
+    "13": "134-ai-powered-pricing-and-personalization"
   },
   "API (Application Programming Interface)": {
     "2": "key-terms",
-    "13": "opening-vignette"
+    "6": "64-messaging-channels-the-new-voice",
+    "10": "102-the-major-players-bed-banks-and-wholesale-aggregators",
+    "11": "111-what-is-metasearch",
+    "14": "key-terms"
   },
   "Asset-Light Model": {
-    "11": "111-what-is-metasearch"
+    "7": "72-the-big-programs-a-comparative-analysis",
+    "12": "industry-spotlight-marriott-homes-villasa-hotel-giant-enters-the-sharing-economy"
   },
   "Attrition": {
     "5": "learning-objectives"
@@ -48,55 +75,97 @@
     "5": "learning-objectives"
   },
   "Attribution": {
-    "3": "37-the-attribution-challenge"
+    "3": "37-the-attribution-challenge",
+    "6": "64-messaging-channels-the-new-voice",
+    "11": "117-performance-marketing-measuring-metasearch-roi",
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "Automatic Call Distribution (ACD)": {
     "6": "63-technology-infrastructure-ivr-call-routing-crs-integration-voice-analytics"
   },
   "B2B (Business-to-Business)": {
-    "9": "92-ota-business-models-agency-merchant-and-hybrid"
+    "2": "211-emerging-trends-the-future-of-hotel-technology",
+    "5": "56-the-rise-of-digital-group-booking-platforms",
+    "9": "92-ota-business-models-agency-merchant-and-hybrid",
+    "10": "key-terms",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "B2B2C (Business-to-Business-to-Consumer)": {
-    "9": "910-ota-strategies-post-covid"
+    "9": "910-ota-strategies-post-covid",
+    "10": "101-how-wholesale-distribution-works"
   },
   "BAR (Best Available Rate)": {
+    "2": "21-from-ledgers-to-the-cloud-a-brief-history-of-hotel-technology",
+    "3": "opening-vignette",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "5": "learning-objectives",
+    "6": "65-revenue-management-for-voice-and-walk-in-channels",
+    "7": "opening-vignette-the-invisible-architecture-of-recognition",
     "8": "83-the-modern-travel-advisor-fora-virtuoso-and-the-curation-model",
-    "9": "91-the-ota-origin-story"
+    "10": "101-how-wholesale-distribution-works",
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "Bed Bank": {
     "1": "opening-vignette",
-    "9": "94-commission-structures-and-negotiation"
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
+    "3": "35-guest-segmentation-understanding-who-books-and-why",
+    "4": "43-loyalty-programs-as-a-direct-booking-engine",
+    "9": "94-commission-structures-and-negotiation",
+    "10": "opening-vignette"
   },
   "Best Rate Guarantee (BRG)": {
     "4": "48-best-rate-guarantees"
   },
   "Bid Management": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "113-bidding-strategies-cpc-vs-cpa"
   },
   "Billboard Effect": {
+    "1": "references",
     "3": "learning-objectives",
     "4": "42-the-direct-booking-wars",
-    "8": "86-hotel-strategy-optimizing-the-gds-and-agent-channels"
+    "8": "86-hotel-strategy-optimizing-the-gds-and-agent-channels",
+    "9": "learning-objectives",
+    "10": "101-how-wholesale-distribution-works",
+    "11": "117-performance-marketing-measuring-metasearch-roi"
   },
   "Bleisure Travel": {
+    "5": "51-the-group-segment-an-overview",
     "8": "85-the-gds-under-pressure-ndc-and-the-future"
   },
   "Blockchain": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "learning-objectives"
   },
   "Booking Engine": {
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
     "2": "learning-objectives",
-    "4": "learning-objectives"
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "learning-objectives",
+    "6": "61-the-call-center-as-distribution-channel",
+    "9": "industry-spotlight-how-an-independent-hotel-optimized-its-ota-strategy",
+    "10": "107-negotiation-power-dynamics-who-has-leverage",
+    "11": "113-bidding-strategies-cpc-vs-cpa",
+    "13": "132-super-apps-travel-embedded-in-everything",
+    "14": "opening-vignette"
   },
   "Brand.com": {
     "1": "12-the-essence-of-hotel-distribution",
-    "4": "opening-vignette"
+    "2": "21-from-ledgers-to-the-cloud-a-brief-history-of-hotel-technology",
+    "3": "31-rethinking-revenue-why-not-all-bookings-are-created-equal",
+    "4": "opening-vignette",
+    "6": "61-the-call-center-as-distribution-channel",
+    "7": "74-loyalty-as-distribution-strategy",
+    "9": "industry-spotlight-how-an-independent-hotel-optimized-its-ota-strategy",
+    "10": "108-geographic-variation-wholesale-around-the-world",
+    "12": "126-can-hotels-compete-on-the-sharing-economys-terms",
+    "13": "134-ai-powered-pricing-and-personalization",
+    "14": "145-the-internet-of-things-iot-in-hotels"
   },
   "Breakage": {
     "7": "learning-objectives"
   },
   "Business Intelligence (BI)": {
-    "2": "26-business-intelligence-and-analytics-turning-data-into-decisions"
+    "2": "26-business-intelligence-and-analytics-turning-data-into-decisions",
+    "3": "31-rethinking-revenue-why-not-all-bookings-are-created-equal"
   },
   "Central Reservation Office (CRO)": {
     "6": "61-the-call-center-as-distribution-channel"
@@ -104,18 +173,35 @@
   "Central Reservation System (CRS)": {
     "1": "13-the-evolution-of-hotel-distribution-a-story-in-five-acts",
     "2": "learning-objectives",
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "4": "43-loyalty-programs-as-a-direct-booking-engine",
+    "6": "learning-objectives",
+    "7": "75-personalization-from-data-to-experience",
+    "8": "81-the-global-distribution-system-architecture-and-economics",
+    "11": "111-what-is-metasearch",
+    "14": "141-the-composable-technology-stack"
   },
   "Channel Manager": {
     "1": "15-why-this-matters-for-your-career",
-    "2": "opening-vignette"
+    "2": "opening-vignette",
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "10": "103-the-b2b-model-explained",
+    "11": "111-what-is-metasearch",
+    "14": "opening-vignette"
   },
   "Channel Mix": {
     "1": "learning-objectives",
-    "3": "34-net-revpar-the-metric-that-matters"
+    "2": "learning-objectives",
+    "3": "34-net-revpar-the-metric-that-matters",
+    "4": "411-case-study-the-lark-hotels-direct-booking-transformation",
+    "7": "discussion-questions",
+    "8": "discussion-questions",
+    "9": "learning-objectives",
+    "10": "108-geographic-variation-wholesale-around-the-world"
   },
   "Channel Shift": {
-    "3": "33-the-true-cost-of-guest-acquisition"
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "5": "51-the-group-segment-an-overview"
   },
   "Channel Switching": {
     "6": "key-terms"
@@ -124,111 +210,187 @@
     "5": "52-how-group-distribution-works"
   },
   "Closed User Group (CUG)": {
-    "9": "91-the-ota-origin-story"
+    "7": "74-loyalty-as-distribution-strategy",
+    "10": "109-managing-wholesale-contracts-auditing-and-rate-integrity",
+    "11": "116-the-blurring-line-between-metasearch-and-ota"
   },
   "Cloud-Native": {
     "2": "learning-objectives",
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "opening-vignette"
   },
   "Co-Branded Credit Card": {
+    "4": "43-loyalty-programs-as-a-direct-booking-engine",
     "7": "71-history-and-evolution-of-hotel-loyalty-programs"
   },
   "Commission": {
     "1": "13-the-evolution-of-hotel-distribution-a-story-in-five-acts",
+    "2": "29-payment-systems-pci-compliance-and-cybersecurity",
+    "3": "opening-vignette",
     "4": "opening-vignette",
-    "8": "opening-vignette-two-intermediaries-two-worlds"
+    "5": "51-the-group-segment-an-overview",
+    "6": "66-walk-in-guests-the-front-desk-as-sales-channel",
+    "7": "74-loyalty-as-distribution-strategy",
+    "8": "opening-vignette-two-intermediaries-two-worlds",
+    "9": "opening-vignette",
+    "10": "101-how-wholesale-distribution-works",
+    "11": "opening-vignette-the-4-return",
+    "12": "key-terms",
+    "13": "opening-vignette",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Comp Room Ratio": {
     "5": "learning-objectives"
   },
   "Competitive Set (Comp Set)": {
-    "11": "111-what-is-metasearch"
+    "2": "26-business-intelligence-and-analytics-turning-data-into-decisions",
+    "6": "industry-spotlight-voice-as-brand-experience-in-luxury-hospitality",
+    "12": "key-terms"
   },
   "Composable Architecture / Technology Stack": {
     "2": "21-from-ledgers-to-the-cloud-a-brief-history-of-hotel-technology",
     "13": "131-social-commerce-and-travel-distribution"
   },
   "Connected Trip": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "9": "93-the-duopoly-booking-holdings-vs-expedia-group"
   },
   "Consortia (Travel Consortia)": {
+    "7": "76-the-independent-hotel-loyalty-challenge",
     "8": "learning-objectives"
   },
   "Connectivity Partner": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "111-what-is-metasearch",
+    "12": "121-the-rise-of-the-sharing-economy-in-travel"
   },
   "Content Marketing": {
-    "4": "learning-objectives"
+    "4": "learning-objectives",
+    "7": "75-personalization-from-data-to-experience"
   },
   "Contracted Rate": {
-    "9": "91-the-ota-origin-story"
+    "5": "57-group-business-post-covid-recovery-and-transformation",
+    "10": "105-contracted-vs-dynamic-wholesale-rates"
   },
   "Convention and Visitors Bureau (CVB)": {
     "5": "51-the-group-segment-an-overview"
   },
   "Conversational Search": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "13": "133-generative-ai-and-the-transformation-of-travel-search"
   },
   "Conversion Rate (Voice)": {
-    "6": "key-terms"
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "44-technology-and-the-direct-booking-experience",
+    "6": "key-terms",
+    "9": "95-ota-ranking-algorithms-how-hotels-get-visibility",
+    "11": "112-the-major-players"
   },
   "Conversion Rate Optimization (CRO)": {
     "4": "44-technology-and-the-direct-booking-experience"
   },
   "Cost of Distribution": {
-    "1": "learning-objectives"
+    "1": "learning-objectives",
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings"
   },
   "CPA (Commission Per Acquisition)": {
-    "10": "101-how-wholesale-distribution-works"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "11": "112-the-major-players"
   },
   "CPC (Cost Per Click)": {
-    "10": "101-how-wholesale-distribution-works"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "45-seo-sem-and-metasearch-winning-the-search-battle",
+    "11": "112-the-major-players",
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "CRM (Customer Relationship Management)": {
+    "1": "15-why-this-matters-for-your-career",
     "2": "key-terms",
-    "7": "key-terms"
+    "3": "opening-vignette",
+    "4": "49-the-independent-hotel-challenge",
+    "6": "63-technology-infrastructure-ivr-call-routing-crs-integration-voice-analytics",
+    "7": "key-terms",
+    "11": "1110-the-future-of-metasearch",
+    "14": "opening-vignette"
   },
   "CRM Flywheel": {
     "3": "39-the-data-advantage-of-direct"
   },
   "Customer Lifetime Value (CLV)": {
+    "2": "chapter-summary",
     "3": "learning-objectives",
-    "4": "41-the-economics-of-direct-vs-indirect-bookings"
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "9": "93-the-duopoly-booking-holdings-vs-expedia-group"
   },
   "Cutoff Date": {
     "5": "learning-objectives",
-    "9": "91-the-ota-origin-story"
+    "10": "101-how-wholesale-distribution-works"
   },
   "Cvent": {
     "5": "learning-objectives"
   },
   "Cybersecurity": {
-    "13": "chapter-summary"
+    "2": "29-payment-systems-pci-compliance-and-cybersecurity",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "13": "chapter-summary",
+    "14": "opening-vignette"
   },
   "Data Portability": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "key-terms"
   },
   "Direct Booking": {
-    "4": "opening-vignette"
+    "1": "13-the-evolution-of-hotel-distribution-a-story-in-five-acts",
+    "2": "27-customer-relationship-management-crm-guest-data-and-personalization",
+    "3": "learning-objectives",
+    "4": "opening-vignette",
+    "5": "chapter-summary",
+    "6": "61-the-call-center-as-distribution-channel",
+    "7": "learning-objectives",
+    "8": "81-the-global-distribution-system-architecture-and-economics",
+    "9": "opening-vignette",
+    "10": "opening-vignette",
+    "11": "opening-vignette-the-4-return",
+    "13": "opening-vignette",
+    "14": "141-the-composable-technology-stack"
   },
   "Direct Channel": {
-    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "2": "28-booking-engines-and-guest-facing-technology",
+    "3": "learning-objectives",
+    "4": "opening-vignette",
+    "6": "61-the-call-center-as-distribution-channel",
+    "7": "72-the-big-programs-a-comparative-analysis",
+    "8": "81-the-global-distribution-system-architecture-and-economics",
+    "9": "opening-vignette",
+    "10": "opening-vignette",
+    "11": "118-rate-feed-accuracy-the-hidden-make-or-break-factor",
+    "12": "124-beyond-airbnb-the-alternative-accommodation-landscape",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Displacement Analysis": {
+    "4": "chapter-summary",
     "5": "learning-objectives",
-    "9": "91-the-ota-origin-story"
+    "10": "105-contracted-vs-dynamic-wholesale-rates"
   },
   "Duopoly": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "1": "industry-spotlight-booking-holdings-vs-marriott-international-two-titans-two-models",
+    "9": "learning-objectives",
+    "11": "112-the-major-players"
   },
   "Duty of Care": {
     "8": "84-travel-management-companies-and-corporate-distribution"
   },
   "Dynamic Pricing": {
-    "12": "124-beyond-airbnb-the-alternative-accommodation-landscape"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "2": "28-booking-engines-and-guest-facing-technology",
+    "3": "39-the-data-advantage-of-direct",
+    "7": "71-history-and-evolution-of-hotel-loyalty-programs",
+    "10": "1010-the-growth-of-wholesale-20192024",
+    "12": "124-beyond-airbnb-the-alternative-accommodation-landscape",
+    "13": "134-ai-powered-pricing-and-personalization",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Dynamic Rate": {
-    "9": "91-the-ota-origin-story"
+    "10": "104-rate-leakage-the-1-problem"
   },
   "Dynamic Redemption Pricing": {
     "7": "72-the-big-programs-a-comparative-analysis"
@@ -237,13 +399,15 @@
     "8": "85-the-gds-under-pressure-ndc-and-the-future"
   },
   "Elite Status": {
-    "7": "71-history-and-evolution-of-hotel-loyalty-programs"
+    "4": "key-terms",
+    "7": "71-history-and-evolution-of-hotel-loyalty-programs",
+    "12": "industry-spotlight-marriott-homes-villasa-hotel-giant-enters-the-sharing-economy"
   },
   "Emotional Loyalty": {
     "7": "75-personalization-from-data-to-experience"
   },
   "ESG (Environmental, Social, and Governance)": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "key-terms"
   },
   "Event-Driven Architecture": {
     "2": "learning-objectives"
@@ -255,41 +419,67 @@
     "8": "86-hotel-strategy-optimizing-the-gds-and-agent-channels"
   },
   "FIT (Free Independent Traveler)": {
-    "9": "learning-objectives"
+    "2": "21-from-ledgers-to-the-cloud-a-brief-history-of-hotel-technology",
+    "8": "82-the-travel-agent-decline-reinvention-and-renaissance",
+    "10": "106-fit-vs-group-wholesale"
   },
   "Free Booking Links (FBL)": {
-    "10": "101-how-wholesale-distribution-works"
+    "4": "42-the-direct-booking-wars",
+    "11": "112-the-major-players"
   },
   "GDS (Global Distribution System)": {
     "1": "key-terms",
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "2": "opening-vignette",
+    "3": "learning-objectives",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "7": "opening-vignette-the-invisible-architecture-of-recognition",
+    "8": "opening-vignette-two-intermediaries-two-worlds",
+    "9": "91-the-ota-origin-story",
+    "10": "108-geographic-variation-wholesale-around-the-world",
+    "13": "opening-vignette",
+    "14": "142-consolidation-in-hospitality-technology"
   },
   "Generative AI": {
-    "12": "chapter-summary"
+    "1": "learning-objectives",
+    "4": "42-the-direct-booking-wars",
+    "12": "chapter-summary",
+    "13": "learning-objectives",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Generative Engine Optimization (GEO)": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "13": "133-generative-ai-and-the-transformation-of-travel-search",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Genius Program": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "9": "key-terms",
+    "12": "126-can-hotels-compete-on-the-sharing-economys-terms"
   },
   "GHACP (Google Hotel Ads Commission Program)": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "112-the-major-players"
   },
   "Google Hotel Ads (GHA)": {
-    "10": "101-how-wholesale-distribution-works"
+    "1": "13-the-evolution-of-hotel-distribution-a-story-in-five-acts",
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "42-the-direct-booking-wars",
+    "11": "112-the-major-players",
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "Gross Booking Value (GBV)": {
-    "11": "1110-the-future-of-metasearch"
+    "11": "1110-the-future-of-metasearch",
+    "12": "key-terms"
   },
   "Group Block": {
-    "5": "learning-objectives"
+    "2": "21-from-ledgers-to-the-cloud-a-brief-history-of-hotel-technology",
+    "5": "learning-objectives",
+    "10": "101-how-wholesale-distribution-works",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Group Wash (Slippage)": {
     "5": "key-terms"
   },
   "GSTC (Global Sustainable Tourism Council)": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "key-terms"
   },
   "Handle Time": {
     "6": "63-technology-infrastructure-ivr-call-routing-crs-integration-voice-analytics"
@@ -298,101 +488,143 @@
     "5": "learning-objectives"
   },
   "Hybrid Model": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "4": "49-the-independent-hotel-challenge",
+    "9": "92-ota-business-models-agency-merchant-and-hybrid",
+    "12": "124-beyond-airbnb-the-alternative-accommodation-landscape"
   },
   "Impression Share": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "117-performance-marketing-measuring-metasearch-roi"
   },
   "Incrementality": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "117-performance-marketing-measuring-metasearch-roi"
   },
   "Indirect Channel": {
-    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "8": "81-the-global-distribution-system-architecture-and-economics"
   },
   "Influencer Marketing": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "Instant Book": {
-    "5": "56-the-rise-of-digital-group-booking-platforms"
+    "5": "56-the-rise-of-digital-group-booking-platforms",
+    "11": "112-the-major-players"
   },
   "Interactive Voice Response (IVR)": {
     "6": "learning-objectives"
   },
   "Internet of Things (IoT)": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "2": "28-booking-engines-and-guest-facing-technology",
+    "14": "learning-objectives"
   },
   "Knowledge Panel": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "112-the-major-players"
   },
   "Landing Page Conversion Rate": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "114-metasearch-as-a-direct-booking-weapon"
   },
   "Large Language Model (LLM)": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "13": "key-terms"
   },
   "Last Room Availability (LRA)": {
     "8": "84-travel-management-companies-and-corporate-distribution"
   },
   "Lifetime Value (LTV)": {
-    "7": "74-loyalty-as-distribution-strategy"
+    "1": "11-introduction",
+    "2": "27-customer-relationship-management-crm-guest-data-and-personalization",
+    "3": "learning-objectives",
+    "4": "learning-objectives",
+    "6": "66-walk-in-guests-the-front-desk-as-sales-channel",
+    "7": "74-loyalty-as-distribution-strategy",
+    "8": "81-the-global-distribution-system-architecture-and-economics",
+    "9": "93-the-duopoly-booking-holdings-vs-expedia-group"
   },
   "Loyalty Fatigue": {
     "7": "71-history-and-evolution-of-hotel-loyalty-programs"
   },
   "Loyalty Program": {
+    "1": "11-introduction",
+    "2": "22-property-management-systems-pms-the-operational-backbone",
+    "3": "opening-vignette",
     "4": "learning-objectives",
-    "7": "learning-objectives"
+    "6": "66-walk-in-guests-the-front-desk-as-sales-channel",
+    "7": "learning-objectives",
+    "9": "92-ota-business-models-agency-merchant-and-hybrid",
+    "10": "102-the-major-players-bed-banks-and-wholesale-aggregators",
+    "12": "121-the-rise-of-the-sharing-economy-in-travel",
+    "13": "132-super-apps-travel-embedded-in-everything",
+    "14": "147-blockchain-a-realistic-assessment"
   },
   "Loyalty Program Contribution Fee": {
     "7": "key-terms"
   },
   "Member Rate": {
-    "7": "72-the-big-programs-a-comparative-analysis"
+    "1": "industry-spotlight-booking-holdings-vs-marriott-international-two-titans-two-models",
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
+    "7": "72-the-big-programs-a-comparative-analysis",
+    "11": "114-metasearch-as-a-direct-booking-weapon"
   },
   "Merchant Model": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "9": "91-the-ota-origin-story"
   },
   "Metasearch": {
     "1": "opening-vignette",
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
+    "3": "learning-objectives",
     "4": "learning-objectives",
-    "10": "104-rate-leakage-the-1-problem"
+    "7": "chapter-summary",
+    "10": "104-rate-leakage-the-1-problem",
+    "11": "111-what-is-metasearch",
+    "12": "121-the-rise-of-the-sharing-economy-in-travel",
+    "13": "opening-vignette",
+    "14": "141-the-composable-technology-stack"
   },
   "Microservices": {
-    "2": "210-the-integration-challenge-getting-systems-to-talk"
+    "2": "210-the-integration-challenge-getting-systems-to-talk",
+    "14": "141-the-composable-technology-stack"
   },
   "Middleware": {
-    "2": "learning-objectives"
+    "2": "learning-objectives",
+    "14": "141-the-composable-technology-stack"
   },
   "Mini Program": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "6": "64-messaging-channels-the-new-voice",
+    "13": "opening-vignette"
   },
   "Model Context Protocol (MCP)": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Narrow Rate Parity": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "9": "96-rate-parity-the-controversial-cornerstone"
   },
   "Net Rate": {
     "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
-    "8": "81-the-global-distribution-system-architecture-and-economics",
-    "9": "92-ota-business-models-agency-merchant-and-hybrid"
+    "3": "35-guest-segmentation-understanding-who-books-and-why",
+    "4": "48-best-rate-guarantees",
+    "5": "52-how-group-distribution-works",
+    "9": "92-ota-business-models-agency-merchant-and-hybrid",
+    "10": "opening-vignette"
   },
   "Net RevPAR": {
     "1": "learning-objectives",
+    "2": "chapter-summary",
     "3": "learning-objectives",
-    "4": "41-the-economics-of-direct-vs-indirect-bookings"
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "9": "industry-spotlight-how-an-independent-hotel-optimized-its-ota-strategy",
+    "14": "149-the-workforce-distribution-careers-in-2030"
   },
   "New Distribution Capability (NDC)": {
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
     "8": "learning-objectives"
   },
   "Night Audit": {
     "2": "opening-vignette"
   },
   "Night Cap": {
-    "11": "111-what-is-metasearch"
+    "12": "125-regulatory-battles-and-their-distribution-implications"
   },
   "Open API": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "2": "learning-objectives",
+    "14": "opening-vignette"
   },
   "Open Pricing": {
     "2": "25-revenue-management-systems-rms-where-pricing-meets-distribution"
@@ -402,104 +634,185 @@
   },
   "OTA (Online Travel Agency)": {
     "1": "key-terms",
+    "2": "opening-vignette",
+    "3": "opening-vignette",
     "4": "opening-vignette",
-    "8": "opening-vignette-two-intermediaries-two-worlds"
+    "6": "opening-vignette-the-phone-call-that-paid-for-itself-a-thousand-times-over",
+    "7": "learning-objectives",
+    "8": "opening-vignette-two-intermediaries-two-worlds",
+    "9": "opening-vignette",
+    "10": "learning-objectives",
+    "11": "opening-vignette-the-4-return",
+    "12": "121-the-rise-of-the-sharing-economy-in-travel",
+    "13": "opening-vignette",
+    "14": "141-the-composable-technology-stack"
   },
   "OTA Commission": {
-    "3": "32-customer-lifetime-value-the-metric-that-changes-everything"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "3": "32-customer-lifetime-value-the-metric-that-changes-everything",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "7": "74-loyalty-as-distribution-strategy",
+    "8": "81-the-global-distribution-system-architecture-and-economics",
+    "9": "94-commission-structures-and-negotiation",
+    "11": "114-metasearch-as-a-direct-booking-weapon",
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "OTA Ranking Algorithm": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "9": "learning-objectives"
   },
   "OTA SEO": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "9": "key-terms"
   },
   "PCI DSS": {
     "2": "29-payment-systems-pci-compliance-and-cybersecurity"
   },
   "Personalization": {
-    "7": "71-history-and-evolution-of-hotel-loyalty-programs"
+    "1": "12-the-essence-of-hotel-distribution",
+    "2": "27-customer-relationship-management-crm-guest-data-and-personalization",
+    "3": "38-ancillary-revenue-the-channel-dependent-multiplier",
+    "4": "43-loyalty-programs-as-a-direct-booking-engine",
+    "6": "64-messaging-channels-the-new-voice",
+    "7": "71-history-and-evolution-of-hotel-loyalty-programs",
+    "9": "910-ota-strategies-post-covid",
+    "12": "123-the-hotel-industry-fights-back",
+    "13": "learning-objectives",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "PMS (Property Management System)": {
-    "2": "key-terms"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "2": "key-terms",
+    "5": "56-the-rise-of-digital-group-booking-platforms",
+    "6": "63-technology-infrastructure-ivr-call-routing-crs-integration-voice-analytics",
+    "7": "75-personalization-from-data-to-experience",
+    "8": "81-the-global-distribution-system-architecture-and-economics",
+    "10": "103-the-b2b-model-explained",
+    "11": "111-what-is-metasearch",
+    "12": "124-beyond-airbnb-the-alternative-accommodation-landscape",
+    "14": "key-terms"
   },
   "Points Devaluation": {
     "7": "key-terms"
   },
   "Points Liability": {
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
     "7": "learning-objectives"
   },
   "Professional Congress Organizer (PCO)": {
     "5": "52-how-group-distribution-works"
   },
   "Professional Host/Operator": {
-    "11": "111-what-is-metasearch"
+    "12": "key-terms"
   },
   "Quality Score": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "112-the-major-players"
   },
   "Rate Feed": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "learning-objectives"
   },
   "Rate Leakage": {
-    "9": "98-managing-ota-relationships-the-love-hate-dynamic"
+    "4": "48-best-rate-guarantees",
+    "9": "98-managing-ota-relationships-the-love-hate-dynamic",
+    "10": "opening-vignette"
   },
   "Rate Parity": {
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
+    "3": "33-the-true-cost-of-guest-acquisition",
     "4": "42-the-direct-booking-wars",
     "6": "65-revenue-management-for-voice-and-walk-in-channels",
-    "8": "83-the-modern-travel-advisor-fora-virtuoso-and-the-curation-model"
+    "8": "83-the-modern-travel-advisor-fora-virtuoso-and-the-curation-model",
+    "9": "learning-objectives",
+    "10": "learning-objectives",
+    "11": "114-metasearch-as-a-direct-booking-weapon",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Rate Shopper": {
     "2": "25-revenue-management-systems-rms-where-pricing-meets-distribution"
   },
   "Rate Shopping": {
-    "9": "91-the-ota-origin-story"
+    "4": "410-real-cost-comparisons-and-roi-analysis",
+    "10": "106-fit-vs-group-wholesale",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Regulatory Arbitrage": {
-    "11": "111-what-is-metasearch"
+    "12": "key-terms"
   },
   "Release Date": {
-    "9": "91-the-ota-origin-story"
+    "10": "101-how-wholesale-distribution-works"
   },
   "Request for Proposal (RFP)": {
+    "3": "35-guest-segmentation-understanding-who-books-and-why",
     "5": "opening-vignette-priyas-march-dilemma",
+    "6": "62-who-still-calls-and-why",
     "8": "84-travel-management-companies-and-corporate-distribution"
   },
   "Retention Rate": {
     "3": "32-customer-lifetime-value-the-metric-that-changes-everything"
   },
   "Retargeting (Remarketing)": {
-    "4": "key-terms"
+    "2": "27-customer-relationship-management-crm-guest-data-and-personalization",
+    "4": "key-terms",
+    "8": "83-the-modern-travel-advisor-fora-virtuoso-and-the-curation-model",
+    "9": "industry-spotlight-how-an-independent-hotel-optimized-its-ota-strategy"
   },
   "Revenue per Call": {
     "6": "61-the-call-center-as-distribution-channel"
   },
   "RevPAR (Revenue Per Available Room)": {
-    "1": "key-terms"
+    "1": "key-terms",
+    "2": "22-property-management-systems-pms-the-operational-backbone",
+    "3": "learning-objectives",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "5": "opening-vignette-priyas-march-dilemma",
+    "9": "industry-spotlight-how-an-independent-hotel-optimized-its-ota-strategy",
+    "14": "145-the-internet-of-things-iot-in-hotels"
   },
   "RMS (Revenue Management System)": {
-    "2": "key-terms"
+    "1": "learning-objectives",
+    "2": "key-terms",
+    "3": "31-rethinking-revenue-why-not-all-bookings-are-created-equal",
+    "5": "learning-objectives",
+    "10": "101-how-wholesale-distribution-works",
+    "14": "141-the-composable-technology-stack"
   },
   "ROAS (Return on Ad Spend)": {
-    "10": "101-how-wholesale-distribution-works"
+    "11": "117-performance-marketing-measuring-metasearch-roi"
   },
   "SaaS (Software as a Service)": {
-    "2": "key-terms"
+    "2": "key-terms",
+    "14": "key-terms"
   },
   "Search Engine Marketing (SEM)": {
-    "4": "learning-objectives"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "learning-objectives",
+    "9": "93-the-duopoly-booking-holdings-vs-expedia-group",
+    "11": "113-bidding-strategies-cpc-vs-cpa"
   },
   "Search Engine Optimization (SEO)": {
-    "4": "learning-objectives"
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "learning-objectives",
+    "9": "95-ota-ranking-algorithms-how-hotels-get-visibility",
+    "11": "1110-the-future-of-metasearch",
+    "12": "121-the-rise-of-the-sharing-economy-in-travel",
+    "13": "131-social-commerce-and-travel-distribution",
+    "14": "144-artificial-intelligence-and-the-agentic-future-of-distribution"
   },
   "Sell Rate": {
-    "9": "91-the-ota-origin-story"
+    "10": "101-how-wholesale-distribution-works"
   },
   "Sharing Economy": {
-    "11": "chapter-summary"
+    "1": "11-introduction",
+    "5": "51-the-group-segment-an-overview",
+    "11": "chapter-summary",
+    "12": "121-the-rise-of-the-sharing-economy-in-travel"
   },
   "Short-Term Rental (STR)": {
-    "11": "111-what-is-metasearch"
+    "1": "12-the-essence-of-hotel-distribution",
+    "2": "26-business-intelligence-and-analytics-turning-data-into-decisions",
+    "3": "31-rethinking-revenue-why-not-all-bookings-are-created-equal",
+    "5": "51-the-group-segment-an-overview",
+    "12": "124-beyond-airbnb-the-alternative-accommodation-landscape",
+    "14": "148-sustainability-and-distribution"
   },
   "Skills-Based Routing": {
     "6": "63-technology-infrastructure-ivr-call-routing-crs-integration-voice-analytics"
@@ -508,47 +821,57 @@
     "5": "learning-objectives"
   },
   "Social Commerce": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "1": "11-introduction",
+    "9": "93-the-duopoly-booking-holdings-vs-expedia-group",
+    "13": "131-social-commerce-and-travel-distribution",
+    "14": "149-the-workforce-distribution-careers-in-2030"
   },
   "Social Proof": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "1": "13-the-evolution-of-hotel-distribution-a-story-in-five-acts",
+    "4": "44-technology-and-the-direct-booking-experience",
+    "13": "key-terms"
   },
   "Soft Brand": {
     "4": "49-the-independent-hotel-challenge",
-    "11": "114-metasearch-as-a-direct-booking-weapon"
+    "11": "114-metasearch-as-a-direct-booking-weapon",
+    "12": "123-the-hotel-industry-fights-back"
   },
   "Spiff": {
     "6": "66-walk-in-guests-the-front-desk-as-sales-channel"
   },
   "Subscription Model": {
-    "7": "learning-objectives"
+    "7": "learning-objectives",
+    "11": "112-the-major-players"
   },
   "Super App": {
-    "12": "chapter-summary"
+    "12": "chapter-summary",
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "Supply Elasticity": {
-    "11": "111-what-is-metasearch"
+    "12": "126-can-hotels-compete-on-the-sharing-economys-terms"
   },
   "Switch/Aggregator": {
-    "1": "11-introduction",
     "8": "81-the-global-distribution-system-architecture-and-economics"
   },
   "Switching Costs": {
-    "7": "opening-vignette-the-invisible-architecture-of-recognition"
+    "7": "opening-vignette-the-invisible-architecture-of-recognition",
+    "12": "126-can-hotels-compete-on-the-sharing-economys-terms",
+    "14": "141-the-composable-technology-stack"
   },
   "Tier Qualification": {
     "7": "key-terms"
   },
   "Tokenization": {
     "2": "29-payment-systems-pci-compliance-and-cybersecurity",
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "143-unified-commerce-where-payments-distribution-and-experience-converge"
   },
   "Transactional Loyalty": {
     "7": "75-personalization-from-data-to-experience"
   },
   "Travel Advisor": {
     "4": "learning-objectives",
-    "8": "opening-vignette-two-intermediaries-two-worlds"
+    "8": "opening-vignette-two-intermediaries-two-worlds",
+    "13": "133-generative-ai-and-the-transformation-of-travel-search"
   },
   "Travel Management Company (TMC)": {
     "8": "opening-vignette-two-intermediaries-two-worlds"
@@ -557,35 +880,54 @@
     "2": "key-terms"
   },
   "Unified Commerce": {
-    "13": "131-social-commerce-and-travel-distribution"
+    "2": "211-emerging-trends-the-future-of-hotel-technology",
+    "14": "learning-objectives"
   },
   "Upselling": {
-    "6": "61-the-call-center-as-distribution-channel"
+    "2": "28-booking-engines-and-guest-facing-technology",
+    "6": "61-the-call-center-as-distribution-channel",
+    "13": "135-voice-search-and-conversational-interfaces"
   },
   "User-Generated Content (UGC)": {
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "4": "46-brand-campaigns-content-marketing-and-social-media",
+    "13": "131-social-commerce-and-travel-distribution"
   },
   "VCC (Virtual Credit Card)": {
     "2": "key-terms",
-    "13": "131-social-commerce-and-travel-distribution"
+    "14": "143-unified-commerce-where-payments-distribution-and-experience-converge"
   },
   "Virtual Wholesaler": {
-    "9": "91-the-ota-origin-story"
+    "10": "learning-objectives"
   },
   "Voice Analytics": {
     "6": "learning-objectives"
   },
   "Walk-In": {
-    "6": "61-the-call-center-as-distribution-channel"
+    "1": "14-the-distribution-landscape-today-key-players-and-core-concepts",
+    "2": "21-from-ledgers-to-the-cloud-a-brief-history-of-hotel-technology",
+    "3": "33-the-true-cost-of-guest-acquisition",
+    "4": "chapter-summary",
+    "5": "chapter-summary",
+    "6": "61-the-call-center-as-distribution-channel",
+    "9": "96-rate-parity-the-controversial-cornerstone",
+    "13": "137-the-future-of-search-from-keywords-to-conversations"
   },
   "White-Label": {
-    "9": "93-the-duopoly-booking-holdings-vs-expedia-group"
+    "8": "84-travel-management-companies-and-corporate-distribution",
+    "9": "93-the-duopoly-booking-holdings-vs-expedia-group",
+    "10": "101-how-wholesale-distribution-works"
   },
   "Wholesaler": {
     "1": "11-introduction",
-    "9": "94-commission-structures-and-negotiation"
+    "2": "23-central-reservation-systems-crs-the-distribution-hub",
+    "3": "35-guest-segmentation-understanding-who-books-and-why",
+    "4": "41-the-economics-of-direct-vs-indirect-bookings",
+    "7": "chapter-summary",
+    "9": "94-commission-structures-and-negotiation",
+    "10": "learning-objectives",
+    "11": "111-what-is-metasearch"
   },
   "Wide Rate Parity": {
-    "8": "81-the-global-distribution-system-architecture-and-economics"
+    "9": "96-rate-parity-the-controversial-cornerstone"
   }
 }
