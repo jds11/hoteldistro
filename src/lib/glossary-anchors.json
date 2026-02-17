@@ -246,10 +246,6 @@
     "6": "industry-spotlight-voice-as-brand-experience-in-luxury-hospitality",
     "12": "key-terms"
   },
-  "Composable Architecture / Technology Stack": {
-    "2": "21-from-ledgers-to-the-cloud-a-brief-history-of-hotel-technology",
-    "13": "131-social-commerce-and-travel-distribution"
-  },
   "Connected Trip": {
     "9": "93-the-duopoly-booking-holdings-vs-expedia-group"
   },
@@ -573,7 +569,6 @@
     "4": "learning-objectives",
     "7": "chapter-summary",
     "10": "104-rate-leakage-the-1-problem",
-    "11": "111-what-is-metasearch",
     "12": "121-the-rise-of-the-sharing-economy-in-travel",
     "13": "opening-vignette",
     "14": "141-the-composable-technology-stack"
@@ -672,7 +667,6 @@
     "3": "38-ancillary-revenue-the-channel-dependent-multiplier",
     "4": "43-loyalty-programs-as-a-direct-booking-engine",
     "6": "64-messaging-channels-the-new-voice",
-    "7": "71-history-and-evolution-of-hotel-loyalty-programs",
     "9": "910-ota-strategies-post-covid",
     "12": "123-the-hotel-industry-fights-back",
     "13": "learning-objectives",
@@ -803,8 +797,7 @@
   "Sharing Economy": {
     "1": "11-introduction",
     "5": "51-the-group-segment-an-overview",
-    "11": "chapter-summary",
-    "12": "121-the-rise-of-the-sharing-economy-in-travel"
+    "11": "chapter-summary"
   },
   "Short-Term Rental (STR)": {
     "1": "12-the-essence-of-hotel-distribution",
@@ -844,8 +837,7 @@
     "11": "112-the-major-players"
   },
   "Super App": {
-    "12": "chapter-summary",
-    "13": "131-social-commerce-and-travel-distribution"
+    "12": "chapter-summary"
   },
   "Supply Elasticity": {
     "12": "126-can-hotels-compete-on-the-sharing-economys-terms"
@@ -908,7 +900,6 @@
     "3": "33-the-true-cost-of-guest-acquisition",
     "4": "chapter-summary",
     "5": "chapter-summary",
-    "6": "61-the-call-center-as-distribution-channel",
     "9": "96-rate-parity-the-controversial-cornerstone",
     "13": "137-the-future-of-search-from-keywords-to-conversations"
   },
