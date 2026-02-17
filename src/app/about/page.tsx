@@ -12,6 +12,7 @@ const authors = [
     name: "Jason Shames",
     role: "VP of Product, Fora Travel",
     initials: "JS",
+    photo: "/authors/jason-shames.jpg",
     linkedin: "https://www.linkedin.com/in/jshames/",
     bio: "Jason has spent his career at the intersection of hospitality and technology, building products at Fora Travel, Safara, Skipper, and Ace Hotel. He brings deep product expertise and a practitioner's perspective to hotel distribution strategy. Jason is an adjunct instructor at the NYU Jonathan M. Tisch Center for Hospitality, where he co-created the Distribution & Demand Management curriculum.",
   },
@@ -19,6 +20,7 @@ const authors = [
     name: "David Pavelko",
     role: "Global Hospitality Partnerships Director, Google Travel",
     initials: "DP",
+    photo: "/authors/david-pavelko.jpg",
     linkedin: "https://www.linkedin.com/in/davidpavelko/",
     bio: "David works directly with Google's consumer travel initiatives, supporting overall strategy, business development, and partnership efforts. He previously served as Head of Travel at Google, managing campaigns across search, display, mobile, and YouTube for airlines, hotel chains, OTAs, and metasearch platforms. Before Google, David spent six years at Cendant Corporation as VP of Business Development. He holds a degree from Princeton University and a Master's in Travel & Tourism from George Washington University. David teaches at the NYU Tisch Center and Boston University's School of Hospitality Administration.",
   },
@@ -80,8 +82,8 @@ export default function AboutPage() {
               <div key={a.name} className="bg-white border border-border rounded-lg overflow-hidden">
                 <div className="p-6">
                   <div className="flex items-center gap-4 mb-5">
-                    <div className="w-[72px] h-[72px] rounded-full bg-brand-100 border-2 border-brand-200 flex items-center justify-center">
-                      <span className="text-brand-700 font-bold text-lg">{a.initials}</span>
+                    <div className="w-[72px] h-[72px] rounded-full overflow-hidden border-2 border-brand-200">
+                      <img src={a.photo} alt={a.name} className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2">
