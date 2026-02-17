@@ -5,11 +5,11 @@ title: "Hotel Technology"
 
 ## Opening Vignette
 
-It is 2:47 a.m. at the Langham, New York, Fifth Avenue. A business traveler in Tokyo has just booked a corner suite through Booking.com. Within milliseconds, the hotel's channel manager picks up the reservation, pushes it into the property management system, adjusts availability across every connected platform — Expedia, the hotel's own website, the GDS — and triggers a confirmation email to the guest's inbox. A revenue management algorithm, noticing that Tuesday-night demand just ticked upward, automatically raises the rate for the remaining suites by twelve dollars. The guest's loyalty profile, stored in a CRM, flags a preference for a high floor and a hypoallergenic pillow. A pre-arrival message is queued. None of this requires a human hand.
+It is 2:47 a.m. at the Langham, New York, Fifth Avenue. A business traveler in Tokyo has just booked a corner suite through Booking.com. Within milliseconds, the hotel's channel manager picks up the reservation, pushes it into the property management system, adjusts availability across every connected platform — Expedia, the hotel's own website, the Global Distribution System (GDS) — and triggers a confirmation email to the guest's inbox. A revenue management algorithm, noticing that Tuesday-night demand just ticked upward, automatically raises the rate for the remaining suites by twelve dollars. The guest's loyalty profile, stored in a Customer Relationship Management (CRM), flags a preference for a high floor and a hypoallergenic pillow. A pre-arrival message is queued. None of this requires a human hand.
 
 Twenty years ago, that same booking would have arrived as a fax. A night auditor would have walked to the front desk, penciled the reservation into a rack card, and hoped nobody else had sold the same room in the meantime.
 
-Now consider what happens when it goes wrong. In September 2019, a major lifestyle hotel group in Europe upgraded its property management system over a long weekend. By Monday morning, the new PMS had failed to synchronize with the channel manager. For nearly fourteen hours, rooms that had been sold on Booking.com still showed as available on Expedia and the hotel's own website. The result: 23 overbookings across three properties, furious guests turned away at check-in, emergency walks to competitor hotels at the brand's expense, and a social media firestorm that took weeks to contain. The total cost — between walk compensation, lost future revenue from damaged reviews, and emergency IT remediation — exceeded €180,000. The general manager later told an industry conference: "We learned that your technology stack isn't just infrastructure. It's the foundation your guest experience stands on. When it cracks, everything above it crumbles."
+Now consider what happens when it goes wrong. In September 2019, a major lifestyle hotel group in Europe upgraded its property management system over a long weekend. By Monday morning, the new Property Management System (PMS) had failed to synchronize with the channel manager. For nearly fourteen hours, rooms that had been sold on Booking.com still showed as available on Expedia and the hotel's own website. The result: 23 overbookings across three properties, furious guests turned away at check-in, emergency walks to competitor hotels at the brand's expense, and a social media firestorm that took weeks to contain. The total cost — between walk compensation, lost future revenue from damaged reviews, and emergency IT remediation — exceeded €180,000. The general manager later told an industry conference: "We learned that your technology stack isn't just infrastructure. It's the foundation your guest experience stands on. When it cracks, everything above it crumbles."
 
 *This vignette is a composite based on multiple industry incidents reported at hospitality technology conferences. Details have been adjusted to protect the identities of the properties involved.*
 
@@ -21,7 +21,7 @@ The distance between the seamless 2:47 a.m. booking and the €180,000 disaster 
 
 Upon completing this chapter, you should be able to:
 
-1. **Describe the core components** of the modern hotel technology stack — PMS, CRS, channel manager, RMS, CRM, booking engine, and payment systems — and explain how each contributes to distribution.
+1. **Describe the core components** of the modern hotel technology stack — PMS, Central Reservation System (CRS), channel manager, Revenue Management System (RMS), CRM, booking engine, and payment systems — and explain how each contributes to distribution.
 2. **Trace the evolution** of hotel technology from manual processes to cloud-native platforms, identifying the forces that drove each transition.
 3. **Analyze the integration challenge**, including the role of APIs, middleware, and event-driven architectures, and the risks of fragmented systems.
 4. **Evaluate emerging trends** such as composable architectures, open APIs, AI-driven automation, and guest-facing technology, and assess their implications for hotel operations and distribution strategy.
@@ -61,7 +61,7 @@ The benefits are substantial:
 - **Remote access:** Managers can monitor operations from anywhere with an internet connection.
 - **Better integration:** Cloud platforms are designed from the ground up with APIs (Application Programming Interfaces) that allow them to communicate with other systems.
 
-According to a 2024 report by Hotel Tech Report, over 65% of hotels worldwide were either using or actively migrating to cloud-based PMS platforms, up from roughly 30% just five years earlier (Hotel Tech Report, 2024). Soares, Mendes-Filho, and Gretzel (2021), applying institutional theory to technology adoption in hotels, found that adoption decisions are driven not only by expected efficiency gains but also by mimetic pressures (competitors adopting similar systems) and coercive pressures (brand mandates and OTA requirements) — helping explain why cloud migration has accelerated so rapidly once critical mass was reached.
+According to a 2024 report by Hotel Tech Report, over 65% of hotels worldwide were either using or actively migrating to cloud-based PMS platforms, up from roughly 30% just five years earlier (Hotel Tech Report, 2024). Soares, Mendes-Filho, and Gretzel (2021), applying institutional theory to technology adoption in hotels, found that adoption decisions are driven not only by expected efficiency gains but also by mimetic pressures (competitors adopting similar systems) and coercive pressures (brand mandates and Online Travel Agency (OTA) requirements) — helping explain why cloud migration has accelerated so rapidly once critical mass was reached.
 
 Law, Buhalis, and Cobanoglu (2014), in their review of technology's role in the hospitality industry published in the *Journal of Hospitality and Tourism Technology*, argued that the shift toward cloud computing represented a fundamental restructuring of the IT value chain in hospitality — moving hotels from technology *owners* to technology *subscribers* and fundamentally altering the cost structure and strategic flexibility of hotel operations.
 
@@ -78,7 +78,7 @@ The PMS is the central nervous system of a hotel. It is the core operational pla
 - **Folio and billing:** Posting room charges, restaurant bills, minibar purchases, and generating invoices.
 - **Housekeeping management:** Communicating room status (dirty, clean, inspected) between housekeeping and the front desk.
 - **Night audit:** Running end-of-day financial reconciliation.
-- **Reporting:** Generating operational and financial reports — occupancy, ADR, RevPAR, and more.
+- **Reporting:** Generating operational and financial reports — occupancy, Average Daily Rate (ADR), Revenue Per Available Room (RevPAR), and more.
 
 The PMS is also the system of record for the reservation. When a booking arrives from any channel — the hotel's website, an OTA, the GDS, a phone call — it ultimately lands in the PMS. This makes the PMS the gravitational center of hotel technology; virtually every other system in the stack must connect to it.
 
@@ -98,7 +98,7 @@ This is the PMS in action — not as a static database but as the living, breath
 
 The PMS market in the mid-2020s splits between legacy giants undergoing reinvention and cloud-native disruptors moving fast.
 
-- **Oracle Hospitality (Opera / Opera Cloud):** The dominant market incumbent — and the system that virtually every hospitality student will encounter in their career. Oracle's Opera PMS has been the industry standard for large, full-service, and luxury hotels for over two decades. Its on-premise version (Opera 5, commonly known as Opera PMS) is deeply embedded in the operations of major brands including Marriott, Hilton, and IHG. Oracle launched Opera Cloud as a full SaaS rebuild, and by 2024 had migrated thousands of properties, though the transition from legacy Opera remains a multi-year undertaking for many hotel companies (Oracle Hospitality, 2024). Opera Cloud runs on Oracle Cloud Infrastructure (OCI) and offers an open API platform (Oracle Hospitality Integration Platform, or OHIP) designed to ease third-party integrations.
+- **Oracle Hospitality (Opera / Opera Cloud):** The dominant market incumbent — and the system that virtually every hospitality student will encounter in their career. Oracle's Opera PMS has been the industry standard for large, full-service, and luxury hotels for over two decades. Its on-premise version (Opera 5, commonly known as Opera PMS) is deeply embedded in the operations of major brands including Marriott, Hilton, and IHG. Oracle launched Opera Cloud as a full SaaS rebuild, and by 2024 had migrated thousands of properties, though the transition from legacy Opera remains a multi-year undertaking for many hotel companies (Oracle Hospitality, 2024). Opera Cloud runs on Oracle Cloud Infrastructure (OCI) and offers an open Application Programming Interface (API) platform (Oracle Hospitality Integration Platform, or OHIP) designed to ease third-party integrations.
 
 - **Mews:** A Prague-founded, cloud-native PMS that has gained significant traction since its launch in 2012. Mews targets both independent and branded hotels with a modern, API-first architecture. By 2024, Mews served over 5,500 properties across more than 85 countries and had raised over $300 million in venture funding, including a massive Series D round designed to accelerate AI-driven hotel operations automation. The company's vision extends beyond traditional PMS functionality toward a future where artificial intelligence handles routine hotel operations, from pricing optimization to guest service (Lee, 2026). Its open marketplace and emphasis on automation — including automated check-in and payment — appeal to operators seeking to reduce front-desk labor dependency.
 
@@ -182,12 +182,7 @@ The CRS functions as a traffic controller. When a revenue manager decides to rai
 
 This bidirectional flow — rates and availability *out*, reservations *in* — is the fundamental heartbeat of hotel distribution technology.
 
-
-<figure className="my-8">
-<img src="/exhibits/exhibit-2-1-tech-stack.png" alt="Exhibit 2.1: The CRS as Distribution Hub" className="w-full rounded-lg shadow-sm border border-gray-200" />
-<figcaption className="mt-2 text-center text-sm text-brand-600">Exhibit 2.1: The CRS as Distribution Hub</figcaption>
-</figure>
-
+> **Exhibit 2.1: The CRS as Distribution Hub**
 >
 > *This exhibit should be designed as a hub-and-spoke diagram with the CRS at the center. Outward-facing arrows (labeled "Rates, Availability, Restrictions") flow from the CRS to six connected nodes: GDS (Amadeus, Sabre, Travelport), OTAs (via channel manager), Brand.com (booking engine), Call Center, Metasearch (Google Hotel Ads, Trivago), and Wholesalers/Bed Banks. Inward-facing arrows (labeled "Reservations, Modifications, Cancellations") flow from each node back to the CRS. A downward arrow from the CRS connects to the PMS, labeled "Reservation Delivery & Inventory Sync." The diagram should use color coding: blue for outbound rate/availability flows, green for inbound reservation flows, and a dashed line between CRS and PMS to indicate the critical two-way sync. Include a note: "In hotels without a CRS (many independents), the channel manager assumes this hub role, connecting directly to the PMS."*
 
@@ -244,7 +239,7 @@ Kimes (2016), one of the pioneers of revenue management research in hospitality,
 
 - **IDeaS Revenue Solutions (SAS):** The market leader in hotel revenue management technology, IDeaS (a subsidiary of analytics giant SAS Institute) serves over 30,000 properties worldwide. Its G3 RMS platform uses advanced analytics and machine learning to automate pricing decisions across room types, channels, and market segments. IDeaS pioneered the concept of automated revenue management in the hotel industry in the late 1980s (IDeaS, 2024).
 
-- **Duetto:** Founded in 2012 by former executives from Wynn Resorts, Duetto introduced the concept of **"Open Pricing"** — the ability to set independent, unconstrained prices for each room type, channel, and segment, rather than relying on traditional BAR (Best Available Rate) pricing with fixed differentials. Duetto's GameChanger platform has been adopted by major brands and management companies and is particularly popular in the casino and resort segment (Duetto, 2024).
+- **Duetto:** Founded in 2012 by former executives from Wynn Resorts, Duetto introduced the concept of **"Open Pricing"** — the ability to set independent, unconstrained prices for each room type, channel, and segment, rather than relying on traditional Best Available Rate (BAR) (Best Available Rate) pricing with fixed differentials. Duetto's GameChanger platform has been adopted by major brands and management companies and is particularly popular in the casino and resort segment (Duetto, 2024).
 
 - **Atomize (Mews):** A Swedish-born RMS acquired by Mews in 2023, Atomize uses real-time market data and machine learning to provide automated pricing recommendations. Its integration with the Mews PMS creates a tightly coupled pricing-to-distribution pipeline (Mews, 2023).
 
@@ -264,25 +259,20 @@ The modern revenue management workflow operates as a pipeline:
 
 This end-to-end pipeline can execute in minutes, enabling hotels to respond to demand shifts far faster than any manual process would allow.
 
-
-<figure className="my-8">
-<img src="/exhibits/exhibit-2-2-pms-vendors.png" alt="Exhibit 2.2: The Revenue Management to Distribution Pipeline" className="w-full rounded-lg shadow-sm border border-gray-200" />
-<figcaption className="mt-2 text-center text-sm text-brand-600">Exhibit 2.2: The Revenue Management to Distribution Pipeline</figcaption>
-</figure>
-
+> **Exhibit 2.2: The Revenue Management to Distribution Pipeline**
 >
 > *This exhibit should be designed as a horizontal flowchart moving left to right across five stages. Stage 1 (Data Ingestion): icons representing the PMS (historical bookings, pace data), Rate Shopper (competitor rates, parity alerts), and External Data (events, flights, weather) feed into Stage 2 (RMS Optimization), shown as a central processing box with "ML Algorithm" inside. Stage 3 (Decision Point): a diamond showing "Auto-publish?" with two paths — "Yes" going directly forward, "No" routing to a "Revenue Manager Review" step before continuing. Stage 4 (Rate Push): the CRS and/or Channel Manager receives the approved rates. Stage 5 (Channel Update): arrows fan out from the CRS/CM to icons for Brand.com, OTAs, GDS, Metasearch, and Call Center. A feedback loop arrow curves from Stage 5 back to Stage 1, labeled "Booking data returns to PMS," illustrating the continuous cycle. Include timing annotations: "Minutes, not hours" between Stages 2–5, and "Continuous" for the feedback loop.*
 
 
 ## 2.6 Business Intelligence and Analytics: Turning Data into Decisions
 
-### Beyond Reports: The Rise of BI in Hospitality
+### Beyond Reports: The Rise of Business Intelligence (BI) in Hospitality
 
 Every system in the hotel technology stack generates data — the PMS records guest stays and revenue, the RMS tracks pricing decisions, the channel manager logs booking volumes by channel, and the CRM captures guest behavior. Raw data, however, is not insight. Dedicated **Business Intelligence (BI)** tools mark the industry's shift from "What happened last night?" to "Why did it happen, and what should we do about it?"
 
 BI platforms aggregate data from across the technology stack — PMS, RMS, CRM, channel manager, reputation management, and competitive intelligence — and present it in unified dashboards that enable faster, more informed decision-making. Key capabilities include:
 
-- **Competitive benchmarking:** Comparing a hotel's performance (occupancy, ADR, RevPAR) against its competitive set in real time, using data from providers like STR and Lighthouse.
+- **Competitive benchmarking:** Comparing a hotel's performance (occupancy, ADR, RevPAR) against its competitive set in real time, using data from providers like Short-Term Rental (STR) and Lighthouse.
 - **Channel performance analysis:** Visualizing which channels are driving the most revenue, at what cost, and with what guest profile — enabling the data-driven channel mix optimization discussed in Chapter 1.
 - **Demand forecasting:** Combining internal booking pace with external signals (event calendars, flight searches, search volume) to predict future demand with greater accuracy than historical data alone.
 - **Pace and pickup reporting:** Tracking how quickly rooms are being booked relative to historical patterns, alerting revenue managers to anomalies that require pricing adjustments.
@@ -343,7 +333,7 @@ Beyond the booking engine, a growing category of guest-facing technology directl
 
 - **Self-service kiosks:** Touchscreen terminals in the lobby for check-in, check-out, and key dispensing. Particularly common in budget and midscale segments (citizenM, YOTEL) where operational efficiency is a brand differentiator.
 
-- **In-room technology:** Smart TVs with casting capability, IoT-controlled lighting and climate, voice assistants (Amazon Alexa for Hospitality), and digital compendiums replacing paper directories. These systems increasingly connect to the PMS to enable personalized settings based on guest profiles.
+- **In-room technology:** Smart TVs with casting capability, Internet of Things (IoT)-controlled lighting and climate, voice assistants (Amazon Alexa for Hospitality), and digital compendiums replacing paper directories. These systems increasingly connect to the PMS to enable personalized settings based on guest profiles.
 
 - **Guest messaging platforms:** Tools like **Kipsu**, **Zingle** (now Medallia Concierge), and **Whistle** enable real-time communication between guests and staff via SMS, WhatsApp, or in-app messaging. These platforms integrate with the PMS to provide context-aware service — the system knows the guest's name, room number, and preferences before a staff member responds.
 
@@ -419,12 +409,7 @@ Achieving this level of connectivity across all systems remains an aspiration fo
 
 This trade-off — composable best-of-breed versus integrated all-in-one — is one of the most consequential technology decisions a hotel operator will make, and it is explored further in the chapter's discussion questions and hands-on exercise.
 
-
-<figure className="my-8">
-<img src="/exhibits/exhibit-2-3-tech-evolution.png" alt="Exhibit 2.3: The Hotel Technology Ecosystem" className="w-full rounded-lg shadow-sm border border-gray-200" />
-<figcaption className="mt-2 text-center text-sm text-brand-600">Exhibit 2.3: The Hotel Technology Ecosystem</figcaption>
-</figure>
-
+> **Exhibit 2.3: The Hotel Technology Ecosystem**
 >
 > *This exhibit should be designed as a network diagram with the PMS at the center, enclosed in a prominent circle. Radiating outward are two-way connections (double-headed arrows) to: CRS, Channel Manager, RMS, CRM, Booking Engine, POS (restaurants and bars), Payment Systems, Guest Messaging, and Housekeeping/Maintenance. Between the CRS and the external world, arrows connect to GDS, OTAs, Metasearch, and Wholesalers. Line weight should indicate criticality: the thickest lines connect PMS↔CRS, PMS↔Channel Manager, and PMS↔RMS (the core distribution loop). Medium-weight lines connect PMS↔CRM and PMS↔Payment Systems. Thinner lines connect to operational systems (POS, Housekeeping, Guest Messaging). A shaded overlay on the right side of the diagram groups all external-facing systems (CRS, Channel Manager, Booking Engine) under the label "Distribution Layer," while the left side groups operational systems (POS, Housekeeping, Maintenance) under "Operations Layer." A note at the bottom reads: "In a composable stack, each node may be a different vendor. In an all-in-one platform, multiple nodes are bundled into a single system." Include a legend showing that solid lines = real-time API integration, dashed lines = batch or near-real-time sync.*
 
@@ -630,6 +615,7 @@ This chapter explored the technology stack that powers modern hotel distribution
 ## References
 
 
+*© 2025 David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman. NYU Jonathan M. Tisch Center for Hospitality.*
 
 AHLA (American Hotel & Lodging Association). (2024). *Hotel Technology Next Generation (HTNG) workgroups*. https://www.ahla.com
 
