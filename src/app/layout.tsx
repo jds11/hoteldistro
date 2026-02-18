@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 // Google Sans isn't available via next/font — it's a proprietary Google font.
@@ -62,6 +63,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-surface text-text-primary min-h-screen">
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
