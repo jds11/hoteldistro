@@ -4,6 +4,7 @@ import { getPartColors } from "@/lib/part-colors";
 import glossaryTerms from "@/lib/glossary-data.json";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import AskDotMatrix from "@/components/AskDotMatrix";
 
 const parts = [
   { title: "Part I", subtitle: "Introduction", range: [1, 3] },
@@ -109,6 +110,9 @@ export default function Home() {
             </section>
           );
         })}
+
+        {/* Ask Dot Matrix */}
+        <AskDotMatrix />
 
         {/* Bottom CTA */}
         <section className="py-16">
