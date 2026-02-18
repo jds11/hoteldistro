@@ -33,8 +33,8 @@ export default function ChatWidget() {
           {
             type: "text" as const,
             text: chapterSlug
-              ? "Hey! I'm **Dot Matrix** 🖨️ — your study assistant for this chapter. Ask me anything about the material."
-              : "Hey! I'm **Dot Matrix** 🖨️ — your study assistant for Hotel Distribution. Ask me anything about the textbook.",
+              ? "Hey! I'm **Dot Matrix** 💬 — your study assistant for this chapter. Ask me anything about the material."
+              : "Hey! I'm **Dot Matrix** 💬 — your study assistant for Hotel Distribution. Ask me anything about the textbook.",
           },
         ],
       },
@@ -81,7 +81,7 @@ export default function ChatWidget() {
           {/* Header */}
           <div className="bg-brand-900 text-white px-4 py-3 flex items-center gap-3 shrink-0">
             <div className="w-8 h-8 rounded-full bg-brand-700 flex items-center justify-center text-sm font-bold">
-              🖨️
+              💬
             </div>
             <div className="flex-1 min-w-0">
               <p className="font-semibold text-sm">Dot Matrix</p>

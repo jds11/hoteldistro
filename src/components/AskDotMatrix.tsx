@@ -30,7 +30,7 @@ export default function AskDotMatrix() {
         parts: [
           {
             type: "text" as const,
-            text: "Hey! I'm **Dot Matrix** 🖨️ — the study assistant for this textbook. Ask me anything about hotel distribution — channels, technology, strategy, or any concept from the chapters.",
+            text: "Hey! I'm **Dot Matrix** 💬 — the study assistant for this textbook. Ask me anything about hotel distribution — channels, technology, strategy, or any concept from the chapters.",
           },
         ],
       },
@@ -63,7 +63,7 @@ export default function AskDotMatrix() {
         {/* Header */}
         <div className="px-6 pt-6 pb-4 flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-brand-900 flex items-center justify-center text-lg">
-            🖨️
+            💬
           </div>
           <div>
             <h2 className="font-bold text-text-primary text-lg">Ask Dot Matrix</h2>
