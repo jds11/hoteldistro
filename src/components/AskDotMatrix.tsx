@@ -3,6 +3,7 @@
 import { useChat } from "@ai-sdk/react";
 import { TextStreamChatTransport } from "ai";
 import { useState, useRef, useEffect, useMemo } from "react";
+import ChatMarkdown from "./ChatMarkdown";
 
 const SUGGESTIONS = [
   "What is the difference between an OTA and a metasearch engine?",
@@ -90,7 +91,7 @@ export default function AskDotMatrix() {
                     : "bg-slate-100 text-text-primary rounded-bl-md"
                 }`}
               >
-                <MessageContent
+                <ChatMarkdown
                   content={
                     m.parts
                       ?.filter((p) => p.type === "text")
@@ -159,10 +160,4 @@ export default function AskDotMatrix() {
   );
 }
 
-function MessageContent({ content }: { content: string }) {
-  const html = content
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>")
-    .replace(/\n/g, "<br />");
-  return <span dangerouslySetInnerHTML={{ __html: html }} />;
-}
+// removed — using ChatMarkdown

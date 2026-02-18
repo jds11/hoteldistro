@@ -4,6 +4,7 @@ import { useChat } from "@ai-sdk/react";
 import { TextStreamChatTransport } from "ai";
 import { useState, useRef, useEffect, useMemo } from "react";
 import { usePathname } from "next/navigation";
+import ChatMarkdown from "./ChatMarkdown";
 
 export default function ChatWidget() {
   const [open, setOpen] = useState(false);
@@ -112,7 +113,7 @@ export default function ChatWidget() {
                       : "bg-slate-100 text-text-primary rounded-bl-md"
                   }`}
                 >
-                  <MessageContent content={m.parts?.filter((p) => p.type === "text").map((p) => (p as { type: "text"; text: string }).text).join("") ?? ""} />
+                  <ChatMarkdown content={m.parts?.filter((p) => p.type === "text").map((p) => (p as { type: "text"; text: string }).text).join("") ?? ""} />
                 </div>
               </div>
             ))}
@@ -160,10 +161,4 @@ export default function ChatWidget() {
   );
 }
 
-function MessageContent({ content }: { content: string }) {
-  const html = content
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>")
-    .replace(/\n/g, "<br />");
-  return <span dangerouslySetInnerHTML={{ __html: html }} />;
-}
+// removed — using ChatMarkdown
