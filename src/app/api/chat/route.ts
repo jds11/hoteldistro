@@ -1,5 +1,5 @@
 import { createAnthropic } from "@ai-sdk/anthropic";
-import { streamText } from "ai";
+import { streamText, UIMessage, convertToModelMessages } from "ai";
 import { getAllChapters, getChapterBySlug } from "@/lib/chapters";
 
 const anthropic = createAnthropic({
@@ -51,10 +51,13 @@ export async function POST(req: Request) {
     chapterContext = `\n\n## Textbook Table of Contents\n${toc}\n\nThe student is not on a specific chapter page. Answer based on your knowledge of the full textbook.`;
   }
 
+  // Convert UI messages (parts format) to model messages for streamText
+  const modelMessages = await convertToModelMessages(messages as UIMessage[]);
+
   const result = streamText({
     model: anthropic("claude-sonnet-4-20250514"),
     system: SYSTEM_PROMPT + chapterContext,
-    messages,
+    messages: modelMessages,
     maxOutputTokens: 1024,
   });
 
