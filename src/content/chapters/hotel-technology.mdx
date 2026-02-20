@@ -61,7 +61,7 @@ The benefits are substantial:
 - **Remote access:** Managers can monitor operations from anywhere with an internet connection.
 - **Better integration:** Cloud platforms are designed from the ground up with APIs (Application Programming Interfaces) that allow them to communicate with other systems.
 
-According to a 2024 report by Hotel Tech Report, over 65% of hotels worldwide were either using or actively migrating to cloud-based PMS platforms, up from roughly 30% just five years earlier (Hotel Tech Report, 2024). Soares, Mendes-Filho, and Gretzel (2021), applying institutional theory to technology adoption in hotels, found that adoption decisions are driven not only by expected efficiency gains but also by mimetic pressures (competitors adopting similar systems) and coercive pressures (brand mandates and Online Travel Agency (OTA) requirements) — helping explain why cloud migration has accelerated so rapidly once critical mass was reached.
+Li, Liu, and Du (2024), in a comprehensive bibliometric review of digital transformation research in hospitality from 2000 to 2023 published in the *International Journal of Hospitality Management*, documented that cloud migration has emerged as the dominant technological theme of the past decade — with research output on cloud computing, API integration, and platform ecosystems accelerating sharply after 2018. According to a 2024 report by Hotel Tech Report, over 65% of hotels worldwide were either using or actively migrating to cloud-based PMS platforms, up from roughly 30% just five years earlier (Hotel Tech Report, 2024). Soares, Mendes-Filho, and Gretzel (2021), applying institutional theory to technology adoption in hotels, found that adoption decisions are driven not only by expected efficiency gains but also by mimetic pressures (competitors adopting similar systems) and coercive pressures (brand mandates and Online Travel Agency (OTA) requirements) — helping explain why cloud migration has accelerated so rapidly once critical mass was reached.
 
 Law, Buhalis, and Cobanoglu (2014), in their review of technology's role in the hospitality industry published in the *Journal of Hospitality and Tourism Technology*, argued that the shift toward cloud computing represented a fundamental restructuring of the IT value chain in hospitality — moving hotels from technology *owners* to technology *subscribers* and fundamentally altering the cost structure and strategic flexibility of hotel operations.
 
@@ -164,7 +164,7 @@ While the PMS manages operations at the property level, the Central Reservation 
 
 The CRS performs several critical functions:
 
-- **Rate and inventory management:** Hotels (or their corporate revenue teams) load rates, room types, and availability rules into the CRS, which then distributes this information to connected channels.
+- **Rate and inventory management:** Hotels (or their corporate revenue teams) load rates, room types, and availability rules into the CRS, which then distributes this information to connected channels. As Falk and Anderson (2020) detail in their chapter on key hotel distribution channels — co-authored by Chris Anderson, whose billboard effect research is discussed in Chapter 3 — the CRS's ability to manage rate and inventory flows across an increasingly complex channel landscape is what makes modern multi-channel distribution possible.
 - **Reservation delivery:** When a booking is made on any external channel, the CRS receives the reservation and routes it to the appropriate property's PMS.
 - **Business rules enforcement:** The CRS can enforce rate parity rules, manage allotments, apply length-of-stay restrictions, and control which channels can sell which rate plans.
 - **Loyalty program integration:** For branded hotel companies, the CRS is where loyalty member rates, point redemption rules, and member recognition logic live.
@@ -183,6 +183,8 @@ The CRS functions as a traffic controller. When a revenue manager decides to rai
 This bidirectional flow — rates and availability *out*, reservations *in* — is the fundamental heartbeat of hotel distribution technology.
 
 > **Exhibit 2.1: The CRS as Distribution Hub**
+
+<img src="/exhibits/exhibit-2-1-tech-stack.png" alt="Exhibit 2.1" className="my-6 rounded-lg shadow-md w-full" />
 >
 > *This exhibit should be designed as a hub-and-spoke diagram with the CRS at the center. Outward-facing arrows (labeled "Rates, Availability, Restrictions") flow from the CRS to six connected nodes: GDS (Amadeus, Sabre, Travelport), OTAs (via channel manager), Brand.com (booking engine), Call Center, Metasearch (Google Hotel Ads, Trivago), and Wholesalers/Bed Banks. Inward-facing arrows (labeled "Reservations, Modifications, Cancellations") flow from each node back to the CRS. A downward arrow from the CRS connects to the PMS, labeled "Reservation Delivery & Inventory Sync." The diagram should use color coding: blue for outbound rate/availability flows, green for inbound reservation flows, and a dashed line between CRS and PMS to indicate the critical two-way sync. Include a note: "In hotels without a CRS (many independents), the channel manager assumes this hub role, connecting directly to the PMS."*
 
@@ -260,6 +262,8 @@ The modern revenue management workflow operates as a pipeline:
 This end-to-end pipeline can execute in minutes, enabling hotels to respond to demand shifts far faster than any manual process would allow.
 
 > **Exhibit 2.2: The Revenue Management to Distribution Pipeline**
+
+<img src="/exhibits/exhibit-2-2-pms-vendors.png" alt="Exhibit 2.2" className="my-6 rounded-lg shadow-md w-full" />
 >
 > *This exhibit should be designed as a horizontal flowchart moving left to right across five stages. Stage 1 (Data Ingestion): icons representing the PMS (historical bookings, pace data), Rate Shopper (competitor rates, parity alerts), and External Data (events, flights, weather) feed into Stage 2 (RMS Optimization), shown as a central processing box with "ML Algorithm" inside. Stage 3 (Decision Point): a diamond showing "Auto-publish?" with two paths — "Yes" going directly forward, "No" routing to a "Revenue Manager Review" step before continuing. Stage 4 (Rate Push): the CRS and/or Channel Manager receives the approved rates. Stage 5 (Channel Update): arrows fan out from the CRS/CM to icons for Brand.com, OTAs, GDS, Metasearch, and Call Center. A feedback loop arrow curves from Stage 5 back to Stage 1, labeled "Booking data returns to PMS," illustrating the continuous cycle. Include timing annotations: "Minutes, not hours" between Stages 2–5, and "Continuous" for the feedback loop.*
 
@@ -272,14 +276,14 @@ Every system in the hotel technology stack generates data — the PMS records gu
 
 BI platforms aggregate data from across the technology stack — PMS, RMS, CRM, channel manager, reputation management, and competitive intelligence — and present it in unified dashboards that enable faster, more informed decision-making. Key capabilities include:
 
-- **Competitive benchmarking:** Comparing a hotel's performance (occupancy, ADR, RevPAR) against its competitive set in real time, using data from providers like Short-Term Rental (STR) and Lighthouse.
+- **Competitive benchmarking:** Comparing a hotel's performance (occupancy, ADR, RevPAR) against its competitive set in real time, using data from providers like Smith Travel Research (now CoStar) and Lighthouse.
 - **Channel performance analysis:** Visualizing which channels are driving the most revenue, at what cost, and with what guest profile — enabling the data-driven channel mix optimization discussed in Chapter 1.
 - **Demand forecasting:** Combining internal booking pace with external signals (event calendars, flight searches, search volume) to predict future demand with greater accuracy than historical data alone.
 - **Pace and pickup reporting:** Tracking how quickly rooms are being booked relative to historical patterns, alerting revenue managers to anomalies that require pricing adjustments.
 
 Hospitality-specific BI platforms include **Lighthouse** (rate intelligence and market analytics), **OTA Insight** (now part of Lighthouse), **Demand Calendar**, and **ProfitSword** (enterprise BI for hotel management companies). Additionally, major PMS vendors increasingly embed BI capabilities directly into their platforms — Mews Analytics, Opera Cloud's reporting suite, and Cloudbeds' analytics dashboard all reflect this trend.
 
-The importance of analytics in hospitality was underscored by Mariani and Borghi (2018), who found that hotels that systematically used online analytics to inform operational and marketing decisions achieved measurably better performance outcomes.
+The importance of analytics in hospitality was underscored by Mariani and Borghi (2018), who found that hotels that systematically used online analytics to inform operational and marketing decisions achieved measurably better performance outcomes. A comprehensive systematic literature review by Mariani, Baggio, Fuchs, and Höepken (2018), published in the *International Journal of Contemporary Hospitality Management*, mapped the academic landscape of business intelligence and big data research in hospitality and tourism — identifying key application domains including demand forecasting, sentiment analysis, and competitive benchmarking, and arguing that BI capabilities have transitioned from competitive advantage to operational necessity.
 
 
 ## 2.7 Customer Relationship Management (CRM): Guest Data and Personalization
@@ -410,6 +414,8 @@ Achieving this level of connectivity across all systems remains an aspiration fo
 This trade-off — composable best-of-breed versus integrated all-in-one — is one of the most consequential technology decisions a hotel operator will make, and it is explored further in the chapter's discussion questions and hands-on exercise.
 
 > **Exhibit 2.3: The Hotel Technology Ecosystem**
+
+<img src="/exhibits/exhibit-2-3-tech-evolution.png" alt="Exhibit 2.3" className="my-6 rounded-lg shadow-md w-full" />
 >
 > *This exhibit should be designed as a network diagram with the PMS at the center, enclosed in a prominent circle. Radiating outward are two-way connections (double-headed arrows) to: CRS, Channel Manager, RMS, CRM, Booking Engine, POS (restaurants and bars), Payment Systems, Guest Messaging, and Housekeeping/Maintenance. Between the CRS and the external world, arrows connect to GDS, OTAs, Metasearch, and Wholesalers. Line weight should indicate criticality: the thickest lines connect PMS↔CRS, PMS↔Channel Manager, and PMS↔RMS (the core distribution loop). Medium-weight lines connect PMS↔CRM and PMS↔Payment Systems. Thinner lines connect to operational systems (POS, Housekeeping, Guest Messaging). A shaded overlay on the right side of the diagram groups all external-facing systems (CRS, Channel Manager, Booking Engine) under the label "Distribution Layer," while the left side groups operational systems (POS, Housekeeping, Maintenance) under "Operations Layer." A note at the bottom reads: "In a composable stack, each node may be a different vendor. In an all-in-one platform, multiple nodes are bundled into a single system." Include a legend showing that solid lines = real-time API integration, dashed lines = batch or near-real-time sync.*
 
@@ -422,7 +428,7 @@ The next generation of PMS platforms — Mews, Apaleo, Shiji — are not simply 
 
 ### Artificial Intelligence and Automation
 
-AI is permeating every layer of the hotel technology stack — though the gap between vendor rhetoric and operational deployment remains wide. In a 2025 survey of 700+ hotel brands, **AI ranked last on the technology priority list**; fixing rate parity and ARI (availability, rates, and inventory) management remained the top operational challenges (HEDNA, NYU Tisch Center, & RateGain, 2025). That said, AI capabilities are increasingly embedded into existing tools rather than deployed as standalone initiatives:
+AI is permeating every layer of the hotel technology stack — though the gap between vendor rhetoric and operational deployment remains wide. Iranmanesh, Ghobakhloo, Nilashi, Tseng, Yadegaridehkordi, and Leung (2022), in a systematic review published in the *International Journal of Hospitality Management*, catalogued the full spectrum of disruptive digital technologies being adopted across the hotel industry — including cloud computing, the Internet of Things, artificial intelligence, and blockchain — and found that while adoption is accelerating, most implementations remain fragmented rather than integrated into a cohesive technology strategy. In a 2025 survey of 700+ hotel brands, **AI ranked last on the technology priority list**; fixing rate parity and ARI (availability, rates, and inventory) management remained the top operational challenges (HEDNA, NYU Tisch Center, & RateGain, 2025). That said, AI capabilities are increasingly embedded into existing tools rather than deployed as standalone initiatives:
 
 - **RMS:** Machine learning algorithms are replacing traditional rule-based models for pricing optimization, capable of processing far more variables and detecting patterns that human revenue managers cannot.
 - **Chatbots and virtual assistants:** AI-powered conversational tools handle guest inquiries and bookings on hotel websites and messaging platforms, providing 24/7 responsiveness.
@@ -637,6 +643,8 @@ D-EDGE Hospitality Solutions. (2024). *About D-EDGE*. https://www.d-edge.com
 
 Duetto. (2024). *About Duetto*. https://www.duettocloud.com
 
+Falk, E., & Anderson, C. (2020). Key hotel distribution channels. In *Hospitality revenue management: Concepts and practices*. Taylor & Francis. https://doi.org/10.1201/9781003019923-4
+
 Geerts, W. (2021). *The state of hotel payments 2021*. Skift Research.
 
 Geerts, W., & Skift Research. (2021). *Hotel tech benchmark: Revenue management systems 2021*. Skift.
@@ -649,15 +657,19 @@ Hotel Tech Report. (2024). *State of hotel property management systems 2024*. ht
 
 ICO (Information Commissioner's Office). (2020). ICO fines Marriott International Inc £18.4 million for failing to keep customers' personal data secure [Press release]. https://ico.org.uk
 
+Iranmanesh, M., Ghobakhloo, M., Nilashi, M., Tseng, M. L., Yadegaridehkordi, E., & Leung, N. (2022). Applications of disruptive digital technologies in hotel industry: A systematic review. *International Journal of Hospitality Management*, *107*, 103304. https://doi.org/10.1016/j.ijhm.2022.103304
+
 IDeaS Revenue Solutions. (2024). *About IDeaS*. https://www.ideas.com
 
 Kasavana, M. L., & Brooks, R. M. (2005). *Managing front office operations* (7th ed.). American Hotel & Lodging Educational Institute.
 
-Kimes, S. E. (2016). The evolution of hotel revenue management. *Journal of Revenue and Pricing Management*, *15*(3–4), 224–228.
+Kimes, S. E. (2016). The evolution of hotel revenue management. *Journal of Revenue and Pricing Management*, *15*(3–4), 247–251. https://doi.org/10.1057/rpm.2016.27
 
 Law, R., Buhalis, D., & Cobanoglu, C. (2014). Progress on information and communication technologies in hospitality and tourism. *International Journal of Contemporary Hospitality Management*, *26*(5), 727–750. https://doi.org/10.1108/IJCHM-08-2013-0367
 
 Law, R., Leung, D., & Chan, I. C. C. (2020). Progression and development of information and communication technology research in hospitality and tourism: A state-of-the-art review. *International Journal of Contemporary Hospitality Management*, *32*(2), 511–534. https://doi.org/10.1108/IJCHM-07-2018-0586
+
+Li, Y., Liu, C., & Du, R. (2024). Digital transformation in the hospitality industry: A bibliometric review from 2000 to 2023. *International Journal of Hospitality Management*, *118*, 103686. https://doi.org/10.1016/j.ijhm.2024.103686
 
 Lee, A. (2026, January 22). Mews raises $300 million to prove AI can run hotel operations. *Skift*. https://skift.com/2026/01/22/mews-raises-300-million-to-prove-ai-can-run-hotel-operations/
 
@@ -666,6 +678,8 @@ Leung, R., & Law, R. (2013). Evaluation of hotel information technologies and ED
 Lighthouse. (2024). *About Lighthouse*. https://www.mylighthouse.com
 
 Mariani, M. M., & Borghi, M. (2018). Effects of the Booking.com rating system: Bringing hotel class into the picture. *Tourism Management*, *66*, 47–52.
+
+Mariani, M., Baggio, R., Fuchs, M., & Höepken, W. (2018). Business intelligence and big data in hospitality and tourism: A systematic literature review. *International Journal of Contemporary Hospitality Management*, *30*(12), 3514–3554. https://doi.org/10.1108/IJCHM-07-2017-0461
 
 Marriott International. (2018, November 30). Marriott International announces Starwood guest reservation database security incident [Press release]. https://news.marriott.com
 
@@ -690,8 +704,6 @@ Planet. (2020). Planet acquires Protel [Press release]. https://www.weareplanet.
 RateGain. (2024). *About RateGain*. https://www.rategain.com
 
 Revinate. (2024). *About Revinate*. https://www.revinate.com
-
-Rizvi, A. (2025). *Navigating the future: What's next for global distribution systems*. Skift Research.
 
 Sabre Corporation. (2024). *SynXis platform*. https://www.sabrehospitality.com
 
