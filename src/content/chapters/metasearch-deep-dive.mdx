@@ -3,6 +3,10 @@ number: 11
 title: "Metasearch"
 ---
 
+# Chapter 11: Metasearch Deep Dive
+
+---
+
 ## Opening Vignette: The $4 Return
 
 Sarah Chen stares at her laptop in the lobby of The Whitfield, a 200-room boutique hotel on Chicago's Michigan Avenue. It's Tuesday morning, and she's reviewing last month's distribution performance. One number keeps jumping out: for every dollar she spent on Google Hotel Ads, she saved four dollars in Online Travel Agency (OTA) commissions. Last year, The Whitfield paid $1.2 million in commissions to Booking.com and Expedia. This year, by redirecting a portion of that spend into metasearch, she's on track to cut that figure by $300,000 — while *increasing* direct bookings by 22%.
@@ -13,6 +17,7 @@ But Sarah is also watching a new challenge emerge. On her phone, she pulls up a 
 
 This chapter maps the metasearch landscape — the comparison-shopping layer that has fundamentally altered the economics of hotel distribution. It examines how these platforms work, who the major players are, how operators like Sarah use them to reclaim control of revenue, and why the ground beneath the entire model is shifting.
 
+---
 
 ## Learning Objectives
 
@@ -25,6 +30,7 @@ Upon completing this chapter, you should be able to:
 5. **Assess Google's expanding role in travel** — including AI Overviews — and its implications for hotels, OTAs, and the broader distribution ecosystem.
 6. **Identify operational requirements** — rate feed accuracy, landing page optimization, and device-specific strategy — that determine metasearch success.
 
+---
 
 ## 11.1 What Is Metasearch?
 
@@ -32,7 +38,9 @@ Upon completing this chapter, you should be able to:
 
 At its core, metasearch is deceptively simple: it aggregates hotel rates and availability from multiple sources — OTAs, brand websites, wholesalers — and displays them side by side so travelers can compare and choose where to book. Unlike an OTA, a metasearch engine does not (traditionally) process the booking itself. It is, in essence, a shopping comparison tool for hotel rooms.
 
-But that simplicity belies enormous power. Metasearch platforms sit at one of the most valuable moments in the traveler's journey: the **point of purchase intent**. By the time someone is comparing rates on Google Hotels or Trivago, they've already decided *where* to stay. The only question left is *where to book*. This makes metasearch the last click before the transaction — and that click is worth a great deal of money.
+But that simplicity belies enormous power. Metasearch platforms sit at one of the most valuable moments in the traveler's journey: the **point of purchase intent**. By the time someone is comparing rates on Google Hotels or Trivago, they've already decided *where* to stay. The only question left is *where to book*. This makes metasearch the last click before the transaction — and that click is worth a great deal of money. 
+
+The tension between hotels selling rooms directly and through third-party websites is not new; as Toh, Raven, and DeKay (2011) documented in the *Cornell Hospitality Quarterly*, this channel conflict has been a defining feature of digital distribution for decades. However, this tension has intensified with each new intermediary layer. Metasearch represents the latest, and perhaps most consequential, escalation of that conflict, forcing hotels to pay for visibility on the very platforms where their own rates are being aggregated.
 
 ### How It Works: The Technical Flow
 
@@ -41,7 +49,7 @@ The journey of a rate from hotel to metasearch display involves several steps:
 1. **The hotel sets rates and availability** in its Property Management System (PMS) or Central Reservation System (CRS).
 2. **A channel manager or connectivity partner** (e.g., SiteMinder, D-EDGE, Derbysoft) distributes those rates to multiple endpoints.
 3. **Rate feeds are sent to metasearch platforms** via Application Programming Interface (API) connections, typically updated in near-real-time.
-4. **The metasearch platform aggregates** rates from all connected sources — the hotel's direct site, Booking.com, Expedia, Agoda, and others.
+4. **The metasearch platform aggregates** rates from all connected sources — the hotel's direct site, Booking.com, Expedia, Agoda, and others. It is at this precise aggregation step that competitive outcomes are shaped. Ling, Guo, and Yang (2014), in an empirical study in *Tourism Management*, demonstrated that online marketplace pricing dynamics between hotels and intermediaries are highly sensitive to how these rates are displayed side-by-side. The rates travelers see are the product of complex, multi-party strategic interactions.
 5. **The traveler sees a comparison** showing prices from each source, often with visual indicators of the lowest rate.
 6. **Upon clicking, the traveler is redirected** to the selected booking source (hotel website or OTA) to complete the reservation.
 
@@ -53,54 +61,55 @@ This "redirect model" is the traditional metasearch approach. However, as we'll 
 
 The distinction matters enormously for hotels:
 
-<div className="my-6 overflow-x-auto">
-<table className="w-full border-collapse text-sm">
-<thead>
-<tr className="bg-brand-50 border-b-2 border-brand-200">
-<th className="py-3 px-4 text-left font-semibold text-brand-900">OTA</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Metasearch</th>
-</tr>
-</thead>
-<tbody>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">**Role**</td>
-<td className="py-3 px-4 text-primary">Retailer — sells the room</td>
-<td className="py-3 px-4 text-primary">Advertiser — refers the customer</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">**Revenue model**</td>
-<td className="py-3 px-4 text-primary">Commission (15–25%)</td>
-<td className="py-3 px-4 text-primary">CPC or CPA (typically 5–12%)</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">**Customer relationship**</td>
-<td className="py-3 px-4 text-primary">OTA owns it</td>
-<td className="py-3 px-4 text-primary">Hotel can own it (if booked direct)</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">**Booking transaction**</td>
-<td className="py-3 px-4 text-primary">Processed by OTA</td>
-<td className="py-3 px-4 text-primary">Processed by the booking source</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">**Guest data**</td>
-<td className="py-3 px-4 text-primary">Limited/no pass-through</td>
-<td className="py-3 px-4 text-primary">Full data if booked on hotel site</td>
-</tr>
-</tbody>
+<table className="w-full border-collapse my-6 text-sm">
+  <thead>
+    <tr>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary"></th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">**OTA**</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">**Metasearch**</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Role**</td>
+      <td className="p-3 border-b border-divider text-secondary">Retailer — sells the room</td>
+      <td className="p-3 border-b border-divider text-secondary">Advertiser — refers the customer</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Revenue model**</td>
+      <td className="p-3 border-b border-divider text-secondary">Commission (15–25%)</td>
+      <td className="p-3 border-b border-divider text-secondary">CPC or CPA (typically 5–12%)</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Customer relationship**</td>
+      <td className="p-3 border-b border-divider text-secondary">OTA owns it</td>
+      <td className="p-3 border-b border-divider text-secondary">Hotel can own it (if booked direct)</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Booking transaction**</td>
+      <td className="p-3 border-b border-divider text-secondary">Processed by OTA</td>
+      <td className="p-3 border-b border-divider text-secondary">Processed by the booking source</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Guest data**</td>
+      <td className="p-3 border-b border-divider text-secondary">Limited/no pass-through</td>
+      <td className="p-3 border-b border-divider text-secondary">Full data if booked on hotel site</td>
+    </tr>
+  </tbody>
 </table>
-</div>
+This distinction is why metasearch has become so strategically important: it offers hotels a way to compete for visibility *alongside* OTAs, but at a fraction of the cost — and with the potential to own the guest relationship. As Phocuswright noted in its 2023 analysis of the metasearch landscape, these platforms have evolved from "nice-to-have comparison tools" to "essential components of any hotel's digital distribution strategy" (Phocuswright, 2023).
 
-This distinction is why metasearch has become so strategically important: it offers hotels a way to compete for visibility *alongside* OTAs, but at a fraction of the cost — and with the potential to own the guest relationship.
+Yet metasearch has not simply disintermediated the old gatekeepers — it has created new ones. Law, Leung, Lo, Leung, and Fong (2015), revisiting the disintermediation debate in the *International Journal of Contemporary Hospitality Management*, found that metasearch engines have paradoxically both disintermediated traditional travel agents *and* re-intermediated the hotel–guest relationship by inserting a new comparison layer between the traveler and the booking. 
 
-As Phocuswright noted in its 2023 analysis of the metasearch landscape, these platforms have evolved from "nice-to-have comparison tools" to "essential components of any hotel's digital distribution strategy" (Phocuswright, 2023). Law, Leung, Lo, Leung, and Fong (2015), revisiting the disintermediation debate in the *International Journal of Contemporary Hospitality Management*, found that metasearch engines have paradoxically both disintermediated traditional travel agents and re-intermediated the hotel–guest relationship by inserting a new comparison layer between the traveler and the booking — a dynamic that Ling, Guo, and Yang (2014) explored empirically in *Tourism Management*, showing how online marketplace pricing dynamics between hotels and intermediaries shape competitive outcomes. Earlier work by Toh, Raven, and DeKay (2011) in the *Cornell Hospitality Quarterly* documented the tension between hotels selling rooms directly versus through third-party websites — a tension that metasearch has intensified rather than resolved. Xiang, Schwartz, Gerdes, and Uysal (2015), analyzing big data and text analytics in the *International Journal of Hospitality Management*, demonstrated that the vast volume of online guest reviews and search data now available through platforms like metasearch engines provides unprecedented insight into guest satisfaction and hotel performance — data that smart operators leverage to optimize their metasearch positioning and pricing.
+Meanwhile, the data exhaust generated by these platforms — billions of searches, clicks, and price comparisons — has become a strategic asset in its own right. Xiang, Schwartz, Gerdes, and Uysal (2015), analyzing big data in the *International Journal of Hospitality Management*, demonstrated that the volume of online reviews and search data flowing through metasearch engines provides unprecedented insight into guest satisfaction and hotel performance. Smart operators leverage this data to optimize their positioning and pricing — a capability we will return to in Sections 11.7 and 11.8.
 
+---
 
 ## 11.2 The Major Players
 
 ### Google Hotel Ads: The 800-Pound Gorilla
 
-No discussion of metasearch can begin anywhere other than Google. With its integration across Search, Maps, and the broader Google ecosystem, Google Hotel Ads (GHA) has become the dominant force in hotel metasearch — and arguably one of the most important distribution channels in the industry, period. Google processes billions of travel-related searches each year, though the company does not publicly disclose exact monthly volumes (industry estimates commonly cite billions of travel-related searches monthly, though Google does not publicly disclose exact volumes).
+No discussion of metasearch can begin anywhere other than Google. With its integration across Search, Maps, and the broader Google ecosystem, Google Hotel Ads (GHA) has become the dominant force in hotel metasearch — and arguably one of the most important distribution channels in the industry, period. Google processes billions of travel-related searches each year, though the company does not publicly disclose exact monthly volumes.
 
 #### A Brief History
 
@@ -125,9 +134,8 @@ This booking module is where the money flows:
   - **CPA (Commission Per Acquisition):** Pay a percentage of the booking value only when a confirmed reservation is made. Lower risk, but typically higher cost per booking than optimized CPC.
   - **GHACP (Google Hotel Ads Commission Program):** Pay commission only on **stayed** bookings — meaning cancellations and no-shows do not cost the hotel. This shifted risk further toward Google.
 
-#### Co-Author Perspective
-
-As co-author David Pavelko, who works at Google, can attest, the company's travel strategy reflects a fundamental belief that helping users find the best information — including the best price — creates value for everyone in the ecosystem. The introduction of Free Booking Links was particularly significant: it acknowledged that Google's role is to organize information, not to become a transaction intermediary. Critics, however, argue that Google's control over the search experience gives it asymmetric power to shape distribution economics in its favor — effectively setting the rules of a game in which it is also a player (Schaal, 2025a). Whether the rest of the industry agrees with Google's characterization of its own role is, as we'll discuss, a matter of considerable debate.
+> ### 💡 Sidebar: A Co-Author's Perspective on Google's Role
+> As co-author David Pavelko, who works at Google, can attest, the company's travel strategy reflects a fundamental belief that helping users find the best information — including the best price — creates value for everyone in the ecosystem. The introduction of Free Booking Links was particularly significant: it acknowledged that Google's role is to organize information, not to become a transaction intermediary. Critics, however, argue that Google's control over the search experience gives it asymmetric power to shape distribution economics in its favor — effectively setting the rules of a game in which it is also a player (Schaal, 2025a). Whether the rest of the industry agrees with Google's characterization of its own role is a matter of considerable debate.
 
 #### What the Data Shows: Skift Research's Google Hotels Web Scraping Analysis
 
@@ -204,10 +212,21 @@ Bing's hotel ads market share remains small relative to Google — likely in the
 
 **HotelsCombined**, an Australian metasearch engine, was acquired by **Booking Holdings** in 2016, further consolidating the Booking Holdings portfolio of comparison tools alongside Kayak.
 
+---
+
+> ### 🛑 Check Your Understanding
+> **Scenario:** You are the General Manager of a 40-room independent boutique hotel. You have just connected your booking engine to Google via a connectivity partner. You notice your hotel is now appearing in the "Free Booking Links" section, but Booking.com is still appearing at the very top of the module in the "Sponsored" section. 
+> 
+> **Question:** Why is Booking.com appearing above your direct site, and what would you have to do to appear in that top spot?
+> *Answer: Booking.com is paying for placement via Google Hotel Ads (CPC or CPA). To appear in the top sponsored section, your hotel would need to launch a paid Google Hotel Ads campaign and bid competitively against the OTAs.*
+
+---
 
 ## 11.3 Bidding Strategies: CPC vs. CPA
 
-Understanding how consumers search for hotels on comparison platforms is essential context for bidding strategy. Hunold, Kesler, and Laitenberger (2020), in a study published in *Marketing Science*, examined how OTA ranking algorithms affect hotel pricing and consumer welfare, finding that algorithmic ranking creates incentives for hotels to increase commissions in exchange for visibility — a dynamic directly relevant to metasearch bidding, where similar position-based economics determine which hotels travelers see first. Ghose, Ipeirotis, and Li (2019), in a study published in *Management Science*, modeled consumer search behavior on hotel platforms and found that travelers' click-through and booking decisions are influenced by an interplay between search engine positioning, social media signals, and prior browsing behavior — suggesting that metasearch bidding strategies must account for a traveler's broader digital footprint, not just the isolated price comparison.
+Understanding how consumers search for hotels on comparison platforms is essential context for bidding strategy. Academic research supports this operational reality. Hunold, Kesler, and Laitenberger (2020), in a study published in *Marketing Science*, examined how OTA ranking algorithms affect hotel pricing and consumer welfare, finding that algorithmic ranking creates incentives for hotels to increase commissions in exchange for visibility. This dynamic is directly relevant to metasearch bidding, where similar position-based economics determine which hotels travelers see first. 
+
+Furthermore, Ghose, Ipeirotis, and Li (2019), in a study published in *Management Science*, modeled consumer search behavior on hotel platforms and found that travelers' click-through and booking decisions are influenced by an interplay between search engine positioning, social media signals, and prior browsing behavior. This suggests that metasearch bidding strategies must account for a traveler's broader digital footprint, not just the isolated price comparison.
 
 Choosing the right bidding strategy is one of the most consequential decisions a hotel's digital marketing team will make. Each model has distinct advantages and risks.
 
@@ -260,120 +279,127 @@ Choosing the right bidding strategy is one of the most consequential decisions a
 
 ### The Bidding Decision Framework
 
-<div className="my-6 overflow-x-auto">
-<table className="w-full border-collapse text-sm">
-<thead>
-<tr className="bg-brand-50 border-b-2 border-brand-200">
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Factor</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Favors CPC</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Favors CPA/GHACP</th>
-</tr>
-</thead>
-<tbody>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Website conversion rate</td>
-<td className="py-3 px-4 text-primary">High (3%+)</td>
-<td className="py-3 px-4 text-primary">Low or unknown</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Digital marketing expertise</td>
-<td className="py-3 px-4 text-primary">Strong in-house</td>
-<td className="py-3 px-4 text-primary">Limited</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Market competitiveness</td>
-<td className="py-3 px-4 text-primary">Moderate</td>
-<td className="py-3 px-4 text-primary">Highly competitive</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Cancellation rate</td>
-<td className="py-3 px-4 text-primary">Low</td>
-<td className="py-3 px-4 text-primary">High</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Budget flexibility</td>
-<td className="py-3 px-4 text-primary">Flexible</td>
-<td className="py-3 px-4 text-primary">Fixed/conservative</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Property type</td>
-<td className="py-3 px-4 text-primary">Branded chain</td>
-<td className="py-3 px-4 text-primary">Independent</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Primary device traffic</td>
-<td className="py-3 px-4 text-primary">Desktop-heavy</td>
-<td className="py-3 px-4 text-primary">Mobile-heavy*</td>
-</tr>
-</tbody>
+<table className="w-full border-collapse my-6 text-sm">
+  <thead>
+    <tr>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Factor</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Favors CPC</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Favors CPA/GHACP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Website conversion rate</td>
+      <td className="p-3 border-b border-divider text-secondary">High (3%+)</td>
+      <td className="p-3 border-b border-divider text-secondary">Low or unknown</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Digital marketing expertise</td>
+      <td className="p-3 border-b border-divider text-secondary">Strong in-house</td>
+      <td className="p-3 border-b border-divider text-secondary">Limited</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Market competitiveness</td>
+      <td className="p-3 border-b border-divider text-secondary">Moderate</td>
+      <td className="p-3 border-b border-divider text-secondary">Highly competitive</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Cancellation rate</td>
+      <td className="p-3 border-b border-divider text-secondary">Low</td>
+      <td className="p-3 border-b border-divider text-secondary">High</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Budget flexibility</td>
+      <td className="p-3 border-b border-divider text-secondary">Flexible</td>
+      <td className="p-3 border-b border-divider text-secondary">Fixed/conservative</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Property type</td>
+      <td className="p-3 border-b border-divider text-secondary">Branded chain</td>
+      <td className="p-3 border-b border-divider text-secondary">Independent</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Primary device traffic</td>
+      <td className="p-3 border-b border-divider text-secondary">Desktop-heavy</td>
+      <td className="p-3 border-b border-divider text-secondary">Mobile-heavy*</td>
+    </tr>
+  </tbody>
 </table>
-</div>
-
 *Mobile conversion rates are typically 40–60% lower than desktop for hotel bookings (see Section 11.9), making CPA models — where you only pay for completed bookings — less risky for mobile-heavy traffic.
 
 Many sophisticated hotel groups use a **hybrid approach**: CPC for high-converting markets and dates, CPA for shoulder periods or less predictable segments, and GHACP as a safety net.
 
 **Bid management tools** like **Koddi**, **Derbysoft**, and **Triptease** offer automated optimization — adjusting bids in real-time based on factors like day of week, booking window, device type, and competitive positioning. For hotel groups managing hundreds of properties across multiple metasearch platforms, these tools have become essential.
 
+---
 
 ## 11.4 Metasearch as a Direct Booking Weapon
 
 Here is where metasearch becomes truly strategic for hotels: it is one of the most effective tools available to **recapture demand** that would otherwise flow through OTAs.
 
-### The Math That Changed the Game
+### The Math That Changed the Game: A Worked Example
 
-Consider a $250/night booking:
+Consider a traveler looking to book a $250/night room. Let's compare the financial outcome for the hotel across different distribution channels:
 
-<div className="my-6 overflow-x-auto">
-<table className="w-full border-collapse text-sm">
-<thead>
-<tr className="bg-brand-50 border-b-2 border-brand-200">
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Channel</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Assumption</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Cost to Hotel</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Hotel Keeps</th>
-</tr>
-</thead>
-<tbody>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Booking.com (15% commission)</td>
-<td className="py-3 px-4 text-primary">—</td>
-<td className="py-3 px-4 text-primary">$37.50</td>
-<td className="py-3 px-4 text-primary">$212.50</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Expedia (18% commission)</td>
-<td className="py-3 px-4 text-primary">—</td>
-<td className="py-3 px-4 text-primary">$45.00</td>
-<td className="py-3 px-4 text-primary">$205.00</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Google Hotel Ads CPC</td>
-<td className="py-3 px-4 text-primary">$1.50/click, 4% conversion rate (25 clicks per booking)</td>
-<td className="py-3 px-4 text-primary">$37.50</td>
-<td className="py-3 px-4 text-primary">$212.50</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Google Hotel Ads CPA (10%)</td>
-<td className="py-3 px-4 text-primary">—</td>
-<td className="py-3 px-4 text-primary">$25.00</td>
-<td className="py-3 px-4 text-primary">$225.00</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Google Free Booking Links</td>
-<td className="py-3 px-4 text-primary">—</td>
-<td className="py-3 px-4 text-primary">$0.00</td>
-<td className="py-3 px-4 text-primary">$250.00</td>
-</tr>
-</tbody>
+<table className="w-full border-collapse my-6 text-sm">
+  <thead>
+    <tr>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Channel</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Assumption</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Cost to Hotel</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Hotel Keeps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Booking.com (15% commission)</td>
+      <td className="p-3 border-b border-divider text-secondary">Standard OTA contract</td>
+      <td className="p-3 border-b border-divider text-secondary">$37.50</td>
+      <td className="p-3 border-b border-divider text-secondary">$212.50</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Expedia (18% commission)</td>
+      <td className="p-3 border-b border-divider text-secondary">Standard OTA contract</td>
+      <td className="p-3 border-b border-divider text-secondary">$45.00</td>
+      <td className="p-3 border-b border-divider text-secondary">$205.00</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Google Hotel Ads CPC</td>
+      <td className="p-3 border-b border-divider text-secondary">$1.50/click, 4% conversion rate (25 clicks per booking)</td>
+      <td className="p-3 border-b border-divider text-secondary">$37.50</td>
+      <td className="p-3 border-b border-divider text-secondary">$212.50</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Google Hotel Ads CPA (10%)</td>
+      <td className="p-3 border-b border-divider text-secondary">10% flat commission model</td>
+      <td className="p-3 border-b border-divider text-secondary">$25.00</td>
+      <td className="p-3 border-b border-divider text-secondary">$225.00</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Google Free Booking Links</td>
+      <td className="p-3 border-b border-divider text-secondary">Organic placement</td>
+      <td className="p-3 border-b border-divider text-secondary">$0.00</td>
+      <td className="p-3 border-b border-divider text-secondary">$250.00</td>
+    </tr>
+  </tbody>
 </table>
-</div>
+**Note on the CPC calculation:** The 4% conversion rate assumption is critical. At 4%, it takes 25 clicks at $1.50 each to produce one booking (25 clicks × $1.50 = $37.50). 
 
-**Note on the CPC calculation:** The 4% conversion rate assumption is critical. At 4%, it takes 25 clicks at $1.50 each to produce one booking (25 × $1.50 = $37.50). If your website converts at 2%, the math doubles: 50 clicks × $1.50 = $75.00 per booking — suddenly far more expensive than an OTA commission. Conversely, at 6% conversion, the cost drops to ~$25 per booking. **Landing page conversion rate is the single most important variable in CPC metasearch economics.**
+If your website converts at 2%, the math doubles: 50 clicks × $1.50 = $75.00 per booking — suddenly making metasearch far more expensive than an OTA commission. Conversely, at a highly optimized 6% conversion rate, it only takes ~16.6 clicks to get a booking, dropping the cost to ~$25. **Landing page conversion rate is the single most important variable in CPC metasearch economics.**
 
-At first glance, CPC metasearch looks similar to an OTA commission. But the critical difference is **what else you get**: the guest books on your website, you capture their email, their preferences, their payment details. You own the relationship. The next time they travel, you can reach them directly — no intermediary needed. Over the lifetime of that guest, the economics diverge dramatically.
+At first glance, CPC metasearch (at a 4% conversion rate) looks identical to an OTA commission ($37.50). But the critical difference is **what else you get**: the guest books on your website, you capture their email, their preferences, their payment details. You own the relationship. The next time they travel, you can reach them directly — no intermediary needed. Over the lifetime of that guest, the economics diverge dramatically.
 
 As the Skift Research team noted in their 2024 Hotel Distribution Outlook, "metasearch has become the primary battleground where hotels and OTAs compete for the same traveler at the moment of booking intent" (Skift Research, 2024).
+
+---
+
+> ### 🛑 Check Your Understanding
+> **Scenario:** Your hotel's website conversion rate drops from 4% to 2% due to a technical glitch on your mobile booking engine. You are currently paying $2.00 per click on Google Hotel Ads. 
+> 
+> **Question:** How much will it now cost you to acquire a single booking via CPC metasearch?
+> *Answer: At a 2% conversion rate, it takes 50 clicks to generate one booking (100 / 2 = 50). At $2.00 per click, the cost of acquisition is $100.00 (50 clicks × $2.00). This highlights why website conversion rate is the linchpin of CPC strategy.*
+
+---
 
 ### Rate Parity's Role
 
@@ -394,6 +420,7 @@ But Free Booking Links alone are not enough for most independents. The reality i
 
 The key insight for independent hoteliers: metasearch is no longer a "big brand" game. The infrastructure exists for a 50-room boutique hotel to appear alongside Marriott and Booking.com in Google's booking module — but it requires deliberate effort on connectivity, rate accuracy, and website conversion.
 
+---
 
 ## 11.5 Google's Expanding Travel Empire
 
@@ -407,7 +434,7 @@ To understand the future of metasearch, you must understand Google's broader tra
 - **Things to Do:** Google's expansion into activities and experiences, competing with Viator and GetYourGuide. For hotels, this represents both a threat (Google controlling more of the trip) and an opportunity (bundling experiences with stays).
 - **AI Overviews and Gemini:** The most significant development. Google's AI-generated answers increasingly appear at the top of travel searches, summarizing options and making recommendations *before* the traveler ever sees a traditional link. Early research from Authoritas, a UK-based search analytics firm, suggests AI Overviews may reduce click-through rates on organic results by **30–60%** for queries where they appear (Authoritas, 2024). While this research is based on a limited sample and the long-term impact remains uncertain, the directional implication is significant: if AI summaries satisfy the traveler's query without requiring a click, the entire metasearch model — which depends on clicks to generate value — faces a structural challenge.
 
-Anguera-Torrell and Langer (2022), in the first academic study specifically examining hotel metasearch positioning effects, found that a hotel's rank position in metasearch results significantly influences click-through rates — with properties appearing in top positions receiving disproportionately more clicks, confirming that the CPC and CPA bidding strategies discussed in Section 11.3 have measurable visibility consequences beyond mere cost management.
+Anguera-Torrell and Langer (2022), in the first academic study specifically examining hotel metasearch positioning effects, found that a hotel's rank position in metasearch results significantly influences click-through rates — with properties appearing in top positions receiving disproportionately more clicks. This confirms that the CPC and CPA bidding strategies discussed in Section 11.3 have measurable visibility consequences beyond mere cost management.
 
 ### Is Google Becoming an OTA?
 
@@ -430,6 +457,7 @@ This is the existential question the industry has debated for over a decade. The
 
 The HSMAI Foundation's Distribution Channel Analysis warned as early as 2012 about the emergence of "new powerful gatekeepers" in travel — specifically naming Google and Apple. That prediction has proved remarkably prescient (Estis Green & Lomanno, 2012).
 
+---
 
 ## 11.6 The Blurring Line Between Metasearch and OTA
 
@@ -451,6 +479,7 @@ When metasearch platforms process or facilitate transactions, several things cha
 
 This evolution is far from settled, and students entering the industry should expect continued experimentation and disruption in how metasearch platforms define their role.
 
+---
 
 ## 11.7 Performance Marketing: Measuring Metasearch ROI
 
@@ -482,8 +511,9 @@ Metasearch attribution is notoriously tricky:
 - **Multi-touch attribution** distributes credit across all touchpoints. More accurate but much harder to implement.
 - **Incrementality** is the gold standard: of the bookings that came through metasearch, how many would you have gotten anyway? If a loyal guest searches your hotel on Google and clicks your Hotel Ad, was that click truly incremental — or would they have navigated to your website directly?
 
-Answering incrementality questions requires **A/B testing**: turning off metasearch in certain markets or time periods and measuring the impact. Triptease, a metasearch technology vendor, reported in 2023 that hotels conducting such tests typically found **60–80% of metasearch bookings were incremental** — meaning the channel was genuinely driving new direct business, not just taxing existing demand (Triptease, 2023). Triptease is a vendor with a commercial interest in demonstrating metasearch effectiveness — its business model depends on hotels investing in metasearch management. Independent academic research on metasearch incrementality remains limited; Anderson's (2011) foundational work on the billboard effect — which found that OTA visibility drives incremental direct bookings — provides a useful conceptual parallel, but the specific question of metasearch incrementality deserves further peer-reviewed investigation.
+Answering incrementality questions requires **A/B testing**: turning off metasearch in certain markets or time periods and measuring the impact. While independent, peer-reviewed academic research on metasearch incrementality remains limited, commercial vendors have attempted to quantify this impact. For example, Triptease (2023), a metasearch technology provider, claims that hotels conducting such tests typically find **60–80% of metasearch bookings to be incremental** — meaning the channel genuinely drives new direct business rather than just taxing existing demand. However, because Triptease's business model relies on hotels investing in metasearch management, strict academic rigor requires treating these figures as vendor claims rather than conclusive industry benchmarks. Anderson's (2011) foundational work on the billboard effect — which found that OTA visibility drives incremental direct bookings — provides a useful conceptual parallel, but the specific question of metasearch incrementality deserves further peer-reviewed investigation.
 
+---
 
 ## 11.8 Rate Feed Accuracy: The Hidden Make-or-Break Factor
 
@@ -514,6 +544,7 @@ The most common — and most costly — mistake hotels make in metasearch is neg
 
 Rate accuracy is unsexy but essential. A hotel with perfect bids, compelling ads, and a beautiful website will still hemorrhage money if its rate feeds are unreliable.
 
+---
 
 ## 11.9 Mobile vs. Desktop: Two Different Games
 
@@ -523,46 +554,43 @@ Metasearch performance varies dramatically by device, and hotels that treat mobi
 
 The majority of travel *searches* now happen on mobile devices, but the majority of hotel *bookings* still complete on desktop. This creates a fundamental tension in metasearch strategy:
 
-<div className="my-6 overflow-x-auto">
-<table className="w-full border-collapse text-sm">
-<thead>
-<tr className="bg-brand-50 border-b-2 border-brand-200">
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Metric</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Desktop</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Mobile</th>
-</tr>
-</thead>
-<tbody>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Share of hotel searches</td>
-<td className="py-3 px-4 text-primary">~40–45%</td>
-<td className="py-3 px-4 text-primary">~55–60%</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Booking conversion rate</td>
-<td className="py-3 px-4 text-primary">3–6%</td>
-<td className="py-3 px-4 text-primary">1–3%</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Average booking value</td>
-<td className="py-3 px-4 text-primary">Higher (longer stays, suites)</td>
-<td className="py-3 px-4 text-primary">Lower (1–2 night stays)</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Booking window</td>
-<td className="py-3 px-4 text-primary">Further out (7–30+ days)</td>
-<td className="py-3 px-4 text-primary">Shorter (0–7 days)</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 text-primary">Bounce rate on hotel sites</td>
-<td className="py-3 px-4 text-primary">Lower</td>
-<td className="py-3 px-4 text-primary">Higher</td>
-</tr>
-</tbody>
+<table className="w-full border-collapse my-6 text-sm">
+  <thead>
+    <tr>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Metric</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Desktop</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Mobile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Share of hotel searches</td>
+      <td className="p-3 border-b border-divider text-secondary">~40–45%</td>
+      <td className="p-3 border-b border-divider text-secondary">~55–60%</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Booking conversion rate</td>
+      <td className="p-3 border-b border-divider text-secondary">3–6%</td>
+      <td className="p-3 border-b border-divider text-secondary">1–3%</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Average booking value</td>
+      <td className="p-3 border-b border-divider text-secondary">Higher (longer stays, suites)</td>
+      <td className="p-3 border-b border-divider text-secondary">Lower (1–2 night stays)</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Booking window</td>
+      <td className="p-3 border-b border-divider text-secondary">Further out (7–30+ days)</td>
+      <td className="p-3 border-b border-divider text-secondary">Shorter (0–7 days)</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">Bounce rate on hotel sites</td>
+      <td className="p-3 border-b border-divider text-secondary">Lower</td>
+      <td className="p-3 border-b border-divider text-secondary">Higher</td>
+    </tr>
+  </tbody>
 </table>
-</div>
-
-Sources: Industry benchmarks vary; ranges reflect data from SiteMinder (2023) and D-EDGE (2023). Figures represent commonly cited industry consensus from practitioner reports.
+*Sources: Industry benchmarks vary; ranges reflect data from SiteMinder (2023) and D-EDGE (2023). Figures represent commonly cited industry consensus from practitioner reports.*
 
 ### Implications for Bidding Strategy
 
@@ -576,6 +604,15 @@ The reality is messier than a clean mobile/desktop split suggests. Many traveler
 
 Hotels with sophisticated analytics can implement cross-device tracking (through logged-in user IDs or Google's cross-device reporting), but for many properties, the pragmatic approach is to evaluate metasearch performance at the **portfolio level** rather than obsessing over device-level ROAS.
 
+---
+
+> ### 🛑 Check Your Understanding
+> **Scenario:** You are reviewing your metasearch performance and notice that 60% of your clicks are coming from mobile devices, but mobile only accounts for 20% of your actual bookings. You are currently using a flat CPC bid of $1.50 across all devices.
+> 
+> **Question:** What two strategic adjustments should you make immediately to improve your Return on Ad Spend (ROAS)?
+> *Answer: 1) Implement device-level bid adjustments, lowering your CPC bid for mobile devices and raising it for desktop devices where conversion is higher. 2) Audit your mobile landing page and booking engine to identify friction points causing the high drop-off rate.*
+
+---
 
 ## 11.10 The Future of Metasearch
 
@@ -603,6 +640,7 @@ The metasearch landscape is likely to consolidate further. Independent metasearc
 
 The strategic imperative is clear: **diversify, but invest in fundamentals.** Metasearch will remain a critical channel for the foreseeable future, but hotels that build their direct booking capabilities on a single platform's goodwill are taking a risk. The hotels that will thrive are those that use metasearch as one component of a broader direct-booking ecosystem — combining metasearch with SEO, Customer Relationship Management (CRM), loyalty, social media, and email marketing to build demand that does not depend on any one gatekeeper.
 
+---
 
 ## Industry Spotlight: The Metasearch Turnaround at Pan Pacific Hotels
 
@@ -631,87 +669,87 @@ The company's digital team made a bold decision: shift 30% of OTA co-op marketin
 
 The lesson: metasearch is not just a distribution channel. It is a **strategic lever** that connects paid acquisition, direct booking, loyalty, and CRM into an integrated system. Hotels that treat it as just another line item in the marketing budget miss the bigger picture.
 
+---
 
 ## Chapter Summary
 
 This chapter explored metasearch—the comparison-shopping layer that aggregates hotel rates from multiple sources and displays them at the critical moment of booking intent. We examined the major platforms (Google Hotel Ads, Trivago, Kayak, TripAdvisor, Bing), analyzed CPC versus CPA bidding strategies, and demonstrated how metasearch functions as a powerful direct booking weapon when paired with rate parity, strong landing pages, and accurate rate feeds. The chapter also addressed Google's expanding travel ecosystem and the existential threat AI Overviews pose to the click-dependent metasearch model. **What's Next:** Chapter 12 turns to the sharing economy and alternative accommodations—the platforms and business models that redefined what "hospitality" means and permanently expanded the competitive landscape hotels must navigate.
 
+---
 
 ## Key Terms
 
-<div className="my-8 overflow-x-auto">
-<table className="w-full border-collapse text-sm">
-<thead>
-<tr className="border-b-2 border-brand-200">
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Term</th>
-<th className="py-3 px-4 text-left font-semibold text-brand-900">Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Metasearch**</td>
-<td className="py-3 px-4 text-primary">A platform that aggregates and compares hotel rates from multiple booking sources, allowing travelers to find the best price</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Google Hotel Ads (GHA)**</td>
-<td className="py-3 px-4 text-primary">Google's advertising product that displays hotel prices within Search, Maps, and Google Travel</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Free Booking Links (FBL)**</td>
-<td className="py-3 px-4 text-primary">Unpaid hotel listings in Google's booking module, launched in 2021, available to any hotel with a connectivity partner</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**CPC (Cost Per Click)**</td>
-<td className="py-3 px-4 text-primary">A bidding model where the advertiser pays each time a user clicks on their listing</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**CPA (Commission Per Acquisition)**</td>
-<td className="py-3 px-4 text-primary">A bidding model where the advertiser pays a percentage of booking value only on confirmed reservations</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**GHACP**</td>
-<td className="py-3 px-4 text-primary">Google Hotel Ads Commission Program — commission charged only on completed (stayed) bookings</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Rate Feed**</td>
-<td className="py-3 px-4 text-primary">An automated data connection that transmits real-time rates and availability from a hotel's systems to metasearch platforms</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Connectivity Partner**</td>
-<td className="py-3 px-4 text-primary">A technology company (e.g., Derbysoft, SiteMinder) that manages the technical connection between hotels and metasearch platforms</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**ROAS (Return on Ad Spend)**</td>
-<td className="py-3 px-4 text-primary">A metric measuring revenue generated per dollar of advertising spend</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Incrementality**</td>
-<td className="py-3 px-4 text-primary">The measurement of whether a marketing channel drives truly new bookings versus capturing demand that would have occurred anyway</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Knowledge Panel**</td>
-<td className="py-3 px-4 text-primary">The information box Google displays for a hotel, including photos, reviews, location, and booking options</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Bid Management**</td>
-<td className="py-3 px-4 text-primary">The process (often automated) of setting and optimizing CPC or CPA bids across metasearch platforms</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Quality Score**</td>
-<td className="py-3 px-4 text-primary">A composite metric used by metasearch platforms (notably Google and Trivago) reflecting rate accuracy, landing page experience, and expected conversion rate; higher scores improve ad positioning and reduce effective cost per click</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Landing Page Conversion Rate**</td>
-<td className="py-3 px-4 text-primary">The percentage of visitors arriving at a hotel's website from a metasearch click who complete a booking; the most critical variable in CPC metasearch economics</td>
-</tr>
-<tr className="border-b border-gray-200 hover:bg-gray-50">
-<td className="py-3 px-4 font-semibold text-brand-800">**Impression Share**</td>
-<td className="py-3 px-4 text-primary">The percentage of eligible searches in which a hotel's metasearch ad appeared; a measure of visibility and missed opportunity</td>
-</tr>
-</tbody>
+<table className="w-full border-collapse my-6 text-sm">
+  <thead>
+    <tr>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Term</th>
+      <th className="text-left p-3 bg-surface-alt border-b border-divider font-semibold text-primary">Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Metasearch**</td>
+      <td className="p-3 border-b border-divider text-secondary">A platform that aggregates and compares hotel rates from multiple booking sources, allowing travelers to find the best price</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Google Hotel Ads (GHA)**</td>
+      <td className="p-3 border-b border-divider text-secondary">Google's advertising product that displays hotel prices within Search, Maps, and Google Travel</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Free Booking Links (FBL)**</td>
+      <td className="p-3 border-b border-divider text-secondary">Unpaid hotel listings in Google's booking module, launched in 2021, available to any hotel with a connectivity partner</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**CPC (Cost Per Click)**</td>
+      <td className="p-3 border-b border-divider text-secondary">A bidding model where the advertiser pays each time a user clicks on their listing</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**CPA (Commission Per Acquisition)**</td>
+      <td className="p-3 border-b border-divider text-secondary">A bidding model where the advertiser pays a percentage of booking value only on confirmed reservations</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**GHACP**</td>
+      <td className="p-3 border-b border-divider text-secondary">Google Hotel Ads Commission Program — commission charged only on completed (stayed) bookings</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Rate Feed**</td>
+      <td className="p-3 border-b border-divider text-secondary">An automated data connection that transmits real-time rates and availability from a hotel's systems to metasearch platforms</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Connectivity Partner**</td>
+      <td className="p-3 border-b border-divider text-secondary">A technology company (e.g., Derbysoft, SiteMinder) that manages the technical connection between hotels and metasearch platforms</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**ROAS (Return on Ad Spend)**</td>
+      <td className="p-3 border-b border-divider text-secondary">A metric measuring revenue generated per dollar of advertising spend</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Incrementality**</td>
+      <td className="p-3 border-b border-divider text-secondary">The measurement of whether a marketing channel drives truly new bookings versus capturing demand that would have occurred anyway</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Knowledge Panel**</td>
+      <td className="p-3 border-b border-divider text-secondary">The information box Google displays for a hotel, including photos, reviews, location, and booking options</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Bid Management**</td>
+      <td className="p-3 border-b border-divider text-secondary">The process (often automated) of setting and optimizing CPC or CPA bids across metasearch platforms</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Quality Score**</td>
+      <td className="p-3 border-b border-divider text-secondary">A composite metric used by metasearch platforms (notably Google and Trivago) reflecting rate accuracy, landing page experience, and expected conversion rate; higher scores improve ad positioning and reduce effective cost per click</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Landing Page Conversion Rate**</td>
+      <td className="p-3 border-b border-divider text-secondary">The percentage of visitors arriving at a hotel's website from a metasearch click who complete a booking; the most critical variable in CPC metasearch economics</td>
+    </tr>
+    <tr>
+      <td className="p-3 border-b border-divider text-secondary">**Impression Share**</td>
+      <td className="p-3 border-b border-divider text-secondary">The percentage of eligible searches in which a hotel's metasearch ad appeared; a measure of visibility and missed opportunity</td>
+    </tr>
+  </tbody>
 </table>
-</div>
-
+---
 
 ## Discussion Questions
 
@@ -727,11 +765,13 @@ This chapter explored metasearch—the comparison-shopping layer that aggregates
 
 6. **Rate Accuracy Scenario:** A 100-room boutique hotel discovers that its rate feed to Google Hotel Ads has been showing rates $15 lower than the actual booking page price for the past three weeks due to a tax-display error. Using what you've learned in this chapter, estimate the likely impacts on (a) wasted ad spend, (b) Quality Score, (c) guest trust, and (d) Google's algorithmic treatment of the property's listing. What steps should the hotel take immediately?
 
+---
 
 ## References
 
+---
 
-*© 2025 David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman. NYU Jonathan M. Tisch Center for Hospitality.*
+*© 2026 David Pavelko, Jason Shames, Richie Karaburun & Samantha Shankman. NYU Jonathan M. Tisch Center for Hospitality.*
 
 Agarwal, P., & Skift Research. (2023a). *A deep dive into Google Travel Part I: U.S. hotel distribution*. Skift.
 
